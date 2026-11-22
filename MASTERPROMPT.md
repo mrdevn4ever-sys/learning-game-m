@@ -4,6 +4,34 @@ Dieses Dokument ist der vollständige und verbindliche Auftrag an den Agenten, d
 
 ---
 
+## E. Einrichtung (einmalig, vor Abschnitt 0)
+
+Du arbeitest in einer Umgebung, die bei GitHub angemeldet ist. Richte zuerst alles ein, was sich mit diesem Zugang einrichten lässt.
+
+1. **Repository verbinden**:
+   - Projekt-Repository ist `github.com/mrdevn4ever-sys/learning-game-m`. Klone es oder öffne es, falls es schon vorhanden ist.
+   - Der vorbereitete Stand liegt auf dem Branch `claude/swift-learning-game-ch-32w9ms`. Fehlen `MASTERPROMPT.md` und `steuerung/` auf `main`, erstellst du einen Pull Request von diesem Branch nach `main` und mergst ihn. Ab dann ist `main` die Basis, und du arbeitest auf eigenen Arbeitsbranches.
+2. **Sichtbarkeit prüfen**: Ist das Repository öffentlich, gelten die Regeln für öffentliche Repositories (Abschnitte 6.2 und 18). Verdecktes Prüfmaterial, Builds, Archive und Secrets landen nie in diesem Repository.
+3. **Privaten Prüfbereich anlegen**: Erstelle unter demselben Konto ein **privates** Repository `chnobel-pruefung` mit einer `README.md` (Zweck: verdeckte Prüfaufgaben, Sollantworten, verdeckte Handschriftfamilien, Freigabebelege). Fehlen dir die Rechte dazu, trag es in `steuerung/BLOCKER.md` ein.
+4. **Branchschutz für `main`**: Pull Request erforderlich, Pflichtstatus aus den CI-Jobs (Abschnitt 18), sobald diese existieren, kein Force-Push, keine Löschung. Der Schutz muss für die vorgesehenen technischen Identitäten erfüllbar bleiben. Fehlen dir die Rechte, trag es in `steuerung/BLOCKER.md` ein.
+5. **GitHub Actions**: Aktiviere Actions für das Repository und lege die Workflows aus Abschnitt 18 schrittweise in `.github/workflows/` an. macOS-Jobs laufen auf `macos`-Runnern mit der jeweils aktuellen, Apple-konformen Xcode-Version.
+6. **Secrets**: Die Werte kann nur der Mensch eintragen. Du legst nur die erwarteten **Namen** fest und prüfst, ob sie vorhanden sind (nie die Werte ausgeben):
+
+   | Secret | Inhalt |
+   |---|---|
+   | `ASC_KEY_ID` | Key-ID des App-Store-Connect-API-Schlüssels |
+   | `ASC_ISSUER_ID` | Issuer-ID |
+   | `ASC_KEY_P8_BASE64` | Inhalt der .p8-Datei, Base64-kodiert |
+   | `APPLE_TEAM_ID` | Team-ID |
+   | `CHNOBEL_BUNDLE_ID` | Bundle-ID des App-Datensatzes, z.B. `ch.chnobel.app` |
+   | `PRUEFUNG_REPO_TOKEN` | Token mit Lesezugriff auf `chnobel-pruefung`, nur für den Job `independent-check` |
+   | optional `DIST_CERT_P12_BASE64`, `DIST_CERT_PASSWORD`, `PROVISIONING_PROFILE_BASE64` | nur falls kein verwaltetes Signing über den API-Schlüssel möglich ist |
+
+7. **Ausnahme vom Frageverbot (einmalig)**: Fehlen nach den Schritten 1 bis 6 Bausteine, die nur ein Mensch liefern kann (Apple-Konto, App-Datensatz, Secret-Werte, fehlende Rechte), gibst du **einmal** eine knappe, vollständige Liste aus: was genau fehlt, wo man es einträgt, wie die Secrets heissen. Dieselbe Liste steht in `steuerung/BLOCKER.md`. Danach wartest du nicht, sondern beginnst mit Abschnitt 2 und arbeitest an allem, was ohne diese Bausteine möglich ist.
+8. Setze `steuerung/STATUS.md` auf `ZUSTAND: IN_ARBEIT`, committe die Einrichtung und fahre mit der Startsequenz (Abschnitt 2) fort.
+
+---
+
 ## 0. Deine Rolle und dein Auftrag
 
 Du bist der **Leitagent** von Chnobel. Du arbeitest vollständig autonom und setzt dafür bei Bedarf weitere Agenten (Subagenten, parallele Sitzungen) in den unten beschriebenen Rollen ein.
