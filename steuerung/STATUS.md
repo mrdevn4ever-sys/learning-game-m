@@ -1,22 +1,20 @@
 # Status
 
-ZUSTAND: BEREIT
-PHASE: 0 – Betriebsfähigkeit und Apple-Durchstich
-LETZTE_AKTUALISIERUNG: 2026-11-22
+ZUSTAND: IN_ARBEIT
+PHASE: 0 – Betriebsfaehigkeit und Apple-Durchstich
+LETZTE_AKTUALISIERUNG: 2026-11-24
 
 ## Letzte erledigte Aufgabe
-Repository vorbereitet: Masterprompt, Struktur, Verträge v0 (Startversionen), Auftragsliste Phase 0.
+Startpaket nach drei unabhaengigen Kontextreviews ueber PR #1 integriert; main-Basis `818be59efe2559897d70aa186b2c464c7d3d5410`. Oeffentliche Sichtbarkeit bestaetigt. Privates Pruefrepository mit Zweck-README angelegt, Sichtbarkeit zurueckgelesen. PR-Schutz ohne Force-Push/Loeschung aktiviert, Actions im Produktrepo aktiv. Secret-Namen/Environments inventarisiert (leer).
 
-## Nächste Aufgabe
-P0-01 (siehe `steuerung/auftraege/phase-0.json`)
+## Aktuelle Arbeit
+Einrichtungsbranch `chore/betriebsbasis`: Blocker, Rollen-/CI-Grenzen und unveraenderte Bootstrap-Befunde dokumentieren. Keine Produktfreigabe, keine verdeckte Pruefung, kein Apple-Upload.
+
+## Naechste Aufgabe
+P0-02/P0-03/P0-04/P0-05 als unabhaengige Entwicklungsanteile implementieren und testen; P0-07 darauf integrieren. Aufgabenabschluss nur nach fremdem Review und ausgefuehrten Gates. Die Gesamtphase bleibt bis zum echten Apple-Endzustand offen.
 
 ## Blocker
-Siehe `steuerung/BLOCKER.md`.
+Siehe `steuerung/BLOCKER.md`. Menschliche Startpaket-Liste einmalig; unabhaengige Entwicklung wartet nicht. Noch nicht alle unabhaengigen Aufgaben erledigt, deshalb nicht BLOCKIERT_STARTPAKET.
 
-<!--
-Erlaubte Werte für ZUSTAND:
-  BEREIT                 noch nicht gestartet
-  IN_ARBEIT              Agenten arbeiten
-  BLOCKIERT_STARTPAKET   alles erledigt, was ohne Startpaket möglich ist; wartet auf Startpaket
-  WARTEN                 Definition of Done erfüllt, TestFlight-ready; keine Änderungen mehr
--->
+## Wiederaufnahme
+`MASTERPROMPT.md`, ADRs, Auftragsdateien und Arbeitsstand lesen; exakte Remote-SHAs pruefen. Keine Produktions-/Pruefrollen aus einem gemeinsamen Token ableiten. WARTEN nur nach vollstaendiger Definition of Done. Alle Laufzeitdaten und Caches ausserhalb des Repositories auf F:.

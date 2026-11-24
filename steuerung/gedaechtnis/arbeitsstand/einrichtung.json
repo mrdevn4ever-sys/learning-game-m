@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "date": "2026-11-24",
+  "repository": "mrdevn4ever-sys/learning-game-m",
+  "visibility": "public",
+  "bootstrapPR": 1,
+  "bootstrapHead": "144c9b3f8a2b03907cca41ed30ac81fdc196d91d",
+  "mainBase": "818be59efe2559897d70aa186b2c464c7d3d5410",
+  "privateRepository": "mrdevn4ever-sys/chnobel-pruefung",
+  "privateVisibilityVerified": true,
+  "privateActionsEnabled": false,
+  "productActionsEnabled": true,
+  "branchProtection": {"pullRequest": true, "enforceAdmins": true, "forcePush": false, "deletion": false, "requiredChecks": []},
+  "secretsPresent": [],
+  "environmentsPresent": [],
+  "identitySeparationVerified": false,
+  "nativeBuildVerified": false,
+  "testFlightVerified": false,
+  "humanChecklistCommunicated": true
+}
