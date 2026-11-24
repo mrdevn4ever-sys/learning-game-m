@@ -1,0 +1,52 @@
+name: Offene Entwicklungspruefung
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: chnobel-development-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+jobs:
+  preflight:
+    name: preflight
+    runs-on: xcode-27
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.14'
+      - run: python -m pip install -r produkt/werkzeuge/ci/requirements.txt
+      - run: python produkt/werkzeuge/ci/preflight.py
+  product-check:
+    name: product-check
+    needs: preflight
+    runs-on: xcode-27
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.14'
+      - name: Swift, iPad-Oberflaeche und unsignierter Release-Build
+        run: bash produkt/werkzeuge/ci/native.sh
+  recovery-drill:
+    name: recovery-drill
+    needs: preflight
+    runs-on: xcode-27
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.14'
+      - run: python produkt/werkzeuge/ci/run_suite.py produkt/werkzeuge/steuerung/tests
