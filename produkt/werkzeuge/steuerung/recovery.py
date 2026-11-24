@@ -160,7 +160,9 @@ class Recovery:
                 restored._set_meta(db, "recovery_locked", "1")
                 for raw in db.execute("SELECT * FROM effects ORDER BY operation_id").fetchall():
                     op = dict(raw)
-                    changes = {"lease_owner": None, "lease_expires": None, "next_check_at": now}
+                    # Epochenwechsel entzieht Rechte, nicht gespeicherte Wartefristen.
+                    changes = {"lease_owner": None, "lease_expires": None,
+                               "next_check_at": max(op["next_check_at"], now)}
                     if op["state"] != "confirmed":
                         changes.update(state="unknown", uncertain=1)
                     restored._save_effect(db, op, now, "restore", **changes)
@@ -173,7 +175,8 @@ class Recovery:
                         elif job["lease_owner"] is not None:
                             state = "retry_wait"
                     restored._save_job(db, job, now, "restore", state=state,
-                                       lease_owner=None, lease_expires=None, next_check_at=now)
+                                       lease_owner=None, lease_expires=None,
+                                       next_check_at=max(job["next_check_at"], now))
                 restored._audit(db, "store", "restore", 1, "quarantine", now,
                                 {"source_digest": expected_digest, "source_epoch": old_epoch,
                                  "fencing_floor": fencing_floor})

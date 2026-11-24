@@ -203,6 +203,16 @@ python -m produkt.werkzeuge.steuerung restore \
   Epoche, entzieht alte Leases und erhoeht Revisionen. **Jede** offene Wirkung
   wird unsicher, selbst wenn sie in der alten Momentaufnahme nur `prepared`
   war: die Quellinstanz koennte sie nach der Sicherung begonnen haben.
+- Fuer jeden Auftrag und jeden Wirkungseintrag bleibt `next_check_at` beim
+  Restore mindestens auf der gespeicherten Frist: gesetzt wird
+  `max(gespeicherte Frist, Restorezeit)`. Eine laufende Retry-/Abgleichpause
+  wird auch durch wiederholten Restore oder lokale Aktivierung nicht verkuerzt.
+  Abgelaufene Fristen werden auf die Restorezeit angehoben, ohne neue Pause.
+  Auftrags- und Wirkungsfrist bleiben getrennt; Versuchszahlen und Backoff-
+  Fortschritt bleiben erhalten. Fristfaelligkeit erlaubt weder Aktivierung
+  noch erneutes Dispatch. `tests/test_restore_deadlines.py` prueft vor, genau
+  auf und nach der Frist sowie Ablehnung, fristgerechten Fortschritt,
+  Wiederholungsrestore, Quarantaene, alte Epochen und unsichere Wirkungen.
 - Der Restore bleibt `recovery_locked=1`. Die CLI kann ihn anzeigen/pruefen,
   aber nicht aktivieren. `activate_local_recovery` dient ausschliesslich der
   synthetischen Bibliotheksprobe und beweist keine Rechte oder Quellstilllegung.
