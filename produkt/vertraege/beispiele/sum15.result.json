@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "sum15.result",
+  "version": 1,
+  "claimId": "attempt.result.correct",
+  "target": {"references": [
+    {"kanton": "LU", "schulsprache": "de", "code": "MA.1.A.3", "stufe": "a", "ausgabe": "Lehrplan 21 Luzern (Fassung zu bestimmen)", "taetigkeit": "Summe im Zahlenraum 20 korrekt angeben", "bezug": "teil"}
+  ]},
+  "applicability": {"taskContracts": ["sum-8-7"], "startingStates": ["board-8-7-v1"], "scope": "einzelversuch", "nachweisform": "antwort"},
+  "logic": {"factCatalogVersion": "0.1.0", "requires": {"all": ["submitted", "answer.value.15"]}, "unknownPolicy": "fallback"},
+  "boundary": {
+    "alternatives": [{"erklaerung": "Ergebnis aus Auswahl erraten", "ausschlussFakt": "answer.origin.choice"}],
+    "counterexamples": [
+      {"traceRef": "traces/sum-8-7/korrigierte-fehllesung.json", "expected": "must_claim"},
+      {"traceRef": "traces/sum-8-7/antwort-14.json", "expected": "must_not_claim"},
+      {"traceRef": "traces/sum-8-7/abbruch-vor-abgabe.json", "expected": "undecidable"}
+    ],
+    "wording": {"de-CH": "Bei dieser Aufgabe hast du das richtige Ergebnis 15 angegeben.", "kind": "Stimmt, 8 und 7 sind 15!", "fallback": "insufficient_observation"}
+  }
+}

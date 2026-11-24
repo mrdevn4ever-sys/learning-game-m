@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chnobel.local/vertraege/belegstatus.schema.json",
+  "title": "Belegstatus (zweiachsig)",
+  "description": "Achse 1: Prüfverfahren. Achse 2: Geltungsbereich. Startversion v0.",
+  "type": "object",
+  "required": ["claim", "verfahren", "geltungsbereich", "ergebnis", "herkunft"],
+  "additionalProperties": false,
+  "properties": {
+    "claim": {"type": "string", "description": "Geprüfte Behauptung, z.B. 'adapter.sum-8-7.ten-trace-korrekt' oder 'kinder.verstehen-auftrag'"},
+    "verfahren": {
+      "type": "string",
+      "enum": ["none", "regeltest", "lernsimulation", "strich_replay", "ui_automation", "instrumentierte_messung", "unabhaengige_ki_pruefung", "quellenpruefung"]
+    },
+    "geltungsbereich": {
+      "type": "object",
+      "required": ["kandidat", "ausfuehrungsort", "population"],
+      "additionalProperties": false,
+      "properties": {
+        "kandidat": {"type": "string", "description": "Build-/Commit-Bindung"},
+        "ziel": {"type": "string"},
+        "ausfuehrungsort": {"type": "string", "enum": ["adapter", "simulator", "physisches_geraet", "keiner"]},
+        "laufzeitversion": {"type": "string"},
+        "geraeteklasse": {"type": "string"},
+        "eingabeart": {"type": "string"},
+        "population": {"type": "string", "enum": ["synthetisch", "eigene_quellen", "keine"]},
+        "pruefsatz": {"type": "string"},
+        "auswertungseinheit": {"type": "string", "description": "Unabhängige Einheit, z.B. Grundpfad oder Generatorfamilie"},
+        "bedingungen": {"type": "array", "items": {"type": "string"}},
+        "ausschluesse": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "ergebnis": {"type": "string", "enum": ["open", "passed", "failed", "inconclusive"]},
+    "kennzahlen": {"type": "object"},
+    "herkunft": {
+      "type": "object",
+      "required": ["zeitpunkt", "pruefidentitaet"],
+      "additionalProperties": false,
+      "properties": {
+        "zeitpunkt": {"type": "string", "format": "date-time"},
+        "pruefidentitaet": {"type": "string"},
+        "laufId": {"type": "string"},
+        "digestPruefsatz": {"type": "string"},
+        "digestRegeln": {"type": "string"},
+        "digestBericht": {"type": "string"}
+      }
+    },
+    "berichtstext": {"type": "string", "description": "Formulierung für den Erwachsenenbericht"}
+  }
+}

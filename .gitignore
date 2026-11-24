@@ -1,0 +1,24 @@
+# Xcode / Swift
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcarchive
+*.ipa
+*.dSYM.zip
+*.dSYM
+.build/
+.swiftpm/
+Packages/*/.build/
+# Secrets niemals einchecken
+*.p8
+*.p12
+*.mobileprovision
+*.cer
+.env
+.env.*
+# Python-Werkzeuge
+__pycache__/
+*.pyc
+.venv/

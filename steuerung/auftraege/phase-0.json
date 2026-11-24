@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "0.1.0",
+  "phase": 0,
+  "hinweis": "Startliste. Der Steuerungsdienst (P0-02) übernimmt diese Liste und pflegt danach Zustände, Leases und Berechtigungsnummern.",
+  "auftraege": [
+    {"id": "P0-01", "titel": "ADR 0001 prüfen, Verzeichnisrechte und technische Identitäten festlegen (Produkt, Prüfung, Release, Steuerung)", "abhaengig": [], "zustand": "ready"},
+    {"id": "P0-02", "titel": "Zustandsmaschine mit Leases, Fencing-Token, Operations-IDs und Wiederaufnahme implementieren und testen", "abhaengig": ["P0-01"], "zustand": "planned"},
+    {"id": "P0-03", "titel": "Verträge v1: Beweisregel-, Ereignis- und Belegstatus-Schema aus den v0-Startversionen verfeinern", "abhaengig": ["P0-01"], "zustand": "planned"},
+    {"id": "P0-04", "titel": "Referenzprüfer (plattformneutral): Ereignisspur + Beweisregeln -> Aussagen, dreiwertige Logik, Integritätsprüfung, doppelte Zustellung", "abhaengig": ["P0-03"], "zustand": "planned"},
+    {"id": "P0-05", "titel": "Mindestens 20 Ereignisverläufe für 8 + 7 inkl. Hinweis nach Zug, Undo, App-Demo, Fehllesung, Abbruch, Lücke und absichtlich ungültiger Fälle", "abhaengig": ["P0-03"], "zustand": "planned"},
+    {"id": "P0-06", "titel": "Prüfbereich trennen: öffentliche Kriterien in pruefung/, verdeckte Sätze im privaten Prüfbereich", "abhaengig": ["P0-01"], "zustand": "planned"},
+    {"id": "P0-07", "titel": "Minimale iPad-App (SwiftUI, SwiftData): synthetischer 8 + 7-Versuch, Ereignisprotokoll, Wiederherstellung nach Neustart, enge Berichte", "abhaengig": ["P0-04"], "zustand": "planned"},
+    {"id": "P0-08", "titel": "CI-Workflows: preflight, product-check, freeze-build, independent-check, issue-verdict, release-internal, reconcile, recovery-drill; Freigabebeleg mit Digests", "abhaengig": ["P0-02", "P0-07"], "zustand": "planned"},
+    {"id": "P0-09", "titel": "Release-Pipeline: Archiv einfrieren, Export ohne Neukompilierung, idempotenter Upload, Apple-Status abgleichen", "abhaengig": ["P0-08"], "zustand": "planned"},
+    {"id": "P0-10", "titel": "Fünf Betriebsproben (Masterprompt Abschnitt 20) bestehen und interner TestFlight-Zielzustand für den Minimalbuild", "abhaengig": ["P0-09"], "zustand": "planned"}
+  ]
+}

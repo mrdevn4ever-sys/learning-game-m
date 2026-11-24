@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "sum15.ten",
+  "version": 1,
+  "claimId": "attempt.ten",
+  "target": {"references": [
+    {"kanton": "LU", "schulsprache": "de", "code": "MA.1.C.1", "stufe": "c", "ausgabe": "Lehrplan 21 Luzern (Fassung zu bestimmen)", "taetigkeit": "Rechenweg über die Zehn mit Material darstellen", "bezug": "teil"},
+    {"kanton": "LU", "schulsprache": "de", "code": "MA.1.A.3", "stufe": "b", "ausgabe": "Lehrplan 21 Luzern (Fassung zu bestimmen)", "taetigkeit": "Zum nächsten Zehner ergänzen", "bezug": "teil"}
+  ]},
+  "applicability": {"taskContracts": ["sum-8-7"], "startingStates": ["board-8-7-v1"], "scope": "einzelversuch", "nachweisform": "dargestellter_weg"},
+  "logic": {"factCatalogVersion": "0.1.0", "requires": {"all": ["submitted", "board.ten.child"], "none": ["support.ten.before"]}, "unknownPolicy": "fallback"},
+  "boundary": {
+    "alternatives": [
+      {"erklaerung": "Zehnerschritt durch App-Hinweis ausgelöst", "ausschlussFakt": "support.ten.before"},
+      {"erklaerung": "Anordnung durch App-Demo entstanden", "ausschlussFakt": "board.ten.app"}
+    ],
+    "counterexamples": [
+      {"traceRef": "traces/sum-8-7/frei-zehnerweg.json", "expected": "must_claim"},
+      {"traceRef": "traces/sum-8-7/hinweis-vor-zug.json", "expected": "must_not_claim"},
+      {"traceRef": "traces/sum-8-7/luecke-in-spur.json", "expected": "undecidable"}
+    ],
+    "wording": {"de-CH": "Bei dieser Aufgabe hast du ohne einen Hinweis der App auf den Zehnerschritt 10 und 5 gelegt.", "fallback": "attempt.result.correct"}
+  }
+}
