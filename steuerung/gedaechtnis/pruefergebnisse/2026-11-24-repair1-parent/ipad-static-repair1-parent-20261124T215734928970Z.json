@@ -1,0 +1,20 @@
+{
+  "sourceCommit": "c1ad063851f568eb3e376fdb7ca7802a59cb0d1b",
+  "root": "F:\\Projects\\Chnobel-iPad",
+  "runId": "20261124T215734928970Z",
+  "expected": 40,
+  "discovered": 40,
+  "executed": 40,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "expectedFailures": 0,
+  "unexpectedSuccesses": 0,
+  "runtime": "3.14.7 (main, Sep  1 2026, 14:17:30) [MSC v.1944 64 bit (AMD64)]",
+  "interpreter": "F:\\ChnobelRuntime\\venv\\Scripts\\python.exe",
+  "log": "F:\\ChnobelRuntime\\verification\\ipad-static-repair1-parent-20261124T215734928970Z.log",
+  "logSha256": "0a5a5f54434078b9082ab7e0de37efba98ea74087f26912aa09f4f4e15cfb029",
+  "cleanAfter": true,
+  "releaseAuthorized": false,
+  "passed": true
+}

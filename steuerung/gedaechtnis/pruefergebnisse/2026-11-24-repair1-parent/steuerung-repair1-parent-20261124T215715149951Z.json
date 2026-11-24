@@ -1,0 +1,20 @@
+{
+  "sourceCommit": "e4a8f442272b75cfa0e1f7fd46c2d793b1fbd2ca",
+  "root": "F:\\Projects\\Chnobel-Steuerung",
+  "runId": "20261124T215715149951Z",
+  "expected": 83,
+  "discovered": 83,
+  "executed": 83,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "expectedFailures": 0,
+  "unexpectedSuccesses": 0,
+  "runtime": "3.14.7 (main, Sep  1 2026, 14:17:30) [MSC v.1944 64 bit (AMD64)]",
+  "interpreter": "F:\\ChnobelRuntime\\venv\\Scripts\\python.exe",
+  "log": "F:\\ChnobelRuntime\\verification\\steuerung-repair1-parent-20261124T215715149951Z.log",
+  "logSha256": "9ccc02cfe0b7641dd5c9036ff4b52fdf84f57b819327fbc09813620f2b241c29",
+  "cleanAfter": true,
+  "releaseAuthorized": false,
+  "passed": true
+}

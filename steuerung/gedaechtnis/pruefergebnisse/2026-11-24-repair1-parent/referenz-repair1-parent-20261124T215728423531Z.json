@@ -1,0 +1,20 @@
+{
+  "sourceCommit": "107f524a0529e84fb5dad78af7a7204edb6f649e",
+  "root": "F:\\Projects\\Chnobel-Vertraege",
+  "runId": "20261124T215728423531Z",
+  "expected": 232,
+  "discovered": 232,
+  "executed": 232,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "expectedFailures": 0,
+  "unexpectedSuccesses": 0,
+  "runtime": "3.14.7 (main, Sep  1 2026, 14:17:30) [MSC v.1944 64 bit (AMD64)]",
+  "interpreter": "F:\\ChnobelRuntime\\venv\\Scripts\\python.exe",
+  "log": "F:\\ChnobelRuntime\\verification\\referenz-repair1-parent-20261124T215728423531Z.log",
+  "logSha256": "4680410fe997df17756c695ec5e5d90886c1f429b1106c116450f85f5ea45009",
+  "cleanAfter": true,
+  "releaseAuthorized": false,
+  "passed": true
+}

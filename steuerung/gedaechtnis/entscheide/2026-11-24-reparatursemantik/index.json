@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "Fachvoten zum vorherigen Entwurf; keine Implementierungsfreigabe",
+  "records": [
+    {
+      "role": "entwurf",
+      "source": "F:/ChnobelRuntime/repair-semantic-proposal.md",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-24-reparatursemantik/entwurf.json",
+      "containerSha256": "5d63d1003a5c4ab5e456a59472026657e50075dc672889ad048e67f4b10d4728",
+      "contentSha256": "e876f9d0ae5ba76f0cecd285dcb624e3d5cfefe053d405296ff7684bef2480d2"
+    },
+    {
+      "role": "architekt",
+      "source": "F:/ChnobelRuntime/reviews/gremium-reparatur-architekt.md",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-24-reparatursemantik/architekt.json",
+      "containerSha256": "0ba0781a84a23a4b32212feddf222fd83915e4a13b5b0b20b8c4466b98374ef3",
+      "contentSha256": "2dffeb631505e4702ade503edbd94095ea1dd2435fc9febf290f1653299fb565"
+    },
+    {
+      "role": "didaktik",
+      "source": "F:/ChnobelRuntime/reviews/gremium-reparatur-didaktik.md",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-24-reparatursemantik/didaktik.json",
+      "containerSha256": "3c792d31f83ee756ff3d568d66684a0d9bded9b4ca4b6710e5e71b599691371f",
+      "contentSha256": "7e683d7b57335fe515c5a7b372c6839484ef7334ce0a5b6717c315c3e8db7895"
+    },
+    {
+      "role": "redteam",
+      "source": "F:/ChnobelRuntime/reviews/gremium-reparatur-redteam.md",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-24-reparatursemantik/redteam.json",
+      "containerSha256": "b0028d86d0c918b60aa1a1a60d0ddf19160a9c7b6decbc968824ff39651772aa",
+      "contentSha256": "c8b7a2fa2a64f3bbb476efb6d89c578e2f1ccc68edba4623e48af12ce785284e"
+    }
+  ],
+  "votes": {
+    "architekt": {
+      "D1": "JA",
+      "D2": "JA",
+      "D3": "JA",
+      "D4": "JA",
+      "D5": "AENDERUNG",
+      "D6": "JA"
+    },
+    "didaktik": {
+      "D1": "JA",
+      "D2": "JA",
+      "D3": "JA",
+      "D4": "JA",
+      "D5": "AENDERUNG",
+      "D6": "JA"
+    },
+    "redteam": {
+      "D1": "AENDERUNG",
+      "D2": "AENDERUNG",
+      "D3": "JA",
+      "D4": "AENDERUNG",
+      "D5": "AENDERUNG",
+      "D6": "JA"
+    }
+  },
+  "counts": {
+    "D1": {
+      "JA": 2,
+      "NEIN": 0,
+      "AENDERUNG": 1
+    },
+    "D2": {
+      "JA": 2,
+      "NEIN": 0,
+      "AENDERUNG": 1
+    },
+    "D3": {
+      "JA": 3,
+      "NEIN": 0,
+      "AENDERUNG": 0
+    },
+    "D4": {
+      "JA": 2,
+      "NEIN": 0,
+      "AENDERUNG": 1
+    },
+    "D5": {
+      "JA": 0,
+      "NEIN": 0,
+      "AENDERUNG": 3
+    },
+    "D6": {
+      "JA": 3,
+      "NEIN": 0,
+      "AENDERUNG": 0
+    }
+  },
+  "releaseAuthorized": false,
+  "originalReviewsRemain": "FAIL"
+}

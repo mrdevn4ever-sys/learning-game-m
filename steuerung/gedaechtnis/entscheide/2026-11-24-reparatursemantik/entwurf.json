@@ -1,0 +1,30 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "repair-semantic-proposal.md",
+  "contentSha256": "e876f9d0ae5ba76f0cecd285dcb624e3d5cfefe053d405296ff7684bef2480d2",
+  "lines": [
+    "# Entscheidungsentwurf fuer neue Phase-0-Kandidaten\n",
+    "\n",
+    "Status: Vorschlag fuer drei getrennte Gremiumskontexte; keine Mehrheitsentscheidung vorweggenommen. 2026-11-24.\n",
+    "\n",
+    "Autoritaet: F:/Projects/Chnobel/MASTERPROMPT.md vollstaendig und ADR 0002. Offene Reviewberichte: F:/ChnobelRuntime/reviews/referenz-review.md und ipad-review.md. Die Originalkandidaten bleiben FAIL. Keine Geheimpruefung/Releasefreigabe.\n",
+    "\n",
+    "## Zu entscheiden\n",
+    "\n",
+    "D1. Historische freie Handlung und aktuell wirksame Darstellung getrennt beobachten. Fall A: Kind legt 10/5 vor Hilfe; spaeterer Hinweis allein aendert diesen Nachweis nicht. Fall B: Kind verlaesst die Darstellung und kehrt nach Hilfe durch eigenen Zug oder eigenes Undo zurueck: neuer aktueller Aktionsanker mit Hilfe; historischer freier Schritt bleibt historisch. Fall C: Kind legt 10/5 frei; App macht danach einen eigenen Umweg und nimmt nur diesen zurueck, Kind tut nichts Weiteres: der unveraendert erhaltene Kind-Zug wird nicht rueckwirkend nach Hilfe datiert. App-Wiederherstellung ist keine neue Kind-Handlung. Beide Reviews muessen gemeinsam erfuellt sein; kein pauschales Re-Ankern bei jedem Brettuebergang und kein ausschliesslicher Vergleich letzter Plattchenpositionen mit dem Anfang.\n",
+    "\n",
+    "D2. Nach Luecken Antwortaktivitaet, Eingabemodus, Materialpositionen und Undo-Abhaengigkeiten dreiwertig/je Objekt fuehren. Unbekannt ist weder bewiesen inaktiv noch sicher unveraendert. Neu direkt beobachtete Fakten werden wieder bekannt. Neue korrekte Eingabe bleibt erreichbar; ein nach der Luecke unmittelbar neu bewiesener Ausgangszonenwiderspruch ist weiterhin echter Integritaetsfehler. Historische Referenzen und bekannte doppelte Ruecknahmen bleiben streng validiert. Hilfe aus einem unbeobachteten Intervall bleibt unbekannt.\n",
+    "\n",
+    "D3. 5/10 ist ebenso ein passender Zehnerweg wie 10/5; breiter Wortlaut darf keine unbelegte Links-rechts-Beschraenkung transportieren. Unvorhergesehene Layouts nicht allein wegen einer unvollstaendigen Musterliste als fachlich falsch ausgeben. Keine beliebige Mengenverteilung automatisch als gezeigten Rechenweg bezeichnen.\n",
+    "\n",
+    "D4. Invalidierung anhand expliziter eventIds und fachlicher Abhaengigkeiten auswerten. Nicht verwendeter Selbstbericht oder Materialbeleg entwertet eine unabhaengige direkte Ergebniseingabe nicht. Invalidierte Antwort/ihre notwendigen Eingabebelege, Inhaltsrueckzug und Profilloeschen bleiben wirksam gesperrt. Echte Ereignisintegritaetsfehler werden nicht durch spaetere Invalidierung unsichtbar gemacht. Keine Neuberechnung auf Basis einer pauschal als wahr/falsch gesetzten globalen Beobachtungsvariable.\n",
+    "\n",
+    "D5. Allgemeine App-Unterstuetzung und nachgewiesener Hinweis auf einen bestimmten Zielschritt sind unterschiedliche Fakten. Aus jeder beliebigen App-Bewegung folgt nicht automatisch ein Zehnerhinweis. Prueft insbesondere eine ausschliessliche 7+7+1-Demo vor einem spaeteren 10/5-Kindweg: welche enge freie/angeleitete Aussage traegt die vollstaendig beobachtete Spur? Wenn Hilfewirkung nicht eindeutig bestimmt ist, kein positiver spezifischer Guided-Claim; zugleich berechtigte enge Rueckmeldungen nicht pauschal unterdruecken. Vorhandene Hilfeerinnerung bleibt ueber Undo erhalten.\n",
+    "\n",
+    "D6. Korrektur bestehender fachlich fehlerhafter Sollwerte nur als explizite zukuenftige Vertrags-/Regelrevision mit Begruendung und Vorher-/Nachher-Gegenpruefung, niemals stumm um gruene Tests zu erzeugen. Alte Kandidaten, Berichte, Vertragsfassungen und Fehler bleiben unveraendert erhalten. Keine Faelle/Nenner entfernen, Tests ueberspringen oder schwerere Anforderungen senken. Verlangte zusaetzliche Regressionen staerken sowohl Praezision als auch Recall. Falls eine vorhandene Erwartung mit dem Masterprompt kollidiert, Konflikt und genaue betroffene IDs vor einer Aenderung melden, neue Revision erst nach Gremiumsentscheid.\n",
+    "\n",
+    "## Abgabe jedes Gremiumsmitglieds\n",
+    "\n",
+    "Fuer D1-D6 je JA/NEIN/AENDERUNG, kurze Begruendung mit Masterprompt-/ADR-Bezug, konkret pruefbare Sollfaelle und Gegenfaelle. Unterschiedliche Vorschlaege bleiben sichtbar. Keine Mehrheit oder Test-PASS erfinden. Nur Architektur-/Fachentscheid, keine Freigabe einer Implementierung. Eigener Bericht ausschliesslich ausserhalb Git unter dem beauftragten Runtimepfad. Keine Produktwrites, Browseraktionen, Git-Aenderungen, CI-Ausloesung, Secrets oder Uploads.\n"
+  ]
+}

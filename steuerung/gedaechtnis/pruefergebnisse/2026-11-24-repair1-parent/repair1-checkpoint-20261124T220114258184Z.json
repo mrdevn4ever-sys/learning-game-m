@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-11-24T22:01:14.258163+00:00",
+  "components": [
+    {
+      "component": "steuerung",
+      "base": "3bf45a586478a1c38ba8563bef7d0e8ad22e06e6",
+      "candidate": "e4a8f442272b75cfa0e1f7fd46c2d793b1fbd2ca",
+      "scope": [
+        "produkt/werkzeuge/steuerung/"
+      ],
+      "changedFiles": {
+        "produkt/werkzeuge/steuerung/README.md": "9e1ea082f00298464c03eed17500e6738aa632689e69fda58078504d482c6a95",
+        "produkt/werkzeuge/steuerung/recovery.py": "7a7cfb36e94fa2b8747b93f83ab0f39181568a783e23479a1a921ea463d7f35a",
+        "produkt/werkzeuge/steuerung/tests/test_restore_deadlines.py": "aedb752a1fb949f08112c06d0029bc643ed1b5d7859a6711ede3fbb87eae227d"
+      },
+      "protectedFilesByteEqual": 8,
+      "parentRun": "steuerung-repair1-parent-20261124T215715149951Z.json",
+      "executed": 83,
+      "passed": true,
+      "nativeExecution": false,
+      "integrationApproved": false
+    },
+    {
+      "component": "referenz",
+      "base": "b8cd111453b2c44d28a5fc21125c4f9dbc95877e",
+      "candidate": "107f524a0529e84fb5dad78af7a7204edb6f649e",
+      "scope": [
+        "produkt/werkzeuge/referenz/"
+      ],
+      "changedFiles": {
+        "produkt/werkzeuge/referenz/README.md": "33c7c007ca097124e7ae9e627f548f0bf03956b2a605eeef72f07a0d49a7b1b4",
+        "produkt/werkzeuge/referenz/REPARATUR-1.md": "ed84c067da5156c331badce37749b42449abc66c2688e8fb7a665aef8f861454",
+        "produkt/werkzeuge/referenz/engine.py": "f4aa7312c98b6daa47fe54c32d0354964311edcdf9f5a4d49e5e220a3a502656",
+        "produkt/werkzeuge/referenz/tests/test_repair_f01_f03.py": "4fe2077132caac8852d02f439c48ce8a7a705abcebc5c09b95d8ac29af161581"
+      },
+      "protectedFilesByteEqual": 81,
+      "parentRun": "referenz-repair1-parent-20261124T215728423531Z.json",
+      "executed": 232,
+      "passed": true,
+      "nativeExecution": false,
+      "integrationApproved": false
+    },
+    {
+      "component": "ipad-static",
+      "base": "d71acbe65a602f091840ed5fa7e6069a157843c2",
+      "candidate": "c1ad063851f568eb3e376fdb7ca7802a59cb0d1b",
+      "scope": [
+        "produkt/App/",
+        "produkt/Packages/"
+      ],
+      "changedFiles": {
+        "produkt/App/Chnobel.xcodeproj/project.pbxproj": "12fae4d9b9186ed014c2e48159644d94f7a6728b2b228fb8d195112b19d2b44c",
+        "produkt/App/Chnobel/Persistence/NotebookStore.swift": "d6e900535bc7f42115eb4d8fa1c3bfb623981d1738ce78f15fc0e4f8cce57266",
+        "produkt/App/Chnobel/Views/NotebookView.swift": "e2d7edf32da353ce6672493fd7ab9ee3d39d7cf20c569bdeeaa71b68ba0ba9a4",
+        "produkt/App/Chnobel/Views/ReportView.swift": "2e41a890da5205b071902b78ff8320bfe230251ab30d1c25bb1b446921d51839",
+        "produkt/App/ChnobelTests/RepairSessionTests.swift": "d65bcb5b4c530ddc0c66a52f0d131056646aee3e5cbf9ca289f3c651a59f0b48",
+        "produkt/App/ChnobelUITests/RepairNotebookUITests.swift": "c3874f20a08b4e5b02d95e4a09fb9f206840c39262b1e43986668365a9dff04f",
+        "produkt/App/README.md": "fb4be591ce67e375a3f879a87aa18810a8b26b254d68829f8f953a48d74d6112",
+        "produkt/App/REPARATUR-1.md": "22295d62f52f27e34bba65d68964e4f5fe7082ca758a22fb5fe740f991796746",
+        "produkt/App/Tools/repair-baseline.json": "e15539936b19e631ad9876e70c7cc54aab70925688f47a135b7dbb9a089bbba4",
+        "produkt/App/Tools/test_repair_static.py": "67376d5e804dce5394b48d65afec28d806bf17971b8b73ae8a2bace8e423b439",
+        "produkt/App/Tools/verify_repair.py": "27cd73d57429fe8e825c8204ad42b67450f8cbcdaa1781da7928d07941c7e8f0",
+        "produkt/App/Tools/verify_static.py": "b85a238b9d1272d2b47cbe63c01653c42c5919087ae34ac6f2a0c54a51913d46",
+        "produkt/Packages/README.md": "2dacee625dff9062abdf7ef5516c3d35c4c32a013e90bd2e482403d385e4a98a",
+        "produkt/Packages/Sources/CoreDomain/Domain.swift": "a75322712309cee90697c8c041249fcaaf4de416963a355dce906cb48075e4be",
+        "produkt/Packages/Sources/LearningEngine/LearningEngine.swift": "a090e9bce2881c4354e8fd778e0fa75cc703bc762bb58a36c8f8f1ebe108c64d",
+        "produkt/Packages/Sources/ObservationLog/Event.swift": "69bd0420a084b9b45361cb4dee5f38b19a0c3ac712969c2aba8f207793d55943",
+        "produkt/Packages/Sources/TaskEngine/TaskEngine.swift": "eaa79b9d3e68a8be25ed1fc8a82c00d44a760902ffc1b31bc13bfaf6def3806c",
+        "produkt/Packages/Tests/LearningEngineTests/ActorAnchorTests.swift": "3ee1ed540fe423cc8e01f42462800d58d6a514d0a9ea2f0613d806815e94733e",
+        "produkt/Packages/Tests/LearningEngineTests/AnswerCurrencyTests.swift": "d9949ef1632625c109f9eadd4e28d91b3fd22f4daaf04d2e5c48f4c54fbb55f5",
+        "produkt/Packages/Tests/TaskEngineTests/RepairContractTests.swift": "c41e0cafa590fac4304042ae7a7f7afe828188c6ea2a9f7b21d83b8c10ccdefa"
+      },
+      "protectedFilesByteEqual": 10,
+      "parentRun": "ipad-static-repair1-parent-20261124T215734928970Z.json",
+      "executed": 40,
+      "passed": true,
+      "nativeExecution": false,
+      "integrationApproved": false
+    }
+  ],
+  "executedAcrossSeparateCandidates": 355,
+  "singleCandidate": false,
+  "originalReviewsUnchanged": true,
+  "integrationAuthorized": false,
+  "releaseAuthorized": false
+}
