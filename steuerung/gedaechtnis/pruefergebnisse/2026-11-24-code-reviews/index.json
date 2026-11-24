@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "offenes unabhaengiges Entwicklungskontextreview",
+  "reviews": [
+    {
+      "component": "steuerung",
+      "candidate": "3bf45a586478a1c38ba8563bef7d0e8ad22e06e6",
+      "base": "db3bb5ac177bf54d3f5652cb50bf8abe52c4dd41",
+      "developmentVerdict": "FAIL",
+      "report": "steuerung/gedaechtnis/pruefergebnisse/2026-11-24-code-reviews/steuerung-review.json",
+      "reportSha256": "b148f69b96b4f529ec82479ea0739e0a9c750a9650e0b366ff9be88d5f0f04be",
+      "technicalIdentityProven": false,
+      "releaseAuthorized": false,
+      "reportEncoding": "utf-8-lines",
+      "containerSha256": "35a21903e5f96216e608a7175047dd8ef1fe811e4ea3748ca4048c5b672d67f2"
+    },
+    {
+      "component": "referenz",
+      "candidate": "b8cd111453b2c44d28a5fc21125c4f9dbc95877e",
+      "base": "db3bb5ac177bf54d3f5652cb50bf8abe52c4dd41",
+      "developmentVerdict": "FAIL",
+      "report": "steuerung/gedaechtnis/pruefergebnisse/2026-11-24-code-reviews/referenz-review.json",
+      "reportSha256": "3ed947f26e6b6a6d7d61ec4eccea80231e48b8c9a3e4e72e98cf9392525caa4b",
+      "technicalIdentityProven": false,
+      "releaseAuthorized": false,
+      "reportEncoding": "utf-8-lines",
+      "containerSha256": "c2dad6aadcafb4c56bbf2f7c5b8275b144b3bdf4a3d8f31422a4d15a736142b1"
+    },
+    {
+      "component": "ipad",
+      "candidate": "d71acbe65a602f091840ed5fa7e6069a157843c2",
+      "base": "db3bb5ac177bf54d3f5652cb50bf8abe52c4dd41",
+      "developmentVerdict": "FAIL",
+      "report": "steuerung/gedaechtnis/pruefergebnisse/2026-11-24-code-reviews/ipad-review.json",
+      "reportSha256": "89c514246c616ec289331d039273830c60025eaca3b25b6fe1b5652640a0a000",
+      "technicalIdentityProven": false,
+      "releaseAuthorized": false,
+      "reportEncoding": "utf-8-lines",
+      "containerSha256": "73fda02c8250b3845f22eac7b014cf735bdebaf91b828ea9e74e93ca73733815"
+    }
+  ]
+}

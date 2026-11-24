@@ -8,7 +8,7 @@ Der Kontoinhaber hat die angemeldeten Apple-/GitHub-Oberflaechen bereitgestellt 
 
 - Explizite Bundle-ID `ch.chnobel.app` und App-Store-Connect-Datensatz Chnobel, Apple-ID `6838908211`, iOS/iPadOS, Deutsch, SKU `CHNOBEL-IPADOS-001`, eingeschraenkter Benutzerzugriff angelegt und nach Neuladen zurueckgelesen. TestFlight: keine Builds, null Tester; keine Gruppe angelegt, niemand eingeladen.
 - Mitgliedschaft/Vertraege noch nicht abschliessend dokumentiert; API-Authentisierung, Signing und Rollen-/Kandidatenisolation nicht nachgewiesen. Privates `independent-check` jetzt mit expliziter Branch-Policy `main`, ohne Secrets; Reviewer-Schutz tarifbedingt abgewiesen, Admin-Bypass weiterhin aktiv. Actions dort bleiben aus. Keine Secrets uebertragen.
-- Fremde Sicherheitsarchitektur eingegangen; eigener Live-Abgleich und Grenzen in `docs/planung/identitaetsarchitektur-pruefstand.md`. Zwoelf Rollen-/Sandbox-Testpaare NOT RUN. Drei Code-Reviews noch ausstehend. Getrennte Entwicklungsstaende lokal nachgetestet, nicht in main integriert; keine gemeinsame Kandidatenfreigabe.
+- Fremde Sicherheitsarchitektur eingegangen; eigener Live-Abgleich und Grenzen in `docs/planung/identitaetsarchitektur-pruefstand.md`. Zwoelf Rollen-/Sandbox-Testpaare NOT RUN. Alle drei Code-Reviews sind FAIL fuer die Originalkandidaten; bytegebundene Berichte und RT-04 bis RT-15 archiviert. Reparaturversuch 1 laeuft. Kein main-Merge oder gemeinsame Kandidatenfreigabe.
 - Portal- und Laufbelege ausserhalb Git unter `F:/ChnobelRuntime/portal/` und `F:/ChnobelRuntime/verification/`. Keine verdeckte Abnahme und kein Upload.
 
 ## Historische einmalige Startpaket-Liste (vor Portal-Einrichtung)
@@ -31,6 +31,6 @@ Alle sechs obligatorischen Secret-Namen waren bei der damaligen Repository-Abfra
 
 ## Getrennte offene Nachweise
 
-Zusaetzlicher technischer Integrationsblocker: Swift-APIs noch nicht mit v1-Referenzvertrag abgeglichen; fremde Code-Reviews und echte native Tests ausstehend. Kein Auftragsabschluss allein aus einem Ruecklauf oder einer Testsumme.
+Zusaetzliche technische Integrationsblocker: Restore-Fristerhalt, dreiwertige Antwort-/Material-/Undo-Auswertung, richtige akteurbezogene Hilfeaussagen und zustandsgerechte UI-Hilfe gemaess RT-04 bis RT-15. Swift-APIs noch nicht mit v1-Referenzvertrag abgeglichen. Neue fremde Reviews nach Reparatur und echte native Tests ausstehend. Kein Auftragsabschluss allein aus einem Ruecklauf oder einer Testsumme.
 
 Reale Kinder, Lernwirksamkeit, Motivation, Fairness und menschlicher Sprachgebrauch bleiben gemaess Abschnitt 23 offen. Physisches iPad/Pencil nicht angebunden; kein Hardwarebeleg. Diese Punkte werden nicht als ausgefuehrte Tests dargestellt.
