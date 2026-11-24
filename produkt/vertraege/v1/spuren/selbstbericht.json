@@ -1,0 +1,187 @@
+{
+  "id": "selbstbericht",
+  "description": "Selbstauskunft ist keine beobachtete Materialhandlung.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "f23e8923-25c9-5049-8ac9-f46e64f2a632",
+      "streamId": "cdfa9fc1-e9c0-50b8-b115-733df5e4e3c9",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "3dc983a2-e554-511d-937b-46b136606bb8",
+        "initialMaterial": [
+          {
+            "itemId": "278ffa33-cc9b-5982-998e-bdad735b8fb8",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "d00d6c1a-2865-5d74-9924-50c8071c9729",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "893d5e4e-860d-5771-94de-d5e804860aa6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "64b62ac0-9195-5c62-b985-6b588383f2bc",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "9821c6bb-4192-5fea-af2e-c9f0d937c43c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "c32c5c42-8496-5856-863d-985aea9cc87c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0ad57799-0104-5407-bf11-8d6329f501fb",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f585aa18-61a3-5964-a0d1-12add29ed6d4",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "21c15be9-3ec8-5dbd-8ae4-0944dee61718",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "855578e4-6601-54bf-9a37-fc19f22197c2",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "ec8b58ec-5e31-5f6e-a68b-1b7b56783c39",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "71fcff4c-0c5e-5c9b-8293-ae2d84283c27",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "c5ed35a3-593c-5723-ad85-953d36bbf3c0",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "6da03123-65c3-54dc-b328-5fa12456854c",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "30954f8b-e0ca-5152-9d34-00ac2a7214db",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "self_report.recorded",
+      "eventId": "21192c78-5712-50a7-8de9-d7034e1a2ed9",
+      "streamId": "cdfa9fc1-e9c0-50b8-b115-733df5e4e3c9",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reportId": "7c0567f4-9432-56d7-9c37-a5d19f3587cd",
+        "target": "ten.step",
+        "value": true
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "36a2e54a-2ad0-50d8-ab3c-f3a1c1d6ddf3",
+      "streamId": "cdfa9fc1-e9c0-50b8-b115-733df5e4e3c9",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "aadd77d7-17cb-53bd-82e6-54b18f7d76c5",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "f4e06251-ceb7-522e-9eb2-be8a88c28d01",
+      "streamId": "cdfa9fc1-e9c0-50b8-b115-733df5e4e3c9",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "a6eefb2f-ad30-5911-b6fc-6a0104d2e789",
+        "inputId": "aadd77d7-17cb-53bd-82e6-54b18f7d76c5",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "fb6b746b-2f5d-558c-aedc-d6e17169609c",
+      "streamId": "cdfa9fc1-e9c0-50b8-b115-733df5e4e3c9",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "abschluss-fehlt",
+  "description": "Fehlender Abschluss ist unbekannt, nicht Abbruch.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "27ce2ac9-3757-5257-b5e2-48f93c899699",
+      "streamId": "506b4e0c-1eb0-5c43-808f-967c85eee8ab",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "d44d8a5f-6707-5930-a474-a2d03764d204",
+        "initialMaterial": [
+          {
+            "itemId": "6bffd900-704c-5877-8998-51e551b4325e",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2c23b34c-3c13-5ebe-add8-5bb740a98818",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f945e05f-92b6-5f28-acbc-29420eea87d7",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "694d5d62-dfa5-5d7f-b533-c91fd9cec50f",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "b64c9632-dde1-59a4-bee6-d4124aa9fe3a",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "66018909-6626-5245-b7de-83ee83bbecb8",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "d08fdb84-457b-567e-bacf-2b830a75da5c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e925bb7b-ae7c-517d-9cd6-44e1554a66ea",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "c4b706af-70ba-5a91-a8fe-2ad31ac77a4c",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "34f33ad0-05c5-5b30-b50e-3b9a508673a3",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "311df701-52ca-5a1a-8d0f-4bf42d2cb975",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "ba844398-2896-5ad5-b7a2-890b582736df",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a974dcf5-3788-5a2f-a0b6-92ef9a500c45",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "c86532f8-79e6-577f-b0c7-ac2bd67238e2",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "c15acf82-d368-5068-b141-025ce0ee6ea5",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "da71f331-369d-5470-b500-82ad7c6a1ce0",
+      "streamId": "506b4e0c-1eb0-5c43-808f-967c85eee8ab",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "92bd5359-eaca-53c9-a5f9-2f6be85f71c7",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "fc0a18bb-eeb1-56be-9979-d3bd57d0763f",
+      "streamId": "506b4e0c-1eb0-5c43-808f-967c85eee8ab",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "30284a21-72dc-5923-8fab-947ebbead643",
+        "inputId": "92bd5359-eaca-53c9-a5f9-2f6be85f71c7",
+        "value": 15,
+        "origin": "direkt"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "undecidable",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

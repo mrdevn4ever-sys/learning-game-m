@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "sum15.guided",
+  "version": 1,
+  "claimId": "attempt.ten.guided",
+  "target": {
+    "references": [
+      {
+        "kanton": "LU",
+        "schulsprache": "de",
+        "code": "MA.1.C.1",
+        "stufe": "c",
+        "taetigkeit": "Angeleiteten Rechenweg mit Material darstellen",
+        "bezug": "teil",
+        "quellenstatus": "offen",
+        "hinweis": "Zuordnungsvorschlag aus dem Projektauftrag; kantonale Ausgabe und Quelle noch nicht geprueft."
+      },
+      {
+        "kanton": "BE",
+        "schulsprache": "de",
+        "code": "MA.1.C.1",
+        "stufe": "c",
+        "taetigkeit": "Angeleiteten Rechenweg mit Material darstellen",
+        "bezug": "teil",
+        "quellenstatus": "offen",
+        "hinweis": "Zuordnungsvorschlag aus dem Projektauftrag; kantonale Ausgabe und Quelle noch nicht geprueft."
+      }
+    ]
+  },
+  "applicability": {
+    "taskContracts": [
+      "sum-8-7"
+    ],
+    "startingStates": [
+      "board-8-7-v1"
+    ],
+    "scope": "einzelversuch",
+    "nachweisform": "dargestellter_weg",
+    "beobachtungsfenster": {
+      "start": "attempt.opened",
+      "end": "attempt.closed",
+      "order": "seq"
+    }
+  },
+  "logic": {
+    "factCatalogVersion": "1.0.0",
+    "requires": {
+      "all": [
+        "observation.valid",
+        "attempt.submitted",
+        "board.ten.child",
+        "support.ten.before"
+      ],
+      "none": []
+    },
+    "validity": "current_not_invalidated",
+    "support": "time_of_effective_action",
+    "unknownPolicy": "abstain"
+  },
+  "boundary": {
+    "alternatives": [
+      {
+        "erklaerung": "Ein richtiges Ergebnis oder eine Darstellung belegt weder dauerhafte Beherrschung noch Strategieauswahl ausserhalb dieses Versuchs."
+      },
+      {
+        "erklaerung": "App-Demo oder Hilfe ist keine freie eigene Strategie; eine Lesart ist keine bestaetigte Antwort."
+      }
+    ],
+    "counterexamples": [
+      {
+        "traceRef": "spuren/hinweis-vor-zug.json",
+        "expected": "must_claim"
+      },
+      {
+        "traceRef": "spuren/frei-zehnerweg.json",
+        "expected": "must_not_claim"
+      },
+      {
+        "traceRef": "spuren/luecke-vor-zug.json",
+        "expected": "undecidable"
+      }
+    ],
+    "wording": {
+      "de-CH": "Bei dieser Aufgabe hast du nach einem Hinweis der App auf den Zehnerschritt 10 und 5 gelegt.",
+      "fallback": "attempt.result.correct"
+    }
+  }
+}

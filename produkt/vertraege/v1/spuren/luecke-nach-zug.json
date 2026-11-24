@@ -1,0 +1,211 @@
+{
+  "id": "luecke-nach-zug",
+  "description": "Fehlende spaetere Bewegungen koennen den wirksamen Weg aendern.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "131c5cde-a4a4-5b72-9e0b-bd59537f34ad",
+      "streamId": "70eba9bd-5e84-589b-89de-c4d941d58a0c",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "f63d69e2-fd62-511a-ab4a-688585158a52",
+        "initialMaterial": [
+          {
+            "itemId": "50767a23-b332-5fb6-a622-e7daf931b638",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "a16ea42a-7c7b-5e71-8f91-6690ad5295d3",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "15df4ad0-7688-550d-9dfe-3dce2d765a04",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "80f8827c-10b3-5b6c-8ecf-e31f74954bf3",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "9e8fb8fe-1d20-51d6-99cc-a761c1ff85ac",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "9bebed24-e4d9-5f62-9417-d296cd7aac8d",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "56bcb3b8-a256-58cf-b8fd-8ecac4123b34",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "ea9136a2-0fc1-5b42-9c47-12b947e0e898",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e3c4b46d-c9d5-56ec-8768-fc94b6de49c8",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "be2feb2a-4ca0-56e5-bd15-70f5998a84a3",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a5584300-114c-57fb-88e1-73353418977e",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f3072eec-93cf-52d8-92b7-7a744ec272d8",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "0087321a-188b-5aff-83da-e0d75427892f",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d8cc112b-2050-5011-b693-73c2a557cecd",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "e3ed336e-42f9-5f4b-9520-2002adb594b3",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "7792690f-5859-51c7-839f-1ae951f7bcb2",
+      "streamId": "70eba9bd-5e84-589b-89de-c4d941d58a0c",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "915c0af2-c796-58e4-829b-b294b130d511",
+        "items": [
+          "e3c4b46d-c9d5-56ec-8768-fc94b6de49c8",
+          "be2feb2a-4ca0-56e5-bd15-70f5998a84a3"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "condition.observed",
+      "eventId": "f8ce1566-4973-5147-a87c-1effdbea9209",
+      "streamId": "70eba9bd-5e84-589b-89de-c4d941d58a0c",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "kind": "gap",
+        "detail": "Offene synthetische Gegenprobe",
+        "sinceSeq": 2
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "3f12abcb-ce11-5389-8b9d-59417a6befba",
+      "streamId": "70eba9bd-5e84-589b-89de-c4d941d58a0c",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "46b6e4ba-0f01-5460-8be5-75743dff1729",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "336ee98a-c5ed-5089-9aa7-10dfddc71c8e",
+      "streamId": "70eba9bd-5e84-589b-89de-c4d941d58a0c",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "d9dcc975-d4b2-5d1a-9446-634e9f40d16b",
+        "inputId": "46b6e4ba-0f01-5460-8be5-75743dff1729",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "e86c5359-79af-55c6-8506-bb9324c89c57",
+      "streamId": "70eba9bd-5e84-589b-89de-c4d941d58a0c",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "undecidable",
+    "attempt.ten.guided": "undecidable",
+    "attempt.alternative": "undecidable",
+    "attempt.path.displayed": "undecidable"
+  }
+}
