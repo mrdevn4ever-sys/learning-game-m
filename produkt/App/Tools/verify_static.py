@@ -14,6 +14,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 from generate_project import APP, PRODUCTS, identifier, outputs, project
+from verify_repair import check_baseline, check_regressions, check_repair_sources, sources as repair_sources
 
 PACKAGES = APP.parent / "Packages"
 ROOT = APP.parents[1]
@@ -174,9 +175,14 @@ def audit(use_parser=False):
     native_tests = sum(len(re.findall(r"@Test\b", path.read_text(encoding="utf-8"))) for path in (APP / "ChnobelTests").glob("*.swift"))
     ui_tests = sum(len(re.findall(r"func test\w+\(", path.read_text(encoding="utf-8"))) for path in (APP / "ChnobelUITests").glob("*.swift"))
     require(swift_tests > 0 and native_tests > 0 and ui_tests >= 4, "Leere oder unvollstaendige Testinventare")
+    preserved = check_baseline()
+    repair = check_repair_sources(repair_sources())
+    regressions = check_regressions()
     parsed = syntax_checks(files) if use_parser else None
     return {
         "source_checks": "PASS", "module_count": len(graph), "swift_files": len(files),
+        "repair_source_gates": repair, "unchanged_baseline_test_files": preserved,
+        "repair_native_regressions": regressions,
         "swift_grammar_only": {"status": "PASS" if use_parser else "NOT RUN", "parsed_files": parsed},
         "prepared_tests_not_executed": {"swift_testing_package": swift_tests, "swift_data_native": native_tests, "xcuitest": ui_tests},
         "native_typecheck": "NOT RUN", "swift_test": "NOT RUN", "xcodebuild": "NOT RUN", "xcuitest": "NOT RUN",

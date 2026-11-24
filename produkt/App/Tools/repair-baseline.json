@@ -1,0 +1,16 @@
+{
+  "candidate": "d71acbe65a602f091840ed5fa7e6069a157843c2",
+  "normalization": "UTF-8, LF; bestehende Tests unveraendert",
+  "files": {
+    "produkt/App/ChnobelTests/NotebookStoreTests.swift": "98de45d676262ad1298a2f3cb121f0f09f87c389eae6438685ac3cfb0a66622d",
+    "produkt/App/ChnobelUITests/NotebookUITests.swift": "dfc2a8ce30c3b67c78713475df955f91188abf32328faa64845464494e863083",
+    "produkt/App/Tools/test_static.py": "b699b851e63bcae5e969dc1cb73342fbfe17253c016d1ddcdab3e32c74649920",
+    "produkt/Packages/Tests/CoreDomainTests/TruthTests.swift": "fd214927b001d7ce9eee424cc0222c2fc050f005dcf1bb62093c499d344d03dc",
+    "produkt/Packages/Tests/EvidenceKitTests/EvidenceTests.swift": "4e731ace4085d0bf11491c0647c092595561f2fb117b46baf726526be7acb4f4",
+    "produkt/Packages/Tests/InputKitTests/InputTests.swift": "93ce664123828f33778b9fa1fc563d5186a92a67aa1d8c28675a9a4440b37ab6",
+    "produkt/Packages/Tests/LearningEngineTests/LearningTests.swift": "eb454e4261934809019030efa3d69a3f0611775e301eca7c212564acbbbe5319",
+    "produkt/Packages/Tests/ObservationLogTests/LedgerTests.swift": "9fb1b6c8fd16299d2bf8da50a8d24e2ea9f3c00a646994a03197570f79e738aa",
+    "produkt/Packages/Tests/RecognitionKitTests/RecognitionTests.swift": "9224b066fe070d5ae2690f45566f10cc5c10e857d6fdebf9b16c772cb100b12d",
+    "produkt/Packages/Tests/TaskEngineTests/TaskTests.swift": "1d5954022f29412135d610267017da39546cdd8c014f1be61a9a429881e1504a"
+  }
+}

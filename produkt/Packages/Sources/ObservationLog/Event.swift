@@ -64,11 +64,26 @@ public struct MaterialMove: Codable, Equatable, Sendable {
 }
 
 public enum Support: String, Codable, Sendable {
-    /// Die UI zeigt genau diesen Text; kein Vorbelegen und kein automatischer Zug.
+    /// Unveränderliche Textfassungen. Replay prüft die Auswahl am Materialzustand.
     case tenStep
+    case tenFromNineV1, tenAlreadyV1, tenFromDoublesV1, tenCompareV1, tenUnknownV1
     public var text: String {
-        "Du kannst zuerst die Acht zur Zehn ergänzen. Lege dafür zwei Plättchen von B nach A."
+        switch self {
+        case .tenStep:
+            "Du kannst zuerst die Acht zur Zehn ergänzen. Lege dafür zwei Plättchen von B nach A."
+        case .tenFromNineV1:
+            "In A liegen neun Plättchen. Lege noch ein Plättchen von B nach A. Dann liegen dort zehn."
+        case .tenAlreadyV1:
+            "In A liegen schon zehn Plättchen und in B fünf. Für diesen Zehnerschritt brauchst du kein weiteres Plättchen zu verschieben."
+        case .tenFromDoublesV1:
+            "7, 7 und 1 ist ein anderer passender Weg. Wenn du stattdessen den Zehnerweg legen möchtest: Lege zuerst das Plättchen aus C nach A und danach zwei Plättchen von B nach A."
+        case .tenCompareV1:
+            "Für einen Zehnerweg kannst du eine Gruppe mit zehn Plättchen legen. Vergleiche die Anzahl in den Feldern. Deine Plättchen bleiben unverändert liegen."
+        case .tenUnknownV1:
+            "Die aktuelle Materialspur ist unvollständig. Für einen Zehnerweg brauchst du eine Gruppe mit zehn Plättchen. Ich gebe deshalb keinen bestimmten Zug vor."
+        }
     }
+    public var version: String { self == .tenStep ? "local-support-0" : "local-support-1" }
     public var target: String { "ten.step" }
     public var channel: String { "visualWithAccessibilityText" }
     public var kind: String { "partialStep" }

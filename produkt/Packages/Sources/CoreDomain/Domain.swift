@@ -50,5 +50,6 @@ public struct Revision: Codable, Equatable, Sendable {
         self.rules = rules
         self.evaluation = evaluation
     }
-    public static let development = Revision(content: "local-draft-0", rules: "local-draft-0", evaluation: "local-draft-0")
+    // Neue Kandidatenrevision; alte Ereignisse werden nicht still neu interpretiert.
+    public static let development = Revision(content: "local-draft-1", rules: "local-draft-1", evaluation: "local-draft-1")
 }

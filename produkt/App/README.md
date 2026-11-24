@@ -16,14 +16,19 @@ Aussagen über Lernwirksamkeit. Signing bleibt ausgeschaltet.
 - Der **Ziffernblock** bleibt im unteren sicheren Bereich. Es gibt keine
   Antwortvorbelegung. Zifferntasten unterstützen auch Hardware-Tastenkürzel.
   **Abgeben** schreibt Eingabe und definitive Antwort in einer Transaktion.
-- **Hilfe** zeigt den konkreten Tipp aus `Support.tenStep.text`. Genau diese
+- **Hilfe** zeigt den zum aktuellen Materialzustand gewählten `Support.text`. Genau diese
   Hilfe wird als `support.presented` protokolliert, vor der UI-Freigabe
-  gespeichert und nicht als Materialzug ausgeführt. Der sichtbare Tipp bleibt
-  stehen; ein erneuter Knopfdruck erzeugt keine weitere Scheinpräsentation.
+  gespeichert und nicht als Materialzug ausgeführt. Solange der Zustand passt,
+  erzeugt ein erneuter Knopfdruck keine Scheinpräsentation. Ein Materialzug oder
+  Undo blendet den alten Tipp aus; danach kann eine neue, passende Hilfe gewählt
+  werden. Beide Hilfen bleiben unverändert im Protokoll, Hilfewissen bleibt erhalten.
 - **Rückgängig** nimmt die zeitlich letzte noch wirksame Antwort oder Bewegung
   zurück. Die Historie wird nicht gelöscht. Hilfewissen wird nicht rückgängig
   gemacht. Eine spätere Hilfe entwertet keinen bereits wirksamen freien Zug.
 - **Bericht** zeigt Ergebnis, engen Materialnachweis und die Ereignisnamen.
+  Aktuelle Darstellung und früherer eigener Zehnerschritt sind getrennt.
+  Eine Antwort vor einer späteren Lücke wird als historisch beobachtet mit
+  offener Aktualität angezeigt, nicht als aktueller Erfolg oder Fehler.
   **Zum Ziffernblock** führt jederzeit zurück. Der Bericht ist ausdrücklich
   kein gesicherter Erwachsenenbereich; die Rollen sind synthetisch.
 - **Runde beenden** schliesst einen abgegebenen Versuch. Er bleibt nach Neustart
@@ -46,7 +51,11 @@ Release ignoriert diesen Parameter. Tests verwenden pro Test eine neue UUID
 und beim Relaunch dieselbe UUID. UI-/Unit-Teststores verschwinden mit der
 Deinstallation der Entwicklungs-App. Es gibt keine Exportfunktion.
 
-Das lokale Codable-Format trägt `localFormat = 0`. Es ist **kein v1-Vertrag**.
+Das lokale Codable-Format trägt `localFormat = 1`, die lokale Ereignisrevision
+ist `local-draft-1`. Beides ist **kein gemeinsamer v1-Vertrag**. Format 0 und
+alte Revisionen werden sichtbar als inkompatibel zurückgewiesen; vorhandene
+Seiten bleiben unangetastet. Eine Migration ist nicht implementiert, und der
+neue Kandidat behauptet keine rückwirkende Heilung alter Berichte.
 Vertragsabgleich, Adapter und Migrationen folgen nach der Vertragsentwicklung;
 Details stehen in [../Packages/README.md](../Packages/README.md).
 
@@ -112,11 +121,12 @@ Repository und werden von diesem Entwicklungsanteil nicht hochgeladen.
 
 ## Statische Prüfungen auf Windows oder macOS
 
-Nur Python-Standardbibliothek für die ersten drei Befehle erforderlich:
+Nur Python-Standardbibliothek für diese Quellprüfungen erforderlich:
 
 ```bash
 python produkt/App/Tools/generate_project.py --check
 python -m unittest discover -s produkt/App/Tools -p test_static.py -v
+python -m unittest discover -s produkt/App/Tools -p test_repair_static.py -v
 python produkt/App/Tools/verify_static.py
 ```
 
@@ -125,6 +135,10 @@ shared Scheme reproduzierbar. Neue Swift-Dateien erfordern eine Erneuerung.
 Die Prüfungen kontrollieren den Modulgraph, Quellenmitgliedschaft, Target- und
 Scheme-Referenzen, Signing-Grenze, Privacy-Manifest und verbotene App-APIs.
 Negative Selbsttests müssen bewusst verletzte Grenzen ablehnen.
+Die ursprünglichen 14 statischen Tests bleiben unverändert. Reparaturgates
+prüfen zusätzlich Quellverdrahtung, unveränderte ursprüngliche Testdateien und
+neue native Testdefinitionen; sie führen keine Swift-Semantik in Python nach.
+Details und verbleibende Grenzen: [REPARATUR-1.md](REPARATUR-1.md).
 
 Optionaler Swift-Grammatikcheck (nur Syntax, **kein** Compiler/Typecheck):
 

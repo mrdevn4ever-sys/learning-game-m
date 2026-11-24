@@ -21,14 +21,14 @@ struct LocalNotebookSnapshot: Codable {
     let draft: String
 
     init(ledger: EventLedger, draft: String) {
-        self.localFormat = 0
+        self.localFormat = 1
         self.streamID = ledger.streamID
         self.events = ledger.events
         self.draft = draft
     }
 
     func validatedLedger() throws -> EventLedger {
-        guard localFormat == 0 else { throw NotebookStoreError.unsupportedFormat }
+        guard localFormat == 1 else { throw NotebookStoreError.unsupportedFormat }
         guard draft.count <= 3, draft.allSatisfy({ $0.isASCII && $0.isNumber }) else {
             throw NotebookStoreError.invalidDraft
         }
@@ -38,7 +38,7 @@ struct LocalNotebookSnapshot: Codable {
     }
 }
 
-enum NotebookStoreError: Error {
+enum NotebookStoreError: Error, Equatable {
     case unsupportedFormat, invalidDraft, ambiguousArchive
 }
 
@@ -47,9 +47,12 @@ enum NotebookStoreError: Error {
 final class NotebookStore {
     let container: ModelContainer
     private let context: ModelContext
+    // Native Fehlerprobe innerhalb der Transaktion, standardmässig ohne Eingriff.
+    private let beforeSave: (@MainActor () throws -> Void)?
     private static let key = "synthetic-development-notebook"
 
-    init(url: URL) throws {
+    init(url: URL, beforeSave: (@MainActor () throws -> Void)? = nil) throws {
+        self.beforeSave = beforeSave
         var directory = url.deletingLastPathComponent()
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
         var values = URLResourceValues()
@@ -99,6 +102,7 @@ final class NotebookStore {
             }
             if let record = records.first { record.payload = data }
             else { context.insert(NotebookArchive(key: Self.key, payload: data)) }
+            try beforeSave?()
             try context.save()
         } catch {
             context.rollback()

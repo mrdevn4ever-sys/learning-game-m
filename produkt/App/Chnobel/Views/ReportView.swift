@@ -12,8 +12,12 @@ struct ReportView: View {
                 Section("Nur dieser synthetische Versuch") {
                     Text(session.evidence.report.resultText).accessibilityIdentifier("report-result")
                     Text(session.evidence.report.pathText).accessibilityIdentifier("report-path")
+                    Text(session.evidence.report.historicalPathText).accessibilityIdentifier("report-historical-path")
                     if let answer = session.state.answer {
-                        Text("Abgegebene Zahl: \(answer.answer.value)").accessibilityIdentifier("report-answer")
+                        Text(session.state.answerCurrency == .yes
+                             ? "Abgegebene Zahl: \(answer.answer.value)"
+                             : "Zuletzt beobachtete Zahl: \(answer.answer.value) · Aktualität offen")
+                            .accessibilityIdentifier("report-answer")
                     }
                     Text("Gezeigte Hilfen: \(session.state.supportCount)").accessibilityIdentifier("report-help-count")
                 }
@@ -30,8 +34,8 @@ struct ReportView: View {
                             Text("\(event.sequence) · \(event.payload.name)").font(.body.monospaced())
                             Text("Akteur: \(event.actor.rawValue)").font(.caption).foregroundStyle(.secondary)
                             if case .supportPresented(let support) = event.payload {
-                                Text(support.text)
-                                Text("\(support.target) · \(support.kind) · \(support.channel)").font(.caption)
+                                Text(support.text).accessibilityIdentifier("logged-help-\(event.sequence)")
+                                Text("\(support.version) · \(support.target) · \(support.kind) · \(support.channel)").font(.caption)
                             }
                         }
                     }

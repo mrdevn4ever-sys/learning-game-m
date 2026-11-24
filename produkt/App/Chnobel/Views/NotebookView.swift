@@ -37,12 +37,16 @@ struct NotebookView: View {
                             .disabled(!session.state.canUndo).accessibilityIdentifier("undo")
                         Spacer()
                         Button("Runde beenden", action: session.finish)
-                            .disabled(session.state.isClosed || session.state.answer == nil)
+                            .disabled(session.state.isClosed || session.state.answerCurrency != .yes)
                             .accessibilityIdentifier("finish-attempt")
                     }.buttonStyle(.bordered).controlSize(.large)
                     VStack(alignment: .leading, spacing: 8) {
                         Text(session.evidence.report.resultText).font(.headline).accessibilityIdentifier("result-summary")
                         Text(session.evidence.report.pathText).accessibilityIdentifier("path-summary")
+                        if session.evidence.report.historicalTenWithoutHint == .yes {
+                            Text(session.evidence.report.historicalPathText).font(.footnote)
+                                .accessibilityIdentifier("historical-path-summary")
+                        }
                         if session.state.isClosed {
                             Text("Diese Runde ist beendet. Deine Seite bleibt gespeichert.")
                                 .accessibilityIdentifier("round-finished")
