@@ -4,17 +4,24 @@ ZUSTAND: IN_ARBEIT
 PHASE: 0 – Betriebsfaehigkeit und Apple-Durchstich
 LETZTE_AKTUALISIERUNG: 2026-11-24
 
-## Letzte erledigte Aufgabe
-Startpaket nach drei unabhaengigen Kontextreviews ueber PR #1 integriert; main-Basis `818be59efe2559897d70aa186b2c464c7d3d5410`. Oeffentliche Sichtbarkeit bestaetigt. Privates Pruefrepository mit Zweck-README angelegt, Sichtbarkeit zurueckgelesen. PR-Schutz ohne Force-Push/Loeschung aktiviert, Actions im Produktrepo aktiv. Secret-Namen/Environments inventarisiert (leer).
+## Letzte erledigte Aufgaben
+- Dokumentations-PR #2 nach fremdem Kontextreview und erneutem Diff-Gate gemergt. Remote-main: `9bab69c078f2c7dbfbca3b548ce1c8ef24a9ab61`. Keine Produkt- oder Releasefreigabe.
+- Apple-Portal: explizite Bundle-ID `ch.chnobel.app` registriert und wieder geoeffnet. Unveroeffentlichter Chnobel-App-Datensatz `6838908211`, Plattform iOS/iPadOS, Primaersprache Deutsch, SKU `CHNOBEL-IPADOS-001`, eingeschraenkter Benutzerzugriff angelegt und nach Neuladen zurueckgelesen. TestFlight: keine Builds, null Tester. Keine Gruppen/Einladungen/Publikation.
+- Ruecklaeufe auf ihren exakten sauberen Arbeitsbranches selbst nachgeprueft und remote gesichert: Steuerung `3bf45a586478a1c38ba8563bef7d0e8ad22e06e6` mit 71/71 Python-Tests; Vertraege/Referenz `b8cd111453b2c44d28a5fc21125c4f9dbc95877e` mit 165/165 Python-Tests; iPad `d71acbe65a602f091840ed5fa7e6069a157843c2` mit 14/14 statischen Tests. Keine ausgelassenen oder erwarteten Fehler in diesen Laeufen. Keine gemeinsame Kandidatenfreigabe.
 
 ## Aktuelle Arbeit
-Einrichtung auf `chore/betriebsbasis` in PR #2 (`db3bb5ac177bf54d3f5652cb50bf8abe52c4dd41`), fremdes Review ausstehend. Parallel getrennte Arbeitsbranches: `feat/steuerung`, `feat/vertraege-referenz`, `feat/ipad-kern`. Orchestrator: `ci/entwicklungspruefung`, lokale CI-Helfertests 9/9 bestanden; native CI noch nicht gestartet. Keine Produktfreigabe, keine verdeckte Pruefung, kein Apple-Upload.
+- Drei fremde Code-Reviews laufen auf den unveraenderten Arbeitsbranch-SHAs. Vorher keine Integration der Produktanteile in main und kein Auftragsabschluss.
+- Unabhaengige Sicherheitspruefung der technischen Identitaets-/Rechtetrennung beauftragt. Owner-Adminzugriff ist Bootstrapzugriff, kein Isolationsbeleg.
+- Orchestrator-Branch `ci/entwicklungspruefung`: oeffentliche Entwicklungs-CI vorbereitet, native Ausfuehrung NOT RUN. Swift-Referenzabgleich ausstehend.
+- Erster eigener Referenzlauf wegen fehlender gepinnter RFC-3339-Abhaengigkeit gescheitert; Originalfehler erhalten. Nach Installation der unveraenderten Requirements separater erfolgreicher Lauf. Kein Test/Gate geaendert.
 
 ## Naechste Aufgabe
-P0-02/P0-03/P0-04/P0-05 als unabhaengige Entwicklungsanteile implementieren und testen; P0-07 darauf integrieren. Aufgabenabschluss nur nach fremdem Review und ausgefuehrten Gates. Die Gesamtphase bleibt bis zum echten Apple-Endzustand offen.
+1. Sicherheitsbefund in minimale Rollen/ACLs mit positiven/negativen Tests ueberfuehren; Apple-Mitgliedschaft/Vertraege abschliessend lesen. Erst dann Secrets in den nachgewiesen isolierten Kontext uebertragen.
+2. Fremde Code-Reviews behandeln, gemeinsame Entwicklungsintegration und Swift-Referenzabgleich pruefen, echte macOS-/Simulator-CI ausfuehren. Pflichtchecks an erwartete CI-Identitaet binden.
+3. Steuerung erst nach Review in Betrieb nehmen; historische Startauftraege nicht nachtraeglich als erledigt markieren. Signieren/Upload nur nach gueltigen Gates.
 
 ## Blocker
-Siehe `steuerung/BLOCKER.md`. Menschliche Startpaket-Liste einmalig; unabhaengige Entwicklung wartet nicht. Noch nicht alle unabhaengigen Aufgaben erledigt, deshalb nicht BLOCKIERT_STARTPAKET.
+Siehe `steuerung/BLOCKER.md`. Keine Signierung, kein Apple-Upload, keine verdeckte Abnahme, keine Phase-0-Abnahme. 43 Package-, vier native SwiftData- und fuenf UI-Tests laut Ruecklauf vorbereitet, nicht ausgefuehrt. Handschrifterkennung deaktiviert. Unabhaengige Arbeit nicht ausgeschoepft; deshalb nicht BLOCKIERT_STARTPAKET.
 
 ## Wiederaufnahme
-`MASTERPROMPT.md`, ADRs, Auftragsdateien und Arbeitsstand lesen; exakte Remote-SHAs pruefen. Keine Produktions-/Pruefrollen aus einem gemeinsamen Token ableiten. WARTEN nur nach vollstaendiger Definition of Done. Alle Laufzeitdaten und Caches ausserhalb des Repositories auf F:.
+MASTERPROMPT, ADRs, Auftragsdateien und exakte Remote-SHAs lesen. Detailbelege ausserhalb Git unter `F:/ChnobelRuntime/portal/` und `F:/ChnobelRuntime/verification/`. Fortsetzungsjob `26647d618052` bleibt waehrend interaktiver Einrichtung und fremder Reviews pausiert; keine parallelen Schreiber. WARTEN erst nach vollstaendiger Definition of Done.
