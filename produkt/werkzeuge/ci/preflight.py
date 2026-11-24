@@ -8,9 +8,11 @@ import subprocess
 import sys
 
 from jsonschema import Draft202012Validator
-import yaml
 
 ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT))
+from produkt.werkzeuge.ci.workflow_security import check_workflows
+from produkt.werkzeuge.ci.snapshot import verify
 
 
 def tracked_paths() -> list[Path]:
@@ -58,21 +60,17 @@ def check_repository() -> dict:
         raise ValueError("Rechteinventar ist noch leer")
     if not (ROOT / "produkt/Packages/Package.swift").is_file():
         raise ValueError("Swift-Package fehlt")
-    workflow = yaml.load((ROOT / ".github/workflows/development.yml").read_text(), Loader=yaml.BaseLoader)
-    if set(workflow["on"]) != {"pull_request", "merge_group", "push"}:
-        raise ValueError("Unerwartete Workflow-Ausloeser")
-    if workflow.get("permissions") != {"contents": "read"}:
-        raise ValueError("Entwicklungs-CI verlangt zu viele Rechte")
-    raw_workflow = (ROOT / ".github/workflows/development.yml").read_text()
-    if re.search(r"secrets\s*[.\[]|upload-artifact|pull_request_target", raw_workflow):
-        raise ValueError("Privilegierter Zugriff/Artefakt-Upload in oeffentlicher Entwicklungs-CI")
+    check_workflows(ROOT)
+    verify()
     return counts
 
 
 def main() -> None:
     print(json.dumps(check_repository(), sort_keys=True))
-    for directory in ("produkt/werkzeuge/ci/tests", "produkt/werkzeuge/referenz/tests"):
+    for directory in ("produkt/werkzeuge/ci/tests", "produkt/werkzeuge/referenz/tests", "produkt/App/Tools"):
         subprocess.run([sys.executable, "produkt/werkzeuge/ci/run_suite.py", directory], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, "produkt/App/Tools/generate_project.py", "--check"], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, "produkt/App/Tools/verify_static.py"], cwd=ROOT, check=True)
     print("Oeffentlicher Entwicklungs-Preflight bestanden; kein Freigabebeleg.")
 
 

@@ -30,22 +30,29 @@ class NativeEvidenceTests(unittest.TestCase):
         with self.assertRaises(ValueError): select_ipad({}, "27.2")
 
     def test_xunit_positive_and_mutations(self):
+        from produkt.werkzeuge.ci.snapshot import contract
+        group = contract()["tests"]["packages"]
+        good = '<testsuite tests="43">' + ''.join(f'<testcase name="{n}()"/>' for n in group["names"]) + '</testsuite>'
         with tempfile.TemporaryDirectory() as tmp:
             p = Path(tmp) / "result.xml"
-            p.write_text('<testsuite tests="1"><testcase name="one"/></testsuite>')
-            self.assertEqual(validate_xunit(p)["executed"], 1)
+            p.write_text(good)
+            self.assertEqual(validate_xunit(p, group)["executed"], 43)
             for xml in ['<testsuite tests="0"/>', '<testsuite tests="2"><testcase/></testsuite>',
-                        '<testsuite tests="1"><testcase><skipped/></testcase></testsuite>',
-                        '<testsuite tests="1"><testcase><failure/></testcase></testsuite>']:
+                        good.replace('/>', '><skipped/></testcase>', 1),
+                        good.replace('/>', '><failure/></testcase>', 1)]:
                 p.write_text(xml)
-                with self.assertRaises(ValueError): validate_xunit(p)
+                with self.assertRaises(ValueError): validate_xunit(p, group)
 
     def test_xcresult_positive_and_mutations(self):
-        good = {"totalTestCount": 3, "passedTests": 3, "failedTests": 0, "skippedTests": 0}
-        self.assertEqual(validate_xcresult(good)["executed"], 3)
+        from produkt.werkzeuge.ci.snapshot import contract
+        groups = contract()["tests"]
+        tree = {"testNodes": [{"nodeType": "Test Case", "name": n + "()", "result": "Passed"}
+                              for lane in ("swiftdata", "ui") for n in groups[lane]["names"]]}
+        good = {"totalTestCount": 9, "passedTests": 9, "failedTests": 0, "skippedTests": 0}
+        self.assertEqual(validate_xcresult(good, tree, groups)["ui"]["executed"], 5)
         for delta in [{"totalTestCount": 0}, {"skippedTests": 1}, {"failedTests": 1},
-                      {"passedTests": 2}, {"passedTests": True}]:
-            with self.assertRaises(ValueError): validate_xcresult(good | delta)
+                      {"passedTests": 8}, {"passedTests": True}]:
+            with self.assertRaises(ValueError): validate_xcresult(good | delta, tree, groups)
 
     def test_empty_python_suite_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
