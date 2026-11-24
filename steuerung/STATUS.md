@@ -8,7 +8,7 @@ LETZTE_AKTUALISIERUNG: 2026-11-24
 Startpaket nach drei unabhaengigen Kontextreviews ueber PR #1 integriert; main-Basis `818be59efe2559897d70aa186b2c464c7d3d5410`. Oeffentliche Sichtbarkeit bestaetigt. Privates Pruefrepository mit Zweck-README angelegt, Sichtbarkeit zurueckgelesen. PR-Schutz ohne Force-Push/Loeschung aktiviert, Actions im Produktrepo aktiv. Secret-Namen/Environments inventarisiert (leer).
 
 ## Aktuelle Arbeit
-Einrichtungsbranch `chore/betriebsbasis`: Blocker, Rollen-/CI-Grenzen und unveraenderte Bootstrap-Befunde dokumentieren. Keine Produktfreigabe, keine verdeckte Pruefung, kein Apple-Upload.
+Einrichtung auf `chore/betriebsbasis` in PR #2 (`db3bb5ac177bf54d3f5652cb50bf8abe52c4dd41`), fremdes Review ausstehend. Parallel getrennte Arbeitsbranches: `feat/steuerung`, `feat/vertraege-referenz`, `feat/ipad-kern`. Orchestrator: `ci/entwicklungspruefung`, lokale CI-Helfertests 9/9 bestanden; native CI noch nicht gestartet. Keine Produktfreigabe, keine verdeckte Pruefung, kein Apple-Upload.
 
 ## Naechste Aufgabe
 P0-02/P0-03/P0-04/P0-05 als unabhaengige Entwicklungsanteile implementieren und testen; P0-07 darauf integrieren. Aufgabenabschluss nur nach fremdem Review und ausgefuehrten Gates. Die Gesamtphase bleibt bis zum echten Apple-Endzustand offen.
