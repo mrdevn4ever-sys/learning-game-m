@@ -11,12 +11,14 @@ LETZTE_AKTUALISIERUNG: 2026-11-24
 
 ## Aktuelle Arbeit
 - Drei fremde Code-Reviews laufen auf den unveraenderten Arbeitsbranch-SHAs. Vorher keine Integration der Produktanteile in main und kein Auftragsabschluss.
-- Unabhaengige Sicherheitspruefung der technischen Identitaets-/Rechtetrennung beauftragt. Owner-Adminzugriff ist Bootstrapzugriff, kein Isolationsbeleg.
+- Unabhaengige Sicherheitsarchitektur eingegangen und gegen Live-Konfiguration abgeglichen; Entwurf und Grenzen in `docs/planung/identitaetsarchitektur-pruefstand.md`. Zwoelf Rollen-/Sandbox-Testpaare weiterhin NOT RUN. Owner-Adminzugriff bleibt Bootstrapzugriff, kein Isolationsbeleg.
+- Privates `independent-check`-Environment ohne Secrets eingerichtet, Branch-Policy ausschliesslich `main` zurueckgelesen. Reviewer-Schutz mit HTTP 422 abgewiesen; Admin-Bypass weiterhin aktiv. Actions im Pruefrepository bleiben aus. Keine privilegierte Freigabe.
+- App-Registrierung im sichtbaren Chrome vor Absenden abgebrochen: dort anderes GitHub-Konto als der Projekt-Owner angemeldet, kein bereits angemeldeter Owner im Account-Switcher. Keine App/Schluessel erzeugt.
 - Orchestrator-Branch `ci/entwicklungspruefung`: oeffentliche Entwicklungs-CI vorbereitet, native Ausfuehrung NOT RUN. Swift-Referenzabgleich ausstehend.
 - Erster eigener Referenzlauf wegen fehlender gepinnter RFC-3339-Abhaengigkeit gescheitert; Originalfehler erhalten. Nach Installation der unveraenderten Requirements separater erfolgreicher Lauf. Kein Test/Gate geaendert.
 
 ## Naechste Aufgabe
-1. Sicherheitsbefund in minimale Rollen/ACLs mit positiven/negativen Tests ueberfuehren; Apple-Mitgliedschaft/Vertraege abschliessend lesen. Erst dann Secrets in den nachgewiesen isolierten Kontext uebertragen.
+1. Sicherheitsentwurf durch Gremium/ADR und echte Rollen-/Sandboxproben absichern; App-Registrierung erst im korrekten Owner-Kontext. Apple-Mitgliedschaft/Vertraege abschliessend lesen. Secrets erst nach nachgewiesener Isolation uebertragen.
 2. Fremde Code-Reviews behandeln, gemeinsame Entwicklungsintegration und Swift-Referenzabgleich pruefen, echte macOS-/Simulator-CI ausfuehren. Pflichtchecks an erwartete CI-Identitaet binden.
 3. Steuerung erst nach Review in Betrieb nehmen; historische Startauftraege nicht nachtraeglich als erledigt markieren. Signieren/Upload nur nach gueltigen Gates.
 
