@@ -1,0 +1,192 @@
+{
+  "id": "frei-zehnerweg-ergebnis",
+  "description": "Eigenstaendiger Zehnerschritt und korrektes Ergebnis sind getrennt.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "d4bcbb68-7612-556a-aec0-43a4a62711be",
+      "streamId": "a18d8457-77e7-5d99-ab08-44a73aea7f20",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "4aa1bcd5-9b0c-5a5c-8273-1599a622ceea",
+        "initialMaterial": [
+          {
+            "itemId": "53b10744-b887-5e1e-b8ac-476ed404ad68",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "56202ebe-0ad0-5ea7-9b3d-fc691c473ece",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "bc2bad6d-b133-5ff2-bf01-b4e2170808b3",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7d8f877c-4338-50cc-8977-545eeeeb2921",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "fa8185e6-97fa-5b74-a977-00b328ef49fc",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "995e1a3e-d057-5b96-bd1d-bb27a1e9e3a0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "08696836-91aa-574a-8d57-094a431eea08",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "5df95490-e0b6-56bd-b161-dfc5fa521194",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "cf0f70e1-1966-5afd-87b3-b40072e54ef8",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "cc62f7b5-dc59-5365-8f1f-af0ebb55738f",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "38428515-400f-5201-82ee-da093c8426d0",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "05828cd3-3c81-5baa-8f38-a9bf38d29145",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "c7d46731-32a4-5f4e-92cf-cdb7743cee81",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "bba8155d-2368-5481-bd3b-1cb38d8da670",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "82ea7d22-b81a-5ede-9265-f4fa5d18b30e",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "f51a97b9-272a-5be0-8c9c-e5399f7ba04d",
+      "streamId": "a18d8457-77e7-5d99-ab08-44a73aea7f20",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "57c26ff6-1662-5b42-9905-40088a101dba",
+        "items": [
+          "cf0f70e1-1966-5afd-87b3-b40072e54ef8",
+          "cc62f7b5-dc59-5365-8f1f-af0ebb55738f"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "5609e7ed-a073-582a-902c-73c1cc44460c",
+      "streamId": "a18d8457-77e7-5d99-ab08-44a73aea7f20",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "be1307bd-7caa-5236-a08e-cd4b4f328eec",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "8255e333-291c-535d-949e-e9467d7bead6",
+      "streamId": "a18d8457-77e7-5d99-ab08-44a73aea7f20",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "5b19346d-be54-5531-897d-aba8c8272b7a",
+        "inputId": "be1307bd-7caa-5236-a08e-cd4b4f328eec",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "9c3643af-298e-5833-9c7c-fea9b2b1eb5b",
+      "streamId": "a18d8457-77e7-5d99-ab08-44a73aea7f20",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_claim"
+  }
+}

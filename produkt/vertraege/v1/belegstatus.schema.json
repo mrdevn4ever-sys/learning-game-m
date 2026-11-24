@@ -1,0 +1,319 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chnobel.local/vertraege/v1/belegstatus.schema.json",
+  "title": "belegstatus v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "claim",
+    "verfahren",
+    "geltungsbereich",
+    "ergebnis",
+    "herkunft",
+    "berichtstext"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "verfahren": {
+      "enum": [
+        "none",
+        "regeltest",
+        "lernsimulation",
+        "strich_replay",
+        "ui_automation",
+        "instrumentierte_messung",
+        "unabhaengige_ki_pruefung",
+        "quellenpruefung"
+      ]
+    },
+    "geltungsbereich": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kandidat",
+        "ziel",
+        "ausfuehrungsort",
+        "population"
+      ],
+      "properties": {
+        "kandidat": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "ziel": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "ausfuehrungsort": {
+          "enum": [
+            "adapter",
+            "simulator",
+            "physisches_geraet",
+            "keiner"
+          ]
+        },
+        "population": {
+          "enum": [
+            "synthetisch",
+            "eigene_quellen",
+            "keine"
+          ]
+        },
+        "laufzeitversion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "geraeteklasse": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "eingabeart": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "pruefsatz": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "auswertungseinheit": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "bedingungen": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "ausschluesse": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "digestArtefakt": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "ergebnis": {
+      "enum": [
+        "open",
+        "passed",
+        "failed",
+        "inconclusive"
+      ]
+    },
+    "herkunft": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "zeitpunkt",
+        "pruefidentitaet"
+      ],
+      "properties": {
+        "zeitpunkt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "pruefidentitaet": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "laufId": {
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "digestPruefsatz": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "digestRegeln": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "digestBericht": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "fallzahlen": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "erwartet",
+        "ausgefuehrt",
+        "bestanden",
+        "gescheitert",
+        "unentschieden",
+        "uebersprungen"
+      ],
+      "properties": {
+        "erwartet": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ausgefuehrt": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bestanden": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "gescheitert": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unentschieden": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "uebersprungen": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "berichtstext": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verfahren": {
+            "const": "none"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "ergebnis": {
+            "const": "open"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "ergebnis": {
+            "not": {
+              "const": "open"
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "fallzahlen"
+        ],
+        "properties": {
+          "verfahren": {
+            "not": {
+              "const": "none"
+            }
+          },
+          "geltungsbereich": {
+            "required": [
+              "kandidat",
+              "ziel",
+              "ausfuehrungsort",
+              "population",
+              "laufzeitversion",
+              "geraeteklasse",
+              "eingabeart",
+              "pruefsatz",
+              "auswertungseinheit",
+              "bedingungen",
+              "ausschluesse",
+              "digestArtefakt"
+            ],
+            "properties": {
+              "ausfuehrungsort": {
+                "not": {
+                  "const": "keiner"
+                }
+              },
+              "population": {
+                "not": {
+                  "const": "keine"
+                }
+              }
+            }
+          },
+          "herkunft": {
+            "required": [
+              "zeitpunkt",
+              "pruefidentitaet",
+              "laufId",
+              "digestPruefsatz",
+              "digestRegeln",
+              "digestBericht"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "ergebnis": {
+            "const": "passed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "fallzahlen": {
+            "properties": {
+              "ausgefuehrt": {
+                "minimum": 1
+              },
+              "bestanden": {
+                "minimum": 1
+              },
+              "gescheitert": {
+                "const": 0
+              },
+              "unentschieden": {
+                "const": 0
+              },
+              "uebersprungen": {
+                "const": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

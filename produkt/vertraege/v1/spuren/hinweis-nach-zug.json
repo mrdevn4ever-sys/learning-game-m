@@ -1,0 +1,213 @@
+{
+  "id": "hinweis-nach-zug",
+  "description": "Ein spaeterer Hinweis entwertet den bereits freien Schritt nicht.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "df9d1174-3188-565a-b007-5da5b351716f",
+      "streamId": "ca3b8350-ef60-5add-81c7-59bdda62f654",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "63ba022a-0dae-51d1-ae94-2fb0124a09fa",
+        "initialMaterial": [
+          {
+            "itemId": "93dcce3c-dc80-50a6-bded-9909901bed60",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "d831952a-aa90-56b3-8cbd-89ac8774f884",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2e509dfc-0914-5d51-8425-992380aa960e",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "12ce1513-f67b-5c27-8d51-f24abf9088b2",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "8ef70f92-4b76-53fc-b79a-5018e37dc8f0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "1b76cb02-1e7a-5266-8e91-c836a795bf14",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e0b9bb4a-fc25-53e7-a346-6f1dbbe7df5a",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e6362e81-57a4-5779-abd2-6a2821194498",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2fd3e3e5-09ff-5454-bd69-ec3b7f0e45fd",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "947bb459-5fde-5ccf-a5d3-a7eb94d20e23",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "01308fce-cba6-572e-aa10-9afbad785183",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "6d861739-3e12-5a2d-9112-701e8c93d1bb",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "77ba9193-2133-58a0-8124-0210cd09944b",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "902b69e8-5069-5ec2-9225-9cd18a0c3cd0",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "8b5892d7-26f2-58a8-9cdb-270abb7524a1",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "c5cd3a0a-8a4d-5064-8ae4-90ff64d61cd7",
+      "streamId": "ca3b8350-ef60-5add-81c7-59bdda62f654",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "9769b3cb-c48f-5a2c-bfcb-1d50f71f6b86",
+        "items": [
+          "2fd3e3e5-09ff-5454-bd69-ec3b7f0e45fd",
+          "947bb459-5fde-5ccf-a5d3-a7eb94d20e23"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "support.presented",
+      "eventId": "7c032d53-79be-5de1-88ec-e9d1e3a24055",
+      "streamId": "ca3b8350-ef60-5add-81c7-59bdda62f654",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "app",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "supportId": "ac6b9ec0-2d51-5a19-a8e2-e3dda4ce1bd5",
+        "kind": "teilschritt",
+        "target": "ten.step",
+        "effect": "hinweis",
+        "channel": "visuell"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "1b7ab532-04e9-58c3-9715-0d91ba66b97f",
+      "streamId": "ca3b8350-ef60-5add-81c7-59bdda62f654",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "6d216070-6b0a-5fff-a857-7cbc007d1650",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "a9048b07-e121-578c-a432-60688f391d8f",
+      "streamId": "ca3b8350-ef60-5add-81c7-59bdda62f654",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "6c295865-050d-5dd1-b0ce-5e988d39ffce",
+        "inputId": "6d216070-6b0a-5fff-a857-7cbc007d1650",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "350bd7d6-e8fc-5e2b-84fc-01f0f542fe73",
+      "streamId": "ca3b8350-ef60-5add-81c7-59bdda62f654",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_claim"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "id": "neutraler-hinweis",
+  "description": "Explizit neutrale Darstellung ist kein verratender Zehnerhinweis.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "36c9ea20-8c3a-577a-b075-9d215d0beb30",
+      "streamId": "a4f2e4c3-a710-5b0f-a9cf-bae5411c7736",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "f9ebc103-a176-5abc-99c9-cd1ea53049ea",
+        "initialMaterial": [
+          {
+            "itemId": "8a86d88d-1ee4-5714-97f9-bce5247b38ec",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "1004a657-3c96-5bf1-a0ee-4ff8af341e32",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "08f28bd2-d386-5a03-8c01-1510de6c4b04",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f47ac185-e1f4-53d3-b710-34a667b13750",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e457109f-5d83-548e-a0c6-e07efc0bbff0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e779c2a5-6e71-5b3c-a649-b330b595126c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "828e40b6-0569-57e5-9960-b3e699e2ff6b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "b3168b47-8721-5dbe-bbe6-a63b0866c81e",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "36b47ede-34eb-535a-84a4-49752e661ffb",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "ffcc0cd4-4b77-532a-b903-6cd78d114f46",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d9c87838-9f44-58a3-8024-2e168732cc27",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "ab32d35c-181f-59e8-a2dd-431fac2d5576",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "c9256de5-0100-55ed-8f58-4fcdfd21c541",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a4b26b68-fffa-5042-883b-9f3897f727cc",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d5aebfc1-48aa-54b9-a831-056653867ed0",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "support.presented",
+      "eventId": "ff7f8792-03c3-51ce-976e-19ab38cd74fb",
+      "streamId": "a4f2e4c3-a710-5b0f-a9cf-bae5411c7736",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "app",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "supportId": "c12ec273-a5dc-5dc8-8f8f-e9bf25f3da30",
+        "kind": "aufmerksamkeit",
+        "target": "ten.step",
+        "effect": "neutral",
+        "channel": "visuell"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "dace29c8-db83-56cf-b3a7-e296b895a6db",
+      "streamId": "a4f2e4c3-a710-5b0f-a9cf-bae5411c7736",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "61189cc1-1179-5a7f-87f0-71e2de69c3d3",
+        "items": [
+          "36b47ede-34eb-535a-84a4-49752e661ffb",
+          "ffcc0cd4-4b77-532a-b903-6cd78d114f46"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "ce571dd1-1e8f-5ef8-b7ac-93982502e7fe",
+      "streamId": "a4f2e4c3-a710-5b0f-a9cf-bae5411c7736",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "85f0ffd4-f2bb-5f02-a9d8-5743dbc90884",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "2fddf121-124c-51f9-baea-6fae0e20ac41",
+      "streamId": "a4f2e4c3-a710-5b0f-a9cf-bae5411c7736",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "82214a93-52eb-5c3d-a456-a6244de5ed22",
+        "inputId": "85f0ffd4-f2bb-5f02-a9d8-5743dbc90884",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "c312f460-117f-595e-9abd-a2518b03839d",
+      "streamId": "a4f2e4c3-a710-5b0f-a9cf-bae5411c7736",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_claim"
+  }
+}

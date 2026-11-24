@@ -1,0 +1,211 @@
+{
+  "id": "luecke-vor-zug",
+  "description": "Luecke verhindert Weg-/Hilfeschluss, spaetere 15 bleibt anerkannt.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "3681e691-5c18-5b45-8e30-ca5b3666923d",
+      "streamId": "78e62c58-d726-5bc7-9cc4-ec9cb1cd7ac0",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "136b7f4c-772a-5b81-be03-e98e44e069f9",
+        "initialMaterial": [
+          {
+            "itemId": "3c7061a9-aa7e-51b2-bb0c-8b19bf5b2e7d",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "caa87f07-d59b-50cd-8565-e90d71cbce4b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "5707cf07-4dbb-503f-8a38-01378367b547",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "4aa2136d-4829-5234-bb64-32ca2cf5709a",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "5bcbb509-4df9-5045-9a71-f6dde4525d0e",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "8f4f7980-588d-5d6a-9dce-b7b790f925fb",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "99d0496f-9890-5b1f-b892-11219cd81f68",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "8e4672fc-6f74-556f-bb5f-3e1cdaf3166c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "5e4a1c26-b633-5cb6-b918-c8f9ea53c3df",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "2af0f078-7774-51c7-b120-1c68fcc7ea44",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "7dc9bb27-8d5a-5a38-9be5-6fac4820ccfc",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f20230ed-6eb8-5356-a163-630cf1fddde4",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "399de7c7-a559-540a-9c28-eeef70330507",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "94ed4eea-5c2f-58c1-bd7c-b891173d74f8",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "24b4759c-d0ab-5e09-aaa4-7e816669f59f",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "condition.observed",
+      "eventId": "ace5e302-e91b-521f-9427-4bbb05e2f0e5",
+      "streamId": "78e62c58-d726-5bc7-9cc4-ec9cb1cd7ac0",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "kind": "gap",
+        "detail": "Offene synthetische Gegenprobe",
+        "sinceSeq": 1
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "5cd6a056-05b2-5927-a47d-5193195c45f3",
+      "streamId": "78e62c58-d726-5bc7-9cc4-ec9cb1cd7ac0",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "088f24bb-1847-51a0-b7d0-b4379148a314",
+        "items": [
+          "5e4a1c26-b633-5cb6-b918-c8f9ea53c3df",
+          "2af0f078-7774-51c7-b120-1c68fcc7ea44"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "17542105-5051-543f-8552-d1f15325a0de",
+      "streamId": "78e62c58-d726-5bc7-9cc4-ec9cb1cd7ac0",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "c17dfa8a-6972-5468-a2bc-705f36cdc935",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "10c5e4e9-4823-5b7f-925a-54c960d6aa52",
+      "streamId": "78e62c58-d726-5bc7-9cc4-ec9cb1cd7ac0",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "458eb48c-7494-52b0-90cb-92839dc69211",
+        "inputId": "c17dfa8a-6972-5468-a2bc-705f36cdc935",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "bb5e17e4-267c-5193-9f6b-f6af304adb27",
+      "streamId": "78e62c58-d726-5bc7-9cc4-ec9cb1cd7ac0",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "undecidable",
+    "attempt.ten.guided": "undecidable",
+    "attempt.alternative": "undecidable",
+    "attempt.path.displayed": "undecidable"
+  }
+}

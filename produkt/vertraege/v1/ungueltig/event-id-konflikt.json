@@ -1,0 +1,210 @@
+{
+  "id": "event-id-konflikt",
+  "description": "Absichtlich ungueltige offene Gegenprobe: event-id-konflikt",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "42eb82c7-13f6-5876-8426-468cab551d5c",
+      "streamId": "b94531a8-3478-54bd-a7d6-f94f1bf1d03a",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "2b69c834-64db-5acb-b046-004dceba365e",
+        "initialMaterial": [
+          {
+            "itemId": "1c2b7099-08fc-5a20-b22c-09e55381fe65",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "b0199fea-28df-5a92-8135-8c7db01351c6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "47e2561a-2073-5113-a954-a2e114f98b6d",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "b668c5f6-deab-5f9c-916a-cc05e61852e9",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0d916de5-a681-5ec7-8155-14d2c8b920b6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "fd71ff68-8400-57bc-b42d-b993542e059b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7b797a57-d254-59b3-b077-78388d075f68",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "4bdec4e7-9b90-5d19-a216-f07562016ac6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "87bce18e-4709-5257-b5e3-150094a7dda9",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "3691db48-944a-5ac9-8d33-e75e868360f8",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "fc2ea44b-b9cf-50a8-a7bb-9815543e3b23",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "ae925fa2-4f86-531d-aba8-3284ec7d7fac",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "8f048a8e-8c6a-5cf5-b84e-024ea986849f",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "01c180fe-81cf-54f7-bd07-590f8814491f",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "945fff80-5d74-5f92-8d92-6ab5e67ff9e8",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "3e758372-2001-577b-a248-b96a48f3d5ff",
+      "streamId": "b94531a8-3478-54bd-a7d6-f94f1bf1d03a",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "cd03c519-ad14-57e8-97f6-cc84a6639f29",
+        "items": [
+          "87bce18e-4709-5257-b5e3-150094a7dda9",
+          "3691db48-944a-5ac9-8d33-e75e868360f8"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "39046b72-0545-5c45-b2ba-a1986e17569c",
+      "streamId": "b94531a8-3478-54bd-a7d6-f94f1bf1d03a",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "7a9e4adc-c44a-5aea-831f-fe22e0257927",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "b8d5bcf2-c622-5879-b6d0-35c958a5b7f5",
+      "streamId": "b94531a8-3478-54bd-a7d6-f94f1bf1d03a",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "d9f39b66-78f2-56ba-938f-aa7924f1adb2",
+        "inputId": "7a9e4adc-c44a-5aea-831f-fe22e0257927",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "69f685c4-1594-55d1-b4eb-60ce8a0efc20",
+      "streamId": "b94531a8-3478-54bd-a7d6-f94f1bf1d03a",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "3e758372-2001-577b-a248-b96a48f3d5ff",
+      "streamId": "b94531a8-3478-54bd-a7d6-f94f1bf1d03a",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "cd03c519-ad14-57e8-97f6-cc84a6639f29",
+        "items": [
+          "87bce18e-4709-5257-b5e3-150094a7dda9",
+          "3691db48-944a-5ac9-8d33-e75e868360f8"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "tastatur"
+      }
+    }
+  ],
+  "expectedError": "event_id_conflict"
+}

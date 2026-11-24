@@ -1,0 +1,130 @@
+{
+  "id": "abbruch",
+  "description": "Abbruch ist ein belegtes Veto gegen eine Abgabeaussage.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "7df144e3-6a30-5fca-a51e-46b0b5e8cd80",
+      "streamId": "f506f56e-c589-507e-a4fa-085ae5bc4fd1",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "8801a824-f001-5957-abec-176aa1e91d9b",
+        "initialMaterial": [
+          {
+            "itemId": "d0cc5342-2e5b-5afd-967b-820424bf1d3d",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7998e573-2a05-51d7-a755-44a81978abe0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "8be157a7-4797-5410-8e09-9f755c38df8b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e15ee690-297c-5df9-95bf-60c2963f5809",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "925135e0-44f4-5a02-b5ea-36ed3c036792",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "5c0b856c-1db0-52ac-81ee-d3ffc2c62a2b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "36702f06-e9a6-546d-afa7-33981e55fee2",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0d6b821d-3250-5fe6-8297-3aa20ab82e6c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e56e3607-3052-5510-8918-514cb0d55b7c",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d11fe980-ed74-5e6c-83a4-d6dfab51aa18",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d68b2c77-0890-5a33-92a9-19fcb6796f47",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "934615d8-ef8b-5450-bc20-19fa25c34f5b",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "c088911c-00d7-5f01-8c79-64c24d2f54d0",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "1bd20164-a6e6-542c-883c-c075bfef529d",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "6d83135e-ef24-5948-8725-41544f328f16",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "3ba0d714-e079-5c8b-944f-2061ddf7aae3",
+      "streamId": "f506f56e-c589-507e-a4fa-085ae5bc4fd1",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "aborted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_not_claim",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

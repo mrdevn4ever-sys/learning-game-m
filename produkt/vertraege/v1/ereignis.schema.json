@@ -1,0 +1,1072 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chnobel.local/vertraege/v1/ereignis.schema.json",
+  "title": "ereignis v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "type",
+    "eventId",
+    "streamId",
+    "seq",
+    "occurredAt",
+    "actor",
+    "candidate",
+    "payload"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "type": {
+      "enum": [
+        "attempt.opened",
+        "attempt.closed",
+        "input.captured",
+        "recognition.proposed",
+        "answer.committed",
+        "response.retracted",
+        "material.moved",
+        "action.undone",
+        "support.presented",
+        "mode.changed",
+        "artifact.saved",
+        "self_report.recorded",
+        "condition.observed",
+        "content.withdrawn",
+        "observation.invalidated",
+        "artifact.deleted",
+        "profile.erasure_requested"
+      ]
+    },
+    "eventId": {
+      "type": "string",
+      "format": "uuid",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "streamId": {
+      "type": "string",
+      "format": "uuid",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "occurredAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "monotonic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bootId",
+        "ns"
+      ],
+      "properties": {
+        "bootId": {
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "ns": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "actor": {
+      "enum": [
+        "child",
+        "app",
+        "system"
+      ]
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "build",
+        "content",
+        "rules"
+      ],
+      "properties": {
+        "build": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "rules": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      }
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "attempt.opened"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "taskContract",
+              "taskVersion",
+              "family",
+              "representation",
+              "target",
+              "startingState",
+              "profileId",
+              "initialMaterial"
+            ],
+            "properties": {
+              "taskContract": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "taskVersion": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "family": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "representation": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "target": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "startingState": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "profileId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "initialMaterial": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "itemId",
+                    "zone",
+                    "origin"
+                  ],
+                  "properties": {
+                    "itemId": {
+                      "type": "string",
+                      "format": "uuid",
+                      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                    },
+                    "zone": {
+                      "enum": [
+                        "left",
+                        "right",
+                        "spare"
+                      ]
+                    },
+                    "origin": {
+                      "const": "task"
+                    }
+                  }
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "system"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "attempt.closed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "reason"
+            ],
+            "properties": {
+              "reason": {
+                "enum": [
+                  "submitted",
+                  "aborted",
+                  "interrupted"
+                ]
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "system"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "input.captured"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "inputId",
+              "mode"
+            ],
+            "properties": {
+              "inputId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "mode": {
+                "enum": [
+                  "handschrift_finger",
+                  "handschrift_stift",
+                  "ziffernblock",
+                  "tastatur",
+                  "auswahl"
+                ]
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "child"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "recognition.proposed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "recognitionId",
+              "inputId",
+              "reading",
+              "confidence",
+              "alternatives"
+            ],
+            "properties": {
+              "recognitionId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "inputId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "reading": {
+                "type": "string",
+                "pattern": "^-?[0-9]{1,9}$"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "alternatives": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^-?[0-9]{1,9}$"
+                },
+                "minItems": 0,
+                "uniqueItems": true
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "app"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "answer.committed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "answerId",
+              "inputId",
+              "value",
+              "origin"
+            ],
+            "properties": {
+              "answerId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "inputId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "value": {
+                "type": "integer",
+                "minimum": -999999999,
+                "maximum": 999999999
+              },
+              "origin": {
+                "enum": [
+                  "direkt",
+                  "automatisch_uebernommen",
+                  "bestaetigt",
+                  "korrigiert"
+                ]
+              },
+              "fromRecognitionId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "origin": {
+                      "const": "direkt"
+                    }
+                  }
+                },
+                "then": {
+                  "not": {
+                    "required": [
+                      "fromRecognitionId"
+                    ]
+                  }
+                },
+                "else": {
+                  "required": [
+                    "fromRecognitionId"
+                  ]
+                }
+              }
+            ]
+          },
+          "actor": {
+            "enum": [
+              "child",
+              "app"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "response.retracted"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "answerId"
+            ],
+            "properties": {
+              "answerId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "child"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "material.moved"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId",
+              "items",
+              "fromZone",
+              "toZone",
+              "via"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uuid",
+                  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "fromZone": {
+                "enum": [
+                  "left",
+                  "right",
+                  "spare"
+                ]
+              },
+              "toZone": {
+                "enum": [
+                  "left",
+                  "right",
+                  "spare"
+                ]
+              },
+              "via": {
+                "enum": [
+                  "ziehen",
+                  "antippen_ablegen",
+                  "tastatur",
+                  "voiceover",
+                  "schaltersteuerung",
+                  "app_demo"
+                ]
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "child",
+              "app"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "action.undone"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "moveId"
+            ],
+            "properties": {
+              "moveId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "child",
+              "app"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "support.presented"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "supportId",
+              "kind",
+              "target",
+              "effect",
+              "channel"
+            ],
+            "properties": {
+              "supportId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "kind": {
+                "enum": [
+                  "aufmerksamkeit",
+                  "teilschritt",
+                  "loesungsweg",
+                  "vorlesen",
+                  "demo"
+                ]
+              },
+              "target": {
+                "enum": [
+                  "ten.step",
+                  "doubles.step",
+                  "result",
+                  "navigation"
+                ]
+              },
+              "effect": {
+                "enum": [
+                  "neutral",
+                  "hinweis",
+                  "vorgabe"
+                ]
+              },
+              "channel": {
+                "enum": [
+                  "visuell",
+                  "audio",
+                  "voiceover",
+                  "haptik"
+                ]
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "app"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "mode.changed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "to"
+            ],
+            "properties": {
+              "from": {
+                "enum": [
+                  "handschrift_finger",
+                  "handschrift_stift",
+                  "ziffernblock",
+                  "tastatur",
+                  "auswahl"
+                ]
+              },
+              "to": {
+                "enum": [
+                  "handschrift_finger",
+                  "handschrift_stift",
+                  "ziffernblock",
+                  "tastatur",
+                  "auswahl"
+                ]
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "child"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "artifact.saved"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "artifactId",
+              "origin",
+              "digest",
+              "mediaType"
+            ],
+            "properties": {
+              "artifactId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "origin": {
+                "enum": [
+                  "selbst_erstellt",
+                  "importiert"
+                ]
+              },
+              "digest": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "mediaType": {
+                "enum": [
+                  "drawing",
+                  "audio",
+                  "photo",
+                  "text"
+                ]
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "child"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "self_report.recorded"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "reportId",
+              "target",
+              "value"
+            ],
+            "properties": {
+              "reportId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "target": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "value": {
+                "type": "boolean"
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "child"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "condition.observed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "detail"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "gap",
+                  "interruption",
+                  "clock_unreliable",
+                  "permission_missing"
+                ]
+              },
+              "detail": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "sinceSeq": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "kind": {
+                      "const": "gap"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "sinceSeq"
+                  ]
+                },
+                "else": {
+                  "not": {
+                    "required": [
+                      "sinceSeq"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "actor": {
+            "enum": [
+              "system"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "content.withdrawn"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "content",
+              "reason"
+            ],
+            "properties": {
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "system"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "observation.invalidated"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "eventIds",
+              "reason"
+            ],
+            "properties": {
+              "eventIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uuid",
+                  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "system"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "artifact.deleted"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "artifactId"
+            ],
+            "properties": {
+              "artifactId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "system"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "profile.erasure_requested"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "profileId"
+            ],
+            "properties": {
+              "profileId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              }
+            }
+          },
+          "actor": {
+            "enum": [
+              "system"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "material.moved"
+          }
+        }
+      },
+      "then": {
+        "if": {
+          "properties": {
+            "actor": {
+              "const": "app"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "payload": {
+              "properties": {
+                "via": {
+                  "const": "app_demo"
+                }
+              }
+            }
+          }
+        },
+        "else": {
+          "properties": {
+            "payload": {
+              "properties": {
+                "via": {
+                  "not": {
+                    "const": "app_demo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "answer.committed"
+          }
+        }
+      },
+      "then": {
+        "if": {
+          "properties": {
+            "payload": {
+              "properties": {
+                "origin": {
+                  "const": "automatisch_uebernommen"
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "actor": {
+              "const": "app"
+            }
+          }
+        },
+        "else": {
+          "properties": {
+            "actor": {
+              "const": "child"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

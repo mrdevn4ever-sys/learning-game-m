@@ -1,0 +1,137 @@
+{
+  "id": "weg-zwischenzustand",
+  "description": "Ein wirksamer Weg ohne Abschluss bleibt fuer Abgabeaussagen offen.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "6891582c-2688-5dbc-a13d-2e2b6be8a0a4",
+      "streamId": "65f151f3-9215-517c-9d89-5fb7d7f94742",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "dc5140c2-72be-53b4-ba96-e053d91e5a1c",
+        "initialMaterial": [
+          {
+            "itemId": "a84e13b4-6535-522e-b5e2-6caeef5b7a4c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e8b710eb-299b-5b1a-b6b1-3188f04051f6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "fb5ea012-5dac-554b-9841-b42b99a7b728",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7155ea85-4432-5999-a99d-9b7208a3f708",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "cf74945d-6470-5ef5-8e50-b6fee53cabdd",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e7d52908-7f0a-5418-b7c5-d26de8582b9c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2aceec01-200c-5d90-93bb-09d224fac7fb",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7d30018b-d2ba-5612-a2db-c6fef841f3a5",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f741d1dd-943e-561d-b730-365a1a70cb4e",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "e268c206-607a-5604-bdd5-53a90f195b02",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "5e249aab-4fa4-5a00-a050-8ce03a4416e6",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a92da31e-cb79-5dcb-93ad-268a8087698b",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "8ca30201-83ec-5896-a0a4-815de7ca37fa",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d0e5183c-32d2-5142-9b34-b7ee5535499b",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "148376b8-9f23-5351-869e-1954fd5d1a88",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "3c2b4363-84e7-5836-8714-50fd48128cac",
+      "streamId": "65f151f3-9215-517c-9d89-5fb7d7f94742",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "45b171b8-017d-567c-aa81-c8c3fe0b4af1",
+        "items": [
+          "f741d1dd-943e-561d-b730-365a1a70cb4e",
+          "e268c206-607a-5604-bdd5-53a90f195b02"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "undecidable",
+    "attempt.ten": "undecidable",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "undecidable"
+  }
+}

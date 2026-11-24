@@ -1,0 +1,149 @@
+{
+  "id": "doppelte-plaettchen",
+  "description": "Absichtlich ungueltige offene Gegenprobe: doppelte-plaettchen",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "a3ce7d06-1b6e-592d-8401-813fcdfa2c27",
+      "streamId": "e74defc7-b924-5e2e-8575-b059696918a6",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "63039675-bde3-5928-8662-b779f11e6832",
+        "initialMaterial": [
+          {
+            "itemId": "9ec6697c-624d-5bce-8354-9edfb40d3a44",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7b92c396-e132-5d61-b8f5-aae383122e51",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "d1944aea-a42b-54ec-abca-f77c4448e346",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2623992b-7460-5368-ae98-a63a235aea4b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "8adf7477-26d7-53fe-a17a-071c872b484e",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "af7e4f3d-d329-5780-9e3c-1815f1d8d8e0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7ca5f133-3044-5855-be6a-f7301ab88e26",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "d9c446b1-1bd9-5e29-9510-1be08b7d9a1c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "17dbb067-538d-5911-9b63-3078917b9599",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a252dbb4-fbf1-517d-9be9-cdd4961cad67",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "3d8384dc-f875-5184-8023-a0d0738cadf4",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "56669939-f411-5a63-b653-e7146345f415",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "2bdb7442-caa2-5bea-8832-bfc28aa42192",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "4009f33e-fae8-5ebb-a7d4-cc0a2158960b",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "fc1416b6-6ffb-50c7-85f3-9d23251d5efd",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "1d5ba2fd-012a-5eb0-a8ae-942e4513d9dc",
+      "streamId": "e74defc7-b924-5e2e-8575-b059696918a6",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "eefcb90c-7d8a-5329-be71-969a5f492322",
+        "items": [
+          "17dbb067-538d-5911-9b63-3078917b9599",
+          "a252dbb4-fbf1-517d-9be9-cdd4961cad67",
+          "17dbb067-538d-5911-9b63-3078917b9599"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "8aee2176-67fe-5c84-a769-b8c6c14a7d15",
+      "streamId": "e74defc7-b924-5e2e-8575-b059696918a6",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expectedError": "schema"
+}

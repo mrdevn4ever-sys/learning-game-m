@@ -1,0 +1,191 @@
+{
+  "id": "alternativ-7-7-1",
+  "description": "Ein gueltiger anderer Weg: ein Plaettchen der Acht abtrennen.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "79f6ef6f-3e09-5f2c-b247-5d3000658b8e",
+      "streamId": "446c9d2a-2c06-5838-9e60-c80e3088d628",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "76386a30-a071-5f43-a07e-1b8bb4482362",
+        "initialMaterial": [
+          {
+            "itemId": "8987a14b-5d8e-5837-b5b0-4374f33c96ca",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "5698dcc3-567b-5439-936f-f9c3881f9648",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "faf4fe0c-71dc-5d1a-ad5b-0e87b23c987b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0869076b-5a31-58cd-9b09-d392bb7691ac",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "baa875e4-f0ed-5a00-9ecf-03c1f63bb55c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "efdf4b32-03d9-515c-a954-976d6687d958",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "36c00a5b-6a06-5789-b626-54c81bd487bb",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "3f363c46-00bf-59ee-bec1-5a75ec9f6bd0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2b3b1102-e412-56c6-9b1b-8226ef01a044",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a01b8788-9d93-5153-8039-08c7d865e0d3",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "6e3f52c4-a0ce-5edb-8beb-a6e095eafea7",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "fc20c408-b210-5f54-b8f5-a2abbefead18",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "75f3d225-46ec-5952-a95e-9bf3a6894432",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "2e96272e-c37d-5ad6-9987-44bbb97d052e",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "6bf3e2a7-c20b-5365-aa37-29e754230986",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "ea020427-4b91-5b89-9aff-c4949166257e",
+      "streamId": "446c9d2a-2c06-5838-9e60-c80e3088d628",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "b592133f-3a05-5bb4-b836-73996257316d",
+        "items": [
+          "8987a14b-5d8e-5837-b5b0-4374f33c96ca"
+        ],
+        "fromZone": "left",
+        "toZone": "spare",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "0caee4fa-5c36-5fab-896c-effdae93bae5",
+      "streamId": "446c9d2a-2c06-5838-9e60-c80e3088d628",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "86df31c3-324e-5841-a856-89aff7c00b5c",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "988cc1f9-d0d2-5c9a-af09-cd1ec6a1f2cc",
+      "streamId": "446c9d2a-2c06-5838-9e60-c80e3088d628",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "00d6a563-9a99-5a0a-a8da-0f151070f820",
+        "inputId": "86df31c3-324e-5841-a856-89aff7c00b5c",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "568d6dad-9b4c-5832-aa21-f0c17cc96e32",
+      "streamId": "446c9d2a-2c06-5838-9e60-c80e3088d628",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_claim",
+    "attempt.path.displayed": "must_claim"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "id": "sequenzluecke",
+  "description": "Auch ohne gap-Meldung wird eine Sequenzluecke erkannt.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "8d6424f2-04e3-510c-9648-e328782d077d",
+      "streamId": "9a76db3d-9de2-5cbc-8a20-99fd31be6ade",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "51514b64-a64b-5c88-8816-fc806251a67e",
+        "initialMaterial": [
+          {
+            "itemId": "d5e779b4-5eeb-52ca-9637-f10f58968845",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "71174635-ed17-54fc-9fd6-e58ec003aff0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e8a025f7-128d-580a-889c-59f0a74fc1a8",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "1e4fff28-ed39-55e4-8010-75b5d1f13d05",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "166c17fd-52e1-5e48-8a9c-9b6ed2c9b857",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "288d712d-ec92-5fa6-87da-fc940f9c7172",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "a69110bf-7b42-5d48-b374-8f50e9e8d15b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "284319b5-525c-559c-8a99-13c0a62a4482",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0aba49a0-6723-590e-923e-b4c921127ff0",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "dc741e50-6078-5c1c-a4ed-7c11b11b7871",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "61a98e30-8a44-51a2-992b-565bb914002e",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "9cf46690-8508-5a61-8137-58e4f388e50c",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "5aebd1e0-de33-575a-8335-40ac74707101",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "8988da0c-0520-5155-8e91-400b0b9cf68a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "0fb506fe-c6a0-5961-b3ba-3a6940a8f07f",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "de3d58d2-4fb1-5a39-b424-003bad7ab0ef",
+      "streamId": "9a76db3d-9de2-5cbc-8a20-99fd31be6ade",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "b8b28fd2-8b64-55d6-9013-5193f27c37d4",
+        "items": [
+          "0aba49a0-6723-590e-923e-b4c921127ff0",
+          "dc741e50-6078-5c1c-a4ed-7c11b11b7871"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "160a1e6b-bfa6-56b0-bcd4-aebac5bb1816",
+      "streamId": "9a76db3d-9de2-5cbc-8a20-99fd31be6ade",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "2cd0753c-a820-50fe-b129-03c8412b0ad1",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "2f5039ba-1825-52bb-aa78-a3d6460af954",
+      "streamId": "9a76db3d-9de2-5cbc-8a20-99fd31be6ade",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "670f8d06-ce30-5e43-9812-cc55608bd55c",
+        "inputId": "2cd0753c-a820-50fe-b129-03c8412b0ad1",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "d7380f1d-1177-5fe6-ab6b-130eafc8d6e2",
+      "streamId": "9a76db3d-9de2-5cbc-8a20-99fd31be6ade",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "undecidable",
+    "attempt.ten.guided": "undecidable",
+    "attempt.alternative": "undecidable",
+    "attempt.path.displayed": "undecidable"
+  }
+}
