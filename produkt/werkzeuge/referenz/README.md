@@ -5,6 +5,11 @@ Freigabe und kein Nachweis für reale Kinder, Handschrifterkennung oder die
 Darstellung auf einem iPad.** Der Prüfer liest nur lokale JSON-Daten. Er hat
 keinen Netzwerkpfad, schreibt keine Profile und löscht keine Anhänge.
 
+Reparaturversuch 1 zu F01–F03 ist in [REPARATUR-1.md](REPARATUR-1.md)
+abgegrenzt. Die fachlichen Vertragsbefunde F04–F06 sind weiterhin offen;
+die bisherigen Regeln, Schemas, Katalog-Sollwerte und 165 Bestandstests wurden
+nicht umgeschrieben. Ein lokaler Testlauf ist keine Selbstfreigabe.
+
 ## Installation und tatsächlicher Testweg
 
 Python ab 3.11; geprüft in der eigenen Python-3.14.7-Umgebung. Abhängigkeiten
@@ -128,18 +133,35 @@ verlangt ausdrücklich `falsch`, niemals bloss das Fehlen eines positiven Werts.
 | `support.ten.before` | wirksame Zehnerhandlung hat vorher einen zielbezogenen Hinweis/eine Demo | nur bei lückenlos beobachtetem Präfix ohne solche Hilfe falsch; ohne wirksame Zielhandlung unbekannt |
 | `support.doubles.before` | entsprechend für die wirksame 7+7+1-Handlung | gleiche Grenze; derzeit keine Freiheitsbehauptung für diesen Weg |
 
-Der Aktionsanker ist die Sequenz, an der die aktuelle Darstellung erstmals
-vollständig erreicht wurde. Ein späterer Hinweis verändert diesen Anker nicht.
-Verlässt ein Zug/Undo die Darstellung, wird er entfernt; erneutes Erreichen wird
-neu verankert. Historische Handlung und aktuell wirksame Darstellung sind getrennt.
-Ein Hinweis zwischen zwei Einzelzügen liegt vor dem vollendeten Zehnerschritt.
+Der Aktionsanker stammt aus der letzten beobachteten **Materialhandlung des
+Kindes** (Bewegung oder eigenes Undo), nicht aus einem beliebigen Brettübergang.
+Er ist nur für eine aktuell belegte Kind-Darstellung nutzbar. Ein späterer
+Hinweis allein ändert ihn nicht. Ein eigener Kind-Umweg und dessen Undo erneuern
+ihn; nach Hilfe bleibt die aktuelle Darstellung dadurch angeleitet. Ein späterer
+App-Umweg mit App-Undo erzeugt hingegen keine neue Kind-Handlung: die erhaltene
+Kind-Bewegung behält ihren früheren Zeitpunkt. Historische Handlung und aktuell
+wirksame Darstellung sind getrennt. Ein Hinweis zwischen zwei Einzelzügen liegt
+vor dem vollendeten Zehnerschritt.
 
-Bei einer Lücke kann eine nicht beobachtete Rücknahme oder Bewegung nicht
-verneint werden: der Materialzustand bleibt konservativ unbekannt, ebenso die
-bis dahin aktive Antwort. Eine **danach explizit abgegebene 15** kann trotzdem
-anerkannt werden. Eine Lücke nach dieser Antwort macht deren Aktualität erneut
-unbekannt. Ein vollständiger Neuaufbau des Materials nach Lücke ist in v1 noch
-kein implementierter Nachweisweg; dafür wäre ein eigener Snapshot-Vertrag nötig.
+Bei einer Lücke werden Antwortaktivität, Modus, Positionen und aktuelle
+Undo-Abhängigkeiten unbekannt, nicht nachgewiesen falsch. Eine historisch bekannte
+Antwort mit unbekannter Aktivität darf ausdrücklich zurückgenommen werden;
+bekannt zurückgenommene IDs bleiben dagegen inaktiv. Eine **danach explizit
+abgegebene 15** ist wieder erreichbar. Eine weitere Lücke macht deren Aktualität
+erneut unbekannt. `input.captured` oder `mode.changed` beobachtet den Modus neu;
+ein danach unmittelbar widersprechender Modus bleibt ein Integritätsfehler.
+
+Zonenkenntnis wird je Plättchen geführt. Jede beobachtete Bewegung und jedes
+mögliche Undo belegt die neue Zone und erzwingt ab dann wieder die nächste
+Ausgangszonenprüfung. Bekannte frische Stackeinträge über einer unbekannten Basis
+bleiben verbindliche Undo-Abhängigkeiten. Bereits belegt beendete IDs und feste
+historische Referenzen werden durch eine Lücke nicht wieder gültig. Ein
+äusseres Undo belegt zudem die Inaktivität seiner früheren abhängigen Züge.
+
+Sind alle Plättchenpositionen und die benötigte Herkunft erneut beobachtet,
+kann der aktuelle Materialweg wieder belegt werden (offene Gegenprobe R09).
+Eine bekannte Zone allein rekonstruiert keine verlorene Provenienz. Frühere
+unbeobachtete Hilfe bleibt unbekannt; daraus wird keine freie Strategie erfunden.
 
 ## Ereignisvertrag für den Swift-Abgleich
 
@@ -171,9 +193,9 @@ Alle Hüllen und Payloads sind geschlossen (`additionalProperties: false`).
 | `input.captured` | child | neue `inputId`, `mode`: handschrift_finger/handschrift_stift/ziffernblock/tastatur/auswahl |
 | `recognition.proposed` | app | neue `recognitionId`, frühere `inputId`, numerische `reading` als Zeichenfolge, confidence, alternatives; nur Handschrifteingaben |
 | `answer.committed` | child, automatisch app | neue `answerId`, `inputId`, ganzzahliger value, origin; nicht-direkt zusätzlich `fromRecognitionId` |
-| `response.retracted` | child | aktuell aktive `answerId`; keine unbekannte oder bereits zurückgenommene Antwort |
+| `response.retracted` | child | historisch bekannte `answerId`; bekannte Inaktivität sperrt, unbekannte Aktualität nach Lücke ist kein sicherer Widerspruch |
 | `material.moved` | child oder app | neue `moveId`, eindeutige `items`, fromZone, toZone, via; Zone muss stimmen, Bewegung muss wirksam sein |
-| `action.undone` | ursprünglicher Akteur | frühere aktive `moveId`; keine spätere Bewegung derselben Plättchen darf davon abhängen |
+| `action.undone` | ursprünglicher Akteur | bekannte `moveId`; bekannte Inaktivität oder aktive Abhängigkeit sperrt, ungesicherte Beziehungen bleiben unbekannt |
 | `support.presented` | app | neue supportId, kind, target, effect, channel; Demo, Teilschritt und Lösungsweg können nicht neutral sein |
 | `mode.changed` | child | from/to; tatsächlicher aktueller Ausgangsmodus und anderer Zielmodus |
 | `artifact.saved` | child | neue artifactId, origin selbst_erstellt/importiert, digest, mediaType; keine implizite Leistungsbewertung |
@@ -229,8 +251,10 @@ Eingabe des Protokolls, kein unabhängiger Beleg des Bildschirminhalts.
 - `korrigiert`: Kind, frühere Lesart derselben Eingabe, anderer Zahlenwert.
 - `automatisch_uebernommen`: App, gleicher Wert wie die frühere Lesart; bleibt
   fachlich unbekannt, bis eine neue explizite Antwort vorliegt.
-- Vor einer neuen Antwort muss die aktive zurückgenommen werden. Eine reine
-  `recognition.proposed` ist niemals eine aktive fachliche Antwort.
+- Vor einer neuen Antwort muss eine bekannt aktive Antwort zurückgenommen
+  werden. Unbekannte Aktualität nach Lücke ist keine bewiesene aktive Antwort.
+  Die neue definitive Antwort belegt ihre Aktualität und die Inaktivität älterer
+  IDs neu. Eine reine `recognition.proposed` ist niemals eine aktive fachliche Antwort.
 
 Damit erzeugt die Folge Lesart 16 → Korrektur 15 auch in **jedem Zwischenpräfix**
 keinen fachlichen Fehler. Die bestätigte 15 wird unabhängig von einem fehlenden,

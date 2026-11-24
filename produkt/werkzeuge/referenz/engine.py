@@ -110,7 +110,9 @@ class Replay:
         self.histories = {item: [] for item in self.initial}
         self.inputs, self.recognitions, self.answers, self.moves, self.artifacts = {}, {}, {}, {}, {}
         self.identities = set(self.initial)
-        self.active_moves = set()
+        self.move_activity: dict[str, Truth] = {}
+        self.move_dependencies: dict[str, set[str]] = {}
+        self.answer_activity: dict[str, Truth] = {}
         self.active_answer = None
         self.support = []
         self.closed = None
@@ -118,8 +120,8 @@ class Replay:
         self.history_ten = False
         self.seen_events = set()
         self.gap_cursor = 0
-        self.board_known = True
         self.ten_seq = self.doubles_seq = None
+        self.child_action_seq = None
         self.current_mode = None
 
     def declare(self, identifier: str) -> None:
@@ -131,15 +133,39 @@ class Replay:
         return collection[identifier]
 
     def board(self) -> tuple[Truth, Truth, Truth]:
-        if not self.board_known:
+        if any(zone is None for zone in self.positions.values()):
             return (Truth.UNKNOWN,) * 3
         counts = Counter(self.positions.values())
         ten = counts == Counter(left=10, right=5)
         doubles = counts == Counter(left=7, right=7, spare=1)
         displaced = [item for item in self.positions if self.positions[item] != self.initial[item]]
-        actors = {self.moves[self.histories[item][-1]]["actor"] for item in displaced}
-        child = bool(displaced) and actors == {"child"}
-        return truth(ten and child), truth(ten and "app" in actors), truth(doubles and child)
+        # Eine bekannte Zone ist noch kein Beleg einer bekannten Herkunft.
+        actors = {self.moves[self.histories[item][-1]]["actor"]
+                  if self.histories[item] and self.histories[item][-1] is not None
+                  else None for item in displaced}
+        child = (Truth.FALSE if not displaced or "app" in actors else
+                 Truth.UNKNOWN if None in actors else Truth.TRUE)
+        app = (Truth.TRUE if "app" in actors else
+               Truth.UNKNOWN if None in actors else Truth.FALSE)
+        return (conjunction([truth(ten), child]), conjunction([truth(ten), app]),
+                conjunction([truth(doubles), child]))
+
+    def lose_current_knowledge(self) -> None:
+        """Luecke: Aktualitaet verlieren, bewiesene Endzustaende behalten.
+
+        Zurueckgenommene IDs werden nicht erneut aktiv: ein neuer Zug/eine neue
+        Antwort braucht eine neue ID. [None] ist eine unbekannte Stackbasis;
+        frische Bewegungen darueber sind wieder sichere Undo-Abhaengigkeiten.
+        """
+        for activity in (self.answer_activity, self.move_activity):
+            for identifier, value in activity.items():
+                if value == Truth.TRUE:
+                    activity[identifier] = Truth.UNKNOWN
+        self.active_answer = None
+        self.current_mode = None
+        self.positions = {item: None for item in self.initial}
+        self.histories = {item: [None] for item in self.initial}
+        self.child_action_seq = None
 
     def before(self, target: str, seq: int | None) -> Truth:
         if seq is None:
@@ -153,10 +179,7 @@ class Replay:
     def consume(self, event: dict) -> None:
         typ, p, seq = event["type"], event["payload"], event["seq"]
         while self.gap_cursor < len(self.gaps) and self.gaps[self.gap_cursor] <= seq:
-            # Fehlende Ereignisse koennen einen Wert zuruecknehmen oder Material aendern.
-            # Eine SPAETERE definitive Antwort kann das Ergebnis erneut belegen.
-            self.active_answer = None
-            self.board_known = False
+            self.lose_current_knowledge()
             self.gap_cursor += 1
         require(self.closed is None or typ in LIFECYCLE, "event_after_close", typ)
         if typ == "attempt.opened":
@@ -188,20 +211,31 @@ class Replay:
                 require(same == (p["origin"] != "korrigiert"), "recognition_value_mismatch", p["origin"])
             self.declare(p["answerId"])
             self.answers[p["answerId"]] = p
+            # Die neue definitive Antwort belegt erneut die aktuelle Antwort.
+            # Unbekannte aeltere Aktivitaet ist kein bewiesener Widerspruch;
+            # bekannte aktive Antworten bleiben oben strikt gesperrt.
+            self.answer_activity = {identifier: Truth.FALSE for identifier in self.answers}
+            self.answer_activity[p["answerId"]] = Truth.TRUE
             self.active_answer = p["answerId"]
         elif typ == "response.retracted":
             self.reference(p["answerId"], self.answers, "answerId")
-            require(p["answerId"] == self.active_answer, "inactive_answer", "Ruecknahme")
+            require(self.answer_activity[p["answerId"]] != Truth.FALSE,
+                    "inactive_answer", "Ruecknahme")
+            self.answer_activity = {identifier: Truth.FALSE for identifier in self.answers}
             self.active_answer = None
         elif typ == "material.moved":
             require(p["fromZone"] != p["toZone"], "ineffective_move", "Gleiche Zone")
             self.declare(p["moveId"])
             for item in p["items"]:
                 require(item in self.positions, "unknown_material", item)
-                if self.board_known:
+                if self.positions[item] is not None:
                     require(self.positions[item] == p["fromZone"], "wrong_source", item)
             self.moves[p["moveId"]] = event
-            self.active_moves.add(p["moveId"])
+            dependencies = {identifier for item in p["items"] for identifier in self.histories[item]
+                            if identifier is not None}
+            self.move_dependencies[p["moveId"]] = dependencies | {
+                ancestor for identifier in dependencies for ancestor in self.move_dependencies[identifier]}
+            self.move_activity[p["moveId"]] = Truth.TRUE
             for item in p["items"]:
                 self.positions[item] = p["toZone"]
                 self.histories[item].append(p["moveId"])
@@ -212,14 +246,26 @@ class Replay:
             move = self.reference(p["moveId"], self.moves, "moveId")
             mp = move["payload"]
             require(move["actor"] == event["actor"], "undo_actor", "Nur eigener Zug")
-            require(p["moveId"] in self.active_moves, "inactive_move", "Undo")
+            require(self.move_activity[p["moveId"]] != Truth.FALSE, "inactive_move", "Undo")
+            descendants = {identifier for identifier, dependencies in self.move_dependencies.items()
+                           if p["moveId"] in dependencies}
+            require(not any(self.move_activity[identifier] == Truth.TRUE for identifier in descendants),
+                    "undo_dependency", "Aktive abhaengige Bewegung")
             for item in mp["items"]:
-                require(self.histories[item] and self.histories[item][-1] == p["moveId"],
-                        "undo_dependency", item)
-            self.active_moves.remove(p["moveId"])
+                history = self.histories[item]
+                require(history and history[-1] in (None, p["moveId"]), "undo_dependency", item)
+                require(self.positions[item] in (None, mp["toZone"]), "undo_dependency", item)
+            self.move_activity[p["moveId"]] = Truth.FALSE
+            # Ein moegliches aeusseres Undo belegt, dass seine beobachteten
+            # abhaengigen Zuege inzwischen ebenfalls zurueckgenommen wurden.
+            # Gleiche Zonen allein duerfen solche IDs nicht reaktivieren.
+            for identifier in descendants:
+                self.move_activity[identifier] = Truth.FALSE
             for item in mp["items"]:
                 self.positions[item] = mp["fromZone"]
-                self.histories[item].pop()
+                if self.histories[item][-1] == p["moveId"]:
+                    self.histories[item].pop()
+                # Bei unbekannter Basis keine alte Provenienz hinzuerfinden.
         elif typ == "support.presented":
             self.declare(p["supportId"])
             require(not (p["kind"] == "demo" and p["effect"] == "neutral"),
@@ -250,16 +296,18 @@ class Replay:
         elif typ == "profile.erasure_requested":
             require(p["profileId"] == self.opening["profileId"], "foreign_profile", "profileId")
             self.valid = False
+        if typ in {"material.moved", "action.undone"} and event["actor"] == "child":
+            # Nur eine Kind-Materialhandlung kann dessen aktuellen Anker erneuern.
+            # App-Detour/Undo laesst die erhaltene Kind-Handlung unveraendert.
+            self.child_action_seq = seq
         ten, _, doubles = self.board()
         if ten == Truth.TRUE:
             self.history_ten = True
-            if self.ten_seq is None:
-                self.ten_seq = seq
+            self.ten_seq = self.child_action_seq
         else:
             self.ten_seq = None
         if doubles == Truth.TRUE:
-            if self.doubles_seq is None:
-                self.doubles_seq = seq
+            self.doubles_seq = self.child_action_seq
         else:
             self.doubles_seq = None
         self.seen_events.add(event["eventId"])
