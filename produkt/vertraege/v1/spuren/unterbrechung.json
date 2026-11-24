@@ -1,0 +1,210 @@
+{
+  "id": "unterbrechung",
+  "description": "Unterbrochene Beobachtung belegt keine Abwesenheit von Hilfe.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "a835be14-a7f1-5e74-9e5a-6fd1bc697e04",
+      "streamId": "29123641-3545-5e1e-91c6-3e8830b205e7",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "49d4e045-78a2-5f5f-a537-831220c17df1",
+        "initialMaterial": [
+          {
+            "itemId": "ee0ab241-a81b-5fd3-9e91-623fa32d215d",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "27341572-ed12-560d-b87e-e93608aae8ee",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "9e7808d0-15cb-56a5-9c0b-f232cb915466",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f3586960-d72e-55ca-bd47-7eac01621d0c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "118aa16e-828f-55c0-a70e-ab8487b86b62",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2ba4361f-09d8-5171-920c-4ad119e80d44",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "daae9c38-2d21-56f0-88b5-1e7c82914023",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "af39010f-619e-514f-943c-d3ea0d6e0b63",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "d2d53e9f-36a5-5863-88c5-10a53fc7574d",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "2f2f9103-7d06-5ab8-a855-b6c8591c5d02",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "1af41609-4d74-5175-a9a8-4e764ec6dc26",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "b7e27816-445c-5511-8a4e-7e2fe88510d3",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "0b41776d-f522-592d-ad66-c84e2bdff25d",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "0c94b87f-50d1-547a-a94b-df711764c2bd",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "18f41934-4b9f-538f-882b-e4c6ba9c7028",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "condition.observed",
+      "eventId": "169b5086-10a3-5e6d-a134-52862f55877c",
+      "streamId": "29123641-3545-5e1e-91c6-3e8830b205e7",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "kind": "interruption",
+        "detail": "Offene synthetische Gegenprobe"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "1e8294e9-7f41-5c60-8cd7-f8b9ff3038a6",
+      "streamId": "29123641-3545-5e1e-91c6-3e8830b205e7",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "dccf527a-22d5-5b22-8aee-2bf8f17dab5b",
+        "items": [
+          "d2d53e9f-36a5-5863-88c5-10a53fc7574d",
+          "2f2f9103-7d06-5ab8-a855-b6c8591c5d02"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "e6df4064-f416-50cd-b2d8-9cc2e28dd78e",
+      "streamId": "29123641-3545-5e1e-91c6-3e8830b205e7",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "455cefd3-4333-5673-8a3a-5d288533ca75",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "ede7471c-e722-5da1-b237-d59ecc2210d8",
+      "streamId": "29123641-3545-5e1e-91c6-3e8830b205e7",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "953debdc-c148-554f-a031-35e20bf69b8a",
+        "inputId": "455cefd3-4333-5673-8a3a-5d288533ca75",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "361e3db9-5871-5ba6-9c46-31761ad4bf8c",
+      "streamId": "29123641-3545-5e1e-91c6-3e8830b205e7",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "undecidable",
+    "attempt.ten.guided": "undecidable",
+    "attempt.alternative": "undecidable",
+    "attempt.path.displayed": "undecidable"
+  }
+}

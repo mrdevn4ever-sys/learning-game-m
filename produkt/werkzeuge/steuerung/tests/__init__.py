@@ -1,0 +1,1 @@
+"""Ausschliesslich oeffentliche synthetische Regressionen."""

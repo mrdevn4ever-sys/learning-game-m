@@ -1,0 +1,150 @@
+{
+  "id": "importiertes-werk",
+  "description": "Importiertes Werk erzeugt keine eigene Ausfuehrungsleistung.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "fad33382-e95e-544c-814c-a4dd62675471",
+      "streamId": "1751da58-557d-5de3-a3c2-7d64056f4ab4",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "4960b218-3804-5d5b-975b-b79a6c96a424",
+        "initialMaterial": [
+          {
+            "itemId": "636c1093-e212-5111-8fe4-bbb20eaed31b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0b8b96a5-d0dd-5218-b164-5b26e6a89c79",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7060ea1e-8a52-5f33-8268-a7449f77cdc5",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "1eafa04e-529d-5e76-8bc7-e483757246f4",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "25adce80-89c0-5fc1-a4a4-0b9ddcfc48f1",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "fde4a817-a52c-5435-bd7b-198dc4d391ab",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "ec43f316-418f-5a4a-8840-eac13c73829b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "6cbf99a7-8859-5ae7-a158-e90a0c1e1b08",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7f39d3bc-25af-5279-b789-42789cc143a9",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "afdbd360-f607-517f-bf56-f121f25f7319",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "6978b392-9c0d-50b0-bb3a-de60a2c78b1f",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "15ac2d7f-a41f-54ac-b55e-e8ce2a7d7a2e",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "466af1da-83ca-5fae-8880-854b068cec48",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "756a3067-369c-5615-a644-84657f2ee720",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "1969da25-95ef-5e75-8a3c-738c65afd347",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "artifact.saved",
+      "eventId": "4278746c-1e47-5c6a-a35c-3445705904f0",
+      "streamId": "1751da58-557d-5de3-a3c2-7d64056f4ab4",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "artifactId": "41218ad2-830c-589a-9c52-78bf6c12bc69",
+        "origin": "importiert",
+        "digest": "0000000000000000000000000000000000000000000000000000000000000000",
+        "mediaType": "drawing"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "69499dc4-0ed8-5f81-8fa5-1132f6bfd158",
+      "streamId": "1751da58-557d-5de3-a3c2-7d64056f4ab4",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "undecidable",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

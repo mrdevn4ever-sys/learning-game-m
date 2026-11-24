@@ -1,0 +1,87 @@
+name: Offene Entwicklungspruefung
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+  PYTHONUTF8: '1'
+  EXPECTED_SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+concurrency:
+  group: chnobel-development-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+jobs:
+  preflight:
+    name: preflight
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.14'
+      - name: Exakte Quellbindung
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SOURCE_SHA"
+          python produkt/werkzeuge/ci/snapshot.py
+      - run: python -m pip install -r produkt/werkzeuge/ci/requirements.txt -r produkt/werkzeuge/referenz/requirements.txt
+      - run: python produkt/werkzeuge/ci/preflight.py
+  product-check:
+    name: product-check (native Diagnose, keine Freigabe)
+    runs-on: xcode-27
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.14'
+      - name: Exakte Quellbindung
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SOURCE_SHA"
+          python produkt/werkzeuge/ci/snapshot.py
+      - name: Swift, SwiftData, iPad-UI und unsignierter Release-Build
+        run: bash produkt/werkzeuge/ci/native.sh
+  recovery-drill:
+    name: recovery-drill
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.14'
+      - name: Exakte Quellbindung
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SOURCE_SHA"
+          python produkt/werkzeuge/ci/snapshot.py
+      - run: python produkt/werkzeuge/ci/run_suite.py produkt/werkzeuge/steuerung/tests
+  integration-review-block:
+    name: Integrationssperre (drei archivierte FAILs)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.14'
+      - name: Exakte Quellbindung
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SOURCE_SHA"
+          python produkt/werkzeuge/ci/snapshot.py
+      - name: Originalurteile mit Container- und Inhaltsdigests auswerten
+        run: python produkt/werkzeuge/ci/review_gate.py

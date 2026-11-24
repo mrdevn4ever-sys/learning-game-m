@@ -1,0 +1,168 @@
+{
+  "id": "abbruch-mit-15",
+  "description": "Die Eingabe bleibt Fakt; eine Abgabeaussage wird nicht behauptet.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "6bec4c68-08a6-504b-b37e-dbbcd67dac6c",
+      "streamId": "d7c3f338-bf77-521e-a6d3-c15d2ffc2fd9",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "be15be85-5de4-5497-a867-3e6ef76e9b6c",
+        "initialMaterial": [
+          {
+            "itemId": "2a2bf6cd-2fac-5e5a-b3a5-cb5ea786bedb",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "34bdab87-f7a5-597f-9760-bb61998cea3f",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "715818a8-3034-5752-b911-fecacb39477a",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e9c77837-0268-5520-9eda-30ecbccf57ff",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2178bcb5-7a27-5485-83c8-1c8220119152",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "4e485392-7eba-5626-9df1-33c39d475ad6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "b5515e56-beae-580a-bc20-66c7f19ec663",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "3ec1e92e-2f7e-5d98-8c24-19d042632e9d",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "93774a00-8bfc-5a69-b2e9-69a916778751",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "98b12d8f-6b87-514c-9fbc-e6fd9c2b3f5d",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "c19b1028-ca53-51da-9386-d562ae92cdaa",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "be5b76b8-5844-5c5f-8720-cba29e222e07",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f0f32366-c01b-5c0e-919d-59d1da88e67d",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "dfe320a5-5a3d-5538-bd47-1c2564377d41",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a5ac0eba-33f3-5f78-9b85-fd8fafd17622",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "6facd5cc-deb7-5050-bb73-5a4b96b01a6f",
+      "streamId": "d7c3f338-bf77-521e-a6d3-c15d2ffc2fd9",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "521dcee9-87fa-556f-879b-826743723f2c",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "610cb836-b854-5717-96dc-9bd141ee9cb6",
+      "streamId": "d7c3f338-bf77-521e-a6d3-c15d2ffc2fd9",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "aef1bd9b-dc75-5ced-b496-da4b5f9af4e1",
+        "inputId": "521dcee9-87fa-556f-879b-826743723f2c",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "4f7ca789-3b58-58f4-b3f6-e361ad9e556c",
+      "streamId": "d7c3f338-bf77-521e-a6d3-c15d2ffc2fd9",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "aborted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_not_claim",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "id": "uuid-ungueltig",
+  "description": "Absichtlich ungueltige offene Gegenprobe: uuid-ungueltig",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "0cde5db3-705d-5dbd-91f0-e53491e5433f",
+      "streamId": "kein-uuid",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "3b2ec1c4-3ed1-5ef0-bd2c-81332fba0310",
+        "initialMaterial": [
+          {
+            "itemId": "9683b95d-56f1-54e6-b359-26b49629e3c0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "8fc8cac1-aa97-5fa9-b1b1-d0b50bb4e9d3",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "05faacef-8733-53f2-b075-fab6314d4a84",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e7222b93-5db4-5e47-843c-e6219ba00db0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "c9fabac0-5524-5747-9d4e-fe83d412f82c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "ac057eaa-44d3-5df7-b634-b78b305a70fd",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7a3b0a07-00d9-546b-a3a2-ea37828ab5db",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e4eeedf1-7efa-5e1f-8d89-dd58067ddee5",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e377ef5a-c1fb-543c-a800-44f8523ca176",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "b84b2a7d-c372-5a88-8128-11dcc662be0a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "aa0422b3-2a8a-5721-a50c-47417b348afe",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "ce9639fc-96f1-5c97-9aac-4eac70916f42",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "3b10def2-89d6-537a-b062-b9f9cf6a93d9",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "311d0a73-3c11-56cd-9e93-0f219cdc862c",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "edb7a498-bc0c-5194-a815-75f4400fd73b",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "ec4680ac-d2d3-5b39-9944-44c792f928b2",
+      "streamId": "c30b9b65-9a52-5532-b36e-90901fe72c19",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "d574359e-d28f-536a-a1fc-51e6b325730b",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "0ca6462c-3693-5b7d-b0ce-8e5bf77194bb",
+      "streamId": "c30b9b65-9a52-5532-b36e-90901fe72c19",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "51528727-2a21-5f61-ad4e-5fdbec9887cf",
+        "inputId": "d574359e-d28f-536a-a1fc-51e6b325730b",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "5f8b5769-83ff-5d80-b87d-9c9ee9f0ff2d",
+      "streamId": "c30b9b65-9a52-5532-b36e-90901fe72c19",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expectedError": "schema"
+}

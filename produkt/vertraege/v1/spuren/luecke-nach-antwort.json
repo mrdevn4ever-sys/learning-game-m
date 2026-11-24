@@ -1,0 +1,187 @@
+{
+  "id": "luecke-nach-antwort",
+  "description": "Eine fehlende Ruecknahme nach der Antwort ist nicht ausgeschlossen.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "17391b9b-7d9d-56ff-989e-b8d524057b2e",
+      "streamId": "abbe15b0-1c96-5acb-84fc-b0ee0b359463",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "0ed75ce0-42a4-589f-87ca-1aa916fd1f52",
+        "initialMaterial": [
+          {
+            "itemId": "b43e41a0-44c7-5c5c-83d7-12dfe283a668",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f97fa78c-a1f5-512f-978e-bc9cf374c637",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "ae7722f8-abb0-5d4f-aab4-7af45d92f77e",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0cfcaedc-22e2-57bf-84c7-638e4e8eb3e1",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "04654bd2-29fe-5959-9579-7dae59185a84",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "fadea7e0-a08e-5c49-a545-8d46438120dd",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "32871c42-a556-5115-90fa-170b5d749469",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "76ae6d02-b276-54d9-a03a-bbd48c3620d3",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "88e5d915-70d4-5953-8f37-5d3fc912ef9a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "216fc5e9-9a93-5004-9189-3de994c3791a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "29198e05-74d4-5b2c-98ce-4f1ff4a0947a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "48c8ea54-9f50-54f9-abbb-b6168de60e68",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "034fe963-7967-5471-b271-11e097d5c3cd",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f49a295f-c97c-5f5d-bbad-07f842618a79",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "b11220ab-1c14-58b5-818b-6fff18612b7c",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "35c9190b-d6f2-520a-9b93-80a24c873a52",
+      "streamId": "abbe15b0-1c96-5acb-84fc-b0ee0b359463",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "d5671035-0b4f-52a4-a74b-39e324526b3f",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "265e6f7b-92b9-540b-8c89-216268fef442",
+      "streamId": "abbe15b0-1c96-5acb-84fc-b0ee0b359463",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "519356a8-554e-5577-8362-e90c4b2f61ee",
+        "inputId": "d5671035-0b4f-52a4-a74b-39e324526b3f",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "condition.observed",
+      "eventId": "d41cc5da-edc2-5196-9d76-0c7683c69cb0",
+      "streamId": "abbe15b0-1c96-5acb-84fc-b0ee0b359463",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "kind": "gap",
+        "detail": "Offene synthetische Gegenprobe",
+        "sinceSeq": 3
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "4fe9e1b6-ba5e-551c-931b-5756af708e0c",
+      "streamId": "abbe15b0-1c96-5acb-84fc-b0ee0b359463",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "undecidable",
+    "attempt.ten": "undecidable",
+    "attempt.ten.guided": "undecidable",
+    "attempt.alternative": "undecidable",
+    "attempt.path.displayed": "undecidable"
+  }
+}

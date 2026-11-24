@@ -1,0 +1,179 @@
+{
+  "candidate": "fbb900fd77be98fe02aba73cdaf2382676d1cf5a",
+  "branch": "ci/native-phase0",
+  "purpose": "native diagnosis only; original development reviews FAIL",
+  "mergeAuthorized": false,
+  "sources": [
+    {
+      "path": "produkt/werkzeuge/steuerung",
+      "source": "3bf45a586478a1c38ba8563bef7d0e8ad22e06e6",
+      "tree": "d66239d7cc3fb32609cea2baf09fde395df6ab16"
+    },
+    {
+      "path": "produkt/vertraege",
+      "source": "b8cd111453b2c44d28a5fc21125c4f9dbc95877e",
+      "tree": "2097ade521ed98ac11b19c18aa68adfaf62df485"
+    },
+    {
+      "path": "produkt/werkzeuge/referenz",
+      "source": "b8cd111453b2c44d28a5fc21125c4f9dbc95877e",
+      "tree": "e0f42d4f942195170c5ce47cb3e9c0222fc348a3"
+    },
+    {
+      "path": "produkt/App",
+      "source": "d71acbe65a602f091840ed5fa7e6069a157843c2",
+      "tree": "25acf17ee45c821a4178544a20dbe6e04330d3d1"
+    },
+    {
+      "path": "produkt/Packages",
+      "source": "d71acbe65a602f091840ed5fa7e6069a157843c2",
+      "tree": "df3fb4fc2821353f2ba6a27f2398224c83955786"
+    }
+  ],
+  "tests": {
+    "packages": {
+      "expected": 43,
+      "files": {
+        "produkt/Packages/Tests/CoreDomainTests/TruthTests.swift": [
+          "unknownNeverProvesAbsence",
+          "ruleHasThreeOutcomes",
+          "falseDominatesUnknown"
+        ],
+        "produkt/Packages/Tests/EvidenceKitTests/EvidenceTests.swift": [
+          "developmentObservationNeverClaimsAcceptance"
+        ],
+        "produkt/Packages/Tests/InputKitTests/InputTests.swift": [
+          "numberPadDoesNotPreselectAnAnswer",
+          "digitsDeleteAndClearWork",
+          "bufferIsBoundedAndRejectsNonDigits"
+        ],
+        "produkt/Packages/Tests/LearningEngineTests/LearningTests.swift": [
+          "resultHasPositiveNegativeAndUnknownCases",
+          "answerAloneNeverProvesAPath",
+          "ownTenStepWithoutHintIsRecognized",
+          "hintBeforeMoveOnlyAllowsGuidedClaim",
+          "hintAfterEffectiveMoveDoesNotRetroactivelyDowngrade",
+          "undoThenRepeatAfterHintIsGuided",
+          "hintBetweenTwoPartialMovesAppliesToSecondMove",
+          "gapKeepsResultButBlocksIndependentPath",
+          "missingSequenceIsUnknownNotHintAbsence",
+          "alternativeSevenSevenOneIsRecognizedSeparately",
+          "alternatePathAlsoHasNegativeAndUnknownCases",
+          "appDemoIsNotAnOwnPathAndRepetitionIsNotIndependent",
+          "unrelatedAppMovementIsNotInventedAsATenHint",
+          "proposedMisreadingNeverBecomesAnError",
+          "duplicateMoveDoesNotChangeEvidence",
+          "restoredReportComesFromEventsNotSavedClaims",
+          "retractedAnswerIsNoLongerEvaluated",
+          "abandonedAttemptHasNoInventedAnswer"
+        ],
+        "produkt/Packages/Tests/ObservationLogTests/LedgerTests.swift": [
+          "duplicateDeliveryIsIdempotent",
+          "sameIDWithChangedPayloadFails",
+          "sequenceCollisionAndForeignStreamFail",
+          "sequenceGapIsNotSilentlyFilled",
+          "invalidSequenceBoundsCannotOverflowReplay",
+          "codingRoundTripPreservesIdentityAndOrder"
+        ],
+        "produkt/Packages/Tests/RecognitionKitTests/RecognitionTests.swift": [
+          "recognitionIsExplicitlyNotImplemented"
+        ],
+        "produkt/Packages/Tests/TaskEngineTests/TaskTests.swift": [
+          "initialMaterialIsEightAndSevenNotASolution",
+          "directAnswerHasCapturedInputAndCommit",
+          "correctionRetractsOldAnswer",
+          "invalidDirectInputsAreRejected",
+          "movesAreUserSelectedAndUndoRestoresExactly",
+          "invalidMoveDoesNotManufactureMaterial",
+          "undoAnswerDoesNotUndoEarlierMove",
+          "helpNeverMovesAnyMaterial",
+          "closedAttemptHasAnActualEnd",
+          "mismatchedActorsAndUnsupportedRevisionsFailClosed",
+          "orphanCorrectionIsRejected"
+        ]
+      },
+      "names": [
+        "abandonedAttemptHasNoInventedAnswer",
+        "alternatePathAlsoHasNegativeAndUnknownCases",
+        "alternativeSevenSevenOneIsRecognizedSeparately",
+        "answerAloneNeverProvesAPath",
+        "appDemoIsNotAnOwnPathAndRepetitionIsNotIndependent",
+        "bufferIsBoundedAndRejectsNonDigits",
+        "closedAttemptHasAnActualEnd",
+        "codingRoundTripPreservesIdentityAndOrder",
+        "correctionRetractsOldAnswer",
+        "developmentObservationNeverClaimsAcceptance",
+        "digitsDeleteAndClearWork",
+        "directAnswerHasCapturedInputAndCommit",
+        "duplicateDeliveryIsIdempotent",
+        "duplicateMoveDoesNotChangeEvidence",
+        "falseDominatesUnknown",
+        "gapKeepsResultButBlocksIndependentPath",
+        "helpNeverMovesAnyMaterial",
+        "hintAfterEffectiveMoveDoesNotRetroactivelyDowngrade",
+        "hintBeforeMoveOnlyAllowsGuidedClaim",
+        "hintBetweenTwoPartialMovesAppliesToSecondMove",
+        "initialMaterialIsEightAndSevenNotASolution",
+        "invalidDirectInputsAreRejected",
+        "invalidMoveDoesNotManufactureMaterial",
+        "invalidSequenceBoundsCannotOverflowReplay",
+        "mismatchedActorsAndUnsupportedRevisionsFailClosed",
+        "missingSequenceIsUnknownNotHintAbsence",
+        "movesAreUserSelectedAndUndoRestoresExactly",
+        "numberPadDoesNotPreselectAnAnswer",
+        "orphanCorrectionIsRejected",
+        "ownTenStepWithoutHintIsRecognized",
+        "proposedMisreadingNeverBecomesAnError",
+        "recognitionIsExplicitlyNotImplemented",
+        "restoredReportComesFromEventsNotSavedClaims",
+        "resultHasPositiveNegativeAndUnknownCases",
+        "retractedAnswerIsNoLongerEvaluated",
+        "ruleHasThreeOutcomes",
+        "sameIDWithChangedPayloadFails",
+        "sequenceCollisionAndForeignStreamFail",
+        "sequenceGapIsNotSilentlyFilled",
+        "undoAnswerDoesNotUndoEarlierMove",
+        "undoThenRepeatAfterHintIsGuided",
+        "unknownNeverProvesAbsence",
+        "unrelatedAppMovementIsNotInventedAsATenHint"
+      ]
+    },
+    "swiftdata": {
+      "expected": 4,
+      "files": {
+        "produkt/App/ChnobelTests/NotebookStoreTests.swift": [
+          "swiftDataRoundTripRebuildsTheSameReport",
+          "pendingDigitsSurviveRestartButAreNotAnAnswer",
+          "invalidArchiveIsRejectedRatherThanReplaced",
+          "undoIsAlsoPersisted"
+        ]
+      },
+      "names": [
+        "invalidArchiveIsRejectedRatherThanReplaced",
+        "pendingDigitsSurviveRestartButAreNotAnAnswer",
+        "swiftDataRoundTripRebuildsTheSameReport",
+        "undoIsAlsoPersisted"
+      ]
+    },
+    "ui": {
+      "expected": 5,
+      "files": {
+        "produkt/App/ChnobelUITests/NotebookUITests.swift": [
+          "testDirectNumberPadSubmission",
+          "testHelpShowsTheLoggedHintWithoutMovingMaterial",
+          "testRestartRestoresDraftThenAnswerMaterialAndReport",
+          "testAllDigitsRemainReachableAfterHelpAndReportInBothOrientations",
+          "testUndoRemovesOnlyTheEffectiveMove"
+        ]
+      },
+      "names": [
+        "testAllDigitsRemainReachableAfterHelpAndReportInBothOrientations",
+        "testDirectNumberPadSubmission",
+        "testHelpShowsTheLoggedHintWithoutMovingMaterial",
+        "testRestartRestoresDraftThenAnswerMaterialAndReport",
+        "testUndoRemovesOnlyTheEffectiveMove"
+      ]
+    }
+  },
+  "reviewIndexSha256": "90973899bcb79cdfa1cb51d267ca93c63f8a5b5bad7e101b04bf1fea5c583d75"
+}

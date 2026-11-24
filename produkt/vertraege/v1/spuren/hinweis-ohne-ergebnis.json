@@ -1,0 +1,175 @@
+{
+  "id": "hinweis-ohne-ergebnis",
+  "description": "Unfreie Strategie darf keine fehlende Ergebniseingabe erfinden.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "ac3e8ab0-a8b5-576c-80a5-94bbc998c015",
+      "streamId": "f776585c-4ebf-58e8-a701-5950eb8b0485",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "88d8e8ed-6848-57f9-9bb2-0ed74f8ff2cf",
+        "initialMaterial": [
+          {
+            "itemId": "d512ebcd-44ee-5d74-94e7-4a1c560b8ac6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "cdb59531-2ac5-5416-8c6f-eaff496aa04a",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2c15345d-54fe-53d5-bf3c-1ff123585d74",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "c0aeb3e5-0695-5044-97f1-f8b293be73f6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "1cceddbe-3259-511b-9b4e-5eec2821496e",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "586fe2e2-77b0-50ba-8b0a-a40130ad0436",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "db8b1440-4deb-5eb9-9d9f-179356d9c807",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f802ed08-5d70-55de-977e-8b477bc2262e",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "50b6bb41-c230-50f3-8f7b-313302971c4f",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "55ea34e5-de3c-5ceb-af93-7e29b3f8ac49",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "b44125d7-4613-5a2f-8822-06b0c9b97d6a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a893edbe-4b1f-5c0b-88a3-fd46b286b176",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "5d8aa678-65eb-5ef1-9c8f-bc616a4887eb",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "625b6231-c4f6-5ccf-bf15-5de77a87dbc6",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a474b9cd-42ae-518c-a22d-6ed956ee4e06",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "support.presented",
+      "eventId": "eb5d2f04-e644-50c1-a679-98e716d73d86",
+      "streamId": "f776585c-4ebf-58e8-a701-5950eb8b0485",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "app",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "supportId": "af409c85-ee58-54e3-bf09-717fcd46e7ef",
+        "kind": "teilschritt",
+        "target": "ten.step",
+        "effect": "hinweis",
+        "channel": "visuell"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "0577f0fb-3671-581b-a7c9-222aae07e599",
+      "streamId": "f776585c-4ebf-58e8-a701-5950eb8b0485",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "12c93ed2-a703-5c52-8051-7eaecec867ab",
+        "items": [
+          "50b6bb41-c230-50f3-8f7b-313302971c4f",
+          "55ea34e5-de3c-5ceb-af93-7e29b3f8ac49"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "f432b8ce-84a7-5925-a7da-1ccb6813f402",
+      "streamId": "f776585c-4ebf-58e8-a701-5950eb8b0485",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "undecidable",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_claim"
+  }
+}

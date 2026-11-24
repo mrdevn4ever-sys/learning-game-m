@@ -1,0 +1,214 @@
+{
+  "id": "zwei-einzelzuege",
+  "description": "Zwei wirksame Einzelzuege sind derselbe gueltige Zehnerweg.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "7dd4b562-f41e-57f9-9a13-47d58ba8b50f",
+      "streamId": "6b0a3800-2284-5c83-97c1-5424f77af3bc",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "2f4b860e-e754-5d14-ba51-c6d6db57e38a",
+        "initialMaterial": [
+          {
+            "itemId": "84d99789-4f00-5ad8-b549-18ce4a7495d6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0a2cd5e5-1428-58cb-ba3d-61e1780fe03d",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0e2673bf-4aae-5cb6-b94e-a3042d955204",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "a88c44b1-96be-54d8-8e45-6bfbb7f33138",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "35e452e6-51b8-5964-8821-cac26101c418",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0e6081ff-15eb-57db-84fa-b6c2ae6b53bd",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "70ddab69-8fad-5efa-9e0b-119273afd7a1",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "b9801051-b553-52eb-8324-63a47111200b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "acdd115c-ae71-5f12-92a4-0b7bd0094eda",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "4199d8e9-e8f2-5b3d-a19c-7ee3a6dcc967",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "e3a08d26-4a70-580a-be87-ada55d33368f",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "0d43c836-d549-5ecf-a6c1-c55ba2c85c3f",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "a71dd55d-c0af-5edc-8f64-ab8bed47c3de",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "aec674f0-8369-55e2-8ad9-d4100bc8c7f2",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "dd0490d4-ef9a-53b0-83d4-bc1c28d17058",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "351021e1-c163-58dc-bc44-942d73f4966e",
+      "streamId": "6b0a3800-2284-5c83-97c1-5424f77af3bc",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "b7594fd3-2aff-5e62-976b-b9a8dce2713c",
+        "items": [
+          "acdd115c-ae71-5f12-92a4-0b7bd0094eda"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "4060782f-0595-527c-bebe-b59bb39d0624",
+      "streamId": "6b0a3800-2284-5c83-97c1-5424f77af3bc",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "f6d82a5e-5d88-54c2-a809-f2f473ff3d34",
+        "items": [
+          "4199d8e9-e8f2-5b3d-a19c-7ee3a6dcc967"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "7c1be247-07bc-51fb-97bb-7f9fad2c6b74",
+      "streamId": "6b0a3800-2284-5c83-97c1-5424f77af3bc",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "b2b63591-f315-56a6-88a8-32c16ad6e2ab",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "d6d430c3-eb69-5e87-bfa5-cad637b7515e",
+      "streamId": "6b0a3800-2284-5c83-97c1-5424f77af3bc",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "c80b9039-be98-51d4-98e4-0663ee9c411f",
+        "inputId": "b2b63591-f315-56a6-88a8-32c16ad6e2ab",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "58206364-fcb7-5d28-8d89-34c9454f0efb",
+      "streamId": "6b0a3800-2284-5c83-97c1-5424f77af3bc",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_claim"
+  }
+}

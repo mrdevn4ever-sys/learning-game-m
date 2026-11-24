@@ -1,0 +1,205 @@
+{
+  "id": "anhang-geloescht",
+  "description": "Anhangsloeschung aendert die erhaltene direkte Ergebniseingabe nicht.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "de443bcc-990c-59fc-bb12-0887b7509079",
+      "streamId": "db1b5ffc-141b-5321-82ef-6039fbd39162",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "f1aa5589-fd5a-501a-b1ee-e0e32265d0af",
+        "initialMaterial": [
+          {
+            "itemId": "a6b977f5-3036-517c-bc9a-659a24b737ee",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "b6696b7e-98b2-512c-868e-fe97afabb95a",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "57c61f74-16bd-5fb7-862b-0986aefb7b86",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "47713584-7003-557d-8297-026b57ea73db",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "8ee2ee29-dfb5-5de4-9049-8f164463229f",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "bc6cce48-bb9e-5fbf-8ae4-91c80118a942",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "ce1f0ec6-ed72-55e7-8e49-45d0889502ec",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "89897905-9349-552a-ab1b-1a42a31fec06",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "fd856714-263c-5630-a2d7-b68d22809b81",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "cc81542f-123a-5de5-940d-b208bb5acc9b",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "72651222-c800-5953-9f1d-77ecbf1a91cf",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "fb86e59e-7fbc-543b-af8b-b8073340c0cb",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "be9eab82-3b53-5cbf-b69c-fb3226facbd6",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "468b19d1-c6f3-564d-ab9e-f1112caf8687",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "5a8165bb-45a5-54fd-b774-640381e9f04d",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "artifact.saved",
+      "eventId": "0e65e70e-0346-5ba6-b22d-a416de3fef39",
+      "streamId": "db1b5ffc-141b-5321-82ef-6039fbd39162",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "artifactId": "0f2d9127-6daf-596e-a9ad-e5063d16f69c",
+        "origin": "selbst_erstellt",
+        "digest": "0000000000000000000000000000000000000000000000000000000000000000",
+        "mediaType": "drawing"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "b7f24d57-21dc-5657-a94a-6a0593bd9dbd",
+      "streamId": "db1b5ffc-141b-5321-82ef-6039fbd39162",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "d1ff94df-083f-5245-aa24-9ab515f97ea4",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "776a88b6-bca3-5a65-8468-f74a2581c0f8",
+      "streamId": "db1b5ffc-141b-5321-82ef-6039fbd39162",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "ba0e75ac-17e5-591e-9fd6-9368269b8146",
+        "inputId": "d1ff94df-083f-5245-aa24-9ab515f97ea4",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "d707ab4e-339d-5850-81de-c0786cc0448d",
+      "streamId": "db1b5ffc-141b-5321-82ef-6039fbd39162",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "artifact.deleted",
+      "eventId": "0ea7fdc1-c24e-5c9a-84e1-d9dbedd126f2",
+      "streamId": "db1b5ffc-141b-5321-82ef-6039fbd39162",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "artifactId": "0f2d9127-6daf-596e-a9ad-e5063d16f69c"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

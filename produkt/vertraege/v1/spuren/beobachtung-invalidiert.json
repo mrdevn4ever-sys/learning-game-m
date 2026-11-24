@@ -1,0 +1,212 @@
+{
+  "id": "beobachtung-invalidiert",
+  "description": "Invalidierte Beobachtung bleibt als Historie, nicht als gueltiger Nachweis.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "5d4389fa-265d-5c61-81a7-11e51b293333",
+      "streamId": "fc78992c-9a27-549a-aa1c-50b9e7ca25b5",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "3463f85b-e2ca-5f27-bbea-a6db767467a2",
+        "initialMaterial": [
+          {
+            "itemId": "3ab5fdaa-0593-5cfb-8636-8affd86d35ae",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e646b0dd-3167-59c5-b9ee-23a6c4df2135",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "384b56cb-bc0a-521d-bcb4-993fe374f63b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "d2a95eb6-d975-5563-9518-121d73e739c3",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "98d845d7-3006-5c93-85fe-a77b31ea4fb8",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "18d7a1d5-1905-5fff-8361-ac1ed599fc2a",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "85288241-0209-57a3-ad7f-0688b0cd8024",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e5155e4b-4427-53c2-8900-74ceb1c29d39",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "22375200-c524-55f6-8bfc-c013d51bf735",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "9815bdef-ec46-5a64-ab50-6e60c1b09266",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f5fdf02e-1b45-5fe8-9d88-5211864fc45b",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "3b89c949-5159-51f2-8929-01c6fcce9471",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "97a52bbc-915f-5184-b86b-18a406b5175e",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "3fcc447c-6347-5a85-9227-315c78470151",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "e9835a0b-b0c7-5d72-b27f-6937ae6e937d",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "6537640f-c982-5d73-81f2-2cd534cb687f",
+      "streamId": "fc78992c-9a27-549a-aa1c-50b9e7ca25b5",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "b4299736-f17c-5815-8665-5f93e5020cdb",
+        "items": [
+          "22375200-c524-55f6-8bfc-c013d51bf735",
+          "9815bdef-ec46-5a64-ab50-6e60c1b09266"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "9513824d-30dd-5d87-b126-539cd385ae0e",
+      "streamId": "fc78992c-9a27-549a-aa1c-50b9e7ca25b5",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "aedc6761-3348-5f00-8eb3-88e30b8e0683",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "34557498-a1e7-5249-b3dd-408be7928e9e",
+      "streamId": "fc78992c-9a27-549a-aa1c-50b9e7ca25b5",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "b825d8d4-3112-59be-9ca9-a74377eebc26",
+        "inputId": "aedc6761-3348-5f00-8eb3-88e30b8e0683",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "8d93dc98-1427-5cea-89e4-9f44cf5de0f9",
+      "streamId": "fc78992c-9a27-549a-aa1c-50b9e7ca25b5",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "observation.invalidated",
+      "eventId": "48679deb-e19f-50d9-81c7-54e82082f8b1",
+      "streamId": "fc78992c-9a27-549a-aa1c-50b9e7ca25b5",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "eventIds": [
+          "6537640f-c982-5d73-81f2-2cd534cb687f"
+        ],
+        "reason": "Offene Gegenprobe"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_not_claim",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

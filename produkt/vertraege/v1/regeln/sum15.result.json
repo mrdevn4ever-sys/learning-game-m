@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "sum15.result",
+  "version": 2,
+  "claimId": "attempt.result.correct",
+  "target": {
+    "references": [
+      {
+        "kanton": "LU",
+        "schulsprache": "de",
+        "code": "MA.1.A.3",
+        "stufe": "a",
+        "taetigkeit": "Summe im Zahlenraum 20 angeben",
+        "bezug": "teil",
+        "quellenstatus": "offen",
+        "hinweis": "Zuordnungsvorschlag aus dem Projektauftrag; kantonale Ausgabe und Quelle noch nicht geprueft."
+      },
+      {
+        "kanton": "BE",
+        "schulsprache": "de",
+        "code": "MA.1.A.3",
+        "stufe": "a",
+        "taetigkeit": "Summe im Zahlenraum 20 angeben",
+        "bezug": "teil",
+        "quellenstatus": "offen",
+        "hinweis": "Zuordnungsvorschlag aus dem Projektauftrag; kantonale Ausgabe und Quelle noch nicht geprueft."
+      }
+    ]
+  },
+  "applicability": {
+    "taskContracts": [
+      "sum-8-7"
+    ],
+    "startingStates": [
+      "board-8-7-v1"
+    ],
+    "scope": "einzelversuch",
+    "nachweisform": "antwort",
+    "beobachtungsfenster": {
+      "start": "attempt.opened",
+      "end": "attempt.closed",
+      "order": "seq"
+    }
+  },
+  "logic": {
+    "factCatalogVersion": "1.0.0",
+    "requires": {
+      "all": [
+        "observation.valid",
+        "attempt.submitted",
+        "answer.value.15"
+      ],
+      "none": []
+    },
+    "validity": "current_not_invalidated",
+    "support": "time_of_effective_action",
+    "unknownPolicy": "abstain"
+  },
+  "boundary": {
+    "alternatives": [
+      {
+        "erklaerung": "Ein richtiges Ergebnis oder eine Darstellung belegt weder dauerhafte Beherrschung noch Strategieauswahl ausserhalb dieses Versuchs."
+      },
+      {
+        "erklaerung": "App-Demo oder Hilfe ist keine freie eigene Strategie; eine Lesart ist keine bestaetigte Antwort."
+      }
+    ],
+    "counterexamples": [
+      {
+        "traceRef": "spuren/antwort-15.json",
+        "expected": "must_claim"
+      },
+      {
+        "traceRef": "spuren/antwort-14.json",
+        "expected": "must_not_claim"
+      },
+      {
+        "traceRef": "spuren/leere-abgabe.json",
+        "expected": "undecidable"
+      }
+    ],
+    "wording": {
+      "de-CH": "Bei dieser Aufgabe hast du das richtige Ergebnis 15 angegeben.",
+      "fallback": "insufficient_observation"
+    }
+  }
+}

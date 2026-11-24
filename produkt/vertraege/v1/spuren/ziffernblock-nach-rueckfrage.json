@@ -1,0 +1,227 @@
+{
+  "id": "ziffernblock-nach-rueckfrage",
+  "description": "Direkte Alternative nach Lesart ohne verdeckte Vorbelegung.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "0d06e29f-b577-5bfc-aa2a-01a6821f21ef",
+      "streamId": "bbe4b2f2-76cc-5570-adeb-8dd82d7bfdae",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "069f8c6f-4d63-50d3-88bd-04003e28c163",
+        "initialMaterial": [
+          {
+            "itemId": "ce3c5f51-8340-5a5d-a217-f3de12991cb3",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0bcc2d15-208f-555d-b234-99431b639cc4",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "4f596715-4137-5542-882f-f42f7e88f505",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "91355e29-87e3-5526-90e9-8f924b4798ea",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "0a5a3f81-fbe3-50a2-aebc-d5cebb6dbee8",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f5768910-1338-52b9-b1b1-fae3b5c1868b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "69c1fb5f-4147-5b88-b3a9-99e65b9d8922",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "1b47c466-ff20-5975-ba56-5f90e9d3b227",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "4928e270-9453-53b0-bb00-ccf02f2576c0",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "540d1f51-c63c-5679-9143-b71b47198533",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "43d9f98e-97b9-560d-bcdc-14a71c0e0916",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d5ed9b0f-b941-5c4b-8676-a1b74e1f8cf2",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f677554c-9538-50da-a2a4-7242ece57cb2",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "8b7a67c2-9838-5a4a-8f32-952f5c40e2a2",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f0b32870-166d-51b7-90c0-e7fb585447e1",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "c6a494a8-78dd-55cd-a3b1-30ae588f2dee",
+      "streamId": "bbe4b2f2-76cc-5570-adeb-8dd82d7bfdae",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "e91385b0-0169-5e44-9f42-a5cf41c479a0",
+        "mode": "handschrift_finger"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "recognition.proposed",
+      "eventId": "e1e31e37-d9dd-5cef-9b64-e5d42b6eb4cd",
+      "streamId": "bbe4b2f2-76cc-5570-adeb-8dd82d7bfdae",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "app",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "recognitionId": "974d8841-4761-550f-9114-c2d9d13c4232",
+        "inputId": "e91385b0-0169-5e44-9f42-a5cf41c479a0",
+        "reading": "16",
+        "confidence": 0.58,
+        "alternatives": [
+          "15"
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "mode.changed",
+      "eventId": "029c1f12-dbd1-5c54-86fd-a370874b1035",
+      "streamId": "bbe4b2f2-76cc-5570-adeb-8dd82d7bfdae",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "from": "handschrift_finger",
+        "to": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "be7bfb39-938c-50c7-a168-322e9770b929",
+      "streamId": "bbe4b2f2-76cc-5570-adeb-8dd82d7bfdae",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "f603c6b7-6cb6-5989-97ff-8a947def45bc",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "9fbe09c1-169e-5081-8e5c-4a93054cf791",
+      "streamId": "bbe4b2f2-76cc-5570-adeb-8dd82d7bfdae",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "d847d367-0e3e-5fd0-ae92-63f2e7ecd523",
+        "inputId": "f603c6b7-6cb6-5989-97ff-8a947def45bc",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "1bc0c673-0a2d-5779-bdb6-5d6f036ea49d",
+      "streamId": "bbe4b2f2-76cc-5570-adeb-8dd82d7bfdae",
+      "seq": 6,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

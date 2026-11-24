@@ -1,0 +1,154 @@
+{
+  "id": "lesart-zwischenzustand",
+  "description": "Zwischenzustand vor der Korrektur bleibt ohne Rechenfehler.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "6862ade6-726f-529e-9213-16234c93b53f",
+      "streamId": "bea4dfbc-b8ec-5688-a628-084edd76183d",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "b19fda59-2e1e-53d7-bff7-0079ca7feb25",
+        "initialMaterial": [
+          {
+            "itemId": "470a139c-e77e-5ce8-ad9e-5ac880ee5bfe",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "63b3f1f0-7e76-504c-9f59-b7e38da939d6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "1f7e8d1d-7831-5695-b432-2a45f0272a43",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "a9259aeb-540c-54c9-bd7c-070f6e6df7f1",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "3f6888d5-974c-5b4c-8458-fbbf92aea529",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "1ac30ff4-2714-5bcb-bae7-1f9ebc1083a4",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "aa52b5c3-4187-5a37-96e1-de18f2364538",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "fded5d65-6a41-5c22-a6b5-23122f6eeef6",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "2a900342-d466-5919-98c6-4785787c67f6",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "2894a214-52cc-5f35-beb2-14b5171557ca",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "6667e711-7c6f-5f7c-8d49-b95ba4814374",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "1f8b69cf-1e0e-54be-85d7-e7a233e57689",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "8658e602-ea20-5b86-b752-a55fe4808231",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "eb763d28-44b7-5e21-99ca-2cc0c6f73527",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "9fb7f7ac-e249-5d55-8b51-3786a314ffc7",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "1c25a279-495c-5870-a625-b42dadd90ece",
+      "streamId": "bea4dfbc-b8ec-5688-a628-084edd76183d",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "54ffce87-7781-51d3-8b06-777957916682",
+        "mode": "handschrift_finger"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "recognition.proposed",
+      "eventId": "8592ecfd-2ca8-560f-b21a-8169f9e88ddc",
+      "streamId": "bea4dfbc-b8ec-5688-a628-084edd76183d",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "app",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "recognitionId": "99b0564a-4a27-5bb7-b143-823d91592b0a",
+        "inputId": "54ffce87-7781-51d3-8b06-777957916682",
+        "reading": "16",
+        "confidence": 0.58,
+        "alternatives": [
+          "15"
+        ]
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "undecidable",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}

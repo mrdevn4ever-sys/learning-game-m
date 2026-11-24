@@ -1,0 +1,376 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chnobel.local/vertraege/v1/beweisregel.schema.json",
+  "title": "beweisregel v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "version",
+    "claimId",
+    "target",
+    "applicability",
+    "logic",
+    "boundary"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(\\.[a-z0-9_-]+)*$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "claimId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "references"
+      ],
+      "properties": {
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kanton",
+              "schulsprache",
+              "code",
+              "stufe",
+              "taetigkeit",
+              "bezug",
+              "quellenstatus",
+              "hinweis"
+            ],
+            "properties": {
+              "kanton": {
+                "enum": [
+                  "LU",
+                  "BE"
+                ]
+              },
+              "schulsprache": {
+                "const": "de"
+              },
+              "code": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "stufe": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "taetigkeit": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "bezug": {
+                "const": "teil"
+              },
+              "quellenstatus": {
+                "const": "offen"
+              },
+              "hinweis": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "applicability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "taskContracts",
+        "startingStates",
+        "scope",
+        "nachweisform",
+        "beobachtungsfenster"
+      ],
+      "properties": {
+        "taskContracts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "startingStates": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "scope": {
+          "const": "einzelversuch"
+        },
+        "nachweisform": {
+          "enum": [
+            "antwort",
+            "dargestellter_weg"
+          ]
+        },
+        "beobachtungsfenster": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "start",
+            "end",
+            "order"
+          ],
+          "properties": {
+            "start": {
+              "const": "attempt.opened"
+            },
+            "end": {
+              "const": "attempt.closed"
+            },
+            "order": {
+              "const": "seq"
+            }
+          }
+        }
+      }
+    },
+    "logic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "factCatalogVersion",
+        "requires",
+        "validity",
+        "support",
+        "unknownPolicy"
+      ],
+      "properties": {
+        "factCatalogVersion": {
+          "const": "1.0.0"
+        },
+        "requires": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "all",
+            "none"
+          ],
+          "properties": {
+            "all": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "attempt.submitted",
+                  "observation.valid",
+                  "observation.complete",
+                  "answer.value.15",
+                  "answer.deviation",
+                  "board.ten.child",
+                  "board.ten.app",
+                  "board.doubles.child",
+                  "board.path.child",
+                  "history.ten.child",
+                  "support.ten.before",
+                  "support.doubles.before"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "none": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "attempt.submitted",
+                  "observation.valid",
+                  "observation.complete",
+                  "answer.value.15",
+                  "answer.deviation",
+                  "board.ten.child",
+                  "board.ten.app",
+                  "board.doubles.child",
+                  "board.path.child",
+                  "history.ten.child",
+                  "support.ten.before",
+                  "support.doubles.before"
+                ]
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            }
+          }
+        },
+        "validity": {
+          "const": "current_not_invalidated"
+        },
+        "support": {
+          "const": "time_of_effective_action"
+        },
+        "unknownPolicy": {
+          "const": "abstain"
+        }
+      }
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "alternatives",
+        "counterexamples",
+        "wording"
+      ],
+      "properties": {
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "erklaerung"
+            ],
+            "properties": {
+              "erklaerung": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "ausschlussFakt": {
+                "enum": [
+                  "attempt.submitted",
+                  "observation.valid",
+                  "observation.complete",
+                  "answer.value.15",
+                  "answer.deviation",
+                  "board.ten.child",
+                  "board.ten.app",
+                  "board.doubles.child",
+                  "board.path.child",
+                  "history.ten.child",
+                  "support.ten.before",
+                  "support.doubles.before"
+                ]
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "counterexamples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "traceRef",
+              "expected"
+            ],
+            "properties": {
+              "traceRef": {
+                "type": "string",
+                "pattern": "^spuren/[a-z0-9-]+\\.json$"
+              },
+              "expected": {
+                "enum": [
+                  "must_claim",
+                  "must_not_claim",
+                  "undecidable"
+                ]
+              }
+            }
+          },
+          "minItems": 3,
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "expected": {
+                    "const": "must_claim"
+                  }
+                },
+                "required": [
+                  "expected"
+                ]
+              },
+              "minContains": 1
+            },
+            {
+              "contains": {
+                "properties": {
+                  "expected": {
+                    "const": "must_not_claim"
+                  }
+                },
+                "required": [
+                  "expected"
+                ]
+              },
+              "minContains": 1
+            },
+            {
+              "contains": {
+                "properties": {
+                  "expected": {
+                    "const": "undecidable"
+                  }
+                },
+                "required": [
+                  "expected"
+                ]
+              },
+              "minContains": 1
+            }
+          ]
+        },
+        "wording": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "de-CH",
+            "fallback"
+          ],
+          "properties": {
+            "de-CH": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "kind": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "fallback": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          }
+        }
+      }
+    }
+  }
+}

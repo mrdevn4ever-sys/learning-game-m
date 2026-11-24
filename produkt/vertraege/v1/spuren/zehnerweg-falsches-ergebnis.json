@@ -1,0 +1,192 @@
+{
+  "id": "zehnerweg-falsches-ergebnis",
+  "description": "Ein Zehnerweg darf keinen positiven Ergebnis-Fallback erzwingen.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "a7890b23-1a8d-576c-9344-22072855093c",
+      "streamId": "561a993f-b686-5e0e-90ef-4b88d6d9efb0",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "3551f67f-e27d-5032-9b5a-d539251e986f",
+        "initialMaterial": [
+          {
+            "itemId": "2958d615-a59e-5204-bc94-44afbd925769",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "e818f779-602a-5a14-98f6-e03539a5f617",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "9af8a4ad-992e-5983-b66c-28b6f1252c27",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "7ded693e-5378-5384-8c8b-eeb418962b18",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f1baaeed-7c27-570f-a857-016af40bbd33",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "12c56e4c-c6aa-5026-9182-249a9dd744bb",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "99b2c3b5-8706-5729-9b96-d5656af5763c",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "c19c6a73-9bcf-566a-b047-28331fc8a1b7",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "23955da4-7c14-5d79-b6ed-95b8b8c50d54",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d5eeaa27-d348-5d12-af8b-672271d0c792",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "7aff2123-1618-5f7b-8f11-598097bf84b7",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "2fc71006-a720-5d74-bda6-f189daa90f78",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d0e35a45-448a-5a86-b7cd-8bb544c666b8",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "ce621e81-955a-502c-9758-eb69085f6c2a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "d5f76946-2e87-5824-9826-656da7ed660b",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "7199c7ef-0039-5c34-85ac-ae384b204202",
+      "streamId": "561a993f-b686-5e0e-90ef-4b88d6d9efb0",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "83da76b4-2774-53c3-b75a-a39927b5242f",
+        "items": [
+          "23955da4-7c14-5d79-b6ed-95b8b8c50d54",
+          "d5eeaa27-d348-5d12-af8b-672271d0c792"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "28eeee85-670d-5ad6-8765-a04e5a73d027",
+      "streamId": "561a993f-b686-5e0e-90ef-4b88d6d9efb0",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "9243b3da-14cd-56ce-99a1-31ed2e1aeef9",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "11c4d348-9b75-5ba4-a3bb-9b5c51ab77ab",
+      "streamId": "561a993f-b686-5e0e-90ef-4b88d6d9efb0",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "4c74931c-7857-50a5-bb90-eda70e0c1d9b",
+        "inputId": "9243b3da-14cd-56ce-99a1-31ed2e1aeef9",
+        "value": 14,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "715f4588-7e03-504f-b561-eafcd920d58a",
+      "streamId": "561a993f-b686-5e0e-90ef-4b88d6d9efb0",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_not_claim",
+    "attempt.ten": "must_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_claim"
+  }
+}

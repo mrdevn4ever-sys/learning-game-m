@@ -1,0 +1,209 @@
+{
+  "id": "undo",
+  "description": "Undo entfernt den wirksamen Weg, nicht seine Historie.",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.opened",
+      "eventId": "715e992d-5780-5927-bf4c-23f692556b91",
+      "streamId": "5ed2b509-5b33-5bf5-ac22-b7f543a7e48b",
+      "seq": 0,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "taskContract": "sum-8-7",
+        "taskVersion": "1.0.0",
+        "family": "addition-20",
+        "representation": "counters",
+        "target": "sum-8-7",
+        "startingState": "board-8-7-v1",
+        "profileId": "6b0ab24a-3760-5b5b-8c8d-0815117355c9",
+        "initialMaterial": [
+          {
+            "itemId": "a45fa4db-f161-5151-92b8-86e0a7efac0f",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "5b742084-718d-5562-b61e-79924611e5fd",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f8093e32-2ac7-5837-9ceb-c7699f8f6515",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "12bb7043-4cb4-5bae-b0ae-5d0378137bde",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "cfc47b43-3cde-54e2-8323-4b54c86bc755",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "07596f2b-2779-54c7-81ce-5bf73abf43a0",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "ad86bd17-8637-5f10-a00f-9e90d7fd731b",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "136a38eb-47ba-5083-8da0-b9a7b6bb3278",
+            "zone": "left",
+            "origin": "task"
+          },
+          {
+            "itemId": "f2ad7d2e-9f06-5b3b-acb0-dfcb60fd533d",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "76140129-5112-5235-ae00-9673b5a74739",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f51191be-ddbe-5eef-913e-2978d2319d0a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "ce353a95-e3c1-5c19-aa7e-306ec6c9de2a",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "56a32f1e-1fb0-5eb3-a724-32e64b9ff308",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "f7dd6170-e4b4-5ca0-9619-28d6baf7eb73",
+            "zone": "right",
+            "origin": "task"
+          },
+          {
+            "itemId": "867e55f5-ee55-5570-9a6c-c2b39f582213",
+            "zone": "right",
+            "origin": "task"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "material.moved",
+      "eventId": "1ae523e4-1e0d-5cf0-9a70-a57e62f6b776",
+      "streamId": "5ed2b509-5b33-5bf5-ac22-b7f543a7e48b",
+      "seq": 1,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "6825658a-b735-59e5-abe0-f4b49fbd973a",
+        "items": [
+          "f2ad7d2e-9f06-5b3b-acb0-dfcb60fd533d",
+          "76140129-5112-5235-ae00-9673b5a74739"
+        ],
+        "fromZone": "right",
+        "toZone": "left",
+        "via": "ziehen"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "action.undone",
+      "eventId": "7df8d8ca-a0e6-5f74-b57e-b34283c28950",
+      "streamId": "5ed2b509-5b33-5bf5-ac22-b7f543a7e48b",
+      "seq": 2,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "moveId": "6825658a-b735-59e5-abe0-f4b49fbd973a"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "input.captured",
+      "eventId": "d8ed0bf5-ae3b-56e2-961e-bdedaf475368",
+      "streamId": "5ed2b509-5b33-5bf5-ac22-b7f543a7e48b",
+      "seq": 3,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "inputId": "2e006658-e637-5056-acb2-5db96c3a324c",
+        "mode": "ziffernblock"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "answer.committed",
+      "eventId": "d1eb378a-7a26-5232-ac3f-0f419f1cca6e",
+      "streamId": "5ed2b509-5b33-5bf5-ac22-b7f543a7e48b",
+      "seq": 4,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "child",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "answerId": "faab5baa-880f-578a-838e-b08139e2e6d0",
+        "inputId": "2e006658-e637-5056-acb2-5db96c3a324c",
+        "value": 15,
+        "origin": "direkt"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "type": "attempt.closed",
+      "eventId": "543c1bfc-2100-538b-ad20-8750843ed163",
+      "streamId": "5ed2b509-5b33-5bf5-ac22-b7f543a7e48b",
+      "seq": 5,
+      "occurredAt": "2026-11-22T09:00:00Z",
+      "actor": "system",
+      "candidate": {
+        "build": "offener-referenzfall-v1",
+        "content": "1.0.0",
+        "rules": "1.0.0"
+      },
+      "payload": {
+        "reason": "submitted"
+      }
+    }
+  ],
+  "expected": {
+    "attempt.result.correct": "must_claim",
+    "attempt.ten": "must_not_claim",
+    "attempt.ten.guided": "must_not_claim",
+    "attempt.alternative": "must_not_claim",
+    "attempt.path.displayed": "must_not_claim"
+  }
+}
