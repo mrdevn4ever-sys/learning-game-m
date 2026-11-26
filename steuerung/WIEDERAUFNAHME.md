@@ -1,12 +1,18 @@
-# Chnobel: Pausenstand und Wiederaufnahme
+# Chnobel: Wiederaufnahme und gesicherter Pausenstand
 
-Stand: 2026-11-24, ausdrueckliche Nutzerpause wegen nahem Nutzungslimit.
+Stand: 2026-11-26. Die Nutzerpause vom 2026-11-24 wurde durch den ausdruecklichen Auftrag "Chnobel weiter" aufgehoben. Separater Statuscommit: `d4a66d62c499d6f25c3eb1f8625972976c7c4fd2`, gepusht und live zurueckgelesen.
 
 ## 1. Zuerst beachten
 
-**Pause bleibt aktiv bis zum ausdruecklichen Fortsetzungsauftrag des Nutzers.** Eine neue Sitzung, ein Limitreset, ein Cronlauf oder ein nachtraeglicher Delegationsruecklauf ist keine Fortsetzungserlaubnis. Keine neuen Produktwrites, CI-Runs, Portalaktionen, Merges oder Uploads starten. Der Projektzustand bleibt IN_ARBEIT, der Betrieb ist PAUSIERT_AUF_NUTZERWUNSCH. Das ist weder Projektabschluss noch BLOCKIERT_STARTPAKET.
+**Interaktive Fortsetzung erlaubt; Cron bleibt aus.** ZUSTAND und BETRIEB stehen auf IN_ARBEIT. Der Nutzerauftrag vom 2026-11-26 erlaubt die Fortsetzung ab `4e31d37c911a45a519ae728adebfbd45b328983c` und verlangt unveraenderte Gates sowie die Reihenfolge in Abschnitt 7. Die erste Live-Pruefung bestaetigte alle fuenf sauberen Worktrees und die erwarteten lokalen/Remote-SHAs. Keine lebenden Subagenten beim Start. Cron `26647d618052`: enabled false, state paused, next_run_at null. Bei erneuter Nutzerpause keine automatische Fortsetzung durch Sitzung, Limitreset, Cron oder Ruecklauf. Geschuetzte Instruktionsdateien ohne ausdrueckliche Dialogzustimmung nicht aendern; die frueher abgewiesene AGENTS.md-Aenderung ist nicht gelandet.
 
-Nach Erlaubnis: `steuerung/STATUS.md`, den gesamten `MASTERPROMPT.md`, `AGENTS.md`, `docs/adr/`, diese Anleitung und `steuerung/auftraege/phase-0.json` lesen. Skill `chnobel-autonomy` laden. Massgebend sind Dateien, unveraenderliche Gitobjekte und echte Toolausgaben, nicht eine rekonstruierte Erinnerung.
+### Nachreview-Abgleich vom 2026-11-26
+
+Beide alten Delegationsmanifeste und die Endmarker aller sechs Transkripte melden `interrupted`. Alle sechs unter Abschnitt 4 erwarteten Abschlussberichte fehlen. Keine vollstaendigen Urteile, keine Ratifikation. Die alten Teilbelege bleiben unveraendert und sind nur Ausgangsmaterial fuer frische fremde Kontexte. Maschinenlesbarer Abgleich: `F:/ChnobelRuntime/reviews/wiederaufnahme-20261126/abgleich.json`, SHA-256 `dcb023d365e998fbb78bbb10e2a22b5461a9b41eab0ff340db0e9df7efd9d131`. Zuerst drei gezielte Nachreviews gegen die unten genannten exakten Reparatur-SHAs, danach die drei Ratifikationsvoten. Kein Neustart von `deleg_c8c713b8`, keine v2-Implementierung, kein CI-Neustart oder zweiter PR.
+
+Aktive Nachreview-Delegation `deleg_5f23880a`: `sa-0-40bc0516` Steuerung, `sa-1-1cee643e` Referenz, `sa-2-01e3e3c4` iPad. Nur Runtime-Reviewwrites; keine Produktwriter. Die erwarteten Abschlussberichte behalten die Pfade in Abschnitt 4, neue Evidenz liegt unter `F:/ChnobelRuntime/reviews/fortsetzung-20261126/{steuerung,referenz,ipad}/`. Ruecklaeufe werden automatisch in dieselbe aktive Arbeit geliefert; nicht pollen oder doppelt starten. Vor echter Unterbrechung Kinder sauber stoppen und den entstandenen Teilstand sichern; ein asynchroner Ruecklauf-Handoff ist noch kein Sitzungsabbruch.
+
+Bei jedem Wiederanlauf: `steuerung/STATUS.md`, den gesamten `MASTERPROMPT.md`, `AGENTS.md`, `docs/adr/`, diese Anleitung, `steuerung/BLOCKER.md`, `steuerung/auftraege/phase-0.json` und `docs/red-team-register.md` lesen. Skill `chnobel-autonomy` laden. Massgebend sind Dateien, unveraenderliche Gitobjekte und echte Toolausgaben, nicht eine rekonstruierte Erinnerung.
 
 ## 2. Wo liegt was?
 

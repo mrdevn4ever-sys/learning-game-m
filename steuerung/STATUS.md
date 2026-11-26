@@ -10,9 +10,17 @@ FORTSETZUNGSAUFTRAG: ausdruecklicher Nutzerauftrag "Chnobel weiter" vom 2026-11-
 
 Die Nutzerpause vom 2026-11-24 ist durch den ausdruecklichen Fortsetzungsauftrag aufgehoben, nicht durch einen Ruecklauf oder Limitreset. Am 2026-11-26 wurden zuerst alle verlangten Startdateien vollstaendig in der vorgegebenen Reihenfolge gelesen. Die fuenf Worktrees sind sauber; Branch, HEAD und Live-Remote entsprechen exakt den erwarteten Staenden. Main bleibt `9bab69c078f2c7dbfbca3b548ce1c8ef24a9ab61`. Alte FAIL-Commitobjekte und eingefrorener ADR-0003-Hash sind erhalten. WARTEN ist nicht gesetzt, weil die Definition of Done nicht erfuellt ist.
 
-**Anleitung: `steuerung/WIEDERAUFNAHME.md`, zusammen mit dem Fortsetzungsauftrag.** Der Chnobel-Cron `26647d618052` bleibt waehrend interaktiver Arbeit aus; keine eigenmaechtige Reaktivierung. Keine lebenden Subagenten bei der Wiederaufnahme. Die sechs alten Nachreview-/Ratifikationskontexte sind noch auf vollstaendige Urteile zu pruefen; Abbruch/Teilbericht ist kein Urteil. Keine alten Reparaturauftraege erneut starten.
+**Anleitung: `steuerung/WIEDERAUFNAHME.md`, zusammen mit dem Fortsetzungsauftrag.** Der Chnobel-Cron `26647d618052` bleibt waehrend interaktiver Arbeit aus; live bestaetigt enabled false, state paused, next_run_at null. Keine lebenden Subagenten bei der Wiederaufnahme. Abgleich abgeschlossen: alle sechs alten Nachreview-/Ratifikationskontexte `interrupted`, alle sechs erwarteten Abschlussberichte fehlen. Kein Urteil. Keine alten Reparaturauftraege erneut starten.
 
 Die abgewiesene AGENTS.md-Erweiterung ist weder im Git-Objekt noch im Arbeitsinhalt enthalten. SHA-256 des unveraenderten vorherigen und aktuellen Git-Blobs: `98bfd757b5d163b1ad172a7fffae2bf20080aab134aa43337cd7b6b43bb0bca6`; der Arbeitsinhalt unterscheidet sich ausschliesslich durch CRLF/LF-Zeilenenden. Geschuetzte Instruktionsdateien bleiben ohne ausdrueckliche Dialogzustimmung unangetastet.
+
+## Aktueller Ruecklaufcheckpoint
+
+- Eigener Wiederaufnahmecommit `d4a66d62c499d6f25c3eb1f8625972976c7c4fd2`, remote zurueckgelesen.
+- Historischer Abgleich: `steuerung/gedaechtnis/pruefergebnisse/2026-11-26-wiederaufnahme/abgleich.json`. Original-FAILs/Teilbelege bleiben erhalten.
+- Aktive fremde Nachreviews: `deleg_5f23880a`, Steuerung `sa-0-40bc0516`, Referenz `sa-1-1cee643e`, iPad `sa-2-01e3e3c4`. Read-only gegen die unveraenderten drei Reparatur-SHAs; nur neue Runtimebelege erlaubt. Keine Produktwriter gestartet.
+- Naechster Schritt nach automatischem Ruecklauf: Berichte und echte Belege gegen die exakten Kandidaten verifizieren; erst danach drei frische Ratifikationsvoten zum eingefrorenen ADR 0003. Keine neue Implementierung bis v2-Manifest eingefroren und fremd geprueft ist.
+- Kein CI-Run manuell ausgeloest, kein zweiter PR, main-Merge, Auftragsabschluss, Signing oder Upload. Startpaket-Neupruefung bleibt an ihrer vorgegebenen Stelle.
 
 ## Gesicherter Stand des Pausencheckpoints
 

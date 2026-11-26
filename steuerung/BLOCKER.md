@@ -1,6 +1,8 @@
 # Blocker
 
-Stand: 2026-11-24, Pausencheckpoint. Betrieb auf ausdruecklichen Nutzerwunsch pausiert; Fortsetzung nur nach neuem Auftrag. Anleitung: `steuerung/WIEDERAUFNAHME.md`. Keine privaten Schluesselwerte gelesen, erzeugt oder ausgegeben.
+Stand: 2026-11-26, interaktive Wiederaufnahme nach ausdruecklichem Nutzerauftrag. Cron bleibt aus. Anleitung: `steuerung/WIEDERAUFNAHME.md`. Keine privaten Schluesselwerte gelesen, erzeugt oder ausgegeben. Apple-/Identitaetsinventur unten ist historisch und wird erst an der vorgeschriebenen Stelle neu geprueft; keine Behauptung einer heutigen Portalverifikation.
+
+Nachreview-Abgleich: alle sechs alten Kontexte nach Manifest und Transkriptendmarker interrupted; sechs Abschlussberichte fehlen. Kein altes Schlussurteil. Drei frische fremde Nachreviews laufen unter `deleg_5f23880a` gegen die unveraenderten Reparatur-SHAs. ADR 0003 bleibt bis zur anschliessenden Ratifikation Entwurf; v2-Manifest und Implementierung noch nicht begonnen. Beleg: `steuerung/gedaechtnis/pruefergebnisse/2026-11-26-wiederaufnahme/abgleich.json`. Keine offenen fachlichen Befunde durch diesen Abgleich geschlossen.
 
 ## Aktueller Fortschritt und Berechtigung
 
