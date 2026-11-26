@@ -6,6 +6,8 @@ Historischer Wiederaufnahmeabgleich: alle sechs alten Kontexte interrupted, dama
 
 ADR 0003 ist seit 2026-11-26 als prospektive Produktentscheidung ratifiziert: drei vollstaendige unbedingte JA aus `deleg_b54b26ad` zu exakt `0f97e89acd7cb6a2ad937949db57f704596e36c617af5ac31a655ac407975472`, elternverifiziert und verlustfrei archiviert unter `steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/`. **Offene Voraussetzung vor Implementierung:** vollstaendiges v2-Revisions-/Fallmanifest definieren, einfrieren/haschen und fremd pruefen. Kein Codebeginn allein durch die Ratifikation. Neue fachliche Befunde werden weder durch Stimmen noch durch gruene Bestandslaeufe geschlossen. Native Diagnose, Integration und Startpaket-Neupruefung bleiben in der vorgegebenen Folge.
 
+Manifestdefinition ist unter `deleg_6bcb2994` / `sa-0-416e4182` beauftragt, nur Runtime-Spezifikation in `F:/ChnobelRuntime/specification/v2-manifest-draft-01/`. Vollstaendigkeit, Freeze und fremdes Review noch offen; der Autor darf sich nicht selbst freigeben. Ratifikationscheckpoint `d84c597a68863929034cff50089e098120c7cb39` remote bestaetigt. Keine neue Reparatur oder native Ausfuehrung dadurch erlaubt.
+
 ## Aktueller Fortschritt und Berechtigung
 
 Der Kontoinhaber hat die angemeldeten Apple-/GitHub-Oberflaechen bereitgestellt und die weitere Einrichtung ausdruecklich delegiert. Routine-Einrichtung ist damit Agentenarbeit; rechtliche Vertragsannahmen, Zahlungen und persoenliche Authentifizierung bleiben davon getrennt. Die historische Liste unten wird nicht erneut als vollstaendig unerledigte Menschenaufgabe ausgegeben.
