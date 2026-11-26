@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "decision": "ratifiziert",
+  "decidedAt": "2026-11-26T15:07:22.543323+01:00",
+  "draftSha256": "0f97e89acd7cb6a2ad937949db57f704596e36c617af5ac31a655ac407975472",
+  "records": [
+    {
+      "id": "architekt-bericht",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/architekt-bericht.json",
+      "containerSha256": "fa9662910cda077e052ecbd9909344b26bcb45a23e4d9229c43da0c51717f3c1",
+      "contentSha256": "fd67b5ff4583176be64158ad536d01cf658675ceff1373c6e31cd3c2482dae44"
+    },
+    {
+      "id": "architekt-stimme",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/architekt-stimme.json",
+      "containerSha256": "1e30d93293a69f4e5bc063a6de9820adf35b9937ec5d8f3b117b89d001e0a81f",
+      "contentSha256": "ec45b43ec25ff1b7e584efdb7af5bc7e4b77ca9d7cd189ef798be66d0eda9317"
+    },
+    {
+      "id": "didaktik-bericht",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/didaktik-bericht.json",
+      "containerSha256": "cdf81d37d5c3bcfd985be2772dec41271d8351784d808feedd5b19d992c5f20c",
+      "contentSha256": "1cc6efa92d2279679fb31ed9f57df01e59971eb21e94d98d133e63380d97f7d0"
+    },
+    {
+      "id": "didaktik-stimme",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/didaktik-stimme.json",
+      "containerSha256": "0d36651ad0d8b64fef632295c681eb889b36bcb665cda5d5ae3786a3db2072de",
+      "contentSha256": "e05d4c7d19c2840cf598475fb0585c1316f09886168cf4241f4e39ecca029098"
+    },
+    {
+      "id": "fassung",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/fassung.json",
+      "containerSha256": "8759444a0d2ff07101acab232db4364928215b491e47fab625b8f49af11c477d",
+      "contentSha256": "0f97e89acd7cb6a2ad937949db57f704596e36c617af5ac31a655ac407975472"
+    },
+    {
+      "id": "redteam-bericht",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/redteam-bericht.json",
+      "containerSha256": "3a34b5fdb32dfab1ea7894b521db401619bf088c78647263a637b3615a4b5342",
+      "contentSha256": "dfc655ce47fad7ba5749291ff15063d4f7241092e7c4908c3fe205e764ea6a51"
+    },
+    {
+      "id": "redteam-stimme",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/redteam-stimme.json",
+      "containerSha256": "a763080a4191b5719071841b8d704cead5a165630ef27df45a108e11a21884fe",
+      "contentSha256": "cc4ccfb5aa4b892c3289bb829c56a434814cf5a7d0aaf3c3ac89216cd7df0f82"
+    }
+  ],
+  "votes": [
+    {
+      "role": "Architekt",
+      "vote": "JA",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/architekt-stimme.json"
+    },
+    {
+      "role": "Didaktik-Kritiker Mathematik",
+      "vote": "JA",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/didaktik-stimme.json"
+    },
+    {
+      "role": "Red-Team",
+      "vote": "JA",
+      "archive": "steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/redteam-stimme.json"
+    }
+  ],
+  "counts": {
+    "JA": 3
+  },
+  "majoritySatisfied": true,
+  "scope": "Nur prospektive Produktentscheidungen nach MASTERPROMPT 6.2; keine Beleg-, Rechte- oder Kandidatenfreigabe",
+  "implementationAuthorized": false,
+  "manifestReviewRequired": true,
+  "integrationAuthorized": false,
+  "releaseAuthorized": false
+}

@@ -1,6 +1,6 @@
 # ADR 0003: Aktionsbelege und prospektive Vertragsrevision
 
-Status: Entwurf zur abschliessenden Gremiumsratifikation; noch nicht verbindlich
+Status: verbindlich als prospektive Produktentscheidung; ratifiziert am 2026-11-26, keine Produktfreigabe
 Datum: 2026-11-24
 Geltung: ausschliesslich neue, explizit versionierte Entwicklungskandidaten nach Ratifikation. Keine Implementierungs-, Integrations-, Abnahme- oder Releasefreigabe.
 
@@ -92,4 +92,4 @@ Zustandsfremde UI-Hilfe aus IPAD-03 bleibt eigenstaendig zu pruefen: 8/7, 9/6, 1
 - Erst Ratifikation dieses Texts und anschliessende fremde Pruefung des expliziten Revisionsmanifests erlauben die neue Umsetzung. Ein Beschluss macht keinen Test gruen und schliesst keinen Befund.
 - Drei Reparaturbranches werden separat nachgeprueft. Die Original-FAILs und RT-01 bis RT-15 bleiben erhalten; neue Bewertungen binden neue Kandidaten.
 - Technische Identitaetstrennung, authentisierte Freigabe, Offline-/Speicher-/Accessibility-/Hardware-Nachweise, Handschrifterkennung und Apple-Endzustand werden nicht durch dieses ADR ersetzt.
-- Gremiumsvoten zur Ratifikation und Entscheidungsdatum werden erst nach tatsaechlichem Ruecklauf ergaenzt. Bis dahin bleibt der Status Entwurf.
+- Ratifikation am 2026-11-26 nach vollstaendigem Ruecklauf `deleg_b54b26ad`: Architekt JA, Didaktik-Kritiker Mathematik JA, Red-Team JA. Der Orchestrator hat drei verschiedene Rollen, COMPLETE, unbedingte Ganztextvoten und den exakten Hash geprueft. Abstimmungsgegenstand war ausschliesslich SHA-256 `0f97e89acd7cb6a2ad937949db57f704596e36c617af5ac31a655ac407975472`. Diese Fassung samt Originalvoten/-berichten bleibt bytegetreu unter `steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/` erhalten; `index.json` bindet Inhalt und Container. Hier wurden nur Status und dieser Entscheidungsvermerk aktualisiert, D1-D6 bleiben wortgleich. RT-16/17 und alle nicht behobenen Befunde bleiben offen. Vor Implementierung ist weiterhin das separate eingefrorene und fremd gepruefte v2-Manifest erforderlich.

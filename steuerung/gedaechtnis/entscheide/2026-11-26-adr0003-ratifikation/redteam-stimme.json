@@ -1,0 +1,21 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "vote.json",
+  "contentSha256": "cc4ccfb5aa4b892c3289bb829c56a434814cf5a7d0aaf3c3ac89216cd7df0f82",
+  "lines": [
+    "{\n",
+    "  \"role\": \"Red-Team\",\n",
+    "  \"draft_sha256\": \"0f97e89acd7cb6a2ad937949db57f704596e36c617af5ac31a655ac407975472\",\n",
+    "  \"completion\": \"COMPLETE\",\n",
+    "  \"vote\": \"JA\",\n",
+    "  \"report_path\": \"F:/ChnobelRuntime/reviews/adr0003-ratifikation-redteam.md\",\n",
+    "  \"vote_path\": \"F:/ChnobelRuntime/reviews/fortsetzung-20261126/ratifikation-redteam/vote.json\",\n",
+    "  \"reason\": \"Unveraenderter Ganztext deckt RT-16 durch D2.1/D2.6/D4.1 und RT-17 durch D1.1/D1.4/D1.5 ab. G4, ueberlappende Luecken, Invalidierung, D5-Pflichtfaelle und Versionsbindung wurden mit Gegenfaellen geprueft; keine erforderliche Textaenderung gefunden. Alte Urteile und offene Befunde bleiben erhalten.\",\n",
+    "  \"text_changes_required\": false,\n",
+    "  \"conditions\": [],\n",
+    "  \"finding_closures\": [],\n",
+    "  \"ratification_asserted\": false,\n",
+    "  \"product_or_release_verdict\": null\n",
+    "}\n"
+  ]
+}

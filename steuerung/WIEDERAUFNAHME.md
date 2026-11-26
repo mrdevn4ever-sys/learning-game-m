@@ -10,11 +10,13 @@ Stand: 2026-11-26. Die Nutzerpause vom 2026-11-24 wurde durch den ausdrueckliche
 
 Beide alten Delegationsmanifeste und die Endmarker aller sechs Transkripte meldeten `interrupted`. Beim ersten Abgleich fehlten alle sechs unter Abschnitt 4 erwarteten Abschlussberichte. Daraus keine vollstaendigen Urteile oder Ratifikation. Die alten Teilbelege bleiben unveraendert und dienten nur als Ausgangsmaterial fuer frische fremde Kontexte. Maschinenlesbarer Abgleich: `F:/ChnobelRuntime/reviews/wiederaufnahme-20261126/abgleich.json`, SHA-256 `dcb023d365e998fbb78bbb10e2a22b5461a9b41eab0ff340db0e9df7efd9d131`. Reihenfolge: zuerst drei gezielte Nachreviews gegen die unten genannten exakten Reparatur-SHAs, danach die drei Ratifikationsvoten. Kein Neustart von `deleg_c8c713b8`, keine v2-Implementierung, kein CI-Neustart oder zweiter PR.
 
-### Neuester Stand: Nachreviews abgeschlossen, Ratifikation aktiv
+### Neuester Stand: Nachreviews und Ratifikation abgeschlossen
 
 `deleg_5f23880a` ist abgeschlossen. Alle drei Berichte und die angegebenen Kandidaten-/Evidenzbindungen sind vom Elternkontext geprueft. Archive: `steuerung/gedaechtnis/pruefergebnisse/2026-11-26-nachreviews/`. Rohbelege: `F:/ChnobelRuntime/reviews/fortsetzung-20261126/{steuerung,referenz,ipad}/`. Steuerung PASS nur im lokalen Entwicklungsumfang. Referenz FAIL mit neuem hohen RT-16/NR-F01-01 (logisch unmoegliche Undofolge nach zwei Luecken); iPad statisch FAIL mit hohem RT-17/R1-IPAD-01-A (inverse neue App-Bewegung statt Undo belebt alten freien Kindanker). Native Ausfuehrung NOT RUN. Elternlauf: `F:/ChnobelRuntime/verification/2026-11-26-review-parent/evidence/verification.json`, SHA-256 `e557c2af8597cc5f4a09580d6d1fa605f37886e72df71f5e42f9612dbbc2f2f4`; 42 Steuerungsgegenproben bestanden, vier N20-Varianten gegen beide Python-Kandidaten reproduziert, elf iPad-Quellpruefungen mit einem FAIL. Nicht zu einer Gesamtsumme addieren.
 
-Jetzt aktive Ratifikation `deleg_b54b26ad`: Architekt `sa-0-a0489192`, Didaktik `sa-1-6119ebf7`, Red-Team `sa-2-6572b58d`. Ausschliesslich eingefrorener ADR-Hash aus Abschnitt 4. Neue Berichte `adr0003-ratifikation-{architekt,didaktik,redteam}.md` in `F:/ChnobelRuntime/reviews/`, Stimmen jeweils `F:/ChnobelRuntime/reviews/fortsetzung-20261126/ratifikation-<rolle>/vote.json`. ADR unveraendert Entwurf, kein v2-Manifest und keine Reparaturimplementierung. Nach Ruecklauf Voten und Digests pruefen, nur Produktentscheidungen abstimmen; Befunde/Tests/Rechte sind nicht abstimmbar. Danach erst gegebenenfalls v2-Manifest samt RT-16/17 und positiven Gegenfaellen einfrieren und fremd pruefen.
+Ratifikation `deleg_b54b26ad` ist abgeschlossen: Architekt `sa-0-a0489192`, Didaktik `sa-1-6119ebf7`, Red-Team `sa-2-6572b58d` jeweils COMPLETE/JA zum gesamten eingefrorenen ADR-Hash aus Abschnitt 4. Drei unterschiedliche Rollen, unbedingte Stimmen, Bericht-/Stimm-/Fassungsdigests und Mehrheit vom Elternkontext am 2026-11-26 geprueft. Archiv `steuerung/gedaechtnis/entscheide/2026-11-26-adr0003-ratifikation/` enthaelt die urspruenglichen Rohbytes verlustfrei und einen Hashindex. ADR 0003 ist fuer prospektive Produktentscheidungen verbindlich; nur Status/Entscheidungsvermerk wurden aktualisiert, D1-D6 nicht geaendert. Befunde, Tests und Rechte sind nicht abstimmbar; RT-16/17 bleiben offen.
+
+Jetzt v2-Revisions-/Fallmanifest definieren: ganze Feldliste, alte Fall-IDs und Revisions-/Erwartungszuordnung, neue Pflichtfaelle einschliesslich RT-16/17 und positiver Gegenkontrollen, Nenner und getrennte Ausfuehrungsgrenzen. Danach einfrieren/haschen und fremd pruefen. Vor dessen Freigabe weiterhin keine Implementierung/native Folgearbeiten/Integration. Die drei Ratifikationsberichte liegen unter den unten genannten Runtimepfaden; kein paralleler Produktwriter.
 
 Nur Runtime-Reviewwrites; keine Produktwriter. Ruecklaeufe werden automatisch in dieselbe aktive Arbeit geliefert; nicht pollen oder doppelt starten. Vor echter Unterbrechung Kinder sauber stoppen und den entstandenen Teilstand sichern; ein asynchroner Ruecklauf-Handoff ist noch kein Sitzungsabbruch.
 
@@ -48,7 +50,7 @@ Nicht additiv als Gesamtfreigabe verwenden: unterschiedliche Quellcommits, unter
 Evidenz im Repo:
 - `steuerung/gedaechtnis/pruefergebnisse/2026-11-24-code-reviews/`: drei unveraenderte Original-FAILs als verlustfreie JSON-Zeilencontainer mit Hashindex.
 - `steuerung/gedaechtnis/pruefergebnisse/2026-11-24-repair1-parent/`: Elternlaeufe und Checkpointmanifest. Rohlogs bleiben unter `F:/ChnobelRuntime/verification/`.
-- `docs/red-team-register.md`: RT-01 bis RT-15, nicht durch eigene Tests geschlossen.
+- `docs/red-team-register.md`: RT-01 bis RT-17; Kandidatenbindungen und offene Befunde werden durch eine Produktentscheidung nicht geschlossen.
 - `produkt/werkzeuge/referenz/REPARATUR-1.md` im Referenzworktree und `produkt/App/REPARATUR-1.md` im iPadworktree: Implementierungsumfang und Grenzen.
 
 ## 4. Reviews und Gremium: nicht nochmals bei null anfangen
@@ -60,7 +62,7 @@ Original-FAILs betreffen:
 
 Erster Reparatur-/Gremiumsauftrag `deleg_c8c713b8` ist zurueck und in diesem Stand behandelt. Nicht erneut die alten Reparaturauftraege starten. Die drei Ausgangsvoten sind unveraendert unter `steuerung/gedaechtnis/entscheide/2026-11-24-reparatursemantik/` archiviert: D1/D2/D4 zwei JA/eine AENDERUNG, D3/D6 drei JA, D5 drei AENDERUNG.
 
-`docs/adr/0003-aktionsbelege-und-prospektive-vertragsrevision.md` ist der konsolidierte **Entwurf**, noch nicht verbindlich. Eingefrorene Ratifikationsfassung:
+`docs/adr/0003-aktionsbelege-und-prospektive-vertragsrevision.md` ist seit 2026-11-26 **ratifiziert fuer prospektive Produktentscheidungen**. Die nachfolgende eingefrorene Fassung war der exakte Abstimmungsgegenstand; ihr historischer Entwurfsstatus bleibt in den archivierten Originalbytes erhalten. Keine inhaltliche Aenderung der D1-D6 durch die redaktionelle Statusaktualisierung. Eingefrorene Ratifikationsfassung:
 `F:/ChnobelRuntime/reviews/adr0003-ratifikation-0f97e89acd7cb6a2ad937949db57f704596e36c617af5ac31a655ac407975472.md`.
 Hash: `0f97e89acd7cb6a2ad937949db57f704596e36c617af5ac31a655ac407975472`.
 
@@ -68,7 +70,7 @@ Bei Pausenwunsch wurde Stop fuer folgende sechs Kontexte angefordert; Ruecklaeuf
 - `deleg_87155b84`: `sa-0-3746c9cd` Steuerungsnachreview, `sa-1-24127e2b` Referenznachreview, `sa-2-1fcbb769` iPadnachreview.
 - `deleg_afd52147`: `sa-0-57b1d82a` Architekt, `sa-1-1d39cd2a` Didaktik, `sa-2-a010be5a` Red-Team zur ADR-Ratifikation.
 
-Pfade der beim Pausenstand erwarteten Berichte; die drei Nachreviews sind nun vollstaendig, die drei neuen Ratifikationsvoten noch ausstehend:
+Pfade der beim Pausenstand erwarteten Berichte; die drei neuen Nachreviews und drei neuen Ratifikationsvoten sind nun vollstaendig und elternverifiziert, alte abgebrochene Kontexte bleiben unveraendert:
 `F:/ChnobelRuntime/reviews/steuerung-repair1-review.md`, `referenz-repair1-review.md`, `ipad-repair1-review.md`, `adr0003-ratifikation-architekt.md`, `adr0003-ratifikation-didaktik.md`, `adr0003-ratifikation-redteam.md`.
 
 Vollstaendige Delegationstranskripte: `C:/Users/user/AppData/Local/hermes/cache/delegation/live/<delegations-id>/task-0.log` bis `task-2.log`. Aeltere Batches: `deleg_fe139734` Originalreviews; `deleg_c8c713b8` sechs Reparatur-/Votumruecklaeufe; `deleg_51255299` native Diagnose. Nur abgeschlossene/angehaltene Ruecklaeufe zur Rekonstruktion lesen, nicht laufende Kinder pollen.
