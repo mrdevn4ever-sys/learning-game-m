@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "INCOMPLETE",
+  "delegation": "deleg_6bcb2994",
+  "author": "sa-0-416e4182",
+  "sourceDirectory": "F:/ChnobelRuntime/specification/v2-manifest-draft-01/",
+  "sourceManifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
+  "sourceHandoffSha256": "970299f1be40510c16eb2c707be39a947023e0eaf80f87f924ea057ea79324df",
+  "archiveScope": "Nur Status-/Manifest-/Blocker-/Mengen-/Elternabgleich-/Beratungstexte; vollstaendige Rohdaten bleiben Runtime, keine vollstaendige Git-Sicherung der Quelldateien",
+  "records": [
+    {
+      "id": "manifest",
+      "kind": "specification",
+      "source": "F:/ChnobelRuntime/specification/v2-manifest-draft-01/manifest.json",
+      "archive": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-manifest-entwurf01/manifest.json",
+      "contentSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
+      "containerSha256": "f9654d953bb8b844f5bed28e3194e26a8990707588d8df5e31940d7ea82e7f44"
+    },
+    {
+      "id": "readme",
+      "kind": "scope",
+      "source": "F:/ChnobelRuntime/specification/v2-manifest-draft-01/README.md",
+      "archive": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-manifest-entwurf01/readme.json",
+      "contentSha256": "e6b1ea3aa5655c22a550bcdc44e4cd266103c57c0cfe336459f045728fb987e9",
+      "containerSha256": "9fc8dc2feb29d26f09d6bd39e0509c99826b8b507eb0e2336ef6b739f7af878d"
+    },
+    {
+      "id": "offene-punkte",
+      "kind": "blockers",
+      "source": "F:/ChnobelRuntime/specification/v2-manifest-draft-01/open-issues.json",
+      "archive": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-manifest-entwurf01/offene-punkte.json",
+      "contentSha256": "9cae43f9c0a1d30e1388eced5e902fc81c91150474ce6076cc2911ae0f3d1ea8",
+      "containerSha256": "0585f3703492b175d4a4c20fb2cb820db4ed5fa7f1ab883cb6ab2502c9ccc1e2"
+    },
+    {
+      "id": "fallmengen",
+      "kind": "inventory",
+      "source": "F:/ChnobelRuntime/specification/v2-manifest-draft-01/counts.json",
+      "archive": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-manifest-entwurf01/fallmengen.json",
+      "contentSha256": "5cf73c92e0488faad5e1e751c41aa2852d92aa69efc076fd20a0d635026e426a",
+      "containerSha256": "7b6bdba9fbaa5b77a83ef54bfca9c32ac866f62626e33be833e169b11c7d5e58"
+    },
+    {
+      "id": "elternabgleich",
+      "kind": "mechanical-verification",
+      "source": "F:/ChnobelRuntime/verification/v2-manifest-draft-01-parent/mechanical-readback.json",
+      "archive": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-manifest-entwurf01/elternabgleich.json",
+      "contentSha256": "056cb24d4b956b4898c9c71d1c9b9f96d2d5c9073ba3c3b0a893709d69bc505a",
+      "containerSha256": "51f059d1e2cee504a53f2c0dcb880f1d1f59405fd3b325a09366c5b02c5d3bf2"
+    },
+    {
+      "id": "gremiumsauftrag",
+      "kind": "consultation",
+      "source": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01/brief.md",
+      "archive": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-manifest-entwurf01/gremiumsauftrag.json",
+      "contentSha256": "a41b85b4f7b710ddf32e6111d27a4f2fe957c684a50c9ac5485bbe3c1c96ac69",
+      "containerSha256": "83b245c9ffc0682024fae0e65c753a7c93d96185d6adcd8d87954b27fd843abc"
+    }
+  ],
+  "parentVerified": "Mechanische Hashes, Fallidentitaeten und Quellen; keine fachliche Freigabe",
+  "sourceChanged": false,
+  "frozen": false,
+  "implementationAuthorized": false,
+  "integrationAuthorized": false,
+  "releaseAuthorized": false,
+  "openIssueIds": [
+    "Q-ANCHOR-INTERVENTION",
+    "Q-U07",
+    "Q-GUARD-TOTALISATION",
+    "M-REPORT-ORACLES",
+    "M-HELP-TEXT-BINDING",
+    "M-FIELD-NORMALFORM",
+    "M-SEMANTIC-CASE-CHECK"
+  ],
+  "followupDelegation": "deleg_07559a2f",
+  "children": [
+    "sa-0-4c346f07",
+    "sa-1-653e4ead",
+    "sa-2-e51db84c",
+    "sa-3-897f522a"
+  ]
+}
