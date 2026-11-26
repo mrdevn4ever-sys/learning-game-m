@@ -1,15 +1,20 @@
 # Status
 
 ZUSTAND: IN_ARBEIT
-BETRIEB: PAUSIERT_AUF_NUTZERWUNSCH
+BETRIEB: IN_ARBEIT
 PHASE: 0 – Betriebsfaehigkeit und Apple-Durchstich
-LETZTE_AKTUALISIERUNG: 2026-11-24
+LETZTE_AKTUALISIERUNG: 2026-11-26
+FORTSETZUNGSAUFTRAG: ausdruecklicher Nutzerauftrag "Chnobel weiter" vom 2026-11-26, Wiederaufnahme ab Checkpoint 4e31d37; alle Grenzen und die vorgegebene Arbeitsreihenfolge bleiben unveraendert.
 
-## Verbindliche Pause und aktuelle Uebergabe
+## Bestaetigte Wiederaufnahme
 
-Der Nutzer hat wegen des nahen Nutzungslimits Pause und eine gesicherte Anleitung angeordnet. Keine neuen Entwicklungs-, Delegations-, CI-, Portal-, Merge- oder Releaseaktionen bis zu einem ausdruecklichen Fortsetzungsauftrag. Spaete Ruecklaeufe und ein Limitreset heben die Pause nicht auf. WARTEN ist nicht gesetzt, weil die Definition of Done nicht erfuellt ist.
+Die Nutzerpause vom 2026-11-24 ist durch den ausdruecklichen Fortsetzungsauftrag aufgehoben, nicht durch einen Ruecklauf oder Limitreset. Am 2026-11-26 wurden zuerst alle verlangten Startdateien vollstaendig in der vorgegebenen Reihenfolge gelesen. Die fuenf Worktrees sind sauber; Branch, HEAD und Live-Remote entsprechen exakt den erwarteten Staenden. Main bleibt `9bab69c078f2c7dbfbca3b548ce1c8ef24a9ab61`. Alte FAIL-Commitobjekte und eingefrorener ADR-0003-Hash sind erhalten. WARTEN ist nicht gesetzt, weil die Definition of Done nicht erfuellt ist.
 
-**Vollstaendige aktuelle Anleitung: `steuerung/WIEDERAUFNAHME.md`.** Der Chnobel-Cron `26647d618052` ist verifiziert pausiert, enabled false, ohne naechsten Lauf. Stop fuer alle sechs laufenden Nachreview-/Ratifikationskontexte angefordert; Teilruecklaeufe bleiben unvollstaendige Belege.
+**Anleitung: `steuerung/WIEDERAUFNAHME.md`, zusammen mit dem Fortsetzungsauftrag.** Der Chnobel-Cron `26647d618052` bleibt waehrend interaktiver Arbeit aus; keine eigenmaechtige Reaktivierung. Keine lebenden Subagenten bei der Wiederaufnahme. Die sechs alten Nachreview-/Ratifikationskontexte sind noch auf vollstaendige Urteile zu pruefen; Abbruch/Teilbericht ist kein Urteil. Keine alten Reparaturauftraege erneut starten.
+
+Die abgewiesene AGENTS.md-Erweiterung ist weder im Git-Objekt noch im Arbeitsinhalt enthalten. SHA-256 des unveraenderten vorherigen und aktuellen Git-Blobs: `98bfd757b5d163b1ad172a7fffae2bf20080aab134aa43337cd7b6b43bb0bca6`; der Arbeitsinhalt unterscheidet sich ausschliesslich durch CRLF/LF-Zeilenenden. Geschuetzte Instruktionsdateien bleiben ohne ausdrueckliche Dialogzustimmung unangetastet.
+
+## Gesicherter Stand des Pausencheckpoints
 
 - Reparatur 1 Steuerung: `e4a8f442272b75cfa0e1f7fd46c2d793b1fbd2ca`, `feat/steuerung`, Elternnachtest 83/83 Python-Tests bestanden; alte Tests bytegleich, gepusht und Remote-SHA verifiziert.
 - Reparatur 1 Referenz: `107f524a0529e84fb5dad78af7a7204edb6f649e`, `feat/vertraege-referenz`, Elternnachtest 232/232 Python-Tests bestanden; alte Tests/Vertraege bytegleich, gepusht und Remote-SHA verifiziert. F04-F06/Sollrevision weiter offen.
@@ -34,14 +39,14 @@ Der Nutzer hat wegen des nahen Nutzungslimits Pause und eine gesicherte Anleitun
 - Dokumentations-/Steuerungsbranch `ci/entwicklungspruefung` getrennt von `ci/native-phase0` in `F:/Projects/Chnobel-Nativ`. Diagnose-Snapshot `fbb900fd77be98fe02aba73cdaf2382676d1cf5a` enthaelt exakt die drei gesperrten Original-Produktbaeume und aktuelle main-Basis; Tree-Identitaet nachgeprueft. CI-Auftrag fuer ausschliesslich unsignierte macOS-/Simulator-Diagnose mit separater Review-Sperre und Draft-PR beauftragt; noch kein nativer Ausfuehrungsbeleg. Kein main-Merge oder Release daraus erlaubt. Swift-Referenzabgleich ausstehend.
 - Erster eigener Referenzlauf wegen fehlender gepinnter RFC-3339-Abhaengigkeit gescheitert; Originalfehler erhalten. Nach Installation der unveraenderten Requirements separater erfolgreicher Lauf. Kein Test/Gate geaendert.
 
-## Naechste Aufgabe NUR nach ausdruecklicher Fortsetzung
+## Naechste Aufgabe nach bestaetigter Fortsetzung, strikt geordnet
 1. `steuerung/WIEDERAUFNAHME.md`, MASTERPROMPT, ADRs, Auftraege und echte lokale/Remote-SHAs lesen. Angehaltene Nachreviews/Ratifikationen und nativen Diagnose-Ruecklauf abgleichen; nichts doppelt beginnen.
 2. Fehlende fremde Urteile vervollstaendigen, ADR 0003 gegebenenfalls ratifizieren/korrigieren, explizites Revisionsmanifest vor neuer Umsetzung einfrieren und fremd pruefen. Alte FAILs/v0/v1 bleiben unveraendert.
 3. Native Diagnosefehler am exakten SHA auswerten; neue Kandidaten separat nativ pruefen und Swift-/Referenzabgleich erbringen. Pflichtchecks an beobachtete CI-Identitaet binden.
 4. Sicherheits-/Appleblocker unabhaengig weiterbearbeiten. Steuerung und Signieren/Upload erst nach gueltigen fremden Gates. Historische Auftraege nicht manuell als erledigt markieren; Cron bei interaktiver Arbeit aus lassen.
 
 ## Blocker
-Siehe `steuerung/BLOCKER.md`. Keine Signierung, kein Apple-Upload, keine verdeckte Abnahme, keine Phase-0-Abnahme. Native Definitionen und Diagnose-Ruecklauf sind kandidatgebunden wie oben getrennt. Handschrifterkennung deaktiviert. Unabhaengige Arbeit nicht ausgeschoepft; Pause auf Nutzerwunsch, nicht BLOCKIERT_STARTPAKET.
+Siehe `steuerung/BLOCKER.md`. Keine Signierung, kein Apple-Upload, keine verdeckte Abnahme, keine Phase-0-Abnahme. Native Definitionen und Diagnose-Ruecklauf sind kandidatgebunden wie oben getrennt. Handschrifterkennung deaktiviert. Unabhaengige Arbeit nicht ausgeschoepft; nicht BLOCKIERT_STARTPAKET. Startpaket-Neupruefung folgt an der im Fortsetzungsauftrag vorgesehenen Stelle.
 
 ## Wiederaufnahme
-Massgebend sind die Pausensperre oben und `steuerung/WIEDERAUFNAHME.md`. Runtimeuebergabe: `F:/ChnobelRuntime/autonomie.json`. Stop angefordert fuer `deleg_87155b84` (Nachreviews) und `deleg_afd52147` (Ratifikation); native Diagnose `deleg_51255299` noch detailliert zu rekonstruieren. Ruecklaeufe niemals als neue Fortsetzungserlaubnis behandeln. WARTEN erst nach vollstaendiger Definition of Done.
+Massgebend sind der ausdrueckliche Fortsetzungsauftrag, die unveraenderten Projektgrenzen und `steuerung/WIEDERAUFNAHME.md`. Runtimeuebergabe: `F:/ChnobelRuntime/autonomie.json`, nach diesem separaten Statuscommit abzugleichen. Alte Batches: `deleg_87155b84` (Nachreviews), `deleg_afd52147` (Ratifikation), `deleg_51255299` (native Diagnose). Bei erneuter Nutzerpause sofort wieder sperren; Ruecklaeufe heben sie nicht auf. WARTEN erst nach vollstaendiger Definition of Done.
