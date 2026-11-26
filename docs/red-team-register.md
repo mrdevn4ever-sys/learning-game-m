@@ -42,3 +42,25 @@ Originalberichte verlustfrei als `utf-8-lines`-JSON und mit SHA-256 gebunden unt
 - **RT-15 / IPAD-05 — mittel — offen:** Unveraenderte oder nichtnumerische Lesarten werden als korrigiert akzeptiert. Numerische Lesarten und disjunkte Bestaetigungs-/Korrekturprovenienz validieren; niemals daraus einen Rechenfehler erzeugen.
 
 iPad-Befunde sind Quellbefunde mit reproduzierbaren Python-Erlaeuterungen, keine Swift-Ausfuehrung. Native Reproduktion und alle nativen Gates bleiben offen. Reparaturversuch 1 ist getrennt pro Arbeitsbranch beauftragt; kein Befund geschlossen. Gremium prueft den prospektiven Semantik-/Versionierungsentwurf D1-D6; kein Mehrheitsentscheid vorweggenommen.
+
+## Fremde Nachreviews vom 2026-11-26
+
+Die drei vollstaendigen Nachreviews sind verlustfrei unter `steuerung/gedaechtnis/pruefergebnisse/2026-11-26-nachreviews/` archiviert. `index.json` bindet Kandidaten, Berichtbytes, Containerdigests und den Elternabgleich. Alte FAILs und RT-01 bis RT-15 bleiben unveraendert erhalten.
+
+- Steuerung `e4a8f442272b75cfa0e1f7fd46c2d793b1fbd2ca`: PASS ausschliesslich fuer das lokale Entwicklungsnachreview von R-01 und Bestandsregression. Elternwiederholung der 42 unabhaengigen Gegenproben: 42 bestanden, keine Fehler/Skips. Der historische Harness-Importfehler ist separat erhalten; kein Integrations-, Phasen- oder Freigabeurteil.
+- Referenz `107f524a0529e84fb5dad78af7a7204edb6f649e`: FAIL trotz 232 bestandener Bestands-/Reparaturtests. F02/F03 bestehen den abgegrenzten Nachreviewumfang, F01 bleibt durch RT-16 offen; F04-F06 weiterhin separat offen.
+- iPad `c1ad063851f568eb3e376fdb7ca7802a59cb0d1b`: FAIL im statischen Scope trotz 40 bestandener mitgelieferter statischer Tests. Eigene Reviewpruefungen und Elternwiederholung jeweils 11 ausgefuehrt, 10 bestanden, 1 gescheitert, keine Skips. IPAD-02 bis IPAD-05 im untersuchten Quellpfad adressiert, keine native Ausfuehrung. 77/13/11 sind nur Package-/SwiftData-/UI-Definitionen.
+
+### RT-16 / NR-F01-01 — hoch — offen
+
+Kandidat `107f524a0529e84fb5dad78af7a7204edb6f649e`; `produkt/werkzeuge/referenz/engine.py:153-168,234-237,250-263`. Nach zwei Luecken verliert der Pruefer eine durch spaeteres aeusseres Undo zwingend belegte Abhaengigkeit. A und B bewegen dasselbe Plattchen; nach gueltigem Undo A muss B bereits beendet sein, wird aber ohne neue Luecke erneut rueckgaengig gemacht. Vier N20-Varianten (Kind/App, explizite/Sequenzluecke) erzeugen im Kandidaten dennoch `observation.valid=wahr`, `attempt.result.correct=must_claim`, CLI Exit 0. Elternkontext hat alle vier gegen beide exakten Quellen erneut ausgefuehrt; Original jeweils `undo_dependency`, Exit 2, leeres stdout. Die Original-FAILs werden dadurch nicht aufgehoben.
+
+Abhilfe fuer einen neuen Kandidaten: bedingte historische Abhaengigkeiten erhalten oder aus spaeterem Beleg erschliessen; gueltige Gegenfaelle N21-N25 und urspruengliches X06 nicht pauschal sperren. Keine Reparatur begonnen. Die historischen U07-Rohabweichungen bleiben erhalten, ihre unbelegte Annahme genau einer Weltaktion pro fehlender seq traegt kein neues verbindliches Produkturteil; NR-F01-01 ist davon unabhaengig.
+
+### RT-17 / R1-IPAD-01-A — hoch — offen
+
+Kandidat `c1ad063851f568eb3e376fdb7ca7802a59cb0d1b`; `produkt/Packages/Sources/TaskEngine/TaskEngine.swift:93-100,117-123,189-203`, `LearningEngine.swift:49-66`. Kind legt frei 10/5; App verschiebt ein Anfangsplattchen, zeigt Hilfe und stellt es durch einen neuen inversen Zug statt Undo zurueck. Der App-Zweig prueft keine Undo-Referenz und reaktiviert den alten freien Kindanker. Die frische App-Herstellung wird dadurch als aktueller freier Kindweg berichtet. Historischer Kindbeleg und aktuelle Wirksamkeit muessen getrennt bleiben.
+
+Elternkontext hat den exakten Swift-Quellpfad gelesen und die statische Python-Gegenprobe erneut ausgefuehrt: `AssertionError: 1 is not None`, elf Pruefungen, eine gescheitert. Das ist keine Swift-Ausfuehrung. Natives Gegenpaar echtes App-Undo / inverse neue App-Bewegung bleibt Pflicht, einschliesslich Anfangs- und vorher umgelegtem Plattchen. Keine beobachtete iPad-Bedienstoerung behauptet; die heutige UI erzeugt keine App-Demo. Keine Reparatur begonnen.
+
+Elternbeleg: `F:/ChnobelRuntime/verification/2026-11-26-review-parent/evidence/verification.json`, SHA-256 `e557c2af8597cc5f4a09580d6d1fa605f37886e72df71f5e42f9612dbbc2f2f4`. Neue Befunde werden nicht durch Gremiumsvoten geschlossen. Als naechster geordneter Schritt folgt ausschliesslich die Ratifikation der unveraenderten ADR-0003-Fassung; Implementierung bleibt bis zum fremd geprueften v2-Manifest gesperrt.

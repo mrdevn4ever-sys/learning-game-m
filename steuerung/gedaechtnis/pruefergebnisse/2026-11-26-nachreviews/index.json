@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "offene fremde Nachreviews, kein Integrations- oder Freigabebeleg",
+  "reviews": [
+    {
+      "component": "steuerung",
+      "candidate": "e4a8f442272b75cfa0e1f7fd46c2d793b1fbd2ca",
+      "developmentVerdict": "PASS",
+      "report": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-nachreviews/steuerung-review.json",
+      "containerSha256": "a842a0e3c89b8c2f6c84d6fbd5694087b8950e8ac9950456b49ca44bb09f52bc",
+      "contentSha256": "b7b6c7ee07dd1a26bf6ffbdaad9f9df95a57a09bbf2b308a4e4cc6484b170c05",
+      "scope": "lokale Python-Entwicklungspruefung"
+    },
+    {
+      "component": "referenz",
+      "candidate": "107f524a0529e84fb5dad78af7a7204edb6f649e",
+      "developmentVerdict": "FAIL",
+      "report": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-nachreviews/referenz-review.json",
+      "containerSha256": "4259c9efd44d9c1f7cd43913422d9be87720f79a76143500f5c8b6e584ab8e25",
+      "contentSha256": "f8d317c94f6746e54fa0272e0ff4e0c212e86b8756669ccf001fb8bdea60d012",
+      "scope": "lokale Python-Entwicklungspruefung"
+    },
+    {
+      "component": "ipad",
+      "candidate": "c1ad063851f568eb3e376fdb7ca7802a59cb0d1b",
+      "developmentVerdict": "FAIL",
+      "report": "steuerung/gedaechtnis/pruefergebnisse/2026-11-26-nachreviews/ipad-review.json",
+      "containerSha256": "a1e111909a3f6fb12e6154e3115992247df733422d1195145c5b9a1cff886bcd",
+      "contentSha256": "f3665d96c60327a7a9823c952c4010309a9e3039ad67fe832479c3b3419b8cc5",
+      "scope": "statisch, keine native Ausfuehrung"
+    }
+  ],
+  "parentVerification": {
+    "path": "F:/ChnobelRuntime/verification/2026-11-26-review-parent/evidence/verification.json",
+    "sha256": "e557c2af8597cc5f4a09580d6d1fa605f37886e72df71f5e42f9612dbbc2f2f4"
+  },
+  "newFindings": [
+    "NR-F01-01",
+    "R1-IPAD-01-A"
+  ],
+  "releaseAuthorized": false
+}

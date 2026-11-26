@@ -2,7 +2,9 @@
 
 Stand: 2026-11-26, interaktive Wiederaufnahme nach ausdruecklichem Nutzerauftrag. Cron bleibt aus. Anleitung: `steuerung/WIEDERAUFNAHME.md`. Keine privaten Schluesselwerte gelesen, erzeugt oder ausgegeben. Apple-/Identitaetsinventur unten ist historisch und wird erst an der vorgeschriebenen Stelle neu geprueft; keine Behauptung einer heutigen Portalverifikation.
 
-Nachreview-Abgleich: alle sechs alten Kontexte nach Manifest und Transkriptendmarker interrupted; sechs Abschlussberichte fehlen. Kein altes Schlussurteil. Drei frische fremde Nachreviews laufen unter `deleg_5f23880a` gegen die unveraenderten Reparatur-SHAs. ADR 0003 bleibt bis zur anschliessenden Ratifikation Entwurf; v2-Manifest und Implementierung noch nicht begonnen. Beleg: `steuerung/gedaechtnis/pruefergebnisse/2026-11-26-wiederaufnahme/abgleich.json`. Keine offenen fachlichen Befunde durch diesen Abgleich geschlossen.
+Historischer Wiederaufnahmeabgleich: alle sechs alten Kontexte interrupted, damals sechs fehlende Berichte; kein altes Schlussurteil. Die drei frischen Nachreviews `deleg_5f23880a` sind inzwischen vollstaendig und elternverifiziert: Steuerung PASS im lokalen Entwicklungsumfang; Referenz FAIL wegen neuem hohen RT-16/NR-F01-01; iPad statisch FAIL wegen neuem hohen RT-17/R1-IPAD-01-A, native Ausfuehrung NOT RUN. Neue Integrationssperren stehen mit exakten Kandidaten und Reproduktionen in `docs/red-team-register.md`; Berichtindex `steuerung/gedaechtnis/pruefergebnisse/2026-11-26-nachreviews/index.json`. Keine Testsummen als Gesamtfreigabe, keine alten FAILs umgewertet.
+
+ADR 0003 bleibt Entwurf. Drei frische Ratifikationskontexte laufen unter `deleg_b54b26ad` nur gegen den unveraenderten eingefrorenen Hash. v2-Manifest und Implementierung noch nicht begonnen. Neue fachliche Befunde werden weder durch Stimmen noch durch gruene Bestandslaeufe geschlossen. Native Diagnose, Integration und Startpaket-Neupruefung bleiben in der vorgegebenen Folge.
 
 ## Aktueller Fortschritt und Berechtigung
 
