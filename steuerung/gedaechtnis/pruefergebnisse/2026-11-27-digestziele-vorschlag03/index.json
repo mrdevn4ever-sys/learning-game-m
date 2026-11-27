@@ -1,0 +1,112 @@
+{
+  "kind": "lossless-whole-narrow-digest-author-revision03/1",
+  "batch": "deleg_96c251aa",
+  "parentCheckpoint": "9b500a6cfa80ca0197c30f48c8995135837ffc8c",
+  "proposalSha256": "0ff158c9302cbec6f603531d11dd9d60bb58cb170566756a9760a8ea322ffadd",
+  "specificationStatus": "PROPOSED_NOT_ACCEPTED",
+  "encoding": "utf-8-lines",
+  "files": [
+    {
+      "file": "01-author-digest-targets.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/digest-targets.json",
+      "contentSha256": "0ff158c9302cbec6f603531d11dd9d60bb58cb170566756a9760a8ea322ffadd",
+      "originalByteCount": 93140,
+      "containerSha256": "122d64e5fd50b21fd58475376e194d1fc6bbc42b88b92724184267945b623c99",
+      "containerByteCount": 103223
+    },
+    {
+      "file": "02-author-report.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/report.md",
+      "contentSha256": "4c710e8a7bc68a2ca1168a440df920dc64cf56afaffaecb497f514f118dee3a8",
+      "originalByteCount": 7708,
+      "containerSha256": "a50d7fe364d71ec72474f142ec5151aaa2dd622d7e980bed3104ba7e3c52086f",
+      "containerByteCount": 8491
+    },
+    {
+      "file": "03-author-changes.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/changes.json",
+      "contentSha256": "31963da971bfc29d7c76b25ce0e085e16e69a1251a489b9ee9fadcd7c49bc5a0",
+      "originalByteCount": 86430,
+      "containerSha256": "9f1a68a56a6be00966602ef176903a769d3a12748f4c64c1609732fad65d3eb7",
+      "containerByteCount": 95280
+    },
+    {
+      "file": "04-author-sources.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/sources.json",
+      "contentSha256": "fbebc43825960d0baacae2250266f52fe8ed655d21c17d667959039e21ae05ed",
+      "originalByteCount": 465661,
+      "containerSha256": "3ac7bd119d510bcb008703f6cb7a2591594cbda1a9a38f4f0e0d35859dbab372",
+      "containerByteCount": 514431
+    },
+    {
+      "file": "05-author-handoff.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/handoff.json",
+      "contentSha256": "7de855286deb84a7f64445f3aab42bc81607ec55f793b66686f342ce25a0a855",
+      "originalByteCount": 9685,
+      "containerSha256": "a41935d882e9fcd8ae545ac93e81af986072cc07ab2c5f9cf09cfb48e27d8713",
+      "containerByteCount": 11734
+    },
+    {
+      "file": "06-digest-targets-brief.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/brief.md",
+      "contentSha256": "1a890e84cd3be8513118884241dd4e439813c2d501ec2ba792c0f45880cdabd1",
+      "originalByteCount": 9902,
+      "containerSha256": "3ac089bd728328c6505db93d0e653400a953124a3e55a8e80bbcb43411ab3426",
+      "containerByteCount": 10766
+    },
+    {
+      "file": "07-digest-targets-input-bindings.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/input-bindings.json",
+      "contentSha256": "4d89a143f6e983dac036891d82d5befcd30d2391d295f640d98b0c4fe204a52d",
+      "originalByteCount": 93678,
+      "containerSha256": "54709e980be73994875d2b5cca6a80df3d7f6034dc15d37344dfd1319a0a76d3",
+      "containerByteCount": 100121
+    },
+    {
+      "file": "08-digest-targets-dispatch.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/dispatch.json",
+      "contentSha256": "779b368db5590a3228a84a8538a710b3644984c82252ac9358dfc9c029335844",
+      "originalByteCount": 1890,
+      "containerSha256": "2b74d7df6b022bf41e47a046ac5f568582b86a031d47adcb5832ec61f38eb93d",
+      "containerByteCount": 2758
+    },
+    {
+      "file": "09-digest-targets-03-author-parent-verify_return.py.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-author-parent/verify_return.py",
+      "contentSha256": "90faef169fd3e0e8b0b43e61664b9c120867df2ba68cefb17264fb831c713fa1",
+      "originalByteCount": 12121,
+      "containerSha256": "fa357024e0db7c7fa046b6c51bd8b80c796e5f83fe5292f2c7de91f14e9e8436",
+      "containerByteCount": 14081
+    },
+    {
+      "file": "10-digest-targets-03-author-parent-verification.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-author-parent/verification.json",
+      "contentSha256": "c7508a25754840e3bc6ec7b8cd9d686423d4b60810596f1dda002ae57dceeab7",
+      "originalByteCount": 2537,
+      "containerSha256": "b7ef1420284368b25227f990811971a1205d66c230ab3fb298f08a5959650496",
+      "containerByteCount": 3510
+    },
+    {
+      "file": "11-digest-targets-03-author-parent-assessment.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-author-parent/assessment.md",
+      "contentSha256": "1f959d7bb82ded42667299ce841b059ce689cee7f7ccf685239acecc21a093c4",
+      "originalByteCount": 3700,
+      "containerSha256": "572174fed2e2dbb72266da5d48b0b1eafbdf44b37aa34f7acccf1cd2c22ae819",
+      "containerByteCount": 4135
+    },
+    {
+      "file": "12-digest-targets-03-author-parent-attempt-01.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-author-parent/attempt-01.json",
+      "contentSha256": "0cfcc5f540511bbdc0f0553c1565925dc163ff694cff70d2e327d3eeb5643422",
+      "originalByteCount": 12619,
+      "containerSha256": "170bdba0d49176c24de626180aa5f96adb3e05e4c6b2f3b05116a6614336d430",
+      "containerByteCount": 13273
+    }
+  ],
+  "fileCount": 12,
+  "fullManifestArchived": false,
+  "hiddenExaminationMaterialIncluded": false,
+  "blockerClosed": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED"
+}

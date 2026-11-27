@@ -2,7 +2,7 @@
   "documentKind": "planning-handoff-not-controller-task-transitions/1",
   "phase": 0,
   "date": "2026-11-27",
-  "checkpointBefore": "f0e5cddfc93ca68045bef369c8a34648e254807c",
+  "checkpointBefore": "9b500a6cfa80ca0197c30f48c8995135837ffc8c",
   "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
   "maxConcurrentSubagents": 2,
   "implementationAuthorized": false,
@@ -233,8 +233,8 @@
     }
   ],
   "nextOrder": [
-    "Await the complete fresh revision-03 author from deleg_96c251aa; independently verify exact base, proposal, source, changes and handoff bindings without polling.",
-    "Then freeze the whole new narrow proposal and request fresh whole-narrow independent review. Both revision-02 verdicts are complete and preserved; no acceptance or blocker closure from author completion, mechanical checks or a majority over technical facts.",
+    "Await both complete fresh whole-narrow revision-03 reviews from deleg_6fe569e1; independently verify exact proposal/report/source bindings and reconstruct mutable contexts. No polling.",
+    "Only after both whole-narrow verdicts assess narrow acceptance and findings; author completion and mechanical checks do not close B-EVENT-DIGEST-TARGET or attest the separate mandatory gate.",
     "Complete Q-U07 and Q-GUARD-TOTALISATION with all required roles in bounded fresh contexts; no one-sequence/one-world-action assumption.",
     "Complete remaining field/help/oracle shards, T05 conflict and ADR-0004 transfer; old drafts and values unchanged.",
     "Create a new complete manifest, freeze/hash and independent full review before any implementation."
@@ -551,7 +551,7 @@
       "kind": "digest-diagnosis-prerequisites-revision-03-dispatch/1",
       "batch": "deleg_96c251aa",
       "subagentId": "sa-0-9bd2d0c8",
-      "state": "DISPATCHED_RESULT_PENDING",
+      "state": "COMPLETE_AUTHOR_SCOPE_PARENT_BINDINGS_VERIFIED",
       "at": "2026-11-27T21:43:24.288693+01:00",
       "scope": "B-EVENT-DIGEST-TARGET_DIAGNOSIS_SET_CLOSURE_ONLY",
       "brief": {
@@ -600,6 +600,87 @@
         "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-27-digestvoraussetzungen-revision03-auftrag/index.json",
         "sha256": "6efc24d828bdd365eb8c45e563f6422ae3d037896b4990c35d850b70ab2c4f98",
         "bytes": 1890
+      },
+      "scopeStatus": "COMPLETE",
+      "proposal": {
+        "path": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/digest-targets.json",
+        "sha256": "0ff158c9302cbec6f603531d11dd9d60bb58cb170566756a9760a8ea322ffadd",
+        "bytes": 93140
+      },
+      "handoff": {
+        "path": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/handoff.json",
+        "sha256": "7de855286deb84a7f64445f3aab42bc81607ec55f793b66686f342ce25a0a855",
+        "bytes": 9685
+      },
+      "authorReturnVerification": {
+        "path": "F:/ChnobelRuntime/verification/digest-targets-03-author-parent/verification.json",
+        "sha256": "c7508a25754840e3bc6ec7b8cd9d686423d4b60810596f1dda002ae57dceeab7",
+        "bytes": 2537
+      },
+      "authorReturnArchive": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-27-digestziele-vorschlag03/index.json",
+        "sha256": "03555cf746a9932b8c7b39256522eca06647ae6300146bdb49d49fa181f5cdad",
+        "bytes": 5764
+      },
+      "documentCounts": {
+        "mandatoryFileCount": 68,
+        "immutableSourceCount": 84,
+        "originalIndexProjectionCount": 15,
+        "changeOperationCount": 51,
+        "unaffectedSubtreeCount": 163
+      },
+      "findingsClosed": false,
+      "foreignReview": {
+        "kind": "whole-narrow-revision-03-review-dispatch/1",
+        "batch": "deleg_6fe569e1",
+        "state": "DISPATCHED_RESULTS_PENDING",
+        "at": "2026-11-27T22:10:00.830213+01:00",
+        "scope": "WHOLE_NARROW_DIGEST_TARGET_REVISION_03",
+        "roles": [
+          {
+            "role": "architekt",
+            "subagentId": "sa-0-764eb04c",
+            "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-03/architekt"
+          },
+          {
+            "role": "redteam",
+            "subagentId": "sa-1-70becf28",
+            "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-03/redteam"
+          }
+        ],
+        "brief": {
+          "path": "F:/ChnobelRuntime/reviews/digest-targets-03/brief.md",
+          "sha256": "6efe45323f262e970d7201c8f00f23ebf51b46fcc3c018e03fcbe8ef81056e77",
+          "bytes": 10286
+        },
+        "inputBindings": {
+          "path": "F:/ChnobelRuntime/reviews/digest-targets-03/input-bindings.json",
+          "sha256": "1a0141f70d4fe9a9c946e75eda2ae1f10cc74367103698d1829b98be9ebd1d5d",
+          "bytes": 101731
+        },
+        "proposal": {
+          "path": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/digest-targets.json",
+          "sha256": "0ff158c9302cbec6f603531d11dd9d60bb58cb170566756a9760a8ea322ffadd",
+          "bytes": 93140
+        },
+        "parentVerification": {
+          "path": "F:/ChnobelRuntime/verification/digest-targets-03-author-parent/verification.json",
+          "sha256": "c7508a25754840e3bc6ec7b8cd9d686423d4b60810596f1dda002ae57dceeab7",
+          "bytes": 2537
+        },
+        "parentCheckpointBefore": "9b500a6cfa80ca0197c30f48c8995135837ffc8c",
+        "maxConcurrentSubagents": 2,
+        "activeChildrenAtDispatch": 2,
+        "blockerClosed": false,
+        "implementationAuthorized": false,
+        "wholeManifestVerdict": "NOT_ISSUED",
+        "cronMustRemainPaused": true,
+        "independentContextsNotTechnicalIdentityIsolation": true
+      },
+      "reviewDispatchArchive": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-27-digestziel-fremdpruefung03/index.json",
+        "sha256": "7289ce354e763464c10f5794ebd54d39ad374a85f14b812e234e41ae3ed5cf71",
+        "bytes": 1770
       }
     }
   },

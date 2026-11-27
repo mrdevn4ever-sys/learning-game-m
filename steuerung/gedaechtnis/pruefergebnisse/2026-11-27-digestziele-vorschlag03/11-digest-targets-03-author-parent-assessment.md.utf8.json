@@ -1,0 +1,24 @@
+{
+  "encoding": "utf-8-lines",
+  "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-author-parent/assessment.md",
+  "originalFilename": "assessment.md",
+  "contentSha256": "1f959d7bb82ded42667299ce841b059ce689cee7f7ccf685239acecc21a093c4",
+  "originalByteCount": 3700,
+  "lines": [
+    "# Elternpruefung der ganzen Autorenfassung 03\n",
+    "\n",
+    "Batch deleg_96c251aa / sa-0-9bd2d0c8 abgeschlossen. Basischeckpoint des Auftrags f0e5cddfc93ca68045bef369c8a34648e254807c; aktueller Elterncheckpoint 9b500a6cfa80ca0197c30f48c8995135837ffc8c. Fuenf Worktrees vor eigenen Writes sauber und lokal/Remote gleich; main unveraendert. Keine lebenden Kinder beim Ruecklaufstart.\n",
+    "\n",
+    "Genau fuenf Abgaben unter F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/. Neue ganze Norm SHA-256 0ff158c9302cbec6f603531d11dd9d60bb58cb170566756a9760a8ea322ffadd, 93'140 Bytes. Externer Handoffhash 7de855286deb84a7f64445f3aab42bc81607ec55f793b66686f342ce25a0a855, 9'685 Bytes. Bericht und Handoff ganz gelesen; ganze Norm ueber die zuvor ganz gelesene exakte Fassung 02 plus alle 51 vollstaendigen neuen Werte/Begruendungen gelesen und rekonstruierbar gebunden. Kein behauptetes unabhaengiges semantisches Review.\n",
+    "\n",
+    "verify_return.py endete nach einem erhaltenen Elternhelferfehler mit Exit 0 / PASS_RETURN_SOURCE_AND_CHANGE_BINDINGS_ONLY. 68 Pflichtdateien, 84 immutable Quellen einschliesslich Brief/Input und 14 frueheren Archivcontainern roh geprueft; 15 Originalindexprojektionen. 51 Aenderungsoperationen rekonstruieren die ganze neue Norm wertgleich und unter ihrer ausdruecklichen Serialisierung rohbytegleich; 163 ausgewiesene unberuehrte Teilbaeume wertgleich. Feldziele, Hashgraph, Stufen-/Teilstufenraenge, Vergleichskomponenten, Zeugenregeln und geschlossene Fehlerhuelle erhalten. Drei mutable Elternkontexte aus Rohtexten/ndiff verlustfrei rekonstruiert; Git-LF separat gegen beide Checkpoints geprueft. Bericht 733 whitespace-getrennte Woerter. Keine Produktpruefsumme.\n",
+    "\n",
+    "Erhaltener Helferfehler attempt-01.json: Die erste reine Dokumentkontrolle erwartete fuer jede Indexprojektion genau path/sha256/bytes; ein historischer README-Handoff bindet zusaetzlich absolutePath. Nur diesen ausdruecklichen Projektionszweig ergaenzt und beide Pfadidentitaeten plus Rohhash/Bytezahl zwingend geprueft. Quelle und Abgabe unveraendert, kein Produktfehler. Zwei eigene Autoren-Darstellungs-/Lesestellenkorrekturen bleiben in sources.json erhalten.\n",
+    "\n",
+    "Autorenvorschlag: RT-DT02-01 durch minimale Objekt-/Pflichtlabel-/Stringbedingungen samt expliziter Formfehler-/Wertabweichungsgrenze; RT-DT02-02 durch eine geschlossene lokale Diagnosemenge und getrennte zwingende Zusatzgatepflicht. Letztere Alternative war im Brief erlaubt, ist dadurch aber nicht angenommen: konkrete vollstaendige Inventur, technische Durchsetzung und authentische Nachweise sind weiterhin offen. Ein vorhandener/bestandener Gatedienst oder eine gueltige Weitergabe wird nicht behauptet. Die frische Fremdpruefung muss besonders pruefen, ob die Aufteilung tatsaechlich keine Pflicht verschwinden laesst, kein Gate als implizit bestanden behandelt und keine verbleibende Luecke bloss verdeckt auslagert.\n",
+    "\n",
+    "Alte Fassung 02, beide unterschiedlichen COMPLETE-Urteile und alle vier Findings bleiben unveraendert erhalten. COMPLETE betrifft nur Autorenumfang; PROPOSED_NOT_ACCEPTED, foreignAcceptance=NOT_PERFORMED, blockerClosed=false, implementationAuthorized=false, wholeManifestVerdict=NOT_ISSUED. C1-C3 und saemtliche Produkt-/Schema-/Validator-/Evaluator-/Test-/nativen Laeufe NOT_RUN.\n",
+    "\n",
+    "Naechster Schritt: ganze exakte Fassung 03 samt Bericht und Quellenbasis einfrieren und zwei frische, gegenseitig blinde Rollen Architektur/Red-Team alle sieben engen Pruefpunkte vollstaendig beurteilen lassen. Keine Annahme aus Autorenbehauptung oder mechanischen Belegen. Auch eine spaetere enge Annahme ersetzt das separate vollstaendige Manifestgate, T05, U07, Guardtotalisierung, andere M-Punkte oder ADR-0004-Manifestuebernahme nicht.\n"
+  ]
+}
