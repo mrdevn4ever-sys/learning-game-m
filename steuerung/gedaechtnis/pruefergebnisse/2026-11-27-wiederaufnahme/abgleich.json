@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-11-27T17:37:47.986506+01:00",
+  "checkpoint": "9b25d39918d870fcfb6acf33bc78ca6a2768e085",
+  "worktrees": [
+    {
+      "path": "F:/Projects/Chnobel",
+      "expectedBranch": "ci/entwicklungspruefung",
+      "expectedCommit": "9b25d39918d870fcfb6acf33bc78ca6a2768e085",
+      "branch": "ci/entwicklungspruefung",
+      "head": "9b25d39918d870fcfb6acf33bc78ca6a2768e085",
+      "remote": "9b25d39918d870fcfb6acf33bc78ca6a2768e085",
+      "status": "",
+      "matches": true
+    },
+    {
+      "path": "F:/Projects/Chnobel-Steuerung",
+      "expectedBranch": "feat/steuerung",
+      "expectedCommit": "e4a8f442272b75cfa0e1f7fd46c2d793b1fbd2ca",
+      "branch": "feat/steuerung",
+      "head": "e4a8f442272b75cfa0e1f7fd46c2d793b1fbd2ca",
+      "remote": "e4a8f442272b75cfa0e1f7fd46c2d793b1fbd2ca",
+      "status": "",
+      "matches": true
+    },
+    {
+      "path": "F:/Projects/Chnobel-Vertraege",
+      "expectedBranch": "feat/vertraege-referenz",
+      "expectedCommit": "107f524a0529e84fb5dad78af7a7204edb6f649e",
+      "branch": "feat/vertraege-referenz",
+      "head": "107f524a0529e84fb5dad78af7a7204edb6f649e",
+      "remote": "107f524a0529e84fb5dad78af7a7204edb6f649e",
+      "status": "",
+      "matches": true
+    },
+    {
+      "path": "F:/Projects/Chnobel-iPad",
+      "expectedBranch": "feat/ipad-kern",
+      "expectedCommit": "c1ad063851f568eb3e376fdb7ca7802a59cb0d1b",
+      "branch": "feat/ipad-kern",
+      "head": "c1ad063851f568eb3e376fdb7ca7802a59cb0d1b",
+      "remote": "c1ad063851f568eb3e376fdb7ca7802a59cb0d1b",
+      "status": "",
+      "matches": true
+    },
+    {
+      "path": "F:/Projects/Chnobel-Nativ",
+      "expectedBranch": "ci/native-phase0",
+      "expectedCommit": "5246dbeb8e495563d0c04edd17fb24a8cc61ccf9",
+      "branch": "ci/native-phase0",
+      "head": "5246dbeb8e495563d0c04edd17fb24a8cc61ccf9",
+      "remote": "5246dbeb8e495563d0c04edd17fb24a8cc61ccf9",
+      "status": "",
+      "matches": true
+    }
+  ],
+  "main": "9bab69c078f2c7dbfbca3b548ce1c8ef24a9ab61",
+  "protectedInstructionFiles": [
+    {
+      "path": "F:/Projects/Chnobel/MASTERPROMPT.md",
+      "bytes": 54181,
+      "sha256": "9ccea8090797ababec7d5fb6f21180caf8a595682b87ee2bf27fd74783bda7ac",
+      "checkpointGitBlobSha256": "d720252dacc88a5d6f6c62d9f9a29b3866b5533bad2c4a8c8b84445592029818"
+    },
+    {
+      "path": "F:/Projects/Chnobel/AGENTS.md",
+      "bytes": 474,
+      "sha256": "8c3232c0c29a9ebd6d9f358bf3f404f0c9f00cc655fbb133e7f297d1fe17a9d0",
+      "checkpointGitBlobSha256": "98bfd757b5d163b1ad172a7fffae2bf20080aab134aa43337cd7b6b43bb0bca6"
+    },
+    {
+      "path": "F:/Projects/Chnobel/CLAUDE.md",
+      "bytes": 478,
+      "sha256": "e5da5a1c0a23988ba89a6ba3833562fb0389d65d70c091b27ee45ee09e822a15",
+      "checkpointGitBlobSha256": "c3831989aa55c19115d94ae2b14a171cdafba2b1f4dc69fdbafa56eaedb4639a"
+    }
+  ],
+  "draftBindings": [
+    {
+      "path": "F:/ChnobelRuntime/specification/v2-manifest-draft-01/manifest.json",
+      "bytes": 9585,
+      "sha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502"
+    },
+    {
+      "path": "F:/ChnobelRuntime/specification/v2-manifest-draft-01/handoff.json",
+      "bytes": 1011796,
+      "sha256": "970299f1be40510c16eb2c707be39a947023e0eaf80f87f924ea057ea79324df"
+    },
+    {
+      "path": "F:/ChnobelRuntime/specification/v2-manifest-draft-01/open-issues.json",
+      "bytes": 7392,
+      "sha256": "9cae43f9c0a1d30e1388eced5e902fc81c91150474ce6076cc2911ae0f3d1ea8"
+    }
+  ],
+  "brief": {
+    "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01/brief.md",
+    "bytes": 9017,
+    "sha256": "a41b85b4f7b710ddf32e6111d27a4f2fe957c684a50c9ac5485bbe3c1c96ac69"
+  },
+  "verifiedHandoffFiles": 4944,
+  "physicalDraftFiles": 4946,
+  "priorDelegationManifest": {
+    "path": "C:/Users/user/AppData/Local/hermes/cache/delegation/live/deleg_07559a2f/manifest.json",
+    "bytes": 3075,
+    "sha256": "c7493ac8f7cc0750c5643c4271ed2d0715bed1861285e0495f8fd908f7ba5437"
+  },
+  "expectedOutputs": [
+    {
+      "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01/architekt/report.md",
+      "exists": true,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01/architekt/decision.json",
+      "exists": false,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01/didaktik/report.md",
+      "exists": false,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01/didaktik/decision.json",
+      "exists": false,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01/redteam/report.md",
+      "exists": true,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01/redteam/decision.json",
+      "exists": false,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/specification/v2-field-supplement-01/README.md",
+      "exists": false,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/specification/v2-field-supplement-01/field-normalform.json",
+      "exists": true,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/specification/v2-field-supplement-01/help-text-binding.json",
+      "exists": true,
+      "acceptedAsVerdict": false
+    },
+    {
+      "path": "F:/ChnobelRuntime/specification/v2-field-supplement-01/handoff.json",
+      "exists": false,
+      "acceptedAsVerdict": false
+    }
+  ],
+  "completeVerdictsAccepted": 0,
+  "maxConcurrentSubagents": 2,
+  "semanticVerification": "NOT_RUN",
+  "implementationAuthorized": false,
+  "productWrites": 0,
+  "nativeExecutions": 0,
+  "freezeAuthorized": false,
+  "scope": "Live references, file identity and failed-delegation reconciliation only; no semantic verdict.",
+  "priorTasks": [
+    {
+      "index": 0,
+      "role": "architekt",
+      "status": "failed",
+      "exitReason": "error",
+      "log": {
+        "path": "C:/Users/user/AppData/Local/hermes/cache/delegation/live/deleg_07559a2f/task-0.log",
+        "bytes": 34156,
+        "sha256": "87f2cf200125a130807c33e49a04fc71d2dd58a7e72357c770b6cb9d39026cb6"
+      },
+      "rateLimitRecorded": true,
+      "verdictAccepted": false,
+      "disposition": "NOT_PERFORMED_RESTART_IN_FRESH_CONTEXT"
+    },
+    {
+      "index": 1,
+      "role": "didaktik",
+      "status": "failed",
+      "exitReason": "error",
+      "log": {
+        "path": "C:/Users/user/AppData/Local/hermes/cache/delegation/live/deleg_07559a2f/task-1.log",
+        "bytes": 49855,
+        "sha256": "060b9640d54d2db517246e948b6f3c37e9aa6e521ccd329c8d10da303596dae5"
+      },
+      "rateLimitRecorded": true,
+      "verdictAccepted": false,
+      "disposition": "NOT_PERFORMED_RESTART_IN_FRESH_CONTEXT"
+    },
+    {
+      "index": 2,
+      "role": "redteam",
+      "status": "failed",
+      "exitReason": "error",
+      "log": {
+        "path": "C:/Users/user/AppData/Local/hermes/cache/delegation/live/deleg_07559a2f/task-2.log",
+        "bytes": 25895,
+        "sha256": "95a7e9e2a92213ffda96fb996ec0cc7183256a431bb2b703f522bc2bff09437b"
+      },
+      "rateLimitRecorded": true,
+      "verdictAccepted": false,
+      "disposition": "NOT_PERFORMED_RESTART_IN_FRESH_CONTEXT"
+    },
+    {
+      "index": 3,
+      "role": "spezifikationsautor",
+      "status": "failed",
+      "exitReason": "error",
+      "log": {
+        "path": "C:/Users/user/AppData/Local/hermes/cache/delegation/live/deleg_07559a2f/task-3.log",
+        "bytes": 25625,
+        "sha256": "7a6a21a33e44a8bb2764bd9c7ea947ff4b0dddd330a85138d49983987f249bbd"
+      },
+      "rateLimitRecorded": true,
+      "verdictAccepted": false,
+      "disposition": "NOT_PERFORMED_RESTART_IN_FRESH_CONTEXT"
+    }
+  ],
+  "priorOutputInventories": [
+    {
+      "directory": "F:/ChnobelRuntime/reviews/v2-manifest-questions-01",
+      "fileCount": 3,
+      "acceptedAsVerdict": false,
+      "sourceChanged": false
+    },
+    {
+      "directory": "F:/ChnobelRuntime/specification/v2-field-supplement-01",
+      "fileCount": 625,
+      "acceptedAsVerdict": false,
+      "sourceChanged": false
+    }
+  ],
+  "fullRuntimeEvidence": {
+    "path": "F:/ChnobelRuntime/reviews/wiederaufnahme-20261127/abgleich.json",
+    "sha256": "a2da62df68a726590c51849b956750611cf7b0b9c5e184cdb62832134984a565",
+    "note": "Full partial-output inventory remains outside Git, not a complete Git backup."
+  },
+  "newBoundedBrief": {
+    "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/brief.md",
+    "sha256": "ad7a960958f94cec0d67247543c30ce392095a0a0bbc36467c3fd9d90dbe2084"
+  },
+  "orchestratorToolReadback": {
+    "cron": {
+      "jobId": "26647d618052",
+      "enabled": false,
+      "state": "paused",
+      "nextRunAt": null,
+      "source": "cronjob_manage list, current turn"
+    },
+    "liveChildrenBeforeDispatch": 0,
+    "source": "delegate_task list, current turn; distinct from source-file verification"
+  },
+  "currentDispatch": {
+    "id": "deleg_6aa0a185",
+    "scope": "Q-ANCHOR-INTERVENTION only",
+    "children": [
+      {
+        "id": "sa-0-b9e9737e",
+        "role": "didaktik"
+      },
+      {
+        "id": "sa-1-f253a3a2",
+        "role": "architekt"
+      }
+    ],
+    "state": "dispatched_no_results_yet",
+    "wholeManifestVerdict": "NOT_ISSUED"
+  },
+  "pendingFreshAssignments": [
+    "redteam:Q-ANCHOR-INTERVENTION",
+    "didaktik:Q-U07",
+    "architekt:Q-U07",
+    "redteam:Q-U07",
+    "didaktik:Q-GUARD-TOTALISATION",
+    "architekt:Q-GUARD-TOTALISATION",
+    "redteam:Q-GUARD-TOTALISATION",
+    "spezifikationsautor:M-FIELD-NORMALFORM",
+    "spezifikationsautor:M-HELP-TEXT-BINDING"
+  ],
+  "wholeRoleCompletionRule": "Question-level COMPLETE is not a complete role verdict. All assigned questions and exact final-document votes must be verified before any future manifest approval. No implementation."
+}

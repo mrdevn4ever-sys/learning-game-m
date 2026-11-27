@@ -3,8 +3,18 @@
 ZUSTAND: IN_ARBEIT
 BETRIEB: IN_ARBEIT
 PHASE: 0 – Betriebsfaehigkeit und Apple-Durchstich
-LETZTE_AKTUALISIERUNG: 2026-11-26
-FORTSETZUNGSAUFTRAG: ausdruecklicher Nutzerauftrag "Chnobel weiter" vom 2026-11-26, Wiederaufnahme ab Checkpoint 4e31d37; alle Grenzen und die vorgegebene Arbeitsreihenfolge bleiben unveraendert.
+LETZTE_AKTUALISIERUNG: 2026-11-27
+FORTSETZUNGSAUFTRAG: ausdruecklicher Nutzerauftrag "Chnobel weiter" vom 2026-11-27, Wiederaufnahme ab Checkpoint 9b25d39; unveraenderte Regeln, hoechstens zwei gleichzeitige Subagenten und kleinere begrenzte Pruefauftraege.
+
+## Wiederaufnahme nach Limitunterbrechung
+
+Live-Abgleich vom 2026-11-27: fuenf saubere Worktrees mit exakt passenden lokalen/Remote-SHAs; Hauptbranch `ci/entwicklungspruefung` bei `9b25d39918d870fcfb6acf33bc78ca6a2768e085`, main unveraendert `9bab69c078f2c7dbfbca3b548ce1c8ef24a9ab61`. Keine lebenden Subagenten vor neuem Dispatch; Cron `26647d618052` weiterhin enabled false, paused, next_run_at null. Manifest-/Handoff-/offene-Punkte-/Beratungsbrief-Hashes und alle 4'944 Handoff-Dateien erneut bestaetigt. Das ist nur Identitaets-/Bestandspruefung, keine semantische Freigabe.
+
+Der alte Batch `deleg_07559a2f` ist in ALLEN vier Rollen failed/error nach Rate-Limit. Alle vier gelten als nicht durchgefuehrt, null Urteile angenommen. Architektur/Red-Team haben je eine report.md ohne decision.json; Didaktik hat keine der beiden Abgaben; die Feldspezifikation hat Teilmaterial ohne README/handoff. Alles bleibt unveraendert inventarisiert, nicht als Votum oder vollstaendiger Auftrag verwendet. Abgleich im Repo: `steuerung/gedaechtnis/pruefergebnisse/2026-11-27-wiederaufnahme/abgleich.json`; vollstaendiges Runtimeinventar `F:/ChnobelRuntime/reviews/wiederaufnahme-20261127/abgleich.json`, SHA-256 `a2da62df68a726590c51849b956750611cf7b0b9c5e184cdb62832134984a565`.
+
+Frischer begrenzter Batch `deleg_6aa0a185`: Didaktik `sa-0-b9e9737e` und Architektur `sa-1-f253a3a2`, ausschliesslich Q-ANCHOR-INTERVENTION an T07/N32. Brief `F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/brief.md`, SHA-256 `ad7a960958f94cec0d67247543c30ce392095a0a0bbc36467c3fd9d90dbe2084`; neue Ausgaben je Rolle darunter. Stand: beauftragt, Ruecklaeufe ausstehend. Red-Team und Spezifikationsautor erhalten ebenfalls frische, getrennte Folgeauftraege, nicht mehr als zwei gleichzeitig. U07 und Guardtotalisierung werden separat bearbeitet; ein COMPLETE fuer eine Teilfrage ist kein vollstaendiges Rollen- oder Manifesturteil.
+
+Manifestentwurf unveraendert INCOMPLETE und unfreigegeben. Keine Implementierung vor vollstaendigen, exakt gebundenen Gremiumsurteilen sowie der separaten vollstaendigen Manifestfassung mit Freeze und Fremdpruefung. Kein Produkt-/Instruktionsfile, alter FAIL, Sollwert oder Auftragsstatus wird dafuer geaendert. Vor echter Unterbrechung Checkpoint mit STATUS/BLOCKER/WIEDERAUFNAHME committen/pushen, Remote-SHAs zuruecklesen und Kinder sauber stoppen. Ein asynchroner Ruecklauf-Handoff ist keine Unterbrechung und aktiviert keinen Cron.
 
 ## Bestaetigte Wiederaufnahme
 
@@ -25,7 +35,7 @@ Die abgewiesene AGENTS.md-Erweiterung ist weder im Git-Objekt noch im Arbeitsinh
 - Manifestautor `deleg_6bcb2994` ist mit **INCOMPLETE** zurueck. Unveraenderter Entwurf `F:/ChnobelRuntime/specification/v2-manifest-draft-01/`, Manifest-SHA-256 `1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502`, Handoff-SHA-256 `970299f1be40510c16eb2c707be39a947023e0eaf80f87f924ea057ea79324df`. Nicht einfrierbar und keine fachliche Oraclefreigabe.
 - Elternabgleich vor neuen Dokumentationswrites: 4'944 Dateihashes, 1'767 eindeutige Fall-IDs und 3'534 Fallverweise mechanisch verifiziert; Teilmengen 334 Basisfaelle, 1'336 Transportvarianten, 97 Negativdefinitionen separat nachgezaehlt. 20 explizit pending IDs plus globale Vollstaendigkeitsluecken. Keine Produkt-/native Ausfuehrung und kein Bestehensnenner. Beleg `F:/ChnobelRuntime/verification/v2-manifest-draft-01-parent/mechanical-readback.json`, SHA-256 `056cb24d4b956b4898c9c71d1c9b9f96d2d5c9073ba3c3b0a893709d69bc505a`.
 - Sieben Sperren: Q-ANCHOR-INTERVENTION, Q-U07, Q-GUARD-TOTALISATION, M-REPORT-ORACLES, M-HELP-TEXT-BINDING, M-FIELD-NORMALFORM, M-SEMANTIC-CASE-CHECK. SPECIFICATION_PENDING ist kein fachliches unbekannt. Herkunfts-/Statuskapsel unter `steuerung/gedaechtnis/pruefergebnisse/2026-11-26-manifest-entwurf01/`; vollstaendige Falldaten bleiben nur in der Runtime, nicht als komplette Git-Sicherung behaupten.
-- Aktiver Folgeauftrag `deleg_07559a2f`: Architekt `sa-0-4c346f07`, Didaktik `sa-1-653e4ead`, Red-Team `sa-2-e51db84c` beraten die drei Q-Punkte; Autor `sa-3-897f522a` ergaenzt unabhaengig Feldnormalform/Hilfetextbindung. Nur neue Runtime-Dokumente, keine Produktwriter. Naechster Schritt: gebundene Ruecklaeufe pruefen, echte Produktpraezisierung gegebenenfalls separat ratifizieren, Quellenfragen nach Beleg entscheiden. Danach naechsten vollstaendigen Manifestentwurf mit ereignisadressierten Sollbelegen erstellen. Erst vollstaendige Fassung einfrieren und fremd pruefen; Implementation/native Folgearbeiten/Integration bleiben gesperrt.
+- Historischer Folgeauftrag `deleg_07559a2f`: alle vier Rollen nach Rate-Limit gescheitert, kein Urteil. Der frische begrenzte Neustart und die offene Folgearbeit sind oben dokumentiert. Erst vollstaendige gebundene Ruecklaeufe pruefen, echte Produktpraezisierung gegebenenfalls separat ratifizieren, Quellenfragen nach Beleg entscheiden. Danach naechste vollstaendige Manifestfassung mit ereignisadressierten Sollbelegen erstellen, einfrieren und fremd pruefen; Implementation/native Folgearbeiten/Integration bleiben gesperrt.
 - Kein CI-Run manuell ausgeloest, kein zweiter PR, main-Merge, Auftragsabschluss, Signing oder Upload. Startpaket-Neupruefung bleibt an ihrer vorgegebenen Stelle.
 
 ## Gesicherter Stand des Pausencheckpoints
