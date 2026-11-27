@@ -1,0 +1,33 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "brief.md",
+  "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-03/digest-targets/brief.md",
+  "contentSha256": "df1f1fa3e5a3927217b12fd7d5e0f8b2971fedd82202bdcef32a9ac658d0f401",
+  "originalByteCount": 5801,
+  "lines": [
+    "# Begrenzter Quellen-/Spezifikationsauftrag: B-EVENT-DIGEST-TARGET\n",
+    "\n",
+    "Nur diese zwei Ereignisfelder: `/properties/candidate/properties/contentDigest` und `/properties/candidate/properties/ruleDigest`. Keine neue Feldnormalform aller Vertraege, keine Hilfe-/Anker-/Guardentscheidung, keine Implementation.\n",
+    "\n",
+    "## Rang und Quellen\n",
+    "\n",
+    "- Lies zuerst den gesamten `F:/Projects/Chnobel/MASTERPROMPT.md`, AGENTS.md, STATUS.md, die ADR 0001–0003 und die Betriebsgrenzen aus WIEDERAUFNAHME/BLOCKER. Interaktive Arbeit erlaubt, Cron bleibt aus. Hoechstens zwei Kinder; keine Unterdelegation. Geschuetzte Instruktionen nicht aendern. Aktueller sauberer Elterncheckpoint vor diesem Auftrag: `789e5c0e0d06f1d44313dddf1be343c2807e200d`, main `9bab69c078f2c7dbfbca3b548ce1c8ef24a9ab61`.\n",
+    "- Unveraenderliche Manifestwurzel `F:/ChnobelRuntime/specification/v2-manifest-draft-01/`: manifest.json SHA-256 `1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502`, handoff.json `970299f1be40510c16eb2c707be39a947023e0eaf80f87f924ea057ea79324df`, contract-fields.json `d5091d181ebadf1c7ec6163aa2a383f7e51957b37dcccf3351a171e9a9f9edad`. ADR-0003-Autoritaetscommit `d84c597a68863929034cff50089e098120c7cb39`.\n",
+    "- Vollstaendige frische dokumentarische Ereignis-Teilabgabe `F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/`: README.md `ca229578ff4008ffe4f637efdcf64511fbe39cab9169d4e94600f851725a324b`, field-normalform-event.json `2dd875050ee3ae482423a80e9384a5dda976de717162084b2c23675720b775f8`, handoff.json `3cad6eff0e50b1c8ee6917a3fd5e176e3575b9fbc7566c6f140ac102579052c8`. Sie ist ausdruecklich INCOMPLETE. Lies README, die beiden genauen Knoten und passende Quell-/Indexbindungen, nicht alle 214 Knoten erneut ausarbeiten.\n",
+    "- `additionalFields/1/references` und `/2/references` nennen pauschal `content.json bzw catalogue.json exakte Bytes; in einem Stream identisch`. Dieses Zitat allein ist keine eindeutige Feld-zu-Dateizuordnung. Ein Feldname ist kein Nachweis und `rule-records.json` wird nicht still eingesetzt.\n",
+    "- Verwende nur einschlaegige Inhalte/Digestvertraege, Inhalt-/Katalog-/Regeldokumente sowie ihre Index-/Handoffquellen. Produktcode aus vorhandenen Kandidaten nur bei tatsaechlich notwendiger Quellenklaerung lesend und gegen dessen exakten Git-SHA; daraus keinen v2-Sollwert ableiten. Keine alten unvollstaendigen Teilabgaben aus v2-field-supplement-01. Keine laufenden/neuen ADR-0004-Stimmen lesen; dessen unratifizierter Entwurf ist fuer diesen Auftrag keine Grundlage.\n",
+    "\n",
+    "## Vollstaendige, kleine Abgabe\n",
+    "\n",
+    "1. Trenne belegten historischen Istvertrag, uneindeutige Deklaration und neu vorgeschlagene v2-Norm. Zeige fuer jedes Feld Quellenpfad, SHA-256, Pointer/Zeile und den tatsaechlichen Wortlaut. Bereits vorhandene Digestwerte duerfen auf bytegleiche Dateien abgeglichen werden; ein zufaelliger Treffer alleine ratifiziert keine Bedeutung.\n",
+    "2. Bestimme fuer jedes Feld einen ausdruecklichen konkreten Zielbytestrom mit Bezugswurzel/Relativpfad, Digestalgorithmus und Serialisierungs-/Zeilenendenregel. Wenn die Quellen eine Zuordnung nicht erzwingen: benenne das und liefere einen minimalen, eindeutig als PROPOSED_NOT_ACCEPTED gekennzeichneten technischen Spezifikationsvorschlag statt einer erfundenen historischen Tatsache.\n",
+    "3. Klaere Streamkonstanz und Bindung zwischen Ereignishuellen, Replay-Input und referenzierten Dateien; gleiche historische Feldregeln nicht still um. Pruefe auf Selbstbezug/Digestkreise. Keine neue allgemeine Kanonisierung erfinden, wenn exakte Rohbytes gemeint sind. Bestehende Quelldateien bleiben rohbytegleich.\n",
+    "4. Benenne notwendige prospektive Aenderungen an Feldliste, Kandidatenbindung, Fixtures/Indizes/Handoff ausdruecklich, fuehre sie NICHT aus. Alle betroffenen bestehenden Deklarationsstellen im engen Feldumfang auffuehren, nicht den ganzen Fallkorpus neu erzeugen. Bereits neue Kandidatenwerte nicht fuer alte Fassungen voraussetzen. Eine allfaellige neue Entscheidung/fremde Spezifikationspruefung bleibt als Gate offen.\n",
+    "5. Liefere genau drei deklarative Kontrollanforderungen: passende exakte Dateibytes; anderes Ziel bzw geaenderte Bytes; fehlende/uneindeutige Bindung. Keine Testausfuehrung, kein Probe-Evaluator. Ein fehlender Vertrag ist SPECIFICATION_PENDING, kein fachliches unknown und kein bestandenes Negativtestergebnis.\n",
+    "6. Quellen vor/nach hashen; mutable STATUS/BLOCKER/WIEDERAUFNAHME sowie neue Elternarchive/Queue separat behandeln. Elternkontext darf parallel fortgeschrieben/committet werden; das ist keine neue Normautoritaet. Keine unerlaubte Normabweichung als Buchhaltung abtun.\n",
+    "\n",
+    "Schreibe nur neue `report.md`, `digest-targets.json`, `sources.json`, `handoff.json` in `F:/ChnobelRuntime/specification/v2-field-supplement-03/digest-targets/`. Hilfsdateien nur dort, ausschliesslich mechanische Dokument-/Hash-/Referenzpruefung. Bericht moeglichst <=1500 Woerter. JSON mindestens: scopeStatus COMPLETE|INCOMPLETE, specificationStatus, fields (beide exakten Pointer, historicalEvidence, proposedTarget, unresolvedDecisions, impactedDeclarations), threeControlRequirements, implementationAuthorized=false, wholeManifestVerdict=NOT_ISSUED, blockerClosed=false. COMPLETE bedeutet nur vollstaendig bearbeiteter Quellen-/Vorschlagsscope, nicht angenommene Norm oder behobener Blocker. Handoff bindet alle eigenen Dateien ausser sich selbst und die unveraenderten Quellen; der Brief ist Eingabe.\n",
+    "\n",
+    "Keine Produkt-, Schema-, Oracle-, Test-, ADR-, Auftrags-, Repository-, Git-, Cron-, Portal-, CI-, Secret-, Signing- oder Uploadwrites. Keine Produkt-/Validator-/Evaluatorausfuehrung. Laufzeit `F:/ChnobelRuntime/venv/Scripts/python.exe -B`, Bytecode aus, TEMP/TMP/TMPDIR F:/ChnobelRuntime/tmp. Deutsch, Schweizer Schreibweise, keine Modellbezeichnungen in Abgaben. Nach vollstaendiger Abgabe stoppen, keine eigene Freigabe.\n"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "format": "lossless-public-document-containers/1",
+  "parentCheckpointBefore": "d802c8d64b0b50d89cc13432871aca81c308b68d",
+  "scope": {
+    "status": "THREE_COMPLETE_UNCONDITIONAL_VOTES_PARENT_VERIFIED",
+    "roles": [
+      "didaktik",
+      "architekt",
+      "redteam"
+    ],
+    "voteCounts": {
+      "JA": 3
+    },
+    "ballotSha256": "eaabc21a38b1bdc806f37444a6bdee00991004b462f9066d521cbb4b732d3b3c",
+    "ratificationTransition": "PARENT_DECISION_METADATA_REQUIRED",
+    "preservedFindings": [
+      "B-SPEC-T05-SUPPORT",
+      "RT-16",
+      "RT-17"
+    ],
+    "priorDidacticDissentPreserved": true
+  },
+  "fileCount": 16,
+  "files": [
+    {
+      "file": "ballot.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/ballot.md",
+      "containerSha256": "ffdbafa2d7b9502e07a9e60f54eb113bf9ab0c6b431fa3044016ab26d2428531",
+      "containerByteCount": 15260,
+      "contentSha256": "eaabc21a38b1bdc806f37444a6bdee00991004b462f9066d521cbb4b732d3b3c",
+      "originalByteCount": 14098
+    },
+    {
+      "file": "brief.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/brief.md",
+      "containerSha256": "c2fddf1e141d6993d493c3b73a155693a73c64e63129616bab57e879b9540bba",
+      "containerByteCount": 6831,
+      "contentSha256": "90528cb018b77674c2f2c65a3598f8864e036baeff1052f128449ce1d8bfa244",
+      "originalByteCount": 6257
+    },
+    {
+      "file": "didaktik-report-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/didaktik/report.md",
+      "containerSha256": "9ee132f51df06b29dfc8776b8acd37d7c67b4e12fd862978b3ac66eea020eb1a",
+      "containerByteCount": 16264,
+      "contentSha256": "db5a8b1e01e5a742476186b5202e5404b3269a99c6ccf750684a2835d6d47b7f",
+      "originalByteCount": 14967
+    },
+    {
+      "file": "didaktik-vote-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/didaktik/vote.json",
+      "containerSha256": "f2dfb9432907ebc76f4b6f380412d694b42bb6f8876da90efbcf90fafb40d6d4",
+      "containerByteCount": 39655,
+      "contentSha256": "f7d82a6443018e7c592af48fa51268615ac5809c2e8348e4c2029368885fbda5",
+      "originalByteCount": 31569
+    },
+    {
+      "file": "didaktik-sources-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/didaktik/sources.json",
+      "containerSha256": "600904323730aabd653933b770f734875884d1bb3117cc7bbdffae4347bdea01",
+      "containerByteCount": 61107,
+      "contentSha256": "96f87fdbd5452d8a82b55e580d97c5bf7b9eda1670880409c20cfa1b7da01a94",
+      "originalByteCount": 50900
+    },
+    {
+      "file": "architekt-report-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/architekt/report.md",
+      "containerSha256": "f50e38f21392cf8cad1334a2540b0a380b2e60171ca46a6901511d402f3fecd1",
+      "containerByteCount": 13715,
+      "contentSha256": "36723c83d76b9095cb9c08d359fa3419786df5711abb8eb38f1c80b4b690cc4b",
+      "originalByteCount": 12642
+    },
+    {
+      "file": "architekt-vote-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/architekt/vote.json",
+      "containerSha256": "66c25792529221ba525fb9e96da0d1d10d1daed788d9ef178679cf200eec9352",
+      "containerByteCount": 41658,
+      "contentSha256": "14ad47eafa602c9f8f6a4cee6361dd1e171dcdf68d0ca2fc93e322db677f6def",
+      "originalByteCount": 34223
+    },
+    {
+      "file": "architekt-sources-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/architekt/sources.json",
+      "containerSha256": "d160d74b13ce379fc919208fe17f011c2f9927feedeb3c163635823008844c3e",
+      "containerByteCount": 90394,
+      "contentSha256": "8f390ec228bffcfdc7cb41515af85c9978f02066fe32e35bd3cee884e3dd1467",
+      "originalByteCount": 80794
+    },
+    {
+      "file": "redteam-report-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/redteam/report.md",
+      "containerSha256": "a72c0ca099a4736cba581d813d61d2c53608c1251c84f1ecf2fc5af26bb580d3",
+      "containerByteCount": 13769,
+      "contentSha256": "20b23f617293a8bd267988ee57da369c3e4a40717744885209c6cc892088dbd3",
+      "originalByteCount": 12761
+    },
+    {
+      "file": "redteam-vote-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/redteam/vote.json",
+      "containerSha256": "f3853df371db82878443474ce677fb54082c15d97508c70ad2bb05a687f8baf2",
+      "containerByteCount": 37317,
+      "contentSha256": "71cd9d28a33a1c9c927ac2a4369894dc66663cd6387d6a8ddded7aa208351a02",
+      "originalByteCount": 30394
+    },
+    {
+      "file": "redteam-sources-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/redteam/sources.json",
+      "containerSha256": "a1331d0ba9451273016bf460ae7b4f9021664bf93181502ee4a958dde6bfbf24",
+      "containerByteCount": 69912,
+      "contentSha256": "b60a14769e317b287013e532bdb9970494e4320b14c3c6739591adffc0999911",
+      "originalByteCount": 61467
+    },
+    {
+      "file": "parent-part01.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/adr0004-part01/verification.json",
+      "containerSha256": "049b4aac9fbf1c438aeda13bd1596d6545ba2131f6c2f5408158a5e5ad832e6e",
+      "containerByteCount": 7364,
+      "contentSha256": "ade38db3558a6c0825ef9ce5dd710239c536f68d1fac25e6d927a365f2fca546",
+      "originalByteCount": 5527
+    },
+    {
+      "file": "parent-part02.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/adr0004-part02/verification.json",
+      "containerSha256": "4880632ca49ac474b8709eb925d019c73b94f0d91bf3cfdf7d125ddc8c31bb7f",
+      "containerByteCount": 13648,
+      "contentSha256": "0a160af5d96fb9095c4f8750cfd1180966ade0e921d240ded309f500394311b6",
+      "originalByteCount": 10752
+    },
+    {
+      "file": "parent-helper.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/adr0004-part02/verify_returns.py",
+      "containerSha256": "dc823f5daabf6807bb5770f0a85d2baae5f79c5ed238c46c65133c3cc35a53ba",
+      "containerByteCount": 17631,
+      "contentSha256": "ae717541ebc4311006d3c5b80b77f953536d914e2e2d9e18af3c3b5c5b577afa",
+      "originalByteCount": 15529
+    },
+    {
+      "file": "duplicate-helper-error.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/adr0004-duplicate01/inspection-attempt-01.json",
+      "containerSha256": "2d56bf6709bc39244f88a735654de1aa63bb2d2a7dfc185bbd50e74870f3b3b3",
+      "containerByteCount": 1328,
+      "contentSha256": "f2f1e0df2d36275a6dfde1c9555104b28ff88a0d6b8385d95016e086f4d8ada3",
+      "originalByteCount": 836
+    },
+    {
+      "file": "duplicate-verification.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/adr0004-duplicate01/verification.json",
+      "containerSha256": "3b9bac15762d385a4492ab033a2789f44460a69cad58b8c52f0a5fc460d935d9",
+      "containerByteCount": 1666,
+      "contentSha256": "eb209dec4b6f6fb087c49687df7a9bea63f3333da17f5f033d21e439d70bbe8f",
+      "originalByteCount": 1013
+    }
+  ],
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "fullManifestArchived": false,
+  "hiddenExaminationMaterialIncluded": false
+}

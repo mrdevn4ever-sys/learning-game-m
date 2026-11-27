@@ -1,0 +1,24 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "inspection-attempt-01.json",
+  "sourcePath": "F:/ChnobelRuntime/verification/adr0004-duplicate01/inspection-attempt-01.json",
+  "contentSha256": "f2f1e0df2d36275a6dfde1c9555104b28ff88a0d6b8385d95016e086f4d8ada3",
+  "originalByteCount": 836,
+  "lines": [
+    "{\n",
+    "  \"kind\": \"READ_ONLY_HELPER_FAILURE\",\n",
+    "  \"batch\": \"deleg_f43220be\",\n",
+    "  \"purpose\": \"Duplicate delivery reconciliation of already archived whole-document votes\",\n",
+    "  \"exitCode\": 1,\n",
+    "  \"error\": \"KeyError: 'conditions'\",\n",
+    "  \"location\": \"inline Python line 6\",\n",
+    "  \"cause\": \"Parent helper assumed both role vote documents had a conditions key without checking their actual schemas.\",\n",
+    "  \"checksBeforeFailure\": \"Ten archive containers were reconstructed and matched source bytes, recorded hashes and committed Git blobs; ballot bytes matched the frozen hash.\",\n",
+    "  \"repositoryWritesBeforeFailure\": false,\n",
+    "  \"sourceWritesBeforeFailure\": false,\n",
+    "  \"productExecution\": false,\n",
+    "  \"semanticVerdict\": \"NOT_ISSUED\",\n",
+    "  \"resolution\": \"Inspect actual role-specific vote keys and the archived parent verifier; retry read-only without changing source documents.\"\n",
+    "}\n"
+  ]
+}
