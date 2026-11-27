@@ -1,0 +1,133 @@
+{
+  "kind": "lossless-open-document-review-archive/1",
+  "batch": "deleg_7d617915",
+  "sourceCheckpoint": "0c9a02e0c5971d3d3b4d28d4cfa4d86832687763",
+  "scope": "B-EVENT-DIGEST-TARGET_ONLY",
+  "scopeStatus": "COMPLETE",
+  "recommendations": {
+    "architekt": "CHANGES_REQUIRED",
+    "redteam": "CHANGES_REQUIRED"
+  },
+  "preservedFindingIds": [
+    "ARCH-DT-01",
+    "RT-DIGEST-01"
+  ],
+  "proposalSha256": "d586116e5fef2f19a12fdb9e1ad52f969d84cee9580be4c1568465b44e3285bf",
+  "proposalArchive": "steuerung/gedaechtnis/pruefergebnisse/2026-11-27-digestziele-vorschlag01/index.json",
+  "parentVerificationSha256": "fc62914120ff65b588d1ec93ad502d025aab3c783585aaa852d479de95836292",
+  "fileCount": 13,
+  "files": [
+    {
+      "file": "review-brief.md.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/brief.md",
+      "contentSha256": "43223b623ea6e32ad3ff91939c0b9d36c663f09d6013222c74c232027e313359",
+      "originalByteCount": 5857,
+      "containerSha256": "10abce192d827c73c59c5b91168c77c664c5797bb193662d8217d8e7b4c3fe18",
+      "containerByteCount": 6353
+    },
+    {
+      "file": "review-input-bindings.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/input-bindings.json",
+      "contentSha256": "289e5be5e5c4f0c984732ca33f6959261c73195f730ce398700cb1178caed301",
+      "originalByteCount": 3094,
+      "containerSha256": "8aab6215f13cea96eb629b325655415d36ff7be8f63a159e895030c7e5d2852a",
+      "containerByteCount": 4225
+    },
+    {
+      "file": "review-dispatch.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/dispatch.json",
+      "contentSha256": "cebcce6a2f1f077f3a4c98706f0487333dcde040f2884feee8e91b17637276a9",
+      "originalByteCount": 1248,
+      "containerSha256": "6a10265f96d3c80e878c808d3ca588237c2f443d053a4564b5fa606ac2fe5b62",
+      "containerByteCount": 1921
+    },
+    {
+      "file": "review-architekt--report.md.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/architekt/report.md",
+      "contentSha256": "9fe1f165e6f34446222959ac06061b7745c6ec4000f6d1bb7356a0529aa08a8f",
+      "originalByteCount": 8776,
+      "containerSha256": "702002bacd70de41cf2adb62b93828e3a84790a6a811fe004abefe222fa9c915",
+      "containerByteCount": 9626
+    },
+    {
+      "file": "review-architekt--review.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/architekt/review.json",
+      "contentSha256": "9973da878b7290418239e0a862eeac36a52de170325971f44c17ef07c0b6731e",
+      "originalByteCount": 14986,
+      "containerSha256": "0cf3e6299b7662234b146618eff76f710daf05c963d3466c7819a765b436dd7a",
+      "containerByteCount": 17693
+    },
+    {
+      "file": "review-architekt--sources.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/architekt/sources.json",
+      "contentSha256": "abca72ffba2494c4746971cdcca3b6ea4a07f55e7fe5266bb5b1432287360856",
+      "originalByteCount": 55493,
+      "containerSha256": "c0ca5a5805ec2f295ec14f0dca49741c35a81f30b101416b03b358db6a4e95cf",
+      "containerByteCount": 68208
+    },
+    {
+      "file": "review-redteam--report.md.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/redteam/report.md",
+      "contentSha256": "69ee90d5d544e307cecc605c30520b46443ae1dc582b8500adcae9edad761267",
+      "originalByteCount": 7863,
+      "containerSha256": "08d03ffc88c7e80e568a3176e8dd2e40cd2314e34796246453bc15d56b23dea0",
+      "containerByteCount": 9233
+    },
+    {
+      "file": "review-redteam--review.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/redteam/review.json",
+      "contentSha256": "b18179eab630915ed1aafb23c64b2d616c7a59553dfa506570c2ed82d26ac29b",
+      "originalByteCount": 33673,
+      "containerSha256": "c934b3bba66442d211324fa703dcb175f8e946b19f7755206bfe1951bee33cb3",
+      "containerByteCount": 42236
+    },
+    {
+      "file": "review-redteam--sources.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-01/redteam/sources.json",
+      "contentSha256": "295c1b3ae3e4eb8c3728aaf4539d0b40605ee6f48980950813661bbef6742c6f",
+      "originalByteCount": 239845,
+      "containerSha256": "d1cb9a1d401a560a5e6b8ee825b19acb4588c31e4bc6eee738d8b752b8ad3599",
+      "containerByteCount": 266828
+    },
+    {
+      "file": "parent-verify_returns.py.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-01-parent/verify_returns.py",
+      "contentSha256": "652003d058abe63bbf54c6f0219558288671dffa38bcc20e24b0d1b745c18752",
+      "originalByteCount": 13944,
+      "containerSha256": "4750dbaaff1329f4688b911df1805ee5fe73c4946a1fee87b87e1cbcdea68d0c",
+      "containerByteCount": 16484
+    },
+    {
+      "file": "parent-attempt-01.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-01-parent/attempt-01.json",
+      "contentSha256": "2eb4f1beeb0561b237dec3ca3281bf93d1ed041c0a0e643ce57ba78bf2280151",
+      "originalByteCount": 16521,
+      "containerSha256": "f16a1d185d880dac18d38d26a12e23d9dc1599b3d46ccd327bda46065b2e2863",
+      "containerByteCount": 19927
+    },
+    {
+      "file": "parent-verification.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-01-parent/verification.json",
+      "contentSha256": "fc62914120ff65b588d1ec93ad502d025aab3c783585aaa852d479de95836292",
+      "originalByteCount": 7493,
+      "containerSha256": "73de38b6230ce115efde869509c3e3aeb68a408b026a6fd03151232b57481a4b",
+      "containerByteCount": 9252
+    },
+    {
+      "file": "parent-assessment.md.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-01-parent/assessment.md",
+      "contentSha256": "03b0433008f521e163fcb4701f13e5a0eb3192be004aab0baa78b86a72a5225d",
+      "originalByteCount": 3312,
+      "containerSha256": "e25944ef2ba7474605c88b3f90e1d0c15b7f12c05ad3381b137c3e0921e0bc8d",
+      "containerByteCount": 3794
+    }
+  ],
+  "proposalStatus": "PROPOSED_NOT_ACCEPTED",
+  "fullManifestArchived": false,
+  "hiddenExaminationMaterialIncluded": false,
+  "blockerClosed": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "controlsExecution": "NOT_RUN",
+  "productExecution": "NOT_RUN"
+}

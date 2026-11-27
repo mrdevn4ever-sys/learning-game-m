@@ -1,0 +1,30 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "assessment.md",
+  "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-01-parent/assessment.md",
+  "contentSha256": "03b0433008f521e163fcb4701f13e5a0eb3192be004aab0baa78b86a72a5225d",
+  "originalByteCount": 3312,
+  "lines": [
+    "# Elternabschluss: Digest-Fremdpruefung Fassung 01\n",
+    "\n",
+    "Stand: 2026-11-27. Ausgangscheckpoint `0c9a02e0c5971d3d3b4d28d4cfa4d86832687763`. Batch `deleg_7d617915`, Architektur und Red-Team getrennt und vollstaendig zurueck. Keine Produktfreigabe.\n",
+    "\n",
+    "## Gepruefte Abgaben\n",
+    "\n",
+    "Beide Berichte sowie alle Abschnittsbewertungen 1-7, Aenderungsforderungen und Befunde wurden gelesen. Der ganze enge Vorschlag bleibt an SHA-256 `d586116e5fef2f19a12fdb9e1ad52f969d84cee9580be4c1568465b44e3285bf` gebunden. Beide Rollen urteilen COMPLETE/CHANGES_REQUIRED, nicht bedingte Annahme.\n",
+    "\n",
+    "Eigener Dokumenthelfer `verify_returns.py`: Exit 0, `PASS_RETURN_AND_SOURCE_BINDINGS_ONLY`. Beleg `verification.json`, SHA-256 `fc62914120ff65b588d1ec93ad502d025aab3c783585aaa852d479de95836292`. Architektur: 47 immutable Quellen, 50 Originalindexbindungen und sechs historische Gitobjekte. Red-Team: 44 immutable Quellen und 38 Originalindexbindungen. Je drei mutable Kontexte wurden aus Originalbytes beziehungsweise Git plus exakten Diffs rekonstruiert; LF-/CRLF-Darstellungen getrennt. Keine Addition zu einer Produktpruefsumme.\n",
+    "\n",
+    "Erster Helferlauf scheiterte in Zeile 206: der Helfer verglich das ganze Inputbindungsobjekt mit einer vom Rollenbericht benannten Pfadprojektion. `attempt-01.json` erhaelt Fehler und urspruengliche Helferbytes. Die tatsaechliche Quelle enthaelt `path`, `sha256`, `bytes`. Korrigiert wurde ausschliesslich der Elternhelfer: Pfadprojektion und zusaetzlich exakte Zielbytes pruefen. Kein Quell-/Oracle-/Repositorywrite im Fehlversuch, keine Umwertung als Produktfehler.\n",
+    "\n",
+    "## Nachvollzogener Befund\n",
+    "\n",
+    "`ARCH-DT-01` und `RT-DIGEST-01` bleiben offene technische Annahmehindernisse. Im Vorschlag `/streamAndReplayBinding/errorBoundary` erhalten interne Kandidatenwechsel `candidate_changed`, externe Paket-/Pfad-/Zielabweichungen `digest_binding`. C2 fordert fuer eine isoliert geaenderte Ereigniskopie weiterhin `candidate_changed`. `CONTRACT.md` Zeilen 23 und 71 sowie `error-catalogue.json#/stageOrder` verlangen eine deterministische Reihenfolge mit seq-/Pointertie-Break. Der volle gelesene Vorschlag legt aber fuer zusammentreffende Kategorien und externe Fehler ohne Ereignis-seq keinen vollstaendigen Vergleich fest. Die Quellen tragen diese Normluecke; eine blosse Mehrheitszahl ist nicht ihr Nachweis. Kein praktischer fehlerhafter Replay und keine Annahme falscher Bytes wurden ausgefuehrt.\n",
+    "\n",
+    "Die verlangte enge Fehlerprioritaet ist technische Vertragskonkretisierung, keine neue fachliche Produktpolicy. Deshalb darf ein frischer Autor einen neuen, vollstaendigen technischen Vorschlag erstellen; die alte Fassung, Befunde und Sollwerte bleiben unveraendert. Die Revision benoetigt eigene Hashbindung und erneute fremde Pruefung. Dieser Elternabschluss entscheidet keinen neuen Vorrang selbst und nimmt keine künftige Fassung vorweg.\n",
+    "\n",
+    "## Grenzen und Folge\n",
+    "\n",
+    "Status weiterhin `PROPOSED_NOT_ACCEPTED`; `B-EVENT-DIGEST-TARGET` offen, `blockerClosed=false`, `implementationAuthorized=false`, `wholeManifestVerdict=NOT_ISSUED`, `ratificationIssued=false`. C1-C3, Produkt, Schema, Evaluator, Tests und native Ausfuehrung bleiben NOT_RUN. ADR 0004 bleibt ratifiziert, aber Gesamtmanifest, T05, U07, Guardtotalisierung und alle anderen offenen Umfaenge werden dadurch nicht geschlossen. Kein Cronstart, Upload oder Release.\n"
+  ]
+}

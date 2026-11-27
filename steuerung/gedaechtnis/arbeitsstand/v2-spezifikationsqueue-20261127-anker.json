@@ -2,7 +2,7 @@
   "documentKind": "planning-handoff-not-controller-task-transitions/1",
   "phase": 0,
   "date": "2026-11-27",
-  "checkpointBefore": "d802c8d64b0b50d89cc13432871aca81c308b68d",
+  "checkpointBefore": "0c9a02e0c5971d3d3b4d28d4cfa4d86832687763",
   "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
   "maxConcurrentSubagents": 2,
   "implementationAuthorized": false,
@@ -223,8 +223,8 @@
     }
   ],
   "nextOrder": [
-    "Verify both bounded foreign reviews of the exact digest proposal; no acceptance or blocker closure from author or mechanical checks.",
-    "If policy clarification is required, obtain complete exact-text required-role votes before adoption; preserve every concrete defect.",
+    "Verify the complete bounded error-order revision from deleg_93977827; old proposal and CHANGES_REQUIRED findings remain unchanged and open.",
+    "Bind the whole new narrow proposal by exact hashes and obtain fresh independent architecture and Red-Team reviews; no acceptance or closure from author completion or mechanical checks.",
     "Complete Q-U07 and Q-GUARD-TOTALISATION with all required roles in bounded fresh contexts; no one-sequence/one-world-action assumption.",
     "Complete remaining field/help/oracle shards, T05 conflict and ADR-0004 transfer; old drafts and values unchanged.",
     "Create a new complete manifest, freeze/hash and independent full review before any implementation."
@@ -249,18 +249,68 @@
       "kind": "bounded-followup-dispatch/1",
       "batch": "deleg_7d617915",
       "scope": "B-EVENT-DIGEST-TARGET_ONLY",
-      "state": "DISPATCHED_RESULTS_PENDING",
+      "state": "COMPLETE_CHANGES_REQUIRED_PARENT_VERIFIED",
       "maxConcurrentSubagents": 2,
       "roles": [
         {
           "role": "architekt",
           "subagentId": "sa-0-6c29013d",
-          "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-01/architekt"
+          "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-01/architekt",
+          "scopeStatus": "COMPLETE",
+          "recommendation": "CHANGES_REQUIRED",
+          "findings": [
+            "ARCH-DT-01"
+          ],
+          "decisionClass": "TECHNICAL_SPECIFICATION",
+          "immutableSourcesVerified": 47,
+          "originalIndexBindingsVerified": 50,
+          "files": [
+            {
+              "path": "F:/ChnobelRuntime/reviews/digest-targets-01/architekt/report.md",
+              "sha256": "9fe1f165e6f34446222959ac06061b7745c6ec4000f6d1bb7356a0529aa08a8f",
+              "bytes": 8776
+            },
+            {
+              "path": "F:/ChnobelRuntime/reviews/digest-targets-01/architekt/review.json",
+              "sha256": "9973da878b7290418239e0a862eeac36a52de170325971f44c17ef07c0b6731e",
+              "bytes": 14986
+            },
+            {
+              "path": "F:/ChnobelRuntime/reviews/digest-targets-01/architekt/sources.json",
+              "sha256": "abca72ffba2494c4746971cdcca3b6ea4a07f55e7fe5266bb5b1432287360856",
+              "bytes": 55493
+            }
+          ]
         },
         {
           "role": "redteam",
           "subagentId": "sa-1-9b61e781",
-          "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-01/redteam"
+          "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-01/redteam",
+          "scopeStatus": "COMPLETE",
+          "recommendation": "CHANGES_REQUIRED",
+          "findings": [
+            "RT-DIGEST-01"
+          ],
+          "decisionClass": "TECHNICAL_SPECIFICATION",
+          "immutableSourcesVerified": 44,
+          "originalIndexBindingsVerified": 38,
+          "files": [
+            {
+              "path": "F:/ChnobelRuntime/reviews/digest-targets-01/redteam/report.md",
+              "sha256": "69ee90d5d544e307cecc605c30520b46443ae1dc582b8500adcae9edad761267",
+              "bytes": 7863
+            },
+            {
+              "path": "F:/ChnobelRuntime/reviews/digest-targets-01/redteam/review.json",
+              "sha256": "b18179eab630915ed1aafb23c64b2d616c7a59553dfa506570c2ed82d26ac29b",
+              "bytes": 33673
+            },
+            {
+              "path": "F:/ChnobelRuntime/reviews/digest-targets-01/redteam/sources.json",
+              "sha256": "295c1b3ae3e4eb8c3728aaf4539d0b40605ee6f48980950813661bbef6742c6f",
+              "bytes": 239845
+            }
+          ]
         }
       ],
       "brief": {
@@ -277,6 +327,51 @@
       "blockerClosed": false,
       "implementationAuthorized": false,
       "wholeManifestVerdict": "NOT_ISSUED",
+      "cronMustRemainPaused": true,
+      "parentVerification": {
+        "path": "F:/ChnobelRuntime/verification/digest-targets-01-parent/verification.json",
+        "sha256": "fc62914120ff65b588d1ec93ad502d025aab3c783585aaa852d479de95836292",
+        "scope": "RETURN_AND_SOURCE_BINDINGS_ONLY"
+      },
+      "archive": {
+        "path": "steuerung/gedaechtnis/pruefergebnisse/2026-11-27-digestziel-fremdpruefung01/index.json",
+        "sha256": "41b859e12d960c1b5ee920f4f27bde2b837ca87ba38bf035e9a66bfe84f70b64"
+      },
+      "recommendationCounts": {
+        "CHANGES_REQUIRED": 2
+      },
+      "decisionClass": "TECHNICAL_SPECIFICATION",
+      "newProductPolicyDecisionRequiredForThisNarrowRepair": false
+    },
+    "repairAuthor": {
+      "kind": "bounded-technical-revision-dispatch/1",
+      "batch": "deleg_93977827",
+      "subagentId": "sa-0-be801ae2",
+      "role": "technical-specification-author",
+      "scope": "B-EVENT-DIGEST-TARGET_ERROR_ORDER_REVISION_ONLY",
+      "state": "DISPATCHED_RESULT_PENDING",
+      "outputRoot": "F:/ChnobelRuntime/specification/v2-field-supplement-04/digest-targets/author",
+      "brief": {
+        "path": "F:/ChnobelRuntime/specification/v2-field-supplement-04/digest-targets/brief.md",
+        "sha256": "9baa1f78ab8f1744486de3be042fa87ad418e141bf991417a69732ed8975489a"
+      },
+      "inputBindings": {
+        "path": "F:/ChnobelRuntime/specification/v2-field-supplement-04/digest-targets/input-bindings.json",
+        "sha256": "1d3e7b731e6af059211e46b581aeb13cc976517984439af3d92af250ca78f4d4"
+      },
+      "baseProposalSha256": "d586116e5fef2f19a12fdb9e1ad52f969d84cee9580be4c1568465b44e3285bf",
+      "requiredFindingIds": [
+        "ARCH-DT-01",
+        "RT-DIGEST-01"
+      ],
+      "parentCheckpointBefore": "0c9a02e0c5971d3d3b4d28d4cfa4d86832687763",
+      "maxConcurrentSubagents": 2,
+      "activeChildrenAtDispatch": 1,
+      "specificationStatus": "PROPOSED_NOT_ACCEPTED",
+      "blockerClosed": false,
+      "implementationAuthorized": false,
+      "wholeManifestVerdict": "NOT_ISSUED",
+      "freshForeignReviewRequiredAfterAuthor": true,
       "cronMustRemainPaused": true
     }
   },

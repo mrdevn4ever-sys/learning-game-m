@@ -1,0 +1,38 @@
+{
+  "kind": "lossless-open-technical-order-archive/1",
+  "scope": "B-EVENT-DIGEST-TARGET_ERROR_ORDER_REVISION_ONLY",
+  "state": "DISPATCHED_RESULT_PENDING",
+  "batch": "deleg_93977827",
+  "fileCount": 3,
+  "files": [
+    {
+      "file": "brief.md.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-04/digest-targets/brief.md",
+      "contentSha256": "9baa1f78ab8f1744486de3be042fa87ad418e141bf991417a69732ed8975489a",
+      "originalByteCount": 7836,
+      "containerSha256": "3b2451a0099fbe58b52b76cd5dd0f20f25b431b6c3c034dff1d9abdb641a1539",
+      "containerByteCount": 8466
+    },
+    {
+      "file": "input-bindings.json.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-04/digest-targets/input-bindings.json",
+      "contentSha256": "1d3e7b731e6af059211e46b581aeb13cc976517984439af3d92af250ca78f4d4",
+      "originalByteCount": 71109,
+      "containerSha256": "26dec79ecb8c2e20e6874a6da1661356276bb69991e513a9fb9aeec7fc0c71eb",
+      "containerByteCount": 73826
+    },
+    {
+      "file": "dispatch.json.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-04/digest-targets/dispatch.json",
+      "contentSha256": "b8922c26c13c571770e686a189f2987d5b32d9864fef3bf69c3a8d8510a62df1",
+      "originalByteCount": 1293,
+      "containerSha256": "c6c8f55a2e2adaabd6fc9d88d891ef0acd25363c6b4ab828ad63472c47d42581",
+      "containerByteCount": 1961
+    }
+  ],
+  "fullManifestArchived": false,
+  "hiddenExaminationMaterialIncluded": false,
+  "blockerClosed": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED"
+}
