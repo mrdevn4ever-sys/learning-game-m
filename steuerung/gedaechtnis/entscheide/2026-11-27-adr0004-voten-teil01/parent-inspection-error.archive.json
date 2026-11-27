@@ -1,0 +1,22 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "inspection-attempt-01.json",
+  "sourcePath": "F:/ChnobelRuntime/verification/adr0004-part01/inspection-attempt-01.json",
+  "contentSha256": "da5a19d21bc72de77f0fbe6844faca012c21760fdbef126c04f353d57192244b",
+  "originalByteCount": 649,
+  "lines": [
+    "{\n",
+    "  \"kind\": \"parent-read-only-inspection-error/1\",\n",
+    "  \"result\": \"FAILED_READ_ONLY_HELPER\",\n",
+    "  \"commandPurpose\": \"Inspect returned source metadata and T05 bindings\",\n",
+    "  \"exitCode\": 1,\n",
+    "  \"location\": \"inline Python line 5, attempted case-index.json access idx[\\\"cases\\\"]\",\n",
+    "  \"error\": \"TypeError: list indices must be integers or slices, not str\",\n",
+    "  \"cause\": \"The inspection assumed a wrapped index object; the index is a list.\",\n",
+    "  \"correction\": \"Read and verify the actual list structure; select records by exact id without changing source data.\",\n",
+    "  \"repositoryWritesBeforeFailure\": false,\n",
+    "  \"productExecution\": false,\n",
+    "  \"semanticVerdict\": \"NOT_ISSUED\"\n",
+    "}\n"
+  ]
+}

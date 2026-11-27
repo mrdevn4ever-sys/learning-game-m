@@ -1,0 +1,32 @@
+{
+  "format": "lossless-public-document-containers/1",
+  "scope": {
+    "status": "DISPATCHED_RESULT_PENDING",
+    "task": {
+      "role": "technical-specification-author",
+      "subagentId": "sa-1-b9698fed",
+      "scope": "B-EVENT-DIGEST-TARGET_ONLY",
+      "briefPath": "F:/ChnobelRuntime/specification/v2-field-supplement-03/digest-targets/brief.md",
+      "briefSha256": "df1f1fa3e5a3927217b12fd7d5e0f8b2971fedd82202bdcef32a9ac658d0f401",
+      "outputRoot": "F:/ChnobelRuntime/specification/v2-field-supplement-03/digest-targets/",
+      "state": "DISPATCHED_RESULT_PENDING"
+    },
+    "batch": "deleg_84b7058f",
+    "blockerClosed": false
+  },
+  "fileCount": 1,
+  "files": [
+    {
+      "file": "brief-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-03/digest-targets/brief.md",
+      "containerSha256": "54541ea8192bb4aeea0041900627cf41361befd07b3ecceee8854e5919c48de6",
+      "containerByteCount": 6314,
+      "contentSha256": "df1f1fa3e5a3927217b12fd7d5e0f8b2971fedd82202bdcef32a9ac658d0f401",
+      "originalByteCount": 5801
+    }
+  ],
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "ratificationIssued": false,
+  "fullManifestArchived": false
+}

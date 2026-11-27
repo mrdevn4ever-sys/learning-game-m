@@ -2,7 +2,7 @@
   "documentKind": "planning-handoff-not-controller-task-transitions/1",
   "phase": 0,
   "date": "2026-11-27",
-  "checkpointBefore": "95afeab4dd09593578d9abbfd98e39075313d44d",
+  "checkpointBefore": "789e5c0e0d06f1d44313dddf1be343c2807e200d",
   "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
   "maxConcurrentSubagents": 2,
   "implementationAuthorized": false,
@@ -35,18 +35,42 @@
     "briefSha256": "90528cb018b77674c2f2c65a3598f8864e036baeff1052f128449ce1d8bfa244",
     "votes": {
       "didaktik": {
-        "state": "DISPATCHED_RESULT_PENDING",
+        "state": "COMPLETE_VOTE_PARENT_VERIFIED",
         "batch": "deleg_f43220be",
-        "subagentId": "sa-0-9017494c"
+        "subagentId": "sa-0-9017494c",
+        "vote": "JA",
+        "wholeDocument": true,
+        "unconditional": true,
+        "files": {
+          "report.md": "db5a8b1e01e5a742476186b5202e5404b3269a99c6ccf750684a2835d6d47b7f",
+          "vote.json": "f7d82a6443018e7c592af48fa51268615ac5809c2e8348e4c2029368885fbda5",
+          "sources.json": "96f87fdbd5452d8a82b55e580d97c5bf7b9eda1670880409c20cfa1b7da01a94"
+        }
       },
       "architekt": {
-        "state": "DISPATCHED_RESULT_PENDING",
+        "state": "COMPLETE_VOTE_PARENT_VERIFIED",
         "batch": "deleg_f43220be",
-        "subagentId": "sa-1-7415e72f"
+        "subagentId": "sa-1-7415e72f",
+        "vote": "JA",
+        "wholeDocument": true,
+        "unconditional": true,
+        "files": {
+          "report.md": "36723c83d76b9095cb9c08d359fa3419786df5711abb8eb38f1c80b4b690cc4b",
+          "vote.json": "14ad47eafa602c9f8f6a4cee6361dd1e171dcdf68d0ca2fc93e322db677f6def",
+          "sources.json": "8f390ec228bffcfdc7cb41515af85c9978f02066fe32e35bd3cee884e3dd1467"
+        }
       },
       "redteam": {
-        "state": "NOT_DISPATCHED"
+        "state": "DISPATCHED_RESULT_PENDING",
+        "batch": "deleg_84b7058f",
+        "subagentId": "sa-0-b4ab5949"
       }
+    },
+    "parentVerification": {
+      "path": "F:/ChnobelRuntime/verification/adr0004-part01/verification.json",
+      "sha256": "ade38db3558a6c0825ef9ce5dd710239c536f68d1fac25e6d927a365f2fca546",
+      "scope": "RETURN_BINDINGS_ONLY",
+      "ratificationIssued": false
     }
   },
   "questionShards": [
@@ -178,11 +202,59 @@
     }
   ],
   "nextOrder": [
-    "Verify both complete ADR-0004 returns and bind their full-text votes.",
-    "Obtain independent Red-Team full-text vote without exceeding two contexts.",
-    "Resolve any verified factual/normative conflict; count only complete votes to the unchanged ballot; no manifest approval from ADR ratification.",
-    "Complete remaining question/field/oracle shards in bounded fresh contexts.",
+    "Verify third ADR-0004 full-document vote to the unchanged ballot; complete votes do not decide source truth.",
+    "Resolve factual or normative conflicts before any ratification; preserve all dissent and original voted bytes.",
+    "Review the separate two-field digest-target proposal; no inferred historical field binding and no automatic blocker closure.",
+    "Complete remaining question/field/oracle shards, including T05 support.general, in bounded fresh contexts.",
     "Create a new complete manifest with explicit prospective differences, freeze/hash and independent full review before any implementation."
+  ],
+  "digestTargetClarification": {
+    "role": "technical-specification-author",
+    "subagentId": "sa-1-b9698fed",
+    "scope": "B-EVENT-DIGEST-TARGET_ONLY",
+    "briefPath": "F:/ChnobelRuntime/specification/v2-field-supplement-03/digest-targets/brief.md",
+    "briefSha256": "df1f1fa3e5a3927217b12fd7d5e0f8b2971fedd82202bdcef32a9ac658d0f401",
+    "outputRoot": "F:/ChnobelRuntime/specification/v2-field-supplement-03/digest-targets/",
+    "state": "DISPATCHED_RESULT_PENDING",
+    "batch": "deleg_84b7058f",
+    "blockerClosed": false
+  },
+  "preservedSpecificationFindings": [
+    {
+      "id": "B-SPEC-T05-SUPPORT",
+      "caseId": "V2-REV-T05-app-undo-with-lost-provenance",
+      "input": {
+        "path": "inputs/V2-REV-T05-app-undo-with-lost-provenance.json",
+        "sha256": "ae1579355c617e1dffcf5cc410eed78769a2f277afda722c77abad82939ef5f5",
+        "bytes": 16137
+      },
+      "oracle": {
+        "path": "expectations/V2-REV-T05-app-undo-with-lost-provenance.json",
+        "sha256": "93ca75e130cab14afd07ce295962550f2bfdcd59b23bb67224d71896e57b9661",
+        "bytes": 2410
+      },
+      "eventId": "d029dd60-c7af-5cf5-95d5-8917c610f4d9",
+      "seq": 2,
+      "oraclePointer": "/facts/support.general",
+      "observedOracle": "unbekannt",
+      "catalogueFact": {
+        "id": "support.general",
+        "version": "2.0.0",
+        "true": "Mindestens ein gueltig beobachtetes App-Hilfeangebot einschliesslich Demo",
+        "false": "Vollstaendige gueltige Beobachtung ohne App-Hilfeangebot",
+        "unknown": "Nur invalidierte oder fehlende Hilfebeobachtung",
+        "authority": "D5",
+        "dependencies": "Unabhaengig von mentaler Wirkung und konkretem Ziel"
+      },
+      "ballotExcludesWholeProfile": true,
+      "state": "OPEN",
+      "sourceModified": false,
+      "withinOpenItems": [
+        "M-SEMANTIC-CASE-CHECK",
+        "M-REPORT-ORACLES"
+      ],
+      "broaderCaseScope": "NOT_REVIEWED"
+    }
   ],
   "preservation": [
     "Original failed candidates and all old reports unchanged",
