@@ -1,0 +1,18 @@
+{
+  "kind": "lossless-utf8-source/1",
+  "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-final/inspection-incident-01.json",
+  "encoding": "utf-8-lines",
+  "contentSha256": "e590741dda29e1d4cd16311da04fd374945d195e024314be2f34b1e32435de89",
+  "originalByteCount": 440,
+  "lines": [
+    "{\n",
+    "  \"kind\": \"READ_ONLY_INSPECTION_KEY_ERROR_NOT_PRODUCT_VERDICT\",\n",
+    "  \"at\": \"2026-11-28T00:08:34.064979+01:00\",\n",
+    "  \"exitCode\": 1,\n",
+    "  \"error\": \"KeyError: 'questions'\",\n",
+    "  \"cause\": \"Queue inspected with questions instead of actual questionShards; top-level keys had already been printed. No file write before the error.\",\n",
+    "  \"writesBeforeFailure\": 0,\n",
+    "  \"correction\": \"Use actual questionShards key, inspect record shape before further handling.\"\n",
+    "}\n"
+  ]
+}

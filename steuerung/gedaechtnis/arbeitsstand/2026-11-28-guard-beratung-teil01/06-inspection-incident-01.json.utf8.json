@@ -1,0 +1,18 @@
+{
+  "kind": "lossless-utf8-source/1",
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-parent/inspection-incident-01.json",
+  "encoding": "utf-8-lines",
+  "contentSha256": "cee8e1f0a6db3a6538dde8731ea4c0e21bdc0bf2b3b2e28dc8e5bab7f9d3490f",
+  "originalByteCount": 368,
+  "lines": [
+    "{\n",
+    "  \"kind\": \"READ_ONLY_INSPECTION_KEY_ERROR_NOT_PRODUCT_VERDICT\",\n",
+    "  \"at\": \"2026-11-28T00:10:20.553502+01:00\",\n",
+    "  \"error\": \"KeyError: 'requires'\",\n",
+    "  \"exitCode\": 1,\n",
+    "  \"writesBeforeFailure\": 0,\n",
+    "  \"cause\": \"Requires was assumed on a rule record before inspecting its actual shape. Read complete rule-records.json instead.\",\n",
+    "  \"scope\": \"PRE_FREEZE_SOURCE_INSPECTION_ONLY\"\n",
+    "}\n"
+  ]
+}

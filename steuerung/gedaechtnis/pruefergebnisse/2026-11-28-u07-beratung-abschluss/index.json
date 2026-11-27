@@ -1,0 +1,84 @@
+{
+  "kind": "lossless-documentary-archive/1",
+  "questionId": "Q-U07",
+  "scope": "REDTEAM_RETURN_AND_FINAL_PARENT_CONSOLIDATION_ONLY",
+  "fileCount": 9,
+  "files": [
+    {
+      "file": "01-redteam-report.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/redteam/report.md",
+      "contentSha256": "61e1ba51c7fe718ff042c49eff28a447d14d607b47b4d7e1c5dfb489465939b0",
+      "originalByteCount": 9907,
+      "containerSha256": "1c45bc32cf88fd5c91fa8d82c0f61887b93058cfcc5f0b6afaa276dcc32bfa42",
+      "containerByteCount": 10767
+    },
+    {
+      "file": "02-redteam-sources.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/redteam/sources.json",
+      "contentSha256": "c01876c68004cd618acf8331770fd0d36861f613eff5d3b336c6ea7c8348056e",
+      "originalByteCount": 1020154,
+      "containerSha256": "daa91891b0e0a939354536ade1d2e5d1cb7431a7829a20a7b6cd5a8a0d92bb36",
+      "containerByteCount": 1098764
+    },
+    {
+      "file": "03-redteam-decision.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/redteam/decision.json",
+      "contentSha256": "2fea87377870735ac7f1939f1bea1d3e2d9af53449d78d8538873c16fbda0f15",
+      "originalByteCount": 94408,
+      "containerSha256": "0db83404853d72a5070ef6189f1568f783fe39c27eb33c0bb23a6507ea9aec9a",
+      "containerByteCount": 122184
+    },
+    {
+      "file": "04-verify_returns.py.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-final/verify_returns.py",
+      "contentSha256": "0b6d177ed7ecbac15ba086b0f05295ce34137e1440fc360d534113ac93d30e3f",
+      "originalByteCount": 14265,
+      "containerSha256": "260e407b0e4425b40ad75efb5d1a11266bb3ea7c66392f2425bcf08ca4b6e52d",
+      "containerByteCount": 16278
+    },
+    {
+      "file": "05-verification.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-final/verification.json",
+      "contentSha256": "820ed13e294af90b5a1dc8d3af933b2b13196db0d51c699f257c35787ab538a5",
+      "originalByteCount": 6242,
+      "containerSha256": "16975d8147d3897b6f08e87cd876d6a061360eabc16ef4cd6a7d12313249fc7f",
+      "containerByteCount": 8017
+    },
+    {
+      "file": "06-assessment.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-final/assessment.md",
+      "contentSha256": "a30c4eae2fd70ea0f83870b5317d94da286b179edff89949ee1b1d4d79466c39",
+      "originalByteCount": 5228,
+      "containerSha256": "68d52e59f8742e15fa6082321febbfec63039812bfd52174018113a434039dfc",
+      "containerByteCount": 5812
+    },
+    {
+      "file": "07-consolidation.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-final/consolidation.json",
+      "contentSha256": "d9eed8ffd739bf800a047ccc7154f3abd020d095eb9360e719a9b471871e9fdf",
+      "originalByteCount": 12703,
+      "containerSha256": "f191974fc30e3b1780f7ace26394c796f3393a8dd6893348345a727e75c488df",
+      "containerByteCount": 16130
+    },
+    {
+      "file": "08-live-before.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-final/live-before.json",
+      "contentSha256": "a85db122c66711cc6e1d3ed694088f0a761ba1c104b43fc7e99d41aeb9fd874f",
+      "originalByteCount": 2084,
+      "containerSha256": "d1e4cc909f68698a41530629afd8f2137f563cbb2587dc5dd1e18d4713e13e3c",
+      "containerByteCount": 3058
+    },
+    {
+      "file": "09-inspection-incident-01.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-final/inspection-incident-01.json",
+      "contentSha256": "e590741dda29e1d4cd16311da04fd374945d195e024314be2f34b1e32435de89",
+      "originalByteCount": 440,
+      "containerSha256": "c4a775bfba19a8e0a9dcca85dcf4dad0125f1f5eb8e6d7f64154043b3d1d4579",
+      "containerByteCount": 845
+    }
+  ],
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "productExecution": "NOT_RUN",
+  "blockerClosed": false
+}

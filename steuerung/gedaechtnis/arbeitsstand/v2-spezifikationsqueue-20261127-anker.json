@@ -2,7 +2,7 @@
   "documentKind": "planning-handoff-not-controller-task-transitions/1",
   "phase": 0,
   "date": "2026-11-27",
-  "checkpointBefore": "229fb3bd52f0473af5aeb9ead023df3db63c6847",
+  "checkpointBefore": "f6e73092dd1d5940506c145d645917abc601f1a6",
   "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
   "maxConcurrentSubagents": 2,
   "implementationAuthorized": false,
@@ -97,7 +97,7 @@
   "questionShards": [
     {
       "id": "Q-U07",
-      "state": "PART01_COMPLETE_QUALIFIED_REDTEAM_DISPATCHED_RESULT_PENDING",
+      "state": "ALL_ROLES_COMPLETE_QUALIFIED_RECOMMENDATIONS_NOT_ACCEPTED",
       "requiredRoles": [
         "architekt",
         "didaktik",
@@ -158,7 +158,7 @@
       "roleStates": {
         "didaktik": "COMPLETE_QUESTION_CONSULTATION_WITH_RETAINED_PROCEDURAL_DEVIATION",
         "architekt": "COMPLETE_QUESTION_CONSULTATION_WITH_RETAINED_PROCEDURAL_DEVIATION",
-        "redteam": "DISPATCHED_RESULT_PENDING"
+        "redteam": "COMPLETE_QUESTION_CONSULTATION_WITH_RETAINED_TOOL_EXCEPTIONS"
       },
       "completedPart01": {
         "batch": "deleg_d7ef3701",
@@ -281,16 +281,125 @@
         "sha256": "77e5376e79f25392a8b1100ff861e0156062dab52593ab131e321d8225cecb7e",
         "bytes": 1145
       },
-      "historicalDispatchRetained": true
+      "historicalDispatchRetained": true,
+      "completedAllRoles": {
+        "batches": [
+          "deleg_d7ef3701",
+          "deleg_5e822e5e"
+        ],
+        "redteamSubagentId": "sa-0-3ea4589a",
+        "scope": "Q-U07_Q1-Q6_ONLY",
+        "returnVerification": {
+          "path": "F:/ChnobelRuntime/verification/u07-question-03-final/verification.json",
+          "sha256": "820ed13e294af90b5a1dc8d3af933b2b13196db0d51c699f257c35787ab538a5",
+          "bytes": 6242
+        },
+        "assessment": {
+          "path": "F:/ChnobelRuntime/verification/u07-question-03-final/assessment.md",
+          "sha256": "a30c4eae2fd70ea0f83870b5317d94da286b179edff89949ee1b1d4d79466c39",
+          "bytes": 5228
+        },
+        "consolidation": {
+          "path": "F:/ChnobelRuntime/verification/u07-question-03-final/consolidation.json",
+          "sha256": "d9eed8ffd739bf800a047ccc7154f3abd020d095eb9360e719a9b471871e9fdf",
+          "bytes": 12703
+        },
+        "returnArchive": {
+          "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-u07-beratung-abschluss/index.json",
+          "sha256": "ac5df7edb619d11ba5d29eac4e81f3d7a5453c59a56ce2a42387f01e89a887a7",
+          "bytes": 3997
+        },
+        "recommendationsAccepted": false,
+        "questionClosed": false,
+        "wholeReadSetUnchanged": false,
+        "wholeRoleStatus": "INCOMPLETE_OTHER_QUESTIONS_PENDING",
+        "wholeManifestVerdict": "NOT_ISSUED",
+        "implementationAuthorized": false,
+        "blockerClosed": false
+      },
+      "nextDependencies": [
+        "B-SPEC-U07-SUPPORT",
+        "B-SPEC-U07-COVERAGE",
+        "Q-GUARD-TOTALISATION",
+        "M-REPORT-ORACLES",
+        "M-SEMANTIC-CASE-CHECK"
+      ]
     },
     {
       "id": "Q-GUARD-TOTALISATION",
-      "state": "NOT_PERFORMED_FRESH",
+      "state": "FIRST_TWO_ROLES_DISPATCHED_RESULTS_PENDING",
       "requiredRoles": [
         "architekt",
         "didaktik",
         "redteam"
-      ]
+      ],
+      "dispatch": {
+        "kind": "bounded-question-consultation-dispatch/1",
+        "questionId": "Q-GUARD-TOTALISATION",
+        "batch": "deleg_afb30b90",
+        "state": "DISPATCHED_RESULTS_PENDING",
+        "at": "2026-11-28T00:13:56.679823+01:00",
+        "roles": [
+          {
+            "role": "didaktik",
+            "subagentId": "sa-0-e42b47f7",
+            "outputRoot": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/didaktik"
+          },
+          {
+            "role": "architekt",
+            "subagentId": "sa-1-03a17178",
+            "outputRoot": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/architekt"
+          }
+        ],
+        "redteamState": "NOT_DISPATCHED_REQUIRES_SAME_NORMATIVE_FREEZE_AFTER_CAPACITY_AVAILABLE",
+        "requiredRoles": [
+          "architekt",
+          "didaktik",
+          "redteam"
+        ],
+        "activeChildrenAtDispatch": 2,
+        "maxConcurrentSubagents": 2,
+        "brief": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/brief.md",
+          "sha256": "e1b01395412a5a5c9612f2a1698d8db6d994b8d785b79487b321260a137e90ee",
+          "bytes": 9492
+        },
+        "inputBindings": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/input-bindings.json",
+          "sha256": "4fc3d507be0f40485a1b73f5788ab8cb546f98d275638940635f402505508bf3",
+          "bytes": 36606
+        },
+        "proceduralBaseline": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/procedural-bindings.json",
+          "sha256": "c3c116f891e975ed2e8959fe1fc7398cd411d2151c5bb2937a36d4031e64ebc7",
+          "bytes": 111983
+        },
+        "freezeVerification": {
+          "path": "F:/ChnobelRuntime/verification/guard-question-04-parent/freeze-verification.json",
+          "sha256": "0e7067954e7f56165afbfa06c6fcdd2b38c5198d8d9e7b3a7a8ce38604827890",
+          "bytes": 1438
+        },
+        "parentCheckpointBefore": "f6e73092dd1d5940506c145d645917abc601f1a6",
+        "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
+        "peerRecommendationsProvided": false,
+        "wholeRoleStatus": "INCOMPLETE_OTHER_QUESTIONS_PENDING",
+        "wholeManifestVerdict": "NOT_ISSUED",
+        "implementationAuthorized": false,
+        "blockerClosed": false,
+        "cronMustRemainPaused": true
+      },
+      "dispatchArchive": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-beratung-teil01/index.json",
+        "sha256": "efcc930ee592de070132dc27d8667d6b62f4a6b9057f725cec3c2854f9a758cc",
+        "bytes": 2804
+      },
+      "roleStates": {
+        "didaktik": "DISPATCHED_RESULT_PENDING",
+        "architekt": "DISPATCHED_RESULT_PENDING",
+        "redteam": "NOT_DISPATCHED"
+      },
+      "recommendationsAccepted": false,
+      "questionClosed": false
     }
   ],
   "fieldNormalform": [
@@ -405,10 +514,11 @@
     }
   ],
   "nextOrder": [
-    "Receive the complete independent Q-U07 Red-Team return from deleg_5e822e5e; verify the original frozen brief/input, explicit procedural baseline and separately mutable parent contexts; do not poll.",
-    "Reconcile all three complete bounded Q-U07 recommendations and explicit technical dependencies. Preserve qualified source-deviation evidence; no whole-role, policy or manifest approval from partial consultations.",
-    "Classify Q-U07 evidence and any proposed product policy separately; preserve old raw failures and INCONCLUSIVE, no one-sequence/one-world-action bound. Then Q-GUARD-TOTALISATION with all required roles.",
-    "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004 and accepted digest-source transfer, plus concrete mandatory additional-gate inventory/integration. Old drafts and values unchanged.",
+    "Receive complete Q-GUARD-TOTALISATION returns from deleg_afb30b90, verify exact brief/input/procedural bindings and separate mutable contexts; do not poll or count partial returns.",
+    "After capacity becomes available, fresh independent Red-Team for the same bounded Guard question and normative freeze, without peer recommendations; maximum two concurrent children.",
+    "Reconcile all three whole bounded Guard consultations; separate evidence, technical specification and any new product policy. No automatic adoption or whole-role verdict.",
+    "Retain Q-U07 completed consultations without adoption; resolve U07 coverage and prospective event-bound oracle integration with Guard clarification. Preserve old raw failures and INCONCLUSIVE.",
+    "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004 and accepted digest-source transfer, and concrete mandatory additional-gate integration. Old drafts and values unchanged.",
     "Create a new complete manifest, freeze/hash and obtain independent whole-manifest review before any implementation."
   ],
   "digestTargetClarification": {
@@ -923,6 +1033,48 @@
         "M-REPORT-ORACLES"
       ],
       "broaderCaseScope": "NOT_REVIEWED"
+    },
+    {
+      "id": "B-SPEC-U07-SUPPORT",
+      "state": "OPEN",
+      "aliases": [
+        "DID-U07-01",
+        "ARCH-U07-01",
+        "RT-U07-01"
+      ],
+      "resolutionRequired": "Explicit prospective event-bound oracle revision and foreign review; retain original oracle.",
+      "sourceConsolidation": {
+        "path": "F:/ChnobelRuntime/verification/u07-question-03-final/consolidation.json",
+        "sha256": "d9eed8ffd739bf800a047ccc7154f3abd020d095eb9360e719a9b471871e9fdf",
+        "bytes": 12703
+      },
+      "sourceModified": false,
+      "productExecutionFinding": false,
+      "withinOpenItems": [
+        "M-SEMANTIC-CASE-CHECK",
+        "M-REPORT-ORACLES"
+      ]
+    },
+    {
+      "id": "B-SPEC-U07-COVERAGE",
+      "state": "OPEN",
+      "aliases": [
+        "DID-U07-02",
+        "ARCH-U07-03",
+        "RT-U07-03"
+      ],
+      "resolutionRequired": "Explicit target-anchor and coverage precedence; no guessed field value.",
+      "sourceConsolidation": {
+        "path": "F:/ChnobelRuntime/verification/u07-question-03-final/consolidation.json",
+        "sha256": "d9eed8ffd739bf800a047ccc7154f3abd020d095eb9360e719a9b471871e9fdf",
+        "bytes": 12703
+      },
+      "sourceModified": false,
+      "productExecutionFinding": false,
+      "withinOpenItems": [
+        "M-SEMANTIC-CASE-CHECK",
+        "M-REPORT-ORACLES"
+      ]
     }
   ],
   "preservation": [

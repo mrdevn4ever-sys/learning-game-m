@@ -1,0 +1,60 @@
+{
+  "kind": "lossless-documentary-archive/1",
+  "questionId": "Q-GUARD-TOTALISATION",
+  "scope": "FROZEN_QUESTION_AND_FIRST_TWO_ROLE_DISPATCH_ONLY",
+  "fileCount": 6,
+  "files": [
+    {
+      "file": "01-brief.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/brief.md",
+      "contentSha256": "e1b01395412a5a5c9612f2a1698d8db6d994b8d785b79487b321260a137e90ee",
+      "originalByteCount": 9492,
+      "containerSha256": "2b3aec6e8041e044fb4a63e80d9d4be20208761b11c01247d48119b5b89782c1",
+      "containerByteCount": 10255
+    },
+    {
+      "file": "02-input-bindings.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/input-bindings.json",
+      "contentSha256": "4fc3d507be0f40485a1b73f5788ab8cb546f98d275638940635f402505508bf3",
+      "originalByteCount": 36606,
+      "containerSha256": "b060310fdc28661583dfe5be770f34bf7de82b03bfd5380605aee04dcac6eeec",
+      "containerByteCount": 47441
+    },
+    {
+      "file": "03-procedural-bindings.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/procedural-bindings.json",
+      "contentSha256": "c3c116f891e975ed2e8959fe1fc7398cd411d2151c5bb2937a36d4031e64ebc7",
+      "originalByteCount": 111983,
+      "containerSha256": "343303f430309e60383e5ef784a12a393c3da1174ab8791ff1526567ebe7325c",
+      "containerByteCount": 113709
+    },
+    {
+      "file": "04-dispatch.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/dispatch.json",
+      "contentSha256": "27a1fa45e74acb3f7438346fd019111745f2ad4dc2c2962c2a035e3ecba66aaf",
+      "originalByteCount": 2056,
+      "containerSha256": "9c46083df19c970e9a95ec7ed5ac86835995b60d17256de5f19a9655b67fc0ee",
+      "containerByteCount": 2976
+    },
+    {
+      "file": "05-freeze-verification.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-parent/freeze-verification.json",
+      "contentSha256": "0e7067954e7f56165afbfa06c6fcdd2b38c5198d8d9e7b3a7a8ce38604827890",
+      "originalByteCount": 1438,
+      "containerSha256": "f6897ee36e4ef351bd4fcc5d7a7f5468f0f70adc5a696e95b94c84832c3f2ff9",
+      "containerByteCount": 2142
+    },
+    {
+      "file": "06-inspection-incident-01.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-parent/inspection-incident-01.json",
+      "contentSha256": "cee8e1f0a6db3a6538dde8731ea4c0e21bdc0bf2b3b2e28dc8e5bab7f9d3490f",
+      "originalByteCount": 368,
+      "containerSha256": "8d999ee22dfa24d111938b591a4551305acf04bcdf4af46063c2494f1ec8a442",
+      "containerByteCount": 776
+    }
+  ],
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "productExecution": "NOT_RUN",
+  "blockerClosed": false
+}
