@@ -1,0 +1,66 @@
+{
+  "status": "DRAFT_NOT_RATIFIED",
+  "ballotSha256": "eaabc21a38b1bdc806f37444a6bdee00991004b462f9066d521cbb4b732d3b3c",
+  "briefSha256": "90528cb018b77674c2f2c65a3598f8864e036baeff1052f128449ce1d8bfa244",
+  "dispatch": {
+    "didaktik": {
+      "state": "DISPATCHED_RESULT_PENDING",
+      "batch": "deleg_f43220be",
+      "subagentId": "sa-0-9017494c"
+    },
+    "architekt": {
+      "state": "DISPATCHED_RESULT_PENDING",
+      "batch": "deleg_f43220be",
+      "subagentId": "sa-1-7415e72f"
+    },
+    "redteam": {
+      "state": "NOT_DISPATCHED"
+    }
+  },
+  "remainingQuestionShards": [
+    {
+      "id": "Q-U07",
+      "state": "NOT_PERFORMED_FRESH",
+      "requiredRoles": [
+        "architekt",
+        "didaktik",
+        "redteam"
+      ]
+    },
+    {
+      "id": "Q-GUARD-TOTALISATION",
+      "state": "NOT_PERFORMED_FRESH",
+      "requiredRoles": [
+        "architekt",
+        "didaktik",
+        "redteam"
+      ]
+    }
+  ],
+  "scope": "Exact frozen ADR draft and bounded review brief; no normative effect, no whole-manifest freeze or approval.",
+  "encoding": "utf-8-lines",
+  "files": [
+    {
+      "file": "ballot-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/ballot.md",
+      "originalFilename": "ballot.md",
+      "contentSha256": "eaabc21a38b1bdc806f37444a6bdee00991004b462f9066d521cbb4b732d3b3c",
+      "originalByteCount": 14098,
+      "containerSha256": "ffdbafa2d7b9502e07a9e60f54eb113bf9ab0c6b431fa3044016ab26d2428531",
+      "containerByteCount": 15260
+    },
+    {
+      "file": "brief-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/brief.md",
+      "originalFilename": "brief.md",
+      "contentSha256": "90528cb018b77674c2f2c65a3598f8864e036baeff1052f128449ce1d8bfa244",
+      "originalByteCount": 6257,
+      "containerSha256": "c2fddf1e141d6993d493c3b73a155693a73c64e63129616bab57e879b9540bba",
+      "containerByteCount": 6831
+    }
+  ],
+  "fileCount": 2,
+  "fullManifestArchived": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED"
+}

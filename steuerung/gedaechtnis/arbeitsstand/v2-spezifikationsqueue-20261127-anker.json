@@ -1,0 +1,198 @@
+{
+  "documentKind": "planning-handoff-not-controller-task-transitions/1",
+  "phase": 0,
+  "date": "2026-11-27",
+  "checkpointBefore": "95afeab4dd09593578d9abbfd98e39075313d44d",
+  "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
+  "maxConcurrentSubagents": 2,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "cron": {
+    "jobId": "26647d618052",
+    "observedEnabled": false,
+    "observedState": "paused",
+    "observedNextRunAt": null,
+    "mustNotReactivate": true
+  },
+  "anchorConsultation": {
+    "status": "COMPLETE_QUESTION_CONSULTATION_ONLY",
+    "roles": [
+      "architekt",
+      "didaktik",
+      "redteam"
+    ],
+    "recommendationCounts": {
+      "COMPOSITE_CHILD_PROOF": 2,
+      "REQUIRE_CHILD_COMPLETED_LAYOUT": 1
+    },
+    "dissentPreserved": true,
+    "ratificationIssued": false
+  },
+  "adr0004": {
+    "status": "DRAFT_NOT_RATIFIED",
+    "ballotPath": "F:/ChnobelRuntime/reviews/adr0004-ratifikation-01/ballot.md",
+    "ballotSha256": "eaabc21a38b1bdc806f37444a6bdee00991004b462f9066d521cbb4b732d3b3c",
+    "briefSha256": "90528cb018b77674c2f2c65a3598f8864e036baeff1052f128449ce1d8bfa244",
+    "votes": {
+      "didaktik": {
+        "state": "DISPATCHED_RESULT_PENDING",
+        "batch": "deleg_f43220be",
+        "subagentId": "sa-0-9017494c"
+      },
+      "architekt": {
+        "state": "DISPATCHED_RESULT_PENDING",
+        "batch": "deleg_f43220be",
+        "subagentId": "sa-1-7415e72f"
+      },
+      "redteam": {
+        "state": "NOT_DISPATCHED"
+      }
+    }
+  },
+  "questionShards": [
+    {
+      "id": "Q-U07",
+      "state": "NOT_PERFORMED_FRESH",
+      "requiredRoles": [
+        "architekt",
+        "didaktik",
+        "redteam"
+      ]
+    },
+    {
+      "id": "Q-GUARD-TOTALISATION",
+      "state": "NOT_PERFORMED_FRESH",
+      "requiredRoles": [
+        "architekt",
+        "didaktik",
+        "redteam"
+      ]
+    }
+  ],
+  "fieldNormalform": [
+    {
+      "contract": "belegstatus",
+      "historicalBaseNodes": 59,
+      "declaredAdditionalFields": 7,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "beweisregel",
+      "historicalBaseNodes": 53,
+      "declaredAdditionalFields": 0,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "claim",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 4,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "coverage",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 13,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "ereignis",
+      "historicalBaseNodes": 209,
+      "declaredAdditionalFields": 4,
+      "state": "INCOMPLETE_B-EVENT-DIGEST-TARGET",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "error-report",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 6,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "integrity",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 3,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "proof",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 3,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "replay-input",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 6,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "report",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 10,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "signal",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 5,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    },
+    {
+      "contract": "window",
+      "historicalBaseNodes": 0,
+      "declaredAdditionalFields": 2,
+      "state": "NOT_PERFORMED_FRESH",
+      "foreignSemanticReview": "NOT_PERFORMED"
+    }
+  ],
+  "openItems": [
+    {
+      "id": "B-EVENT-DIGEST-TARGET",
+      "scope": "Exact contentDigest/ruleDigest byte targets; source clarification and explicit prospective binding, no inferred file substitution."
+    },
+    {
+      "id": "M-FIELD-NORMALFORM",
+      "state": "OPEN"
+    },
+    {
+      "id": "M-HELP-TEXT-BINDING",
+      "state": "OPEN"
+    },
+    {
+      "id": "M-REPORT-ORACLES",
+      "state": "OPEN"
+    },
+    {
+      "id": "M-SEMANTIC-CASE-CHECK",
+      "state": "OPEN"
+    }
+  ],
+  "nextOrder": [
+    "Verify both complete ADR-0004 returns and bind their full-text votes.",
+    "Obtain independent Red-Team full-text vote without exceeding two contexts.",
+    "Resolve any verified factual/normative conflict; count only complete votes to the unchanged ballot; no manifest approval from ADR ratification.",
+    "Complete remaining question/field/oracle shards in bounded fresh contexts.",
+    "Create a new complete manifest with explicit prospective differences, freeze/hash and independent full review before any implementation."
+  ],
+  "preservation": [
+    "Original failed candidates and all old reports unchanged",
+    "v0/v1 and draft01 inputs/oracles unchanged",
+    "Incomplete or failed contexts never count as verdicts",
+    "phase-0.json task states unchanged; this queue is documentation only"
+  ],
+  "nonExecutions": {
+    "product": 0,
+    "native": 0,
+    "release": 0
+  }
+}

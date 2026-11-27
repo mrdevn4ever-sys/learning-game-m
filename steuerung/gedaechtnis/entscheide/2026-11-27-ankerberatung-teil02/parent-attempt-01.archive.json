@@ -1,0 +1,21 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "attempt-01.json",
+  "sourcePath": "F:/ChnobelRuntime/verification/anchor-consultation-03/attempt-01.json",
+  "contentSha256": "dc4406df5a9004762bed377435d72e2918e8850945602f998b8f90e35c9efa0c",
+  "originalByteCount": 944,
+  "lines": [
+    "{\n",
+    "  \"status\": \"FAILED_BEFORE_REPOSITORY_WRITES\",\n",
+    "  \"exitCode\": 1,\n",
+    "  \"command\": \"F:/ChnobelRuntime/venv/Scripts/python.exe -B F:/ChnobelRuntime/verification/anchor-consultation-03/verify_returns.py\",\n",
+    "  \"helperSha256\": \"0bee05e6e4f0c631bdd3fa131dead2fccb726fa2e54752d407b3e504e2620ecb\",\n",
+    "  \"error\": \"AssertionError: assert r['sourceBindings'] == sources['sourceBindings']\",\n",
+    "  \"line\": 106,\n",
+    "  \"cause\": \"Parent helper compared the compact decision source projection with the detailed before/after source records as whole objects. Both contain 37 matching paths with no conflicting shared keys, but deliberately different fields.\",\n",
+    "  \"correction\": \"Check every compact path/kind/sha256 against the detailed path/kind/afterSha256 projection; retain separate before/after, duplicate-path, immutable-source and parent-commit checks. No source, oracle, product rule or threshold changes.\",\n",
+    "  \"productExecution\": false,\n",
+    "  \"semanticVerdict\": \"NOT_ISSUED\"\n",
+    "}\n"
+  ]
+}

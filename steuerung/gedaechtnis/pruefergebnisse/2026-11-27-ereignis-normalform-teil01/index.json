@@ -1,0 +1,122 @@
+{
+  "status": "INCOMPLETE",
+  "sourceCheckpoint": "95afeab4dd09593578d9abbfd98e39075313d44d",
+  "completedBatch": "deleg_f0606d8f",
+  "blockerIds": [
+    "B-EVENT-DIGEST-TARGET"
+  ],
+  "counts": {
+    "historicalSelectedNodes": 209,
+    "retainedHistoricalNodes": 201,
+    "replacedHistoricalNodes": 8,
+    "declaredAdditionalFields": 4,
+    "addedDocumentNodes": 5,
+    "derivedArrayElementNodes": 1,
+    "documentNodes": 214,
+    "uniqueProposedPointers": 214,
+    "uniqueNodeIds": 214,
+    "resolvedLocalNodes": 212,
+    "blockedReferenceNodes": 2,
+    "selectedReplacementDeclarations": 5
+  },
+  "scope": "Gesamte neue Ereignis-Teilabgabe verlustfrei; Hilfetextbindung nicht bearbeitet, andere Vertraege und fachliche Fremdpruefung offen. Kein ausfuehrbares Schema.",
+  "parentVerificationSha256": "3426367ea3dd75d067e9385ba435837de2c158855381026dc2982a062ae149a2",
+  "parentReadbackExitCode": 0,
+  "encoding": "utf-8-lines",
+  "files": [
+    {
+      "file": "README-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/README.md",
+      "originalFilename": "README.md",
+      "contentSha256": "ca229578ff4008ffe4f637efdcf64511fbe39cab9169d4e94600f851725a324b",
+      "originalByteCount": 8533,
+      "containerSha256": "43c0fd342f2475bbb8e31182e6dee314dc9af3a3031be3de0cf1dc1f850d6c30",
+      "containerByteCount": 9590
+    },
+    {
+      "file": "field-normalform-event-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/field-normalform-event.json",
+      "originalFilename": "field-normalform-event.json",
+      "contentSha256": "2dd875050ee3ae482423a80e9384a5dda976de717162084b2c23675720b775f8",
+      "originalByteCount": 1492065,
+      "containerSha256": "fad656c426ab8d7f0009b8bde47774a81aff625ea8e5fc221d6107bd29b6ad0b",
+      "containerByteCount": 1960182
+    },
+    {
+      "file": "mechanical-checks-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/mechanical-checks.json",
+      "originalFilename": "mechanical-checks.json",
+      "contentSha256": "b279086fe17487ca80369c3f056018be6ecdc3131da5e479f96781d560dc953b",
+      "originalByteCount": 40952,
+      "containerSha256": "1f46f8317e60e46daa5133928d94744b0915b003a97ea3194dbb048a6256a2b7",
+      "containerByteCount": 53781
+    },
+    {
+      "file": "mechanics--check_documents-py.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/mechanics/check_documents.py",
+      "originalFilename": "check_documents.py",
+      "contentSha256": "c8bab41552066b43605bbb7891bb21c6ebd0113259efd06ecc2fef52f641e855",
+      "originalByteCount": 22063,
+      "containerSha256": "7672e31ea373683fa5618a8b497f9eed2a86453a5d5433e5bb70a704c8538314",
+      "containerByteCount": 25686
+    },
+    {
+      "file": "mechanics--document_nodes-py.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/mechanics/document_nodes.py",
+      "originalFilename": "document_nodes.py",
+      "contentSha256": "b7767da5a778af1aa996568f74d59931a484c737aa862cabe55804be36cb868e",
+      "originalByteCount": 34372,
+      "containerSha256": "69914c3dc55d0e62cbe8d612c921a0be092ad635e6a7957b62da0aa2d5abadfe",
+      "containerByteCount": 39212
+    },
+    {
+      "file": "mechanics--source-before-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/mechanics/source-before.json",
+      "originalFilename": "source-before.json",
+      "contentSha256": "78c3649470c7ddb2769d1daa4ec834aee4ce732878e1ecf9ee62e554a67d150e",
+      "originalByteCount": 16745,
+      "containerSha256": "ce50b6989e43bd486371a94fdc62bb02636410fa0d004880b0f1cf5c9979c375",
+      "containerByteCount": 22537
+    },
+    {
+      "file": "mechanics--source_inventory-py.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/mechanics/source_inventory.py",
+      "originalFilename": "source_inventory.py",
+      "contentSha256": "27c947eae696ae7f5dd08a84dc1ebf4098ded12bd4629f5bcab90a2573289455",
+      "originalByteCount": 8814,
+      "containerSha256": "c121b026517de8db6e8a6381d104751649153dfcec53f0d17b8d7b7e84ff616f",
+      "containerByteCount": 10643
+    },
+    {
+      "file": "handoff-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/handoff.json",
+      "originalFilename": "handoff.json",
+      "contentSha256": "3cad6eff0e50b1c8ee6917a3fd5e176e3575b9fbc7566c6f140ac102579052c8",
+      "originalByteCount": 40310,
+      "containerSha256": "9ffa0b61718c5d6c5274296d6fbcc933213e4122b72992af351fa35fb41cf713",
+      "containerByteCount": 52863
+    },
+    {
+      "file": "brief-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/brief.md",
+      "originalFilename": "brief.md",
+      "contentSha256": "8cbcf92cf7319289a0eaf07376daa20de89226fb13a4e1876ed0f367143027f2",
+      "originalByteCount": 5601,
+      "containerSha256": "60f5d1d4018e9d19d1c2c5184ce9085243aeb00e1319fcc032a5cebce616f30a",
+      "containerByteCount": 6251
+    },
+    {
+      "file": "parent-readback-run.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/anchor-consultation-03/event-readback-run.json",
+      "originalFilename": "event-readback-run.json",
+      "contentSha256": "7144498a0c3092857ac853819c4a33e3dde89f1e98f6b4d4d90f94bbd6bfec41",
+      "originalByteCount": 3558,
+      "containerSha256": "351a754cf715e113b3e9df60d75aec6341391066d404683b551b856656f25bb8",
+      "containerByteCount": 4462
+    }
+  ],
+  "fileCount": 10,
+  "fullManifestArchived": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED"
+}

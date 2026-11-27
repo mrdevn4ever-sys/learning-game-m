@@ -1,0 +1,75 @@
+{
+  "status": "COMPLETE_QUESTION_CONSULTATION_NOT_RATIFICATION",
+  "questionId": "Q-ANCHOR-INTERVENTION",
+  "sourceCheckpoint": "95afeab4dd09593578d9abbfd98e39075313d44d",
+  "completedBatch": "deleg_f0606d8f",
+  "recommendations": {
+    "REQUIRE_CHILD_COMPLETED_LAYOUT": 1,
+    "COMPOSITE_CHILD_PROOF": 2
+  },
+  "dissentPreserved": true,
+  "priorArchive": "steuerung/gedaechtnis/entscheide/2026-11-27-ankerberatung-teil01",
+  "normativeDecision": "OPEN_EXACT_COMMON_TEXT_NOT_YET_VOTED",
+  "scope": "Red-Team-Rohabgabe und mechanischer Elternabgleich; keine Produkt-/native Ausfuehrung und keine Oraclefreigabe.",
+  "encoding": "utf-8-lines",
+  "files": [
+    {
+      "file": "report-md.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/redteam/report.md",
+      "originalFilename": "report.md",
+      "contentSha256": "7f7742207da2854cc993557119f6f1890d39fd6a89de6780a57c273be0e3e1c4",
+      "originalByteCount": 31282,
+      "containerSha256": "38dc989db9efd1b9499f97f6d80225b7fa9a4a4a0647a73ed5f7f25b9d5f8b06",
+      "containerByteCount": 33666
+    },
+    {
+      "file": "decision-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/redteam/decision.json",
+      "originalFilename": "decision.json",
+      "contentSha256": "a149cb9a5c2d047fe14bbd98b9431e624600343f707530931c89f7fe526bfd7a",
+      "originalByteCount": 24712,
+      "containerSha256": "39bcadf1f2d7d6dda184d781798b35d11f311a7810c3ce9b4e493748f3f8b399",
+      "containerByteCount": 30405
+    },
+    {
+      "file": "sources-json.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/redteam/sources.json",
+      "originalFilename": "sources.json",
+      "contentSha256": "ece02876402de1bfa6f932ed1fa297906a65c2596830947e6952316034c09ca4",
+      "originalByteCount": 17546,
+      "containerSha256": "65ca6cbcf3d4526c34fa19ab1b84b7388b5d6ab94ec55a969e0e88b7bb684b6d",
+      "containerByteCount": 21504
+    },
+    {
+      "file": "parent-verification.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/anchor-consultation-03/verification.json",
+      "originalFilename": "verification.json",
+      "contentSha256": "3426367ea3dd75d067e9385ba435837de2c158855381026dc2982a062ae149a2",
+      "originalByteCount": 7308,
+      "containerSha256": "456482aab0a71d933c25634566cd22f093030ed2c5361a7795269bdd9c14d368",
+      "containerByteCount": 9592
+    },
+    {
+      "file": "parent-helper.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/anchor-consultation-03/verify_returns.py",
+      "originalFilename": "verify_returns.py",
+      "contentSha256": "74fd6dd530b475a6fec9aad8b9a6e381705d347ecdc14a8a8b3b8014b125d1bf",
+      "originalByteCount": 13911,
+      "containerSha256": "3e1a57d0554910b605d4886a7d4b12b430b1988eb6ccc84f5ef538b3295d2dc5",
+      "containerByteCount": 16204
+    },
+    {
+      "file": "parent-attempt-01.archive.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/anchor-consultation-03/attempt-01.json",
+      "originalFilename": "attempt-01.json",
+      "contentSha256": "dc4406df5a9004762bed377435d72e2918e8850945602f998b8f90e35c9efa0c",
+      "originalByteCount": 944,
+      "containerSha256": "b1f72b8b753e2adbb7d4f43a5b6af1626ed56fef92b0faec4ecaebec736cd4fb",
+      "containerByteCount": 1380
+    }
+  ],
+  "fileCount": 6,
+  "fullManifestArchived": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED"
+}
