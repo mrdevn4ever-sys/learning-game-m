@@ -2,7 +2,7 @@
   "documentKind": "planning-handoff-not-controller-task-transitions/1",
   "phase": 0,
   "date": "2026-11-27",
-  "checkpointBefore": "9b500a6cfa80ca0197c30f48c8995135837ffc8c",
+  "checkpointBefore": "299cea2c502a370e4128bb2bd77d48787e4c7dcc",
   "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
   "maxConcurrentSubagents": 2,
   "implementationAuthorized": false,
@@ -97,12 +97,69 @@
   "questionShards": [
     {
       "id": "Q-U07",
-      "state": "NOT_PERFORMED_FRESH",
+      "state": "FRESH_PART01_DISPATCHED_RESULTS_PENDING",
       "requiredRoles": [
         "architekt",
         "didaktik",
         "redteam"
-      ]
+      ],
+      "dispatch": {
+        "kind": "bounded-question-consultation-dispatch/1",
+        "questionId": "Q-U07",
+        "batch": "deleg_d7ef3701",
+        "state": "DISPATCHED_RESULTS_PENDING",
+        "roles": [
+          {
+            "role": "didaktik",
+            "subagentId": "sa-0-15ea89fe",
+            "outputRoot": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/didaktik"
+          },
+          {
+            "role": "architekt",
+            "subagentId": "sa-1-615bb788",
+            "outputRoot": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/architekt"
+          }
+        ],
+        "redteamState": "NOT_DISPATCHED_REQUIRES_SAME_FROZEN_INPUTS_AFTER_CAPACITY_AVAILABLE",
+        "requiredRoles": [
+          "architekt",
+          "didaktik",
+          "redteam"
+        ],
+        "activeChildrenAtDispatch": 2,
+        "maxConcurrentSubagents": 2,
+        "brief": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/brief.md",
+          "sha256": "e26814fe066372316a2e5a1a0d80ee81391e0eadd2a48e46aade902b33bb9231",
+          "bytes": 8734
+        },
+        "inputBindings": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/input-bindings.json",
+          "sha256": "9878ae90f1cbb6c0df5af7b26460fd60b6911f3ab4115cf51d9200c19986aba0",
+          "bytes": 114014
+        },
+        "freezeVerification": {
+          "path": "F:/ChnobelRuntime/verification/digest-targets-03-parent/u07-freeze-verification.json",
+          "sha256": "45df8601cf5721c3e60c8aa5ae514350a13f77541d0f942d7d7ba5ba9e293336",
+          "bytes": 885
+        },
+        "parentCheckpointBefore": "299cea2c502a370e4128bb2bd77d48787e4c7dcc",
+        "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
+        "implementationAuthorized": false,
+        "wholeManifestVerdict": "NOT_ISSUED",
+        "wholeRoleStatus": "INCOMPLETE_OTHER_QUESTIONS_PENDING",
+        "cronMustRemainPaused": true
+      },
+      "dispatchArchive": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-27-u07-beratung-teil01/index.json",
+        "sha256": "583e99574f4f8147b32d498cc7df76564023cb2f6beaf9eae9da568eed32dc01",
+        "bytes": 1872
+      },
+      "roleStates": {
+        "didaktik": "PENDING",
+        "architekt": "PENDING",
+        "redteam": "NOT_STARTED"
+      }
     },
     {
       "id": "Q-GUARD-TOTALISATION",
@@ -147,8 +204,10 @@
       "contract": "ereignis",
       "historicalBaseNodes": 209,
       "declaredAdditionalFields": 4,
-      "state": "INCOMPLETE_B-EVENT-DIGEST-TARGET",
-      "foreignSemanticReview": "NOT_PERFORMED"
+      "state": "INCOMPLETE_REQUIRES_NARROW_NORM_TRANSFER_AND_FULL_REVIEW",
+      "foreignSemanticReview": "NOT_PERFORMED",
+      "narrowDigestSourceNormAccepted": true,
+      "completeNormalformVerdict": "NOT_ISSUED"
     },
     {
       "contract": "error-report",
@@ -202,10 +261,6 @@
   ],
   "openItems": [
     {
-      "id": "B-EVENT-DIGEST-TARGET",
-      "scope": "Exact contentDigest/ruleDigest byte targets; source clarification and explicit prospective binding, no inferred file substitution."
-    },
-    {
       "id": "M-FIELD-NORMALFORM",
       "state": "OPEN"
     },
@@ -222,22 +277,17 @@
       "state": "OPEN"
     },
     {
-      "id": "RT-DT02-01",
-      "state": "OPEN_TECHNICAL_SPECIFICATION",
-      "scope": "Minimal target/label structure and classification before binding diagnostics."
-    },
-    {
-      "id": "RT-DT02-02",
-      "state": "OPEN_TECHNICAL_SPECIFICATION",
-      "scope": "Selection, independent trust and acquisition or explicit retained gate boundary for additional mandatory bindings."
+      "id": "B-DIGEST-GATE-INTEGRATION",
+      "state": "OPEN_REQUIRED_NOT_IMPLEMENTED_NOT_ATTESTED",
+      "scope": "All retained additional bindings, full inventory/document contracts, independent trust/acquisition and authentic snapshot-bound enforcement; complete manifest transfer and review still required."
     }
   ],
   "nextOrder": [
-    "Await both complete fresh whole-narrow revision-03 reviews from deleg_6fe569e1; independently verify exact proposal/report/source bindings and reconstruct mutable contexts. No polling.",
-    "Only after both whole-narrow verdicts assess narrow acceptance and findings; author completion and mechanical checks do not close B-EVENT-DIGEST-TARGET or attest the separate mandatory gate.",
-    "Complete Q-U07 and Q-GUARD-TOTALISATION with all required roles in bounded fresh contexts; no one-sequence/one-world-action assumption.",
-    "Complete remaining field/help/oracle shards, T05 conflict and ADR-0004 transfer; old drafts and values unchanged.",
-    "Create a new complete manifest, freeze/hash and independent full review before any implementation."
+    "Receive both full Q-U07 question returns from deleg_d7ef3701 and verify their exact frozen sources and separate mutable contexts; do not poll.",
+    "Complete the fresh Red-Team Q-U07 consultation against the same brief/input hashes after capacity is available; no whole-question closure without all three required roles.",
+    "Classify Q-U07 evidence and any proposed product policy separately; preserve old raw failures and INCONCLUSIVE, no one-sequence/one-world-action bound. Then Q-GUARD-TOTALISATION with all required roles.",
+    "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004 and accepted digest-source transfer, plus concrete mandatory additional-gate inventory/integration. Old drafts and values unchanged.",
+    "Create a new complete manifest, freeze/hash and obtain independent whole-manifest review before any implementation."
   ],
   "digestTargetClarification": {
     "role": "technical-specification-author",
@@ -633,19 +683,35 @@
       "foreignReview": {
         "kind": "whole-narrow-revision-03-review-dispatch/1",
         "batch": "deleg_6fe569e1",
-        "state": "DISPATCHED_RESULTS_PENDING",
+        "state": "COMPLETE_ACCEPT_AS_WRITTEN_PARENT_VERIFIED",
         "at": "2026-11-27T22:10:00.830213+01:00",
         "scope": "WHOLE_NARROW_DIGEST_TARGET_REVISION_03",
         "roles": [
           {
             "role": "architekt",
             "subagentId": "sa-0-764eb04c",
-            "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-03/architekt"
+            "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-03/architekt",
+            "scopeStatus": "COMPLETE",
+            "recommendation": "ACCEPT_AS_WRITTEN",
+            "unconditional": true,
+            "review": {
+              "path": "F:/ChnobelRuntime/reviews/digest-targets-03/architekt/review.json",
+              "sha256": "0fab1468ddf7b72ddb432918ef973f0e096af579a0efc8a885dd4db6e9100a87",
+              "bytes": 13632
+            }
           },
           {
             "role": "redteam",
             "subagentId": "sa-1-70becf28",
-            "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-03/redteam"
+            "outputRoot": "F:/ChnobelRuntime/reviews/digest-targets-03/redteam",
+            "scopeStatus": "COMPLETE",
+            "recommendation": "ACCEPT_AS_WRITTEN",
+            "unconditional": true,
+            "review": {
+              "path": "F:/ChnobelRuntime/reviews/digest-targets-03/redteam/review.json",
+              "sha256": "352a495fa0c1938b90385eae94b1442cd19a74f0d5bbe37c44f8087652d52717",
+              "bytes": 12858
+            }
           }
         ],
         "brief": {
@@ -675,7 +741,23 @@
         "implementationAuthorized": false,
         "wholeManifestVerdict": "NOT_ISSUED",
         "cronMustRemainPaused": true,
-        "independentContextsNotTechnicalIdentityIsolation": true
+        "independentContextsNotTechnicalIdentityIsolation": true,
+        "parentReturnVerification": {
+          "path": "F:/ChnobelRuntime/verification/digest-targets-03-parent/verification.json",
+          "sha256": "ebfadd80d7920dd2f75066a1642c4864ca1461c4affdeff594593f0ea3ab8b61",
+          "bytes": 3722
+        },
+        "returnArchive": {
+          "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-27-digestziel-fremdpruefung03/index.json",
+          "sha256": "6a095a12a56cc365af975bb9f74bfa9f2066748dbfb80f5ae1691b1a8056fc6b",
+          "bytes": 5529
+        },
+        "normativeAcceptanceExternal": {
+          "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-27-digestziel-fassung03-annahme.json",
+          "sha256": "684aaad285d8069c1a5bc084887ca88f86017e278c3e112f5b31eff7c0a33a38",
+          "bytes": 5199
+        },
+        "historicalDispatchFieldsRetained": true
       },
       "reviewDispatchArchive": {
         "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-27-digestziel-fremdpruefung03/index.json",
@@ -727,6 +809,30 @@
     "Incomplete or failed contexts never count as verdicts",
     "phase-0.json task states unchanged; this queue is documentation only"
   ],
+  "digestTargetAcceptance": {
+    "state": "ACCEPTED_PROSPECTIVE_NARROW_TECHNICAL_SPECIFICATION_ONLY",
+    "decision": {
+      "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-27-digestziel-fassung03-annahme.json",
+      "sha256": "684aaad285d8069c1a5bc084887ca88f86017e278c3e112f5b31eff7c0a33a38",
+      "bytes": 5199
+    },
+    "proposal": {
+      "path": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/digest-targets.json",
+      "sha256": "0ff158c9302cbec6f603531d11dd9d60bb58cb170566756a9760a8ea322ffadd",
+      "bytes": 93140
+    },
+    "resolvedNarrowSourceBlocker": "B-EVENT-DIGEST-TARGET",
+    "resolvedTextFindings": [
+      "ARCH-DT-01",
+      "RT-DIGEST-01",
+      "RT-DT02-01",
+      "RT-DT02-02"
+    ],
+    "oldSubmissionsUnchanged": true,
+    "remainingMandatoryGate": "B-DIGEST-GATE-INTEGRATION",
+    "implementationAuthorized": false,
+    "wholeManifestVerdict": "NOT_ISSUED"
+  },
   "nonExecutions": {
     "product": 0,
     "native": 0,

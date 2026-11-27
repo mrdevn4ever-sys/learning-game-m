@@ -1,0 +1,33 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "u07-freeze-verification.json",
+  "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-parent/u07-freeze-verification.json",
+  "contentSha256": "45df8601cf5721c3e60c8aa5ae514350a13f77541d0f942d7d7ba5ba9e293336",
+  "originalByteCount": 885,
+  "lines": [
+    "{\n",
+    "  \"result\": \"PASS_QUESTION_FREEZE_DOCUMENT_BINDINGS_ONLY\",\n",
+    "  \"at\": \"2026-11-27T22:52:12.542534+01:00\",\n",
+    "  \"parentCheckpoint\": \"299cea2c502a370e4128bb2bd77d48787e4c7dcc\",\n",
+    "  \"brief\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/brief.md\",\n",
+    "    \"sha256\": \"e26814fe066372316a2e5a1a0d80ee81391e0eadd2a48e46aade902b33bb9231\",\n",
+    "    \"bytes\": 8734\n",
+    "  },\n",
+    "  \"inputBindings\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/input-bindings.json\",\n",
+    "    \"sha256\": \"9878ae90f1cbb6c0df5af7b26460fd60b6911f3ab4115cf51d9200c19986aba0\",\n",
+    "    \"bytes\": 114014\n",
+    "  },\n",
+    "  \"mandatoryFiles\": 53,\n",
+    "  \"primaryBaseCases\": 2,\n",
+    "  \"transportVariants\": 8,\n",
+    "  \"textualBoundaryCases\": 2,\n",
+    "  \"manifestHandoffFilesVerifiedBeforeFreeze\": 4944,\n",
+    "  \"wholeManifestVerdict\": \"NOT_ISSUED\",\n",
+    "  \"implementationAuthorized\": false,\n",
+    "  \"productExecution\": \"NOT_RUN\",\n",
+    "  \"nativeExecution\": \"NOT_RUN\"\n",
+    "}\n"
+  ]
+}

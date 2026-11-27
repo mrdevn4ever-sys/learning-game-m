@@ -1,0 +1,42 @@
+{
+  "kind": "lossless-public-document-evidence/1",
+  "scope": "Q_U07_PART01_DISPATCH_ONLY_NO_VERDICT",
+  "files": [
+    {
+      "file": "01-brief.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/brief.md",
+      "contentSha256": "e26814fe066372316a2e5a1a0d80ee81391e0eadd2a48e46aade902b33bb9231",
+      "originalByteCount": 8734,
+      "containerSha256": "8624d9a3d2eec00c5d1efd63d51f6ecaaa94a43206515f584c81db4457489718",
+      "containerByteCount": 9367
+    },
+    {
+      "file": "02-input-bindings.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/input-bindings.json",
+      "contentSha256": "9878ae90f1cbb6c0df5af7b26460fd60b6911f3ab4115cf51d9200c19986aba0",
+      "originalByteCount": 114014,
+      "containerSha256": "b47a4077a9916dec4f62b79f6a2b5fea68f29588fb959718a77d6cad540325dc",
+      "containerByteCount": 124269
+    },
+    {
+      "file": "03-dispatch.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/dispatch.json",
+      "contentSha256": "4ad42887482b1cda82451c61d42db2fc2fc46d742d306ccd492b558147f8a3ca",
+      "originalByteCount": 1694,
+      "containerSha256": "3c3ea90605ad253052f31d538c724296f32503379d73141c59d1b4ddaa33e77a",
+      "containerByteCount": 2523
+    },
+    {
+      "file": "04-freeze-verification.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-parent/u07-freeze-verification.json",
+      "contentSha256": "45df8601cf5721c3e60c8aa5ae514350a13f77541d0f942d7d7ba5ba9e293336",
+      "originalByteCount": 885,
+      "containerSha256": "0ade4b9c7587c3cdb2be5e5b581b17a9f01af4dfa823dbfcc2b7ebfec11e47d5",
+      "containerByteCount": 1483
+    }
+  ],
+  "fileCount": 4,
+  "productExecution": "NOT_RUN",
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED"
+}

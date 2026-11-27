@@ -1,0 +1,114 @@
+{
+  "kind": "lossless-public-document-evidence/1",
+  "scope": "WHOLE_NARROW_DIGEST_TARGET_REVISION_03_REPORTS_AND_PARENT_CONTROL",
+  "files": [
+    {
+      "file": "01-architekt-report.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/architekt/report.md",
+      "contentSha256": "83f30107961c6a3261fbf3a5731d83429cfe41ad8a3dc878d42aa4eef72e1db8",
+      "originalByteCount": 9573,
+      "containerSha256": "a0d1a335ac9202bf395979031a31c2e70eb1f7b3737267f9dd4fec57e812c060",
+      "containerByteCount": 10351
+    },
+    {
+      "file": "02-architekt-sources.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/architekt/sources.json",
+      "contentSha256": "70a192464b675ddbf53a2e4f2eed757bff1c4c6bb8edcd8eedfca405aa3b0ee5",
+      "originalByteCount": 765379,
+      "containerSha256": "9502a555a317e2a02b283e697d0de5f5f223bd7affa1944029abe47f786c6023",
+      "containerByteCount": 868562
+    },
+    {
+      "file": "03-architekt-review.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/architekt/review.json",
+      "contentSha256": "0fab1468ddf7b72ddb432918ef973f0e096af579a0efc8a885dd4db6e9100a87",
+      "originalByteCount": 13632,
+      "containerSha256": "ec553961515b785c21dd8787bfcbdd803ed750c2f65d3f6ac46c526290c1beec",
+      "containerByteCount": 16954
+    },
+    {
+      "file": "04-redteam-report.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/redteam/report.md",
+      "contentSha256": "609e24dd6acbbb5f74173c6090f219b2cbef94aabee8b1174a8a40877ced6fc8",
+      "originalByteCount": 9362,
+      "containerSha256": "618f0cf5a705f05eb6874bbcb93f72009f075f66dd4cc703ea14d74ef155b3dd",
+      "containerByteCount": 10138
+    },
+    {
+      "file": "05-redteam-sources.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/redteam/sources.json",
+      "contentSha256": "345281c0e5c365b52701b4ebc9f4b6dc7738580cfffc5ea1dd25a1cdbd912fad",
+      "originalByteCount": 747298,
+      "containerSha256": "e51202fbff7b34283c10a60af54ff66894132d80dcc6b9ef49f70db076062a3a",
+      "containerByteCount": 847413
+    },
+    {
+      "file": "06-redteam-review.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/redteam/review.json",
+      "contentSha256": "352a495fa0c1938b90385eae94b1442cd19a74f0d5bbe37c44f8087652d52717",
+      "originalByteCount": 12858,
+      "containerSha256": "f19d1a7728441fdbc25d5d5db7443b57d586833a34afed801a6f7a75e39c469a",
+      "containerByteCount": 15426
+    },
+    {
+      "file": "07-whole-norm03.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/digest-targets.json",
+      "contentSha256": "0ff158c9302cbec6f603531d11dd9d60bb58cb170566756a9760a8ea322ffadd",
+      "originalByteCount": 93140,
+      "containerSha256": "1d600c1fda692a89887d47f6d8c48939cc845fc73ffd2e7e823539a6f385b88a",
+      "containerByteCount": 103223
+    },
+    {
+      "file": "08-review-brief.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/brief.md",
+      "contentSha256": "6efe45323f262e970d7201c8f00f23ebf51b46fcc3c018e03fcbe8ef81056e77",
+      "originalByteCount": 10286,
+      "containerSha256": "e304afa8238638583c61b5bf91e0c1aeb272b8e473fe302c69508487df2e3300",
+      "containerByteCount": 11017
+    },
+    {
+      "file": "09-review-input-bindings.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/input-bindings.json",
+      "contentSha256": "1a0141f70d4fe9a9c946e75eda2ae1f10cc74367103698d1829b98be9ebd1d5d",
+      "originalByteCount": 101731,
+      "containerSha256": "791dd91bcf688f4d6904375e1688a7b2f660649151ac8307ba6f0527a0a2dbb0",
+      "containerByteCount": 109597
+    },
+    {
+      "file": "10-review-dispatch.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-03/dispatch.json",
+      "contentSha256": "f428642546937eafaaaeb1eae32b423598cddd35d94edbb1ba8924fd55730dfb",
+      "originalByteCount": 1731,
+      "containerSha256": "21f08f5c6b921865991cb5900cf869054476dd42698d67fc40911e8ed3fc8766",
+      "containerByteCount": 2549
+    },
+    {
+      "file": "11-parent-helper.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-parent/verify_returns.py",
+      "contentSha256": "179136fd006f7f26c1d09aa38c8b94f577115dc949b5d5c7d02ed2891da6bec0",
+      "originalByteCount": 16729,
+      "containerSha256": "2db06a94fb15ddf209b21f9f49445015e7494a0d3df91498203310bcb509edec",
+      "containerByteCount": 19469
+    },
+    {
+      "file": "12-parent-verification.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-parent/verification.json",
+      "contentSha256": "ebfadd80d7920dd2f75066a1642c4864ca1461c4affdeff594593f0ea3ab8b61",
+      "originalByteCount": 3722,
+      "containerSha256": "efaf54b63a81674ec7553927b3035ec462d090c0479c393b13b662483968cea3",
+      "containerByteCount": 5234
+    },
+    {
+      "file": "13-parent-assessment.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-03-parent/assessment.md",
+      "contentSha256": "f8cc96e9fdf5fee1b842c9783baa714ce41c2931bec725160b4a9ed317994216",
+      "originalByteCount": 4502,
+      "containerSha256": "82fcd8d81734d73ca20bc305ce9a6b20e21ac182ec95b002867cc12738b0e94a",
+      "containerByteCount": 5047
+    }
+  ],
+  "fileCount": 13,
+  "productExecution": "NOT_RUN",
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED"
+}

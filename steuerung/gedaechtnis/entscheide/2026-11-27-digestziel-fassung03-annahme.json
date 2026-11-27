@@ -1,0 +1,124 @@
+{
+  "documentKind": "orchestrator-prospective-narrow-technical-acceptance/1",
+  "decidedAt": "2026-11-27T22:48:11.536942+01:00",
+  "decision": "ACCEPTED_AS_WRITTEN_PROSPECTIVE_NARROW_TECHNICAL_SPECIFICATION_ONLY",
+  "decisionClass": "TECHNICAL_SPECIFICATION",
+  "productPolicyRatification": false,
+  "scope": "WHOLE_NARROW_DIGEST_TARGET_REVISION_03",
+  "proposal": {
+    "path": "F:/ChnobelRuntime/specification/v2-field-supplement-05/digest-targets/author/digest-targets.json",
+    "sha256": "0ff158c9302cbec6f603531d11dd9d60bb58cb170566756a9760a8ea322ffadd",
+    "bytes": 93140
+  },
+  "preservedProposalStatus": "PROPOSED_NOT_ACCEPTED_IN_IMMUTABLE_AUTHOR_BYTES",
+  "parentCheckpointBefore": "299cea2c502a370e4128bb2bd77d48787e4c7dcc",
+  "independentReviews": [
+    {
+      "role": "architekt",
+      "review": {
+        "path": "F:/ChnobelRuntime/reviews/digest-targets-03/architekt/review.json",
+        "sha256": "0fab1468ddf7b72ddb432918ef973f0e096af579a0efc8a885dd4db6e9100a87",
+        "bytes": 13632
+      },
+      "recommendation": "ACCEPT_AS_WRITTEN",
+      "unconditional": true,
+      "scopeStatus": "COMPLETE"
+    },
+    {
+      "role": "redteam",
+      "review": {
+        "path": "F:/ChnobelRuntime/reviews/digest-targets-03/redteam/review.json",
+        "sha256": "352a495fa0c1938b90385eae94b1442cd19a74f0d5bbe37c44f8087652d52717",
+        "bytes": 12858
+      },
+      "recommendation": "ACCEPT_AS_WRITTEN",
+      "unconditional": true,
+      "scopeStatus": "COMPLETE"
+    }
+  ],
+  "parentVerification": {
+    "path": "F:/ChnobelRuntime/verification/digest-targets-03-parent/verification.json",
+    "sha256": "ebfadd80d7920dd2f75066a1642c4864ca1461c4affdeff594593f0ea3ab8b61",
+    "bytes": 3722
+  },
+  "parentAssessment": {
+    "path": "F:/ChnobelRuntime/verification/digest-targets-03-parent/assessment.md",
+    "sha256": "f8cc96e9fdf5fee1b842c9783baa714ce41c2931bec725160b4a9ed317994216",
+    "bytes": 4502
+  },
+  "losslessEvidenceArchive": {
+    "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-27-digestziel-fremdpruefung03/index.json",
+    "sha256": "6a095a12a56cc365af975bb9f74bfa9f2066748dbfb80f5ae1691b1a8056fc6b",
+    "bytes": 5529
+  },
+  "archiveSourceCount": 13,
+  "acceptanceBasis": "Zwei vollstaendige unabhaengige technische Ganztextempfehlungen, eigene Quellen-/Ruecklaufpruefung und dokumentierte Textbeurteilung. Keine Mehrheit ueber technische Fakten und kein Hash-PASS als semantischer Ersatz.",
+  "prospectiveEffect": "Zulaessige normative Quelle fuer eine neue vollstaendige v2-Manifestfassung; keine bestehende Datei, Erwartung oder Kandidatenbewertung wird dadurch geaendert.",
+  "resolvedSourceBlocker": {
+    "id": "B-EVENT-DIGEST-TARGET",
+    "status": "RESOLVED_NARROW_PROSPECTIVE_SOURCE_NORM_ONLY",
+    "criterion": "Explizite neue Feld-zu-Dateirohbyte-Zuordnung mit ganzer fremdgepruefter Spezifikation vorhanden.",
+    "remainingTransfer": "Die alte Ereignisnormalform bleibt historisch INCOMPLETE. Uebernahme in neue vollstaendige Feld-/Manifestfassung ist offen."
+  },
+  "resolvedTextFindings": [
+    {
+      "id": "ARCH-DT-01",
+      "status": "RESOLVED_FOR_EXACT_REVISION03_TEXT_ONLY",
+      "oldVerdictUnchanged": true,
+      "executedProductFixClaimed": false
+    },
+    {
+      "id": "RT-DIGEST-01",
+      "status": "RESOLVED_FOR_EXACT_REVISION03_TEXT_ONLY",
+      "oldVerdictUnchanged": true,
+      "executedProductFixClaimed": false
+    },
+    {
+      "id": "RT-DT02-01",
+      "status": "RESOLVED_FOR_EXACT_REVISION03_TEXT_ONLY",
+      "oldVerdictUnchanged": true,
+      "executedProductFixClaimed": false
+    },
+    {
+      "id": "RT-DT02-02",
+      "status": "RESOLVED_FOR_EXACT_REVISION03_TEXT_ONLY",
+      "oldVerdictUnchanged": true,
+      "executedProductFixClaimed": false
+    }
+  ],
+  "remainingMandatoryIntegration": {
+    "id": "B-DIGEST-GATE-INTEGRATION",
+    "status": "OPEN_REQUIRED_NOT_IMPLEMENTED_NOT_ATTESTED",
+    "obligations": [
+      "vollstaendige extern angenommene eingefrorene fremdgepruefte Pflichtinventur mit eindeutigen Selektoren",
+      "ganze anwendbare Dokumentvertraege",
+      "unabhaengige Vertrauensanker und sicherer geschlossener Beschaffungsgraph",
+      "technische Durchsetzung der lokalen-und-zusaetzlichen Gatekonjunktion",
+      "authentische Belege fuer identische Norm-/Inventur-/Manifest-/Wurzel-/Index-/Input-/Zielsnapshots",
+      "neue vollstaendige Manifestfassung samt Freeze und frischer Fremdpruefung"
+    ],
+    "noPositiveForwardingUntilEvidence": true,
+    "noRequirementRemovedBySeparation": true
+  },
+  "historicalNormsReviewsOraclesAndFailuresUnchanged": true,
+  "technicalIdentitySeparationProven": false,
+  "broaderManifestBlockersClosed": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "candidateVerdict": "NOT_ISSUED",
+  "integrationAuthorized": false,
+  "releaseAuthorized": false,
+  "controlsExecution": "NOT_RUN",
+  "productExecution": "NOT_RUN",
+  "nativeExecution": "NOT_RUN",
+  "outOfScope": [
+    "Q-U07",
+    "Q-GUARD-TOTALISATION",
+    "B-SPEC-T05-SUPPORT",
+    "M-FIELD-NORMALFORM",
+    "M-HELP-TEXT-BINDING",
+    "M-REPORT-ORACLES",
+    "M-SEMANTIC-CASE-CHECK",
+    "ADR-0004-Manifestuebernahme"
+  ]
+}
