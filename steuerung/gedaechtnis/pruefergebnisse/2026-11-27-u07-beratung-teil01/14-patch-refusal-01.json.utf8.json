@@ -1,0 +1,16 @@
+{
+  "kind": "lossless-utf8-source/1",
+  "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/patch-refusal-01.json",
+  "encoding": "utf-8-lines",
+  "contentSha256": "091b126e9c567d09847e35c78f2968113aad984e280083876dace924c20d9eab",
+  "originalByteCount": 365,
+  "lines": [
+    "{\n",
+    "  \"kind\": \"PARENT_PATCH_REFUSAL\",\n",
+    "  \"filesModified\": false,\n",
+    "  \"helperSha256\": \"775099afa9b1520d9926c509bb9e84c466c7ee697e50d88e607fd64d75ecfe71\",\n",
+    "  \"error\": \"Patch validation failed (no files were modified): hunk 14 and hunk 17 found 2 matches for assert observed['eventId'] == actual['id']; bounded unique replacements used instead.\",\n",
+    "  \"productVerdict\": null\n",
+    "}\n"
+  ]
+}

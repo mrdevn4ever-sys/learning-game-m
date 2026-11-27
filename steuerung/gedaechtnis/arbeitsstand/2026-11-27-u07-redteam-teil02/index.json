@@ -1,0 +1,28 @@
+{
+  "kind": "question-redteam-dispatch/1",
+  "questionId": "Q-U07",
+  "scope": "BOUNDED_QUESTION_DOCUMENTATION_ONLY",
+  "fileCount": 2,
+  "files": [
+    {
+      "file": "01-procedural-bindings.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07-redteam-procedural-freeze/bindings.json",
+      "contentSha256": "c25dbac2a0c8e757ab5f7f3b64a80850f27510da1e39bf5d996e0acc8f858d28",
+      "originalByteCount": 109545,
+      "containerSha256": "60adee2c71302ef8317bcfbf3f74226ea5c8d5cae4cf5995b3efb417b5b9639b",
+      "containerByteCount": 111433
+    },
+    {
+      "file": "02-dispatch-redteam.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/dispatch-redteam.json",
+      "contentSha256": "d031fbaafed232ea7b7477ad40f74a02ebaa14f7a868a698c121800b0482298c",
+      "originalByteCount": 1490,
+      "containerSha256": "323a71f7c55f71bfaca7cb391c643adae9309f5c59ae6502b64bc0c1abdf0266",
+      "containerByteCount": 2209
+    }
+  ],
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "productExecution": "NOT_RUN",
+  "blockerClosed": false
+}

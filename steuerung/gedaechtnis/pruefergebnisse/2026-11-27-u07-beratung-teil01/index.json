@@ -1,0 +1,156 @@
+{
+  "kind": "question-consultation-returns-with-procedural-deviation/1",
+  "questionId": "Q-U07",
+  "scope": "BOUNDED_QUESTION_DOCUMENTATION_ONLY",
+  "fileCount": 18,
+  "files": [
+    {
+      "file": "01-didaktik-report.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/didaktik/report.md",
+      "contentSha256": "d2fb831323f0a3c6fafc2a05e7ba098bbd845933ef273a3f871afc7da596b674",
+      "originalByteCount": 10218,
+      "containerSha256": "64cc3a945dcebdd9c7e0fcc1c0c8245498fa2a8a5368ca91525236c9d3a8dd57",
+      "containerByteCount": 11161
+    },
+    {
+      "file": "02-didaktik-sources.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/didaktik/sources.json",
+      "contentSha256": "0a0593e46366e0c621dd440735ba8eb4b6add48e77e167550f85833eb98bcd2b",
+      "originalByteCount": 566909,
+      "containerSha256": "7d498cd2ac437a5d4361d57b93cabd3b67be223543c1b22b61416d068340ffc8",
+      "containerByteCount": 672395
+    },
+    {
+      "file": "03-didaktik-decision.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/didaktik/decision.json",
+      "contentSha256": "3d12e1638eb9dc63381ace88b26bbff740aaff516ea4278302367304149f56c1",
+      "originalByteCount": 155028,
+      "containerSha256": "230141911cfcb5de7669bd113478ca9ca3d5ce258c6306ca72ec03d8e0ecf6f1",
+      "containerByteCount": 194604
+    },
+    {
+      "file": "04-architekt-report.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/architekt/report.md",
+      "contentSha256": "3143f8e64073276a4d39bdbfd900e200b7d41dd8d5d3f01af94cc6724aa274c4",
+      "originalByteCount": 10351,
+      "containerSha256": "a73e74e4a05151eb8257c8783d1b5ee84ff77fb8ffeb3bd5be4c9251cbc3ff03",
+      "containerByteCount": 11187
+    },
+    {
+      "file": "05-architekt-sources.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/architekt/sources.json",
+      "contentSha256": "d7aa687fc69280dff565dc2c92d85531b2ebbf4f2707ac331c2186f36520d8fa",
+      "originalByteCount": 524360,
+      "containerSha256": "e109657905bd319995d0ef37cd43a0321bc69f8876dec0fee5d1fed458d3598b",
+      "containerByteCount": 589714
+    },
+    {
+      "file": "06-architekt-decision.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-03/u07/architekt/decision.json",
+      "contentSha256": "9d5b6952ab0e74a78dd9c1c678e8a0920fdd6acf833b41dabd8faf22c09a2cb3",
+      "originalByteCount": 58463,
+      "containerSha256": "625f6ba1869685465aa31933770fa454277d0306cfce0d79d6fd9c75d0cc4afe",
+      "containerByteCount": 75148
+    },
+    {
+      "file": "07-assessment.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/assessment.md",
+      "contentSha256": "b9d363adcbc3bdeea94564152ed18a7c852be64377e5bfce1629e468e652af7f",
+      "originalByteCount": 4549,
+      "containerSha256": "91fccbc380e747a779cf1dc9deed540c7ffbb388e2506bf9dfc7ca6bbe50b18b",
+      "containerByteCount": 5098
+    },
+    {
+      "file": "08-attempt-01-helper-source.txt.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-01-helper-source.txt",
+      "contentSha256": "b9ed00ef4d985f9a375fb98abb8a2ab777521287338e59b579d16e6249dd735d",
+      "originalByteCount": 15435,
+      "containerSha256": "762afac29a888f64155f6f43861a8d2e8cbcae587b447b091aa708b1d56d9ec0",
+      "containerByteCount": 18113
+    },
+    {
+      "file": "09-attempt-01.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-01.json",
+      "contentSha256": "bb9f8c56b338a3d8f768e97c5cd21e2335130222dd1ca90cb8f3e2986d76adcc",
+      "originalByteCount": 706,
+      "containerSha256": "6b66c87b76f1195f90905f46d53d7cce527813d96675772fcb17e26f13c3093e",
+      "containerByteCount": 1139
+    },
+    {
+      "file": "10-attempt-02-helper-source.txt.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-02-helper-source.txt",
+      "contentSha256": "775099afa9b1520d9926c509bb9e84c466c7ee697e50d88e607fd64d75ecfe71",
+      "originalByteCount": 15457,
+      "containerSha256": "c22316ca99afaeb0e7720472f92ca404bc2613fa24aa5ccc2970e4d7182ee33a",
+      "containerByteCount": 18135
+    },
+    {
+      "file": "11-attempt-02.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-02.json",
+      "contentSha256": "18e7ff1c5ae6e2a433a2b7394a2871f3b1f399600ca4489acda2626b817ac3bd",
+      "originalByteCount": 728,
+      "containerSha256": "fb08b4b9bfd96e3e64cf0f0242c35f69a04b5e91cc42c78dd85164aac4540aaf",
+      "containerByteCount": 1161
+    },
+    {
+      "file": "12-attempt-03-helper-source.txt.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-03-helper-source.txt",
+      "contentSha256": "875386ed23e206a79788e8108432526d3382d503d6b2369d34fbc0c7da28183e",
+      "originalByteCount": 15869,
+      "containerSha256": "536e0032eb7489a9b9a6350fb034a8e8a1ed113fc79d29cecb74f78869d2e87b",
+      "containerByteCount": 18602
+    },
+    {
+      "file": "13-attempt-03.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-03.json",
+      "contentSha256": "33f6685d9405f55d9fa442a0ae2683f515eeacb192e23ffd3cf1dfea21a53b44",
+      "originalByteCount": 692,
+      "containerSha256": "ccb2f4571fced4d2e6521d06f56b9aa6b04933d8680c86614e29799ae1f3927d",
+      "containerByteCount": 1125
+    },
+    {
+      "file": "14-patch-refusal-01.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/patch-refusal-01.json",
+      "contentSha256": "091b126e9c567d09847e35c78f2968113aad984e280083876dace924c20d9eab",
+      "originalByteCount": 365,
+      "containerSha256": "d5d5204c8e5aeafd86ed30f10536e06f7bb737fb4152b56aad67eaccfd05bea5",
+      "containerByteCount": 739
+    },
+    {
+      "file": "15-procedural-source-drift.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/procedural-source-drift.json",
+      "contentSha256": "cac303ed1dbc9aa827af790828150298a6fdbce7f4c9d5521b8bfa78b163295b",
+      "originalByteCount": 54113,
+      "containerSha256": "216a498f482e0a973749afcb8706206ca26e9c1dffb3529488a80222f41ef65c",
+      "containerByteCount": 55421
+    },
+    {
+      "file": "16-source-reconstruction-incident.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/source-reconstruction-incident.json",
+      "contentSha256": "296988254be5310af25fb8e02c81f8863b971ff9e528aebdb585362715a99c1e",
+      "originalByteCount": 578,
+      "containerSha256": "5ceb52bc3c36b23cf792dda4fffe2ff1d6df131d663b30c43e5b82d278d3d60b",
+      "containerByteCount": 1026
+    },
+    {
+      "file": "17-verification.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/verification.json",
+      "contentSha256": "696ee501f764ae2a7cee89afc5806e40f16a0a81257062ccc90170c78ca2c6ba",
+      "originalByteCount": 5615,
+      "containerSha256": "91ffdbdd1cfce37c73996d9858a333bf375e4fb6bc4a3726c1670dabbd9b25c7",
+      "containerByteCount": 7689
+    },
+    {
+      "file": "18-verify_returns.py.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/verify_returns.py",
+      "contentSha256": "1a5dae2fe3f155b21dc11aa57c6bedd218d628c3ac23b42726305d5f13cdb413",
+      "originalByteCount": 15867,
+      "containerSha256": "cb702e62b3b7203aa58d401209b4b47190ab11b5c06df6363f9f55230b5587cf",
+      "containerByteCount": 18589
+    }
+  ],
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "productExecution": "NOT_RUN",
+  "blockerClosed": false
+}

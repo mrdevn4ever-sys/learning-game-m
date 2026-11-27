@@ -1,0 +1,19 @@
+{
+  "kind": "lossless-utf8-source/1",
+  "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-03.json",
+  "encoding": "utf-8-lines",
+  "contentSha256": "33f6685d9405f55d9fa442a0ae2683f515eeacb192e23ffd3cf1dfea21a53b44",
+  "originalByteCount": 692,
+  "lines": [
+    "{\n",
+    "  \"result\": \"PARENT_DOCUMENT_HELPER_FAILED\",\n",
+    "  \"helper\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/u07-question-03-parent/verify_returns.py\",\n",
+    "    \"sha256\": \"875386ed23e206a79788e8108432526d3382d503d6b2369d34fbc0c7da28183e\",\n",
+    "    \"bytes\": 15869\n",
+    "  },\n",
+    "  \"traceback\": \"Traceback (most recent call last):\\n  File \\\"F:\\\\ChnobelRuntime\\\\verification\\\\u07-question-03-parent\\\\verify_returns.py\\\", line 262, in <module>\\n    main()\\n    ~~~~^^\\n  File \\\"F:\\\\ChnobelRuntime\\\\verification\\\\u07-question-03-parent\\\\verify_returns.py\\\", line 222, in main\\n    assert {f['factId'] for f in case['factProposals']} == facts\\n            ~^^^^^^^^^^\\nKeyError: 'factId'\\n\",\n",
+    "  \"notProductVerdict\": true\n",
+    "}\n"
+  ]
+}

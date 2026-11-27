@@ -1,0 +1,22 @@
+{
+  "kind": "lossless-utf8-source/1",
+  "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/source-reconstruction-incident.json",
+  "encoding": "utf-8-lines",
+  "contentSha256": "296988254be5310af25fb8e02c81f8863b971ff9e528aebdb585362715a99c1e",
+  "originalByteCount": 578,
+  "lines": [
+    "{\n",
+    "  \"result\": \"RECONSTRUCTION_FIRST_ATTEMPT_FAILED_THEN_EXACTLY_RECOVERED\",\n",
+    "  \"originalError\": \"AssertionError: 1\",\n",
+    "  \"writesBeforeFailure\": 0,\n",
+    "  \"cause\": \"Reverse substitution changed both occurrences of observedEvents although the original forward edit changed only the architecture occurrence. No newline normalisation was selected.\",\n",
+    "  \"resolution\": \"Bounded restoration of the didactics occurrence; every recovered source matches its previously recorded raw SHA-256 and byte count.\",\n",
+    "  \"failedHelperVersionsRecovered\": [\n",
+    "    1,\n",
+    "    2,\n",
+    "    3\n",
+    "  ],\n",
+    "  \"productVerdict\": null\n",
+    "}\n"
+  ]
+}

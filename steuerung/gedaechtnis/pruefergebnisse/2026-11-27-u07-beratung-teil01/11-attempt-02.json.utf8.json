@@ -1,0 +1,19 @@
+{
+  "kind": "lossless-utf8-source/1",
+  "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-02.json",
+  "encoding": "utf-8-lines",
+  "contentSha256": "18e7ff1c5ae6e2a433a2b7394a2871f3b1f399600ca4489acda2626b817ac3bd",
+  "originalByteCount": 728,
+  "lines": [
+    "{\n",
+    "  \"result\": \"PARENT_DOCUMENT_HELPER_FAILED\",\n",
+    "  \"helper\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/u07-question-03-parent/verify_returns.py\",\n",
+    "    \"sha256\": \"775099afa9b1520d9926c509bb9e84c466c7ee697e50d88e607fd64d75ecfe71\",\n",
+    "    \"bytes\": 15457\n",
+    "  },\n",
+    "  \"traceback\": \"Traceback (most recent call last):\\n  File \\\"F:\\\\ChnobelRuntime\\\\verification\\\\u07-question-03-parent\\\\verify_returns.py\\\", line 256, in <module>\\n    main()\\n    ~~~~^^\\n  File \\\"F:\\\\ChnobelRuntime\\\\verification\\\\u07-question-03-parent\\\\verify_returns.py\\\", line 108, in main\\n    assert len(inputs['originalIndexProjections']) == 12\\n               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nKeyError: 'originalIndexProjections'\\n\",\n",
+    "  \"notProductVerdict\": true\n",
+    "}\n"
+  ]
+}

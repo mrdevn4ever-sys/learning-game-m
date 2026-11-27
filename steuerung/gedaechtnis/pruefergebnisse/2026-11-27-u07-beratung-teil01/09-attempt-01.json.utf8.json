@@ -1,0 +1,19 @@
+{
+  "kind": "lossless-utf8-source/1",
+  "sourcePath": "F:/ChnobelRuntime/verification/u07-question-03-parent/attempt-01.json",
+  "encoding": "utf-8-lines",
+  "contentSha256": "bb9f8c56b338a3d8f768e97c5cd21e2335130222dd1ca90cb8f3e2986d76adcc",
+  "originalByteCount": 706,
+  "lines": [
+    "{\n",
+    "  \"result\": \"PARENT_DOCUMENT_HELPER_FAILED\",\n",
+    "  \"helper\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/u07-question-03-parent/verify_returns.py\",\n",
+    "    \"sha256\": \"b9ed00ef4d985f9a375fb98abb8a2ab777521287338e59b579d16e6249dd735d\",\n",
+    "    \"bytes\": 15435\n",
+    "  },\n",
+    "  \"traceback\": \"Traceback (most recent call last):\\n  File \\\"F:\\\\ChnobelRuntime\\\\verification\\\\u07-question-03-parent\\\\verify_returns.py\\\", line 256, in <module>\\n    main()\\n    ~~~~^^\\n  File \\\"F:\\\\ChnobelRuntime\\\\verification\\\\u07-question-03-parent\\\\verify_returns.py\\\", line 101, in main\\n    claims = {x['id'] for x in catalogue['claims']}\\n                               ~~~~~~~~~^^^^^^^^^^\\nKeyError: 'claims'\\n\",\n",
+    "  \"notProductVerdict\": true\n",
+    "}\n"
+  ]
+}
