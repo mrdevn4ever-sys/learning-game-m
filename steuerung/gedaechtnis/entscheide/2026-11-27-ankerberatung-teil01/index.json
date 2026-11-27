@@ -1,0 +1,163 @@
+{
+  "status": "COMPLETE_QUESTION_CONSULTATIONS_WITH_CONFLICT_NOT_RATIFIED",
+  "question": "Q-ANCHOR-INTERVENTION",
+  "entries": [
+    {
+      "role": "didaktik",
+      "kind": "report",
+      "filename": "didaktik-bericht.json",
+      "originalSha256": "77e6f7d546449528d2675c2b9e6af669b8c8e8ebe8e7fab2fbd122cf73be22d6",
+      "containerSha256": "0d92f728afe6d4fc22417078a0f4642d540adda0555ee2021b88d0b1e8899e1a"
+    },
+    {
+      "role": "didaktik",
+      "kind": "decision",
+      "filename": "didaktik-empfehlung.json",
+      "originalSha256": "780a90305b62edcfedfe65118cd8dc9c70167579647e64b7c4c669b28b5a5830",
+      "containerSha256": "8ad8223024b3cbf0de30ce7debd17d78e5fafbb6781a44cbf0105ba2388795ad"
+    },
+    {
+      "role": "architekt",
+      "kind": "report",
+      "filename": "architekt-bericht.json",
+      "originalSha256": "725034fa31c7df2a19a31845363b7114f8d9d1c50998b5c7fca471509c7bd81c",
+      "containerSha256": "0d83d0009217ae94a1fbe6f4c38e5825c5d82339648ed90b2d4725c57a241876"
+    },
+    {
+      "role": "architekt",
+      "kind": "decision",
+      "filename": "architekt-empfehlung.json",
+      "originalSha256": "04ca4b1b03273e9660ce82705ef83cbc7107d0490781f54e4c73d7a6619f6e03",
+      "containerSha256": "1c7e95612935078144faea1fb862eb3970e8cc7d24ad8d2d448657b8775a74c9"
+    }
+  ],
+  "parentVerification": {
+    "checkedAt": "2026-11-27T17:57:07.479678+01:00",
+    "sourceCheckpoint": "093e86e7471e7c70d3a9676f417f6b46176693c9",
+    "scope": "Returned document bindings, event-reference identity and scope completeness only; not product execution or semantic ratification.",
+    "delegation": "deleg_6aa0a185",
+    "question": "Q-ANCHOR-INTERVENTION",
+    "roles": [
+      {
+        "role": "didaktik",
+        "report": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/didaktik/report.md",
+          "sha256": "77e6f7d546449528d2675c2b9e6af669b8c8e8ebe8e7fab2fbd122cf73be22d6",
+          "bytes": 31745
+        },
+        "decision": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/didaktik/decision.json",
+          "sha256": "780a90305b62edcfedfe65118cd8dc9c70167579647e64b7c4c669b28b5a5830",
+          "bytes": 21202
+        },
+        "scopeStatus": "COMPLETE",
+        "recommendation": "REQUIRE_CHILD_COMPLETED_LAYOUT",
+        "normativeClassification": "PROSPECTIVE_CLARIFICATION_REQUIRED",
+        "immutableSourcesVerified": 30,
+        "mutableParentContextChanges": [
+          {
+            "path": "F:/Projects/Chnobel/steuerung/STATUS.md",
+            "before": "100888645e7fdb2b54af0d30e15d34f0a4800fa677dfdca5110a46935365bf0c",
+            "after": "a53b581c4c8a63f27748e2755923dffb2e165443e2f9813e067663be3ec8f751"
+          },
+          {
+            "path": "F:/Projects/Chnobel/steuerung/WIEDERAUFNAHME.md",
+            "before": "634172973f90e603b5677f1a0ac7766de6bca1a122829676d8355abc46b85d96",
+            "after": "9272fba62ee69d91e2527014640e0595307235e04f5c4b2c13f5cdb9516c5e1d"
+          }
+        ],
+        "targetEventIdsPresentInReport": 20,
+        "counterexampleDefinitions": 3,
+        "wholeManifestVerdict": "NOT_ISSUED"
+      },
+      {
+        "role": "architekt",
+        "report": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/architekt/report.md",
+          "sha256": "725034fa31c7df2a19a31845363b7114f8d9d1c50998b5c7fca471509c7bd81c",
+          "bytes": 32929
+        },
+        "decision": {
+          "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/architekt/decision.json",
+          "sha256": "04ca4b1b03273e9660ce82705ef83cbc7107d0490781f54e4c73d7a6619f6e03",
+          "bytes": 50080
+        },
+        "scopeStatus": "COMPLETE",
+        "recommendation": "COMPOSITE_CHILD_PROOF",
+        "normativeClassification": "PROSPECTIVE_CLARIFICATION_REQUIRED",
+        "immutableSourcesVerified": 35,
+        "mutableParentContextChanges": [
+          {
+            "path": "F:/Projects/Chnobel/steuerung/STATUS.md",
+            "before": "100888645e7fdb2b54af0d30e15d34f0a4800fa677dfdca5110a46935365bf0c",
+            "after": "a53b581c4c8a63f27748e2755923dffb2e165443e2f9813e067663be3ec8f751"
+          },
+          {
+            "path": "F:/Projects/Chnobel/steuerung/WIEDERAUFNAHME.md",
+            "before": "634172973f90e603b5677f1a0ac7766de6bca1a122829676d8355abc46b85d96",
+            "after": "9272fba62ee69d91e2527014640e0595307235e04f5c4b2c13f5cdb9516c5e1d"
+          }
+        ],
+        "targetEventIdsPresentInReport": 20,
+        "counterexampleDefinitions": 3,
+        "wholeManifestVerdict": "NOT_ISSUED"
+      }
+    ],
+    "recommendationCounts": {
+      "REQUIRE_CHILD_COMPLETED_LAYOUT": 1,
+      "COMPOSITE_CHILD_PROOF": 1
+    },
+    "normativeDecision": "OPEN_THIRD_ROLE_PENDING",
+    "conflictPreserved": true,
+    "fullManifestVerdict": "NOT_ISSUED",
+    "implementationAuthorized": false,
+    "productExecutions": 0,
+    "nativeExecutions": 0,
+    "verifiedHandoffFiles": 4944,
+    "nextDelegation": "deleg_f0606d8f",
+    "nextRoles": [
+      "redteam:anchor",
+      "spezifikationsautor:event-normalform"
+    ],
+    "maxConcurrentSubagents": 2
+  },
+  "parentVerificationFile": {
+    "path": "F:/ChnobelRuntime/verification/anchor-consultation-02/verification.json",
+    "sha256": "fa35b7a6297e24d8dd35565d2c99ef0e1fba55dd37c27feca972b18a86da7c70"
+  },
+  "nextDispatch": {
+    "id": "deleg_f0606d8f",
+    "children": [
+      {
+        "id": "sa-0-e49989d2",
+        "role": "redteam",
+        "scope": "Q-ANCHOR-INTERVENTION",
+        "output": "F:/ChnobelRuntime/reviews/v2-manifest-questions-02/anchor/redteam/"
+      },
+      {
+        "id": "sa-1-704046cd",
+        "role": "spezifikationsautor",
+        "scope": "M-FIELD-NORMALFORM: ereignis only",
+        "output": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/"
+      }
+    ],
+    "state": "dispatched_no_results_yet"
+  },
+  "eventBrief": {
+    "path": "F:/ChnobelRuntime/specification/v2-field-supplement-02/event-normalform/brief.md",
+    "sha256": "8cbcf92cf7319289a0eaf07376daa20de89226fb13a4e1876ed0f367143027f2"
+  },
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "implementationAuthorized": false,
+  "maxConcurrentSubagents": 2,
+  "remainingScope": [
+    "Q-ANCHOR-INTERVENTION: independent redteam, then exact proposed-text decision",
+    "Q-U07: all three roles",
+    "Q-GUARD-TOTALISATION: all three roles",
+    "M-FIELD-NORMALFORM: other contracts and all unresolved dependencies",
+    "M-HELP-TEXT-BINDING",
+    "M-REPORT-ORACLES",
+    "M-SEMANTIC-CASE-CHECK",
+    "complete new manifest, freeze, independent review and required role votes"
+  ]
+}
