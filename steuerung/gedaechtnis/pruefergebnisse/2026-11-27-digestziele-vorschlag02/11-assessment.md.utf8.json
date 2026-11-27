@@ -1,0 +1,31 @@
+{
+  "encoding": "utf-8-lines",
+  "originalFilename": "assessment.md",
+  "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-02-author-parent/assessment.md",
+  "contentSha256": "67594983f1d44dc7da8dcd5626d9867b47d97d1cc23206089294e47f5806006a",
+  "originalByteCount": 3364,
+  "lines": [
+    "# Elternabschluss der technischen Digestziel-Revision 02\n",
+    "\n",
+    "Stand: 2026-11-27. Batch deleg_93977827 / sa-0-be801ae2 ist abgeschlossen; keine laufenden Kinder bei Ruecklaufverarbeitung. Live-Abgleich: fuenf saubere Worktrees mit passenden Remote-SHAs; Hauptbranch ci/entwicklungspruefung bei 15cea6d6bb7e49b96b6eb3c79157311be012766d. Cron 26647d618052 disabled/paused/next_run_at null.\n",
+    "\n",
+    "## Belegte Dokumentkontrollen\n",
+    "\n",
+    "Elternhelfer verify_return.py wurde tatsaechlich ausgefuehrt, Exit 0, Ergebnis PASS_RETURN_SOURCE_AND_CHANGE_BINDINGS_ONLY. verification.json bindet Helfer und alle fuenf Abgaben; kein Produktvalidator oder Fehlerauswahlprogramm wurde ausgefuehrt.\n",
+    "\n",
+    "- Neue ganze Fassung: SHA-256 5d18bdf066cbcaeec182d242d5a2a5eb10ca44153a807d3d500a49f07217a26b, 66'872 Bytes. Begleitbericht vollstaendig gelesen; 753 whitespacegetrennte Woerter.\n",
+    "- Handoff extern gebunden: 430641f2a8ca7eb444eeee506f9ba8f296c235b4110eba648473f1c49495501f. Genau fuenf beauftragte Autorendateien vorhanden; kein Selbstdigest behauptet.\n",
+    "- 28 Pflichtbindungen, insgesamt 38 eindeutige immutable Quellen und sechs Originalindexbindungen nachgeprueft. Keine neue historische Git-/Ganzkorpuspruefung daraus behauptet.\n",
+    "- 26 Aenderungsoperationen rekonstruieren wertgleich das gesamte neue JSON-Dokument. 83 ausgewiesene unberuehrte Teilbaeume wertgleich. Alte ganze Fassung und beide Zieldefinitionen bleiben unveraendert; keine Gleichheit unterschiedlicher Ganzdokument-Rohbytes behauptet.\n",
+    "- Drei mutable Elternkontexte aus Anfangsbytes und exakten Zeilenersetzungen roh rekonstruiert. Endaufnahmen stimmen mit den gelesenen Worktreebytes ueberein; Git-LF separat gegen 0c9a02e0c5971d3d3b4d28d4cfa4d86832687763 und 15cea6d6bb7e49b96b6eb3c79157311be012766d abgeglichen. Kein atomarer Gesamtlesestand behauptet.\n",
+    "- Autorenwerkzeugprobleme sind in sources.json erhalten. Eine ueberlange elterliche Metadatenanzeige wurde abgeschnitten; anschliessend wurden nur die benoetigten Schluessel projiziert. Kein Quellwrite oder Produktlauf dadurch.\n",
+    "\n",
+    "## Annahmegrenze und Folgeschritt\n",
+    "\n",
+    "Die ganze neue enge Norm wurde gelesen. Sie formuliert ausdruecklich parse/structure/binding/integrity/rules/evidence, interne Bindungsteilstufen, sichere Beschaffungsabhaengigkeiten, seq-lose Vergleichsfaelle, Dedupe-/Diagnosebaseline und geschlossene Fehlerausgabe. ARCH-DT-01 und RT-DIGEST-01 gelten damit nur als vom Autor adressiert, nicht als fremd behoben. Ob die Regel in allen relevanten Mischlagen total, konsistent und ohne verdeckte Erweiterung ist, muss die frische ganze Fremdpruefung feststellen. Die alten CHANGES_REQUIRED-Urteile bleiben unveraendert.\n",
+    "\n",
+    "PROPOSED_NOT_ACCEPTED, blockerClosed=false, implementationAuthorized=false und wholeManifestVerdict=NOT_ISSUED. C1-C3 bleiben DECLARATIVE_ONLY/NOT_RUN; Produkt-, Schema-, Validator-, Evaluator-, Test- und native Ausfuehrung NOT_RUN. Keine Befundschliessung, keine neue Produktpolicy und keine Manifestfreigabe durch diese Elternmechanik.\n",
+    "\n",
+    "Naechster Schritt: genau diese ganze Fassung mit Bericht und Aenderungsnachweis hashbinden, frisch durch Architektur und unabhaengiges Red-Team pruefen lassen (hoechstens zwei gleichzeitig). Danach eigene Ruecklaufpruefung; auch eine spaetere Annahme der engen Norm ersetzt das separate vollstaendige Manifestgate nicht. U07, Guardtotalisierung, T05, andere M-Punkte und native/Releasegates bleiben offen.\n"
+  ]
+}

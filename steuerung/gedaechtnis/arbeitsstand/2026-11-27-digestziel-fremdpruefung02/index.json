@@ -1,0 +1,48 @@
+{
+  "kind": "lossless-whole-narrow-revision-02-review-dispatch/1",
+  "fileCount": 4,
+  "files": [
+    {
+      "file": "01-brief.md.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-02/brief.md",
+      "contentSha256": "2ebfe6f8dc3c79dd5e2d26645f1d22ed352f20ee2bd7a0059d712fc81c662963",
+      "originalByteCount": 9952,
+      "containerSha256": "3ce0af9da76277db339a332da0f15228682d2a73fad487b2e2c81f5319c9cd52",
+      "containerByteCount": 10754
+    },
+    {
+      "file": "02-input-bindings.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-02/input-bindings.json",
+      "contentSha256": "9456110f07eb7bd61205e1aa679d16db3a7a1718ae668885535bb2e3d78b2fb4",
+      "originalByteCount": 87136,
+      "containerSha256": "f97368079903588a6c8b88383fb91711d62a3ebd6818196d7f6d7807264aca43",
+      "containerByteCount": 92516
+    },
+    {
+      "file": "03-dispatch.json.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/digest-targets-02/dispatch.json",
+      "contentSha256": "5bf74bfb17a725c8865fdf9d7fbd37aaa5432a4fe852916cd1886a64cbb696a1",
+      "originalByteCount": 1729,
+      "containerSha256": "ffcb1072201af4326d2a037b0ca6384d547dac9ba6ed5a540da4b4cc8df3c9ac",
+      "containerByteCount": 2547
+    },
+    {
+      "file": "04-parent-handoff-patch-attempt-01.utf8.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/digest-targets-02-author-parent/handoff-patch-attempt-01.json",
+      "contentSha256": "b0e468eadf4bce9712e203bba4b8c098d49673e13e4f8a5e87c156ef620dd82e",
+      "originalByteCount": 9088,
+      "containerSha256": "e403e58c74b5afeeaf5da9fc12c0bf021eeff6ce8ccdb0020bc5291ff9d803b3",
+      "containerByteCount": 9727
+    }
+  ],
+  "batch": "deleg_3a373ae9",
+  "scope": "WHOLE_NARROW_DIGEST_TARGET_REVISION_02_REVIEW_DISPATCH",
+  "proposalSha256": "5d18bdf066cbcaeec182d242d5a2a5eb10ca44153a807d3d500a49f07217a26b",
+  "specificationStatus": "PROPOSED_NOT_ACCEPTED",
+  "blockerClosed": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "fullManifestArchived": false,
+  "hiddenExaminationMaterialIncluded": false,
+  "productExecution": "NOT_RUN"
+}
