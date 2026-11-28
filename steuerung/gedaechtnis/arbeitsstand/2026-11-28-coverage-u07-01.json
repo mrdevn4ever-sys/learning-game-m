@@ -1,7 +1,7 @@
 {
   "kind": "bounded-specification-author-dispatch-plan/1",
   "scopeId": "COVERAGE-U07-01",
-  "state": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+  "state": "AUTHOR_COMPLETE_REVIEW01_READY_AFTER_CHECKPOINT",
   "resumeBase": "1998a405ba5028114cf52537cbc5756a95ab25f7",
   "requestedOrder": [
     "CLOSE_U07_SUPPORT_COVERAGE_HELP_ANCHOR_AND_BINDINGS",
@@ -46,7 +46,7 @@
   ],
   "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/author",
   "actualDispatchReceipt": "F:/ChnobelRuntime/reviews/coverage-u07-01/dispatch-actual.json",
-  "checkpointReadback": "F:/ChnobelRuntime/verification/coverage-u07-01-start/checkpoint-readback.json",
+  "checkpointReadback": "F:/ChnobelRuntime/verification/coverage-u07-01-checkpoint01/checkpoint-readback.json",
   "allowParentRepositoryWritesDuringRole": [],
   "blockerClosed": false,
   "proposalAccepted": false,
@@ -61,5 +61,171 @@
     "next_run_at": null,
     "changed": false
   },
-  "authority": "Latest explicit user continuation; all existing gates unchanged; no protected-file permission"
+  "authority": "Latest explicit user continuation; all existing gates unchanged; no protected-file permission",
+  "history": [
+    {
+      "kind": "historical-author-plan-state",
+      "atCommit": "780be730c98489d292881622b8af495d8df1187b",
+      "previousState": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+      "previousCheckpointReadback": "F:/ChnobelRuntime/verification/coverage-u07-01-start/checkpoint-readback.json",
+      "originalPlanBinding": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-coverage-u07-01.json",
+        "sha256": "a89903253cc555066c289cba15a0adc53d6066cd90c1fb4728e5614854d033b8",
+        "bytes": 2751
+      },
+      "actualAuthorDispatch": {
+        "path": "F:/ChnobelRuntime/reviews/coverage-u07-01/dispatch-actual.json",
+        "sha256": "08742793c221a931a0758e12cdfbfa24be8abdd38446c3b56f8a3ac32707de34",
+        "bytes": 2658
+      }
+    }
+  ],
+  "authorReturn": {
+    "delegationId": "deleg_9a09d4bf",
+    "subagentId": "sa-0-40d71310",
+    "actualStartCommit": "780be730c98489d292881622b8af495d8df1187b",
+    "authorScopeStatus": "COMPLETE",
+    "proposalRevision": "COVERAGE-U07-01-P01",
+    "subjectBindings": [
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/proposal.md",
+        "sha256": "d5a43a5a0afbb2e993281d4c8b9eb858ef434f6cfe289f566ed8675dd33c93ab",
+        "bytes": 21541
+      },
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/technical.json",
+        "sha256": "6a41397bd28c5b72e7346bf45f46ed91d465e931265b7c55be36d60f8b0f16d3",
+        "bytes": 133141
+      },
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/cases.json",
+        "sha256": "131611005a02bc0b63ce796d67a0f407f74807902f46fd34678f02b6a17f9544",
+        "bytes": 777313
+      },
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/sources.json",
+        "sha256": "9bb8c5289d4ad593a25cc7e01061d8bd548bdd281ee2fa548fa3446f52c3604c",
+        "bytes": 948912
+      },
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/handoff.json",
+        "sha256": "1a9a70ad8d69f9cb9f20966dac3ceb7b7fb0ee447525037974873733b60eb47f",
+        "bytes": 22978
+      }
+    ],
+    "documentVerification": {
+      "path": "F:/ChnobelRuntime/verification/coverage-u07-01-author-parent/verification.json",
+      "sha256": "741e36414c1230947286cc24a701cf092a8da46f403e77a60dbd2bf6ecd4f74d",
+      "bytes": 60386
+    },
+    "parentAssessment": {
+      "path": "F:/ChnobelRuntime/verification/coverage-u07-01-author-parent/assessment.json",
+      "sha256": "c28f8e720bcd9c645fa2293e643d57ad599197813b26d3accd2081e52186b85c",
+      "bytes": 14636
+    },
+    "scope": "Document/source/capture checks only; no semantic acceptance",
+    "proposalAccepted": false,
+    "ratificationIssued": false,
+    "blockerClosed": false,
+    "implementationAuthorized": false
+  },
+  "foreignReview": {
+    "scopeId": "COVERAGE-U07-01-REVIEW01",
+    "state": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+    "brief": {
+      "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/brief.md",
+      "sha256": "6048747aa2eea11fe127c0ddd5bb4ba52d73059f9abe01aba257325713359cca",
+      "bytes": 10703
+    },
+    "inputBindings": {
+      "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/input-bindings.json",
+      "sha256": "6977d3d2fabf328c4ff60d42663c66b047a2f71c05e26f927b43d399ac6cda9c",
+      "bytes": 83345
+    },
+    "proceduralBindings": {
+      "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/procedural-bindings.json",
+      "sha256": "9370e75a582db1453a58e9da4b8a3e0e17170fc1e477308f2181cb3e03820d59",
+      "bytes": 10337
+    },
+    "freezePath": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/freeze.json",
+    "subjectBindings": [
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/proposal.md",
+        "sha256": "d5a43a5a0afbb2e993281d4c8b9eb858ef434f6cfe289f566ed8675dd33c93ab",
+        "bytes": 21541
+      },
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/technical.json",
+        "sha256": "6a41397bd28c5b72e7346bf45f46ed91d465e931265b7c55be36d60f8b0f16d3",
+        "bytes": 133141
+      },
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/cases.json",
+        "sha256": "131611005a02bc0b63ce796d67a0f407f74807902f46fd34678f02b6a17f9544",
+        "bytes": 777313
+      },
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/sources.json",
+        "sha256": "9bb8c5289d4ad593a25cc7e01061d8bd548bdd281ee2fa548fa3446f52c3604c",
+        "bytes": 948912
+      },
+      {
+        "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/handoff.json",
+        "sha256": "1a9a70ad8d69f9cb9f20966dac3ceb7b7fb0ee447525037974873733b60eb47f",
+        "bytes": 22978
+      }
+    ],
+    "plannedBatches": [
+      [
+        "didaktik",
+        "architekt"
+      ],
+      [
+        "redteam"
+      ]
+    ],
+    "actualDispatchReceipts": {
+      "didaktik": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-didaktik.json",
+      "architekt": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-architekt.json",
+      "redteam": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-redteam.json"
+    },
+    "outputs": {
+      "didaktik": {
+        "finalFiles": [
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/report.md",
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/decision.json",
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/sources.json"
+        ],
+        "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/didaktik"
+      },
+      "architekt": {
+        "finalFiles": [
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/report.md",
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/decision.json",
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/sources.json"
+        ],
+        "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/architekt"
+      },
+      "redteam": {
+        "finalFiles": [
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/report.md",
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/decision.json",
+          "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/sources.json"
+        ],
+        "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/redteam"
+      }
+    },
+    "parentRepositoryWritePathsDuringRole": [],
+    "productPolicyIds": [
+      "P-SELECT",
+      "P-SLICE",
+      "P-BEFORE",
+      "P-COVERAGE",
+      "P-HELP-CONTEXT"
+    ],
+    "newVerdictsReceived": 0,
+    "step1Complete": false,
+    "step2Started": false,
+    "implementationAuthorized": false
+  }
 }
