@@ -2,7 +2,7 @@
   "documentKind": "planning-handoff-not-controller-task-transitions/1",
   "phase": 0,
   "date": "2026-11-27",
-  "checkpointBefore": "45d08fee121361333098586cb0a95612a0adb465",
+  "checkpointBefore": "dd4c5896925e208798b154f4af15d8947250b364",
   "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
   "maxConcurrentSubagents": 2,
   "implementationAuthorized": false,
@@ -745,7 +745,7 @@
         }
       },
       "policyReview01": {
-        "state": "FIRST_TWO_ROLES_DISPATCHED_REDTEAM_QUEUED",
+        "state": "FIRST_RETURNS_VERIFIED_ONE_COUNTED_FRESH_DIDAKTIK_AND_REDTEAM_PENDING",
         "dispatch": {
           "kind": "guard-policy-whole-text-dispatch/1",
           "at": "2026-11-28T02:23:18.626786+01:00",
@@ -847,15 +847,243 @@
           "redteam"
         ],
         "roleStates": {
-          "didaktik": "DISPATCHED_RESULT_PENDING",
-          "architekt": "DISPATCHED_RESULT_PENDING",
-          "redteam": "QUEUED_NOT_DISPATCHED"
+          "didaktik": "FRESH_REVIEW_DISPATCHED_PREVIOUS_NOT_COUNTED",
+          "architekt": "COMPLETE_COUNTED_WITH_RETAINED_EXCEPTIONS",
+          "redteam": "DISPATCHED_RESULT_PENDING"
         },
-        "newWholeTextVotesAccepted": 0,
+        "newWholeTextVotesAccepted": 1,
         "recommendationsAccepted": false,
         "ratificationIssued": false,
         "implementationAuthorized": false,
-        "wholeManifestVerdict": "NOT_ISSUED"
+        "wholeManifestVerdict": "NOT_ISSUED",
+        "completedFirstBatch": {
+          "batchId": "deleg_8ca1aeb1",
+          "verification": {
+            "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/verification.json",
+            "sha256": "6c7960199bc5131f0fd7d14e88a98c154bd62ec43d656be009df4842ef565a4d",
+            "bytes": 5051
+          },
+          "assessment": {
+            "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/assessment.md",
+            "sha256": "5c5f45fd0b2d7bb04f8cbb4b865a0834628058a608804eb55375eb105eb43feb",
+            "bytes": 3712
+          },
+          "helperResolution": {
+            "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/helper-resolution.json",
+            "sha256": "9c762e584fc75cd5f40258193af7f3a24edc466fb527f7781bbb5bcece297d6c",
+            "bytes": 1054
+          },
+          "archive": {
+            "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/index.json",
+            "sha256": "1a1a5830e8b4697e17a4cbf611289996fe2ad78d60a71af7ce6362d1f34c87dc",
+            "bytes": 8988
+          },
+          "roles": [
+            {
+              "role": "didaktik",
+              "outputs": [
+                {
+                  "path": "F:/ChnobelRuntime/reviews/guard-policy-01/didaktik/report.md",
+                  "sha256": "6c91585452cc70737adb7293b744bb81bce94f5d7d5bf3805d9cbea00bacc8cb",
+                  "bytes": 9661
+                },
+                {
+                  "path": "F:/ChnobelRuntime/reviews/guard-policy-01/didaktik/sources.json",
+                  "sha256": "367ed45ef8808f427ce82a4726482d4723c7f9f923f7c1908c54dd2322331a6d",
+                  "bytes": 1586334
+                },
+                {
+                  "path": "F:/ChnobelRuntime/reviews/guard-policy-01/didaktik/decision.json",
+                  "sha256": "928b6013d63942a0b32ae30183186e8010986157d4213840b9248042706bd3ce",
+                  "bytes": 85306
+                }
+              ],
+              "declaredScopeStatus": "COMPLETE",
+              "declaredVote": "JA",
+              "unconditional": true,
+              "sectionCount": 7,
+              "fixedBindings": 69,
+              "originalProjections": 192,
+              "mutableTransitions": 15,
+              "changedTransitions": 10,
+              "reportWhitespaceWords": 1035,
+              "incidentsRetained": 12,
+              "wholeProcedurePassed": false,
+              "countedVote": false,
+              "parentDisposition": "NOT_COUNTED_INCOMPLETE_PROCEDURAL_EVIDENCE_FRESH_REVIEW_REQUIRED",
+              "evidenceGapIds": [
+                "DID-GP01-TOOL-01",
+                "DID-GP01-TOOL-02",
+                "DID-GP01-TOOL-03",
+                "DID-GP01-TOOL-04",
+                "DID-GP01-TOOL-05"
+              ],
+              "qualification": "Stored source/code/output bindings checked; this is not independent execution authentication or a product test."
+            },
+            {
+              "role": "architekt",
+              "outputs": [
+                {
+                  "path": "F:/ChnobelRuntime/reviews/guard-policy-01/architekt/report.md",
+                  "sha256": "c62d75ab705587bc3f08bf7193ef7c6f4ac1ab518ed18946d8886943d9476052",
+                  "bytes": 9745
+                },
+                {
+                  "path": "F:/ChnobelRuntime/reviews/guard-policy-01/architekt/sources.json",
+                  "sha256": "d6697257f1bd185726469424cd93f442bb1f7edf9162d0910c63e9b037c3a3e8",
+                  "bytes": 1532070
+                },
+                {
+                  "path": "F:/ChnobelRuntime/reviews/guard-policy-01/architekt/decision.json",
+                  "sha256": "0a723a58a56fee2c535e00083982f63f6e990214817b5d57af0055e0ebca50d8",
+                  "bytes": 78485
+                }
+              ],
+              "declaredScopeStatus": "COMPLETE",
+              "declaredVote": "JA",
+              "unconditional": true,
+              "sectionCount": 7,
+              "fixedBindings": 69,
+              "originalProjections": 230,
+              "mutableTransitions": 6,
+              "changedTransitions": 3,
+              "reportWhitespaceWords": 1063,
+              "incidentsRetained": 8,
+              "wholeProcedurePassed": false,
+              "countedVote": true,
+              "parentDisposition": "COMPLETE_TEXT_VOTE_WITH_RETAINED_EXCEPTIONS",
+              "evidenceGapIds": [],
+              "qualification": "Stored source/code/output bindings checked; this is not independent execution authentication or a product test."
+            }
+          ],
+          "declaredWholeTextVotes": 2,
+          "countedWholeTextVotes": 1,
+          "countedRoles": [
+            "architekt"
+          ],
+          "didaktikNotCountedReason": "DID-GP01-F02: original diagnostic/code binding requirement explicitly incomplete. Fresh-context full review required; original opinion retained, not retroactively repaired.",
+          "wholeReadSetUnchanged": false,
+          "wholeProcedurePassed": false,
+          "recommendationsAccepted": false,
+          "ratificationIssued": false,
+          "implementationAuthorized": false,
+          "wholeManifestVerdict": "NOT_ISSUED"
+        },
+        "followupRound02": {
+          "dispatch": {
+            "kind": "guard-policy-whole-text-dispatch/2",
+            "recordedAt": "2026-11-28T03:13:48.308193+01:00",
+            "parentBase": "dd4c5896925e208798b154f4af15d8947250b364",
+            "scopeId": "GUARD-POLICY-01-WHOLE-TEXT",
+            "state": "DIDAKTIK_FRESH_AND_REDTEAM_DISPATCHED",
+            "batchId": "deleg_5f13cf97",
+            "roles": [
+              {
+                "role": "didaktik",
+                "agentId": "sa-0-385f587b",
+                "state": "DISPATCHED_RESULT_PENDING",
+                "outputDir": "F:/ChnobelRuntime/reviews/guard-policy-01-round02/didaktik"
+              },
+              {
+                "role": "redteam",
+                "agentId": "sa-1-ed0d21d7",
+                "state": "DISPATCHED_RESULT_PENDING",
+                "outputDir": "F:/ChnobelRuntime/reviews/guard-policy-01-round02/redteam"
+              }
+            ],
+            "subject": {
+              "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/proposal.md",
+              "sha256": "7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3",
+              "bytes": 16281
+            },
+            "brief": {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round02/brief.md",
+              "sha256": "950ca5d878a25e09435f493f252742504d5490fd655074f6f20f30dc45a85bf1",
+              "bytes": 10467
+            },
+            "input": {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round02/input-bindings.json",
+              "sha256": "ca573c4ea64ddf04c011715dfefb546e6bfbfbf63c50e23189e8088f46fcd5fa",
+              "bytes": 48801
+            },
+            "proceduralFreeze": {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round02/procedural-bindings.json",
+              "sha256": "456459a1b01f228666ba35252a2367bbf1dc5a9a6d33f37cd35d6d2736e1d59c",
+              "bytes": 138543
+            },
+            "preDispatchVerification": {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round02/freeze-verification.json",
+              "sha256": "b1fba6f0a2a3e8ef382a853d40f1b3339842802c8a6f559679dc2941fe51d74b",
+              "bytes": 18527
+            },
+            "fixedBindingCount": 69,
+            "activeChildrenAtDispatch": 2,
+            "maxConcurrentSubagents": 2,
+            "priorPeerOpinionsProvided": false,
+            "normativeInputsSame": true,
+            "parentWriteContract": {
+              "consumableMutableContextPaths": [
+                "steuerung/STATUS.md",
+                "steuerung/BLOCKER.md",
+                "steuerung/WIEDERAUFNAHME.md"
+              ],
+              "allowedParentRepositoryWritePaths": [
+                "steuerung/STATUS.md",
+                "steuerung/BLOCKER.md",
+                "steuerung/WIEDERAUFNAHME.md",
+                "steuerung/gedaechtnis/arbeitsstand/v2-spezifikationsqueue-20261127-anker.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/00-didaktik-report.md.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/01-didaktik-sources.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/02-didaktik-decision.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/03-architekt-report.md.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/04-architekt-sources.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/05-architekt-decision.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/06-verify_returns.py.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/07-verification.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/08-assessment.md.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/09-inspection-output-qualification.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/10-inspection-incident-01.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/11-attempt-01.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/12-helper-resolution.json.json",
+                "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/index.json",
+                "steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-voten02/00-brief.md.json",
+                "steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-voten02/01-input-bindings.json.json",
+                "steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-voten02/02-procedural-bindings.json.json",
+                "steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-voten02/03-dispatch.json.json",
+                "steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-voten02/04-freeze-verification.json.json",
+                "steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-voten02/index.json"
+              ],
+              "otherListedPathsAreNotReviewInputs": true,
+              "contentsOfOtherListedPathsMustNotBeRead": true,
+              "noOtherRepositoryWritesAllowed": true,
+              "appliesOnlyToThisNewDispatch": true,
+              "priorParentScopeExceptionRetained": {
+                "path": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/parent-scope-explanation.json",
+                "sha256": "1bec0e583815b33adf161fd96c6fb2b5b757a8805ff84c6f16f2dacd0be336e0",
+                "bytes": 6092
+              },
+              "newPeerOpinionsExcludedFromMutableParentText": true,
+              "laterMutableContextUse": "Raw snapshots and deltas only; no new peer-vote content is a review source."
+            },
+            "recommendationsAccepted": false,
+            "ratificationIssued": false,
+            "implementationAuthorized": false,
+            "wholeManifestVerdict": "NOT_ISSUED"
+          },
+          "archive": {
+            "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-voten02/index.json",
+            "sha256": "2ce9ee1b923eb2ada75916b9a6ac4bed15bee4bf0155f25770f489e97ee31498",
+            "bytes": 3626
+          },
+          "newVotesReceived": 0,
+          "historicalDispatchAndOutputsRetained": true,
+          "normativeInputFilesUnchanged": true,
+          "parentWritePathCount": 24,
+          "recommendationsAccepted": false,
+          "ratificationIssued": false,
+          "implementationAuthorized": false,
+          "wholeManifestVerdict": "NOT_ISSUED"
+        }
       }
     }
   ],
@@ -971,8 +1199,8 @@
     }
   ],
   "nextOrder": [
-    "Receive complete whole-text votes from deleg_8ca1aeb1: didaktik sa-0-c3281703 and architekt sa-1-0bf02d6f, entire proposal SHA-256 7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3. Do not poll or treat partial reports as votes.",
-    "After capacity is available, dispatch fresh independent redteam against the same whole text and explicit procedural baseline, without the other new role votes. Maximum two concurrent children. Verify all three complete exact-text votes before any separate policy ratification.",
+    "Receive complete fresh whole-text votes from deleg_5f13cf97: didaktik sa-0-385f587b and redteam sa-1-ed0d21d7, same proposal SHA-256 7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3. Do not poll or count partial reports. Preserve initial didaktik as NOT_COUNTED_INCOMPLETE_PROCEDURAL_EVIDENCE; architecture vote is separately retained.",
+    "Verify fresh returns and count exactly one complete eligible vote per required role before separate policy ratification. No new reviewer reads peer opinions; maximum two concurrent children.",
     "Only after a separate eligible policy decision: prospective technical/oracle integration, U07 coverage and version-bound qualification. Preserve historical raw failures and INCONCLUSIVE.",
     "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004 and accepted digest-source transfer, and all retained additional-gate integration obligations. Old drafts and values unchanged.",
     "Create a new complete manifest, freeze/hash and obtain independent whole-manifest review before implementation."

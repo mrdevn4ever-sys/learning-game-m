@@ -1,0 +1,22 @@
+{
+  "kind": "lossless-public-document-container/1",
+  "source": {
+    "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/inspection-incident-01.json",
+    "sha256": "9cd77e5121f15ee98c29619153af5949561fb84ccfd37edfff610c1f24386b63",
+    "bytes": 1597
+  },
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"status\": \"PARENT_INSPECTION_FAILURE\",\n",
+    "  \"executionCount\": 165,\n",
+    "  \"exitCode\": 1,\n",
+    "  \"requestedCode\": \"bounded_json({'roles':{r:{'freezeFieldShapes':sorted({str(sorted(rec['frozen' if r=='didaktik' else 'freeze'])) for rec in x['sources']['records']}),'recordFreezeExamples':[rec['frozen' if r=='didaktik' else 'freeze'] for rec in x['sources']['records'][-3:]],'parentCheck':{k:v for k,v in x['decision']['parentWriteScopeCheck'].items() if not isinstance(v,(list,dict))},'transitions':[{k:(len(v) if isinstance(v,str) and len(v)>1000 else v) for k,v in t.items()} for t in x['sources']['mutableParentContexts'][0]['transitions']],'projectionSlashFields':sorted({f for z in x['sources']['projections'] for f in z['fields'] if '/' in f})} for r,x in policy_roles.items()},'archCodePreservation':[{k:v for k,v in a.items() if k in ['id','codeBindingMeaning','originalOutputPreservation','originalStdoutBindingMethod','resolution']} for a in policy_roles['architekt']['sources']['incidents']]})\\n\",\n",
+    "  \"requestedCodeSha256\": \"2ae38d47d77939d1bba8cca4f8fc2b25b8081c28ccbb17f9191cfbd5b04b3ac4\",\n",
+    "  \"originalError\": \"Traceback (most recent call last):\\n  File \\\"F:\\\\HermesTemp\\\\hermes_kernel_9lh80zv7\\\\hermes_kernel_runner.py\\\", line 118, in run_cell\\n    exec(compile(request[\\\"code\\\"], \\\"<cell>\\\", \\\"exec\\\"), GLOBALS)\\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"<cell>\\\", line 1, in <module>\\nTypeError: 'NoneType' object is not iterable\\n\",\n",
+    "  \"writesBeforeFailure\": 0,\n",
+    "  \"sourceWrites\": 0,\n",
+    "  \"resolution\": \"Inspect null variants before iterating; no source mutation.\"\n",
+    "}\n"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "lossless-public-document-container/1",
+  "source": {
+    "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/helper-resolution.json",
+    "sha256": "9c762e584fc75cd5f40258193af7f3a24edc466fb527f7781bbb5bcece297d6c",
+    "bytes": 1054
+  },
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"status\": \"PRESERVED_DOCUMENT_HELPER_FAILURE_RESOLVED\",\n",
+    "  \"attempt\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/attempt-01.json\",\n",
+    "    \"sha256\": \"576a9a847aa750cc4fb2af94cac6d3f3ac2027ed630fd6bf7c10d3f2608fe03b\",\n",
+    "    \"bytes\": 12520\n",
+    "  },\n",
+    "  \"verification\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/verification.json\",\n",
+    "    \"sha256\": \"6c7960199bc5131f0fd7d14e88a98c154bd62ec43d656be009df4842ef565a4d\",\n",
+    "    \"bytes\": 5051\n",
+    "  },\n",
+    "  \"cause\": \"MSYS passed TEMP/TMP/TMPDIR as native Windows backslash paths. The first helper compared literal forward-slash spellings.\",\n",
+    "  \"observedEnvironment\": {\n",
+    "    \"TEMP\": \"F:\\\\ChnobelRuntime\\\\tmp\",\n",
+    "    \"TMP\": \"F:\\\\ChnobelRuntime\\\\tmp\",\n",
+    "    \"TMPDIR\": \"F:\\\\ChnobelRuntime\\\\tmp\",\n",
+    "    \"UV_CACHE_DIR\": \"F:/ChnobelRuntime/cache/uv\",\n",
+    "    \"PYTHONDONTWRITEBYTECODE\": \"1\",\n",
+    "    \"PYTHONIOENCODING\": \"utf-8\"\n",
+    "  },\n",
+    "  \"fix\": \"Path(...).as_posix() only for Windows runtime metadata. No source/oracle/byte normalisation.\",\n",
+    "  \"sourceWrites\": 0,\n",
+    "  \"productExecution\": \"NOT_RUN\"\n",
+    "}\n"
+  ]
+}

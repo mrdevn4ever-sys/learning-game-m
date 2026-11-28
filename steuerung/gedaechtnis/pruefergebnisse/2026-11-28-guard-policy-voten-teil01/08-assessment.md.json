@@ -1,0 +1,32 @@
+{
+  "kind": "lossless-public-document-container/1",
+  "source": {
+    "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/assessment.md",
+    "sha256": "5c5f45fd0b2d7bb04f8cbb4b865a0834628058a608804eb55375eb105eb43feb",
+    "bytes": 3712
+  },
+  "encoding": "utf-8-lines",
+  "lines": [
+    "# Elternauswertung: Guardpolicy 01, erste Ganztextabgaben\n",
+    "\n",
+    "Status: EIN_WERTBARES_GANZTEXTVOTUM; KEINE_RATIFIKATION. Basis dd4c5896925e208798b154f4af15d8947250b364. Batch deleg_8ca1aeb1.\n",
+    "\n",
+    "Gegenstand bleibt proposal.md SHA-256 7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3, 16281 Bytes, P1-P7. Beide unveraenderten Abgaben deklarieren COMPLETE, JA, unconditional=true, keine Bedingungen/Textaenderungen. Der Dokumenthelfer 7299dd66307e2f982b350319916017ccb7b6e335ef4f3aafd47ba54c52d1a5a6 lief nach einem erhaltenen Metadatenpfadfehler mit Exit 0; verification.json 6c7960199bc5131f0fd7d14e88a98c154bd62ec43d656be009df4842ef565a4d. Nur Ruecklauf-/Bindungskontrollen, keine semantische Produktausfuehrung.\n",
+    "\n",
+    "## Wertbarkeit getrennt vom erklaerten Textvotum\n",
+    "\n",
+    "- Architektur: ein vollstaendiges unbedingtes Ganztext-JA als qualifiziertes Rollenurteil wertbar. 69 feste Quellenbindungen, 230 exakte Originalprojektionen und sechs rohe Kontextuebergaenge geprueft. Sieben gebundene fehlgeschlagene Dokumentaufrufe und Startabweichung bleiben erhalten. Code-/Ausgabetexte und gespeicherte Digests sind intern konsistent; dies ist keine technisch unabhaengige Ausfuehrungsauthentisierung und kein pauschales Verfahrens-PASS.\n",
+    "- Didaktik: erklaertes unbedingtes Ganztext-JA und vollstaendige P1-P7-Textbeurteilung bleiben unveraendert archiviert, werden aber NICHT als erforderliches Votum gezaehlt. 69 Bindungen, 192 Originalprojektionen und 15 rohe Kontextuebergaenge sind mechanisch nachgeprueft. DID-GP01-F02 benennt die nicht vollstaendig erfuellte Originaldiagnostik-/Codebindungspflicht; fuenf Vorfallrecords tragen originalDiagnosticsAvailable=false (vier fruehere Fehlversuche und eine unaufgeloeste doppelte Toolantwort). Die in der Abgabe entfernten unbelegten Rekonstruktionen werden weder wieder eingefuegt noch als Original anerkannt. Eine Elternhashpruefung heilt diese Dokumentationsluecke nicht. Vorsichtiger Abschluss: NOT_COUNTED_INCOMPLETE_PROCEDURAL_EVIDENCE_FRESH_REVIEW_REQUIRED. Ein frischer fremder Didaktikkontext muss den identischen ganzen Policytext neu beurteilen; keine alte Stimme wird uebernommen.\n",
+    "- Red-Team: noch kein Ganztextvotum zu diesem Text. Frischer unabhaengiger Auftrag, ohne neue Peer-Abgaben.\n",
+    "\n",
+    "## Grenzen und naechster Auftrag\n",
+    "\n",
+    "Alle beobachteten Eltern-Repositorywrites lagen im damaligen 21-Pfade-Vertrag. Die historische Autoren-Scopeverletzung bleibt davon getrennt erhalten. Keine Erlaubnis wird rueckwirkend erteilt. Das eingesehene Live-Log der abgeschlossenen Architekturrolle ist nur eine begrenzte Darstellung, kein Ersatz fuer vollstaendige Originaltoolbelege; keine neuen Reviewer erhalten dieses Log oder irgendeine neue Peerabgabe.\n",
+    "\n",
+    "Ein Elterninspektionsfehler an null statt Listenfeldern, eine aggregierte Anzeige von 29'209 statt hoechstens 20'000 Bytes ohne Trunkierung und ein Helferfehler an Windows-Pfadschreibweisen bleiben in den separat gebundenen Vorfaellen erhalten. Korrekturen betreffen nur Leser/Metadaten, niemals Originalquellen oder Sollwerte.\n",
+    "\n",
+    "Neue Auftraege: Didaktik und Red-Team zum selben unveraenderten Text/zu denselben 63 Pflichtquellen, hoechstens zwei gleichzeitig, frische explizite Verfahrensbaseline und Eltern-Schreibmenge. Quellenlesen vor Rohmessung bleibt offen zu deklarieren. Fehlversuche sofort mit Originalcode/-ausgabe in eigenen Abgaben sichern, nicht nach Kontextverdichtung rekonstruieren. Keine erneute alte Reparaturimplementation.\n",
+    "\n",
+    "C-HELP-ANCHOR, C-U07, RT-GT-01 bis RT-GT-05 und alle Manifest-/Integrationspflichten bleiben offen. Empfehlungen nicht angenommen; wholeManifestVerdict=NOT_ISSUED, implementationAuthorized=false, blockerClosed=false. Produkt/Parser/Schema/Evaluator/Tests/native NOT_RUN.\n"
+  ]
+}

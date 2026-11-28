@@ -1,0 +1,21 @@
+{
+  "kind": "lossless-public-document-container/1",
+  "source": {
+    "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/inspection-output-qualification.json",
+    "sha256": "04e41550177aa192c91df7d645d027b1f6c8d12868501be47b10dbbf9657c902",
+    "bytes": 408
+  },
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"kind\": \"PARENT_INSPECTION_OUTPUT_BUDGET_EXCEPTION\",\n",
+    "  \"executionCount\": 156,\n",
+    "  \"stdoutBytes\": 29209,\n",
+    "  \"limit\": 20000,\n",
+    "  \"truncated\": false,\n",
+    "  \"sourceWrites\": 0,\n",
+    "  \"cause\": \"Fallback metadata display still contained complete projection bodies; aggregate fallback was not checked.\",\n",
+    "  \"correction\": \"Every subsequent rendered payload is checked as a whole before print; oversized payload is withheld.\"\n",
+    "}\n"
+  ]
+}

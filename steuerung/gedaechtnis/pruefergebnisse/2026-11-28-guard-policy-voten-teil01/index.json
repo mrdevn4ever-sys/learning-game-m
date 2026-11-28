@@ -1,0 +1,183 @@
+{
+  "kind": "lossless-public-document-index/1",
+  "at": "2026-11-28T03:14:04.689814+01:00",
+  "parentBase": "dd4c5896925e208798b154f4af15d8947250b364",
+  "sourceCount": 13,
+  "rows": [
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01/didaktik/report.md",
+        "sha256": "6c91585452cc70737adb7293b744bb81bce94f5d7d5bf3805d9cbea00bacc8cb",
+        "bytes": 9661
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/00-didaktik-report.md.json",
+        "sha256": "64f9a7aab297144be4dc5fabe3abd030786b81440ff45762452337b7c731e6b6",
+        "bytes": 10477
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/00-didaktik-report.md.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01/didaktik/sources.json",
+        "sha256": "367ed45ef8808f427ce82a4726482d4723c7f9f923f7c1908c54dd2322331a6d",
+        "bytes": 1586334
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/01-didaktik-sources.json.json",
+        "sha256": "f0c871a4ce22f73f7c01ef18706cbb79624010b97d4103225e6fada725cefd3c",
+        "bytes": 1765579
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/01-didaktik-sources.json.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01/didaktik/decision.json",
+        "sha256": "928b6013d63942a0b32ae30183186e8010986157d4213840b9248042706bd3ce",
+        "bytes": 85306
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/02-didaktik-decision.json.json",
+        "sha256": "9f1ae861238d1b7c75ea2d493024e90624d07f8d906e0bff6a0a2904a214f5ad",
+        "bytes": 107559
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/02-didaktik-decision.json.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01/architekt/report.md",
+        "sha256": "c62d75ab705587bc3f08bf7193ef7c6f4ac1ab518ed18946d8886943d9476052",
+        "bytes": 9745
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/03-architekt-report.md.json",
+        "sha256": "8c2aaf3eaadab770598123527050e06a535cc8e2f88187240a988dac8c8aa243",
+        "bytes": 10616
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/03-architekt-report.md.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01/architekt/sources.json",
+        "sha256": "d6697257f1bd185726469424cd93f442bb1f7edf9162d0910c63e9b037c3a3e8",
+        "bytes": 1532070
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/04-architekt-sources.json.json",
+        "sha256": "001c554196b7209923130b4f9d41c7c90b4f6d4627063da39316e915e5d3f1d4",
+        "bytes": 1729249
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/04-architekt-sources.json.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01/architekt/decision.json",
+        "sha256": "0a723a58a56fee2c535e00083982f63f6e990214817b5d57af0055e0ebca50d8",
+        "bytes": 78485
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/05-architekt-decision.json.json",
+        "sha256": "833b9ed35e6840ec2fc90bff8250511605d4d634f587179e326c80fabb64a194",
+        "bytes": 98214
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/05-architekt-decision.json.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/verify_returns.py",
+        "sha256": "7299dd66307e2f982b350319916017ccb7b6e335ef4f3aafd47ba54c52d1a5a6",
+        "bytes": 11269
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/06-verify_returns.py.json",
+        "sha256": "55e5ea702504af0aa163b70e0c4a9780cf20844384d412cdd93b45b6bcc8d07a",
+        "bytes": 12815
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/06-verify_returns.py.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/verification.json",
+        "sha256": "6c7960199bc5131f0fd7d14e88a98c154bd62ec43d656be009df4842ef565a4d",
+        "bytes": 5051
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/07-verification.json.json",
+        "sha256": "f6a937c1c7ac72df21ee03c9a7429160e052cfc42fa6816966a01f47aa6a8aaa",
+        "bytes": 6921
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/07-verification.json.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/assessment.md",
+        "sha256": "5c5f45fd0b2d7bb04f8cbb4b865a0834628058a608804eb55375eb105eb43feb",
+        "bytes": 3712
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/08-assessment.md.json",
+        "sha256": "a728ecc398fe92f8900b9966b982ca455e79abbf008fb13098d79af057b117b7",
+        "bytes": 4208
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/08-assessment.md.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/inspection-output-qualification.json",
+        "sha256": "04e41550177aa192c91df7d645d027b1f6c8d12868501be47b10dbbf9657c902",
+        "bytes": 408
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/09-inspection-output-qualification.json.json",
+        "sha256": "f7a848eb1487883c11471df1e8579d4b627fd2f1933832395e10c663372922d4",
+        "bytes": 849
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/09-inspection-output-qualification.json.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/inspection-incident-01.json",
+        "sha256": "9cd77e5121f15ee98c29619153af5949561fb84ccfd37edfff610c1f24386b63",
+        "bytes": 1597
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/10-inspection-incident-01.json.json",
+        "sha256": "22296fd4d8f116dd4c85899f8bbc859e44219e9b44b2ca829ac06ae27474a9ba",
+        "bytes": 2078
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/10-inspection-incident-01.json.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/attempt-01.json",
+        "sha256": "576a9a847aa750cc4fb2af94cac6d3f3ac2027ed630fd6bf7c10d3f2608fe03b",
+        "bytes": 12520
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/11-attempt-01.json.json",
+        "sha256": "72a34bfe2f2c0b5410954bc02742378633ed6ce1aa43b0b65761d0e12ddfad3e",
+        "bytes": 13170
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/11-attempt-01.json.json"
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part01/helper-resolution.json",
+        "sha256": "9c762e584fc75cd5f40258193af7f3a24edc466fb527f7781bbb5bcece297d6c",
+        "bytes": 1054
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/12-helper-resolution.json.json",
+        "sha256": "5bf7142de85eef514935a320ca89d25f90981fe94ead17fc65c1ee7544f11489",
+        "bytes": 1675
+      },
+      "relativePath": "steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil01/12-helper-resolution.json.json"
+    }
+  ],
+  "sourceBytesPreserved": true,
+  "scope": "Open synthetic specification and review documentation only; no hidden tests, builds, secrets or full delegation logs.",
+  "recommendationsAccepted": false,
+  "ratificationIssued": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED"
+}
