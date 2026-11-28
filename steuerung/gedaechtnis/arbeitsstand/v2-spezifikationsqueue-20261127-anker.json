@@ -745,7 +745,7 @@
         }
       },
       "policyReview01": {
-        "state": "TWO_ELIGIBLE_ROLES_ROUND03_COMPLETE_REDTEAM_ROUND04_PREPARED",
+        "state": "RATIFIED_PROSPECTIVE_POLICY_ONLY_MANIFEST_INCOMPLETE",
         "dispatch": {
           "kind": "guard-policy-whole-text-dispatch/1",
           "at": "2026-11-28T02:23:18.626786+01:00",
@@ -848,12 +848,12 @@
         ],
         "roleStates": {
           "didaktik": "COUNTED_WITH_DECLARED_PROCEDURAL_EXCEPTIONS",
-          "redteam": "COMPLETE_OPINION_NOT_COUNTED_ORIGINAL_DIAGNOSTIC_COPY_MISMATCH",
+          "redteam": "COUNTED_WITH_DECLARED_PROCEDURAL_EXCEPTIONS",
           "architekt": "COUNTED_WITH_DECLARED_PROCEDURAL_EXCEPTIONS"
         },
-        "newWholeTextVotesAccepted": 2,
-        "recommendationsAccepted": false,
-        "ratificationIssued": false,
+        "newWholeTextVotesAccepted": 3,
+        "recommendationsAccepted": true,
+        "ratificationIssued": true,
         "implementationAuthorized": false,
         "wholeManifestVerdict": "NOT_ISSUED",
         "completedFirstBatch": {
@@ -1227,7 +1227,8 @@
         },
         "countedRoles": [
           "architekt",
-          "didaktik"
+          "didaktik",
+          "redteam"
         ],
         "eligibilityCorrection": {
           "decision": {
@@ -1426,6 +1427,81 @@
           "ratificationIssued": false,
           "implementationAuthorized": false,
           "wholeManifestVerdict": "NOT_ISSUED"
+        },
+        "completedRound04": {
+          "state": "COMPLETE_ELIGIBLE_WITH_RETAINED_PROCEDURAL_EXCEPTIONS",
+          "batchId": "deleg_e1683c2a",
+          "actualDispatch": {
+            "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/dispatch-actual.json",
+            "sha256": "91790574502306bd7c43f94e533d21b9d99273d7b875009c13c08b96edb53901",
+            "bytes": 2165
+          },
+          "outputs": [
+            {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/report.md",
+              "sha256": "ea7175ec56997f0495ca9ad9fa694a3e45236c111e4ed7ebc827e6b92751d2c8",
+              "bytes": 9805
+            },
+            {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/sources.json",
+              "sha256": "e6d192754643aa54b533c2d30ed1704512756782d88fa8c28a74b9f89ccf3c6b",
+              "bytes": 905657
+            },
+            {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/decision.json",
+              "sha256": "82929b3d8fe2f55bf21ea03185b283d54d54be3b07152d7b7049ffb7102aea48",
+              "bytes": 40644
+            }
+          ],
+          "parentVerification": {
+            "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/verification.json",
+            "sha256": "71e0f2931453042dbf69d2d3fc711841845f8b151fa254e5943daf283e02b268",
+            "bytes": 34355
+          },
+          "eligibilityAssessment": {
+            "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/eligibility-assessment.json",
+            "sha256": "2e5d290079fa38669cb863ddecf8b83186e0a1c204d3cb8ab83d612914bab448",
+            "bytes": 10967
+          },
+          "documentExitCode": 0,
+          "allRequiredWholeTextRolesComplete": true,
+          "mandatoryOriginalEvidenceGapObserved": false,
+          "wholeProcedurePassed": false,
+          "implementationAuthorized": false,
+          "wholeManifestVerdict": "NOT_ISSUED",
+          "newDispatch": "NONE",
+          "activeChildren": 0
+        },
+        "ratification": {
+          "status": "RATIFIED_PROSPECTIVE_POLICY_ONLY",
+          "decision": {
+            "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-beschluss.json",
+            "sha256": "64d448e1e9e1ef2ac27c19516cceab6796e403f55b34a9aff4467338dd81422c",
+            "bytes": 5877
+          },
+          "adr": {
+            "path": "F:/Projects/Chnobel/docs/adr/0005-guard-und-kontextpolicy.md",
+            "sha256": "79f918e07ccf290045f80181d0ebfce47583c28170d1f7247c6fd62c18ce600d",
+            "bytes": 18950
+          },
+          "losslessOriginals": {
+            "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/index.json",
+            "sha256": "70ebb431ec43fe184f377ea741b65ccd7d30e092fae622d1279735b8e98cc61d",
+            "bytes": 11840
+          },
+          "countedRoleCount": 3,
+          "normTextChanged": false,
+          "blockerClosed": false,
+          "implementationAuthorized": false,
+          "wholeManifestVerdict": "NOT_ISSUED",
+          "priorQueueNextOrder": [
+            "Publish and read back this checkpoint, then dispatch exactly one fresh procedure auditor under F:/ChnobelRuntime/reviews/guard-policy-procedure-01/brief.md. Actual IDs and post-push base go only to its runtime dispatch.json; no repository writes while that child runs. This is diagnosis, not a third policy vote.",
+            "Resolve capture-boundary and transient-path findings without fabricating old evidence or weakening gates. Reconsider any newly demonstrated eligibility defect. Then prepare the necessary fresh independent didaktik whole-text review on the same frozen policy, with a separately bound prospective process; do not reuse the diagnostic context as policy voter. Maximum two children.",
+            "Only after a separate eligible policy decision: prospective technical/oracle integration, U07 coverage and version-bound qualification. Preserve historical raw failures and INCONCLUSIVE.",
+            "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004 and accepted digest-source transfer, and all retained additional-gate integration obligations. Old drafts and values unchanged.",
+            "Create a new complete manifest, freeze/hash and obtain independent whole-manifest review before implementation."
+          ],
+          "preparedRound04RecordRetainedAsHistory": true
         }
       }
     }
@@ -1542,11 +1618,11 @@
     }
   ],
   "nextOrder": [
-    "Publish and read back this checkpoint, then dispatch exactly one fresh procedure auditor under F:/ChnobelRuntime/reviews/guard-policy-procedure-01/brief.md. Actual IDs and post-push base go only to its runtime dispatch.json; no repository writes while that child runs. This is diagnosis, not a third policy vote.",
-    "Resolve capture-boundary and transient-path findings without fabricating old evidence or weakening gates. Reconsider any newly demonstrated eligibility defect. Then prepare the necessary fresh independent didaktik whole-text review on the same frozen policy, with a separately bound prospective process; do not reuse the diagnostic context as policy voter. Maximum two children.",
-    "Only after a separate eligible policy decision: prospective technical/oracle integration, U07 coverage and version-bound qualification. Preserve historical raw failures and INCONCLUSIVE.",
-    "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004 and accepted digest-source transfer, and all retained additional-gate integration obligations. Old drafts and values unchanged.",
-    "Create a new complete manifest, freeze/hash and obtain independent whole-manifest review before implementation."
+    "Reconcile ADR 0005, the exact published checkpoint and completed deleg_e1683c2a; do not redispatch historical policy review or procedure-auditor orders. Three eligible exact-target policy votes are complete; product implementation remains prohibited.",
+    "Next bounded specification task: resolve C-HELP-ANCHOR / B-SPEC-U07-COVERAGE with explicit coverage-window, anchor and source-binding proposals. Read original cases and retained recommendations; preserve undecided subwindow semantics and original oracles. No implementation.",
+    "Then integrate version-bound U07 qualification and assistance conflicts in new prospective technical/oracle documents. Preserve historical raw failures, undo_dependency and INCONCLUSIVE; no one-slot/world-action assumption.",
+    "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004/0005 and accepted digest-source transfer, and all retained additional-gate integration obligations. Old drafts and values unchanged.",
+    "Only a new complete manifest with its own freeze/hash and independent whole-manifest review can open the separate implementation gate."
   ],
   "digestTargetClarification": {
     "role": "technical-specification-author",

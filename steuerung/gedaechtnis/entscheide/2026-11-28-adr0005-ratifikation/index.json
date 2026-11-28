@@ -1,0 +1,291 @@
+{
+  "scope": "PUBLIC_TEXT_DOCUMENT_PRESERVATION_ONLY_NOT_ACCEPTANCE",
+  "count": 20,
+  "items": [
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/proposal.md",
+        "sha256": "7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3",
+        "bytes": 16281
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/author-proposal.md.lines.json",
+        "sha256": "28d2be5547ff86b56fe30185955ed877a5242904d676c369e1001976f025a208",
+        "bytes": 17247
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/sources.json",
+        "sha256": "89db2cb3d1004a667f66d12753b74c43bea466709cff39fb5f3edae9a37ce1e8",
+        "bytes": 1653880
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/author-sources.json.lines.json",
+        "sha256": "b7cc32250fbb2c4f4b64b4aec8c551cfc67843478b370fe00a09cfa8a284d580",
+        "bytes": 1881844
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/handoff.json",
+        "sha256": "c9be1dd3437dfc56ca902667bad2039f29648df8eab27834b294a09ce4ffb0e3",
+        "bytes": 135090
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/author-handoff.json.lines.json",
+        "sha256": "82522ee394f755f9ebb843dda9d2ebeacb30606e84600bc800ca7b5987c13dbd",
+        "bytes": 171557
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/didaktik/report.md",
+        "sha256": "e61c6a24ea57560feb426dd7af47f1ce2f8fc765e477c99cde0f61ce52f3b82e",
+        "bytes": 10748
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/didaktik-report.md.lines.json",
+        "sha256": "efe3bd145e80b38f89a8a9b256b2be1d3b0d182ab5474a769f3a6c1a677dd69b",
+        "bytes": 11596
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/didaktik/sources.json",
+        "sha256": "7b36b5356b8dc39d388c61bbafe59656137936b857ba042fc0cc0b2cae9e6660",
+        "bytes": 1112439
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/didaktik-sources.json.lines.json",
+        "sha256": "de9962a3204f240093e69f83a864f7d9c58f18bcbd93e1d7007e6631f4239f91",
+        "bytes": 1333045
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/didaktik/decision.json",
+        "sha256": "a7e0a3b9e94f339ba70dd8c13e3ae17925f0bfdb011b639393dce89cece0af3f",
+        "bytes": 35363
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/didaktik-decision.json.lines.json",
+        "sha256": "fcf1fa51f23c37a988f54b2122788dc663a4c42530e1c42745cb507b5025798c",
+        "bytes": 45872
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/architekt/report.md",
+        "sha256": "ad580b6a98e020b63083f5873e21eb892cfc79176c6f21376b4c4c2456f71b40",
+        "bytes": 10313
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/architekt-report.md.lines.json",
+        "sha256": "ea5b677f40e636621ce29b54005ad6b2ee3f91f75a756aec8438ed979d41fc35",
+        "bytes": 11198
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/architekt/sources.json",
+        "sha256": "9145b15323420527b0c0c57d7f264900ca3a39f600ba5758b540ad31e26573f4",
+        "bytes": 1460777
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/architekt-sources.json.lines.json",
+        "sha256": "07ee4211f5714cd5383954656f7cda88953142821e6f92b8b97c7d9d8e61e0c0",
+        "bytes": 1660196
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/architekt/decision.json",
+        "sha256": "eb6ce413746a229069b3ec1d81fbe352bb6cf4937ca5d635a90e892d539a1d72",
+        "bytes": 39251
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/architekt-decision.json.lines.json",
+        "sha256": "ed0f1e80784bd78b19aa4451cfc379098b870607e7db15ad1190174fa0d14fea",
+        "bytes": 49661
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/report.md",
+        "sha256": "ea7175ec56997f0495ca9ad9fa694a3e45236c111e4ed7ebc827e6b92751d2c8",
+        "bytes": 9805
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/redteam-report.md.lines.json",
+        "sha256": "c2a727491e5419f12269cd5dac6237da937f1dbeab1160c3186e65fb20da6422",
+        "bytes": 10651
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/sources.json",
+        "sha256": "e6d192754643aa54b533c2d30ed1704512756782d88fa8c28a74b9f89ccf3c6b",
+        "bytes": 905657
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/redteam-sources.json.lines.json",
+        "sha256": "8de02b4d16baef88cb9ce08b78467861dac0848969b04378ae88a82e136838ba",
+        "bytes": 1028918
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/decision.json",
+        "sha256": "82929b3d8fe2f55bf21ea03185b283d54d54be3b07152d7b7049ffb7102aea48",
+        "bytes": 40644
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/redteam-decision.json.lines.json",
+        "sha256": "7af05ebd1191b66fabe1171184a02e85a69f058a369578447744015e62276677",
+        "bytes": 50541
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/verification.json",
+        "sha256": "71e0f2931453042dbf69d2d3fc711841845f8b151fa254e5943daf283e02b268",
+        "bytes": 34355
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/parent-verification.json.lines.json",
+        "sha256": "5c643ae76ae7537412bc574e3216c8f0f3125afd36e86f42b3509af62d4d4833",
+        "bytes": 43394
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/eligibility-assessment.json",
+        "sha256": "2e5d290079fa38669cb863ddecf8b83186e0a1c204d3cb8ab83d612914bab448",
+        "bytes": 10967
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/parent-eligibility-assessment.json.lines.json",
+        "sha256": "645c9d44ee4de133bc2b0e088c66867bc185a0153e02c0855e7ddd34ba304e7c",
+        "bytes": 13504
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/verification-input.json",
+        "sha256": "8611d3ef6ee0acd4c061e23874adf18340294e0a69cae59f82fd6de0d73c73b7",
+        "bytes": 6356
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/parent-verification-input.json.lines.json",
+        "sha256": "74a9e369e2ec3f93d0ec5daec591d15b83e17f93790e4fab1d5bafffcff3919d",
+        "bytes": 8514
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/attempt-01-request.json",
+        "sha256": "b342ab6b9f25743ed9ca810fb86336bc8a3122fae98ed7e5a19d64e32b935bf4",
+        "bytes": 18335
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/parent-attempt-01-request.json.lines.json",
+        "sha256": "23636f164c2e9a198b6bf59b82672c4e5bb0fe0a86115d799a7b7283a743a6a4",
+        "bytes": 19137
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/attempt-01-result.json",
+        "sha256": "9beb5acfc37137d01b9caf27587c0c5f65a046779eb4a7887470eb38e78d1840",
+        "bytes": 1864
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/parent-attempt-01-result.json.lines.json",
+        "sha256": "59120cd8b6dfe05aa8957ca7a4e5cad493fb7668b63107554a915a7f7ad34d9d",
+        "bytes": 2558
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/dispatch-actual.json",
+        "sha256": "91790574502306bd7c43f94e533d21b9d99273d7b875009c13c08b96edb53901",
+        "bytes": 2165
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/round04-dispatch-actual.json.lines.json",
+        "sha256": "e5342c483254c99e9033f184c0191c8065d9b89e78f429c755a68dd51ce88baf",
+        "bytes": 3032
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/brief.md",
+        "sha256": "c698123fd7343d2e2baa2ffb5b0dea0564cf71474b740c31cb346c92b13676f5",
+        "bytes": 11406
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/round04-brief.md.lines.json",
+        "sha256": "2b22fb72904bb7561353f948c5bd47f99f3e50b34f27f325ed275a0678fddfaa",
+        "bytes": 12046
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/freeze-verification.json",
+        "sha256": "7213d63bbfe6acb4bf3fca1d7258dc3074ead04f8929f4e9435871e6b2f5b1d3",
+        "bytes": 24976
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/round04-freeze-verification.json.lines.json",
+        "sha256": "e88b0b744cb4eb6f21a73d25ece54263ab68171c24d2195f1b73950b7f7b268b",
+        "bytes": 31758
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    }
+  ],
+  "ratificationIssued": false,
+  "implementationAuthorized": false,
+  "currentPeerReviewersMayRead": false,
+  "rawLogsPublished": false,
+  "allRequiredReviewersCompletedBeforeWrite": true
+}

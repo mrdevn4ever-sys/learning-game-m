@@ -1,0 +1,22 @@
+{
+  "encoding": "utf-8-lines",
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/attempt-01-result.json",
+  "sourceSha256": "9beb5acfc37137d01b9caf27587c0c5f65a046779eb4a7887470eb38e78d1840",
+  "sourceBytes": 1864,
+  "scope": "UNMODIFIED_ORIGINAL_DOCUMENT_NOT_A_NEW_VERDICT",
+  "lines": [
+    "{\n",
+    "  \"kind\": \"parent-document-execution-result/1\",\n",
+    "  \"request\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/attempt-01-request.json\",\n",
+    "    \"sha256\": \"b342ab6b9f25743ed9ca810fb86336bc8a3122fae98ed7e5a19d64e32b935bf4\",\n",
+    "    \"bytes\": 18335\n",
+    "  },\n",
+    "  \"actualToolResult\": {\n",
+    "    \"output\": \"{\\r\\n  \\\"kind\\\": \\\"redteam-round04-parent-verification/1\\\",\\r\\n  \\\"result\\\": \\\"PASS_DOCUMENT_BINDINGS_WITH_RETAINED_PROCEDURAL_EXCEPTIONS\\\",\\r\\n  \\\"recordedAt\\\": \\\"2026-11-28T06:45:51.979736+00:00\\\",\\r\\n  \\\"baseCommit\\\": \\\"03bcb3cef375b9998d3c22f92726f6b3137da44e\\\",\\r\\n  \\\"configuration\\\": {\\r\\n    \\\"path\\\": \\\"F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/verification-input.json\\\",\\r\\n    \\\"sha256\\\": \\\"8611d3ef6ee0acd4c061e23874adf18340294e0a69cae59f82fd6de0d73c73b7\\\",\\r\\n    \\\"bytes\\\": 6356\\r\\n  },\\r\\n  \\\"helper\\\": {\\r\\n    \\\"path\\\": \\\"F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/verify.py\\\",\\r\\n    \\\"sha256\\\": \\\"cdbac88a65266c3bb6549f65cdb848424d1ea9c344a88f3c605b20e1ef08f3b9\\\",\\r\\n    \\\"bytes\\\": 17080\\r\\n  },\\r\\n  \\\"fixedBindings\\\": 111,\\r\\n  \\\"additionalDispatchFreezeBindings\\\": 1,\\r\\n  \\\"uniqueSourceRecords\\\": 112,\\r\\n  \\\"parentContexts\\\": 3,\\r\\n  \\\"originalProjections\\\": 172,\\r\\n  \\\"reportWords\\\": 1073,\\r\\n  \\\"reviewerRecordedDocumentComparisons\\\": 353,\\r\\n  \\\"emptyReadPrimaryLogLine\\\": 181,\\r\\n  \\\"emptyReadStructuredCopyMatchesPrimaryProjection\\\": true,\\r\\n  \\\"journalInventoryAtCreation\\\": 72,\\r\\n  \\\"mandatoryOriginalEvidenceGapObserved\\\": false,\\r\\n  \\\"wholeProcedurePassed\\\": false,\\r\\n  \\\"independentExecutionAuthenticationClaimed\\\": false,\\r\\n  \\\"repositoryWrites\\\": 0,\\r\\n  \\\"ratificationIssued\\\": false,\\r\\n  \\\"implementationAuthorized\\\": false,\\r\\n  \\\"wholeManifestVerdict\\\": \\\"NOT_ISSUED\\\",\\r\\n  \\\"productExecution\\\": \\\"NOT_RUN\\\"\\r\\n}\",\n",
+    "    \"exit_code\": 0,\n",
+    "    \"error\": null\n",
+    "  }\n",
+    "}\n"
+  ]
+}

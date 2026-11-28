@@ -1,0 +1,162 @@
+{
+  "kind": "guard-policy-prospective-ratification/1",
+  "status": "RATIFIED_PROSPECTIVE_POLICY_ONLY",
+  "at": "2026-11-28T07:51:42.008056+01:00",
+  "authority": "MASTERPROMPT.md section 6.2; exact whole-text policy P7; separate manifest gate retained",
+  "subject": {
+    "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/proposal.md",
+    "sha256": "7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3",
+    "bytes": 16281
+  },
+  "adr": {
+    "path": "F:/Projects/Chnobel/docs/adr/0005-guard-und-kontextpolicy.md",
+    "sha256": "79f918e07ccf290045f80181d0ebfce47583c28170d1f7247c6fd62c18ce600d",
+    "bytes": 18950
+  },
+  "normativeBody": {
+    "sourceStatusLine": "# ENTWURF / PROPOSED_NOT_ACCEPTED",
+    "sourceFirstLineExcludedFromBody": true,
+    "sourceBodySha256": "3a43f2cb35ff7ddb447ff3a75767bafc29126447cfd7d1876e215a2f34988e30",
+    "sourceBodyBytes": 16247,
+    "adrBodyMarker": "## Unveraenderter Abstimmungstext P1-P7\n\n",
+    "originalBodyByteEqual": true,
+    "onlyStatusDecisionMetadataAdded": true
+  },
+  "losslessOriginals": {
+    "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/entscheide/2026-11-28-adr0005-ratifikation/index.json",
+    "sha256": "70ebb431ec43fe184f377ea741b65ccd7d30e092fae622d1279735b8e98cc61d",
+    "bytes": 11840
+  },
+  "eligibilityAssessment": {
+    "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/eligibility-assessment.json",
+    "sha256": "2e5d290079fa38669cb863ddecf8b83186e0a1c204d3cb8ab83d612914bab448",
+    "bytes": 10967
+  },
+  "parentDocumentVerification": {
+    "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/verification.json",
+    "sha256": "71e0f2931453042dbf69d2d3fc711841845f8b151fa254e5943daf283e02b268",
+    "bytes": 34355
+  },
+  "parentActualExecution": {
+    "path": "F:/ChnobelRuntime/verification/guard-policy-01-redteam04-parent/attempt-01-result.json",
+    "sha256": "9beb5acfc37137d01b9caf27587c0c5f65a046779eb4a7887470eb38e78d1840",
+    "bytes": 1864
+  },
+  "votes": [
+    {
+      "role": "architekt",
+      "round": "03",
+      "outputs": [
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/architekt/report.md",
+          "sha256": "ad580b6a98e020b63083f5873e21eb892cfc79176c6f21376b4c4c2456f71b40",
+          "bytes": 10313
+        },
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/architekt/sources.json",
+          "sha256": "9145b15323420527b0c0c57d7f264900ca3a39f600ba5758b540ad31e26573f4",
+          "bytes": 1460777
+        },
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/architekt/decision.json",
+          "sha256": "eb6ce413746a229069b3ec1d81fbe352bb6cf4937ca5d635a90e892d539a1d72",
+          "bytes": 39251
+        }
+      ],
+      "wholeTextVote": "JA",
+      "unconditional": true,
+      "conditions": [],
+      "requiredTextChanges": [],
+      "eligibility": "COUNTED_WITH_DECLARED_PROCEDURAL_EXCEPTIONS"
+    },
+    {
+      "role": "didaktik",
+      "round": "03",
+      "outputs": [
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/didaktik/report.md",
+          "sha256": "e61c6a24ea57560feb426dd7af47f1ce2f8fc765e477c99cde0f61ce52f3b82e",
+          "bytes": 10748
+        },
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/didaktik/sources.json",
+          "sha256": "7b36b5356b8dc39d388c61bbafe59656137936b857ba042fc0cc0b2cae9e6660",
+          "bytes": 1112439
+        },
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round03/didaktik/decision.json",
+          "sha256": "a7e0a3b9e94f339ba70dd8c13e3ae17925f0bfdb011b639393dce89cece0af3f",
+          "bytes": 35363
+        }
+      ],
+      "wholeTextVote": "JA",
+      "unconditional": true,
+      "conditions": [],
+      "requiredTextChanges": [],
+      "eligibility": "COUNTED_WITH_DECLARED_PROCEDURAL_EXCEPTIONS"
+    },
+    {
+      "role": "redteam",
+      "round": "04",
+      "outputs": [
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/report.md",
+          "sha256": "ea7175ec56997f0495ca9ad9fa694a3e45236c111e4ed7ebc827e6b92751d2c8",
+          "bytes": 9805
+        },
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/sources.json",
+          "sha256": "e6d192754643aa54b533c2d30ed1704512756782d88fa8c28a74b9f89ccf3c6b",
+          "bytes": 905657
+        },
+        {
+          "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/redteam/decision.json",
+          "sha256": "82929b3d8fe2f55bf21ea03185b283d54d54be3b07152d7b7049ffb7102aea48",
+          "bytes": 40644
+        }
+      ],
+      "wholeTextVote": "JA",
+      "unconditional": true,
+      "conditions": [],
+      "requiredTextChanges": [],
+      "eligibility": "COUNTED_WITH_DECLARED_PROCEDURAL_EXCEPTIONS"
+    }
+  ],
+  "countedRoles": [
+    "architekt",
+    "didaktik",
+    "redteam"
+  ],
+  "requiredRoleCount": 3,
+  "unconditionalJaCount": 3,
+  "normTextChanged": false,
+  "ratificationIssued": true,
+  "scopeOnly": "Unchanged prospective product policy P1-P7",
+  "historicalOpinionsRecounted": false,
+  "historicalAuthorProposalUnmodified": true,
+  "wholeProcedurePassed": false,
+  "blockerClosed": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "productExecution": "NOT_RUN",
+  "nativeExecution": "NOT_RUN",
+  "retainedObligations": [
+    "C-HELP-ANCHOR",
+    "C-U07",
+    "RT-GT-01",
+    "RT-GT-02",
+    "RT-GT-03",
+    "RT-GT-04",
+    "RT-GT-05",
+    "Q-GUARD-TOTALISATION",
+    "Q-U07",
+    "alle M-Punkte",
+    "B-DIGEST-GATE-INTEGRATION",
+    "ADR0004-Integration",
+    "Hilfe-/Wortlaut-/Feldnormalform",
+    "eigenes vollstaendiges Manifest-Freeze-/Fremdreviewgate",
+    "authentische Zusatzgatebelege"
+  ],
+  "previousFailuresUnchanged": true,
+  "cronEnabled": false
+}
