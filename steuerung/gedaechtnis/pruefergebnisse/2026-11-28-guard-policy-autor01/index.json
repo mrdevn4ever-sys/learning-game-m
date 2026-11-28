@@ -1,0 +1,91 @@
+{
+  "kind": "lossless-document-preservation-index/1",
+  "parentBase": "45d08fee121361333098586cb0a95612a0adb465",
+  "status": "PRESERVED_NOT_ADOPTED",
+  "fileCount": 10,
+  "files": [
+    {
+      "file": "00-proposal.md.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/proposal.md",
+      "contentSha256": "7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3",
+      "originalByteCount": 16281,
+      "containerSha256": "0cbb696e1ad1fb6c740cd37e85382ce7eade2e2ca8d903098d8919d3d65596dc",
+      "containerByteCount": 17214
+    },
+    {
+      "file": "01-sources.json.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/sources.json",
+      "contentSha256": "89db2cb3d1004a667f66d12753b74c43bea466709cff39fb5f3edae9a37ce1e8",
+      "originalByteCount": 1653880,
+      "containerSha256": "1e5e1a9e1639bdd2dc594fcc496868165357c26dfcad5bbb432f98d7b2c1df4b",
+      "containerByteCount": 1881811
+    },
+    {
+      "file": "02-handoff.json.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/handoff.json",
+      "contentSha256": "c9be1dd3437dfc56ca902667bad2039f29648df8eab27834b294a09ce4ffb0e3",
+      "originalByteCount": 135090,
+      "containerSha256": "9c353d912d06505d6893fbac15858cc9beb9a89d6376e1a911715e38defa9242",
+      "containerByteCount": 171524
+    },
+    {
+      "file": "03-assessment.md.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/assessment.md",
+      "contentSha256": "376ca8ac7f8d148a5cbb99e0e79826ebc77b05078986a839114fb51f040d0b75",
+      "originalByteCount": 4901,
+      "containerSha256": "943d17856b54e558d272a74e543d3d026ba233404889f7783e3443ee8e86a639",
+      "containerByteCount": 5406
+    },
+    {
+      "file": "04-verification.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/verification.json",
+      "contentSha256": "2f3ae23fab27d74960de616784cff1a691c9df17fc65cf160d42546b0216b648",
+      "originalByteCount": 21263,
+      "containerSha256": "3816e32ed55ecbcb710a0de43ec831671c53b8e85b2920b6e6f4d8e20d4681f1",
+      "containerByteCount": 26387
+    },
+    {
+      "file": "05-parent-scope-explanation.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/parent-scope-explanation.json",
+      "contentSha256": "1bec0e583815b33adf161fd96c6fb2b5b757a8805ff84c6f16f2dacd0be336e0",
+      "originalByteCount": 6092,
+      "containerSha256": "65f0a6b8bee77e2f905a6b84dd5a21b9f5a560b1bab2d16d0d18e7bb99dbe6c7",
+      "containerByteCount": 7241
+    },
+    {
+      "file": "06-inspection-incident-01.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/inspection-incident-01.json",
+      "contentSha256": "42fe65d5c8ae6b582e28351435f5c337f34b0f75fa3d91a140e02cfdaface095",
+      "originalByteCount": 1430,
+      "containerSha256": "265e1a3a708238081452481427e97f0a720564a2e87569117b159d3221ed2bfa",
+      "containerByteCount": 2104
+    },
+    {
+      "file": "07-inspection-incident-02.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/inspection-incident-02.json",
+      "contentSha256": "659462618855e5fe83ba3fbd652b9c5fbfbd52459f433db81c45dfffe93b0790",
+      "originalByteCount": 784,
+      "containerSha256": "3deaf264ccd511d57d8057b97005f93dff45c086c812af2d9c1e859c7605e9d8",
+      "containerByteCount": 1241
+    },
+    {
+      "file": "08-attempt-01.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/attempt-01.json",
+      "contentSha256": "86a92593b15fae0921f552fb701d7ac4903f65ff466841941fa52df754fff182",
+      "originalByteCount": 15483,
+      "containerSha256": "a34241f268075e1fb42911d44f564175fa8658f09dd94ffd12ba99400543c97c",
+      "containerByteCount": 16104
+    },
+    {
+      "file": "09-verify_return.py.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/verify_return.py",
+      "contentSha256": "1b87843821819da4aa8b87e4d7a769a1abb2c8a26bd218b12456bf1b0062aa92",
+      "originalByteCount": 15127,
+      "containerSha256": "a2523a3348987c09215c2c4d554bc49b4500bbe57d0515622b859e2a252cafb7",
+      "containerByteCount": 17087
+    }
+  ],
+  "recommendationsAccepted": false,
+  "ratificationIssued": false,
+  "implementationAuthorized": false
+}

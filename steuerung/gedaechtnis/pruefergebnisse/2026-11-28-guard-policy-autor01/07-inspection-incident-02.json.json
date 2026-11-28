@@ -1,0 +1,23 @@
+{
+  "kind": "lossless-utf8-source/1",
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/inspection-incident-02.json",
+  "encoding": "utf-8-lines",
+  "sha256": "659462618855e5fe83ba3fbd652b9c5fbfbd52459f433db81c45dfffe93b0790",
+  "byteCount": 784,
+  "lines": [
+    "{\n",
+    "  \"id\": \"PARENT-POLICY-INSPECTION-02\",\n",
+    "  \"error\": \"AttributeError: 'str' object has no attribute 'items'\",\n",
+    "  \"failedExpression\": \"[{k:list(v) if isinstance(v,dict) else v for k,v in x.items()} for x in ah['parentContextQualification']['rawSnapshots']]\",\n",
+    "  \"cause\": \"rawSnapshots is a string reference, not a list of records; diagnostics before failure returned, no writes in failed invocation.\",\n",
+    "  \"writesBeforeFailure\": 0,\n",
+    "  \"resolution\": \"Inspect the actual scalar and dereference the described sources contexts; no input normalisation.\",\n",
+    "  \"source\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/specification/v2-guard-policy-01/author/handoff.json\",\n",
+    "    \"sha256\": \"c9be1dd3437dfc56ca902667bad2039f29648df8eab27834b294a09ce4ffb0e3\",\n",
+    "    \"bytes\": 135090\n",
+    "  },\n",
+    "  \"productExecution\": \"NOT_RUN\"\n",
+    "}\n"
+  ]
+}

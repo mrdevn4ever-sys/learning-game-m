@@ -1,0 +1,51 @@
+{
+  "kind": "lossless-document-preservation-index/1",
+  "parentBase": "45d08fee121361333098586cb0a95612a0adb465",
+  "status": "PRESERVED_NOT_ADOPTED",
+  "fileCount": 5,
+  "files": [
+    {
+      "file": "00-brief.md.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/guard-policy-01/brief.md",
+      "contentSha256": "9748a8b8f61407bc5793e62f55e9bdbb9c13ff5ac4383935f7109ab43ae35947",
+      "originalByteCount": 8844,
+      "containerSha256": "9bf213b3dd17c24be00c482c8689ca12e33fb399f2c42569eaa927befc7da33e",
+      "containerByteCount": 9388
+    },
+    {
+      "file": "01-input-bindings.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/guard-policy-01/input-bindings.json",
+      "contentSha256": "3a40afb8ee46da8c3c4773f6547077e1d73bad370575d7ab4ec6e1c30c390978",
+      "originalByteCount": 48154,
+      "containerSha256": "36b29cd46fdaf6fb60841b83d77d35cea5c31aad8064f011c14556a34b092b91",
+      "containerByteCount": 61471
+    },
+    {
+      "file": "02-procedural-bindings.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/guard-policy-01/procedural-bindings.json",
+      "contentSha256": "6bf6c518a9d724703c1d153864f1497076fcd5fe397f52ad10e863ab83f10c3d",
+      "originalByteCount": 131516,
+      "containerSha256": "eb70326f49cf1df0ca7565905814b3942286c0e7bd37d48831fc5a3d3671f645",
+      "containerByteCount": 133640
+    },
+    {
+      "file": "03-dispatch.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/guard-policy-01/dispatch.json",
+      "contentSha256": "04b8bc7fd7e4be732e6b24ee688ea4e0d5ba9f60de951594a120c4f343d7a887",
+      "originalByteCount": 4163,
+      "containerSha256": "5c22ff29fa0d68acba5f075d6216e50293b231a0517ae4efd126124e0af7af58",
+      "containerByteCount": 5383
+    },
+    {
+      "file": "04-review-freeze-verification.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-author-parent/review-freeze-verification.json",
+      "contentSha256": "5330ac878b9ebe380266b8eabc957cdcec1eab2c8aafb5e8b77d9b0a617d799b",
+      "originalByteCount": 22013,
+      "containerSha256": "ea6b58f6b22ed6dd451e14ff23d4c798f8ce60050dac0a213edb2ff2a31bde58",
+      "containerByteCount": 27589
+    }
+  ],
+  "recommendationsAccepted": false,
+  "ratificationIssued": false,
+  "implementationAuthorized": false
+}
