@@ -1,0 +1,79 @@
+{
+  "kind": "guard-procedure-diagnostic-preparation-preservation/1",
+  "scope": "PUBLIC_TEXT_DOCUMENT_PRESERVATION_ONLY_NOT_ACCEPTANCE",
+  "count": 5,
+  "items": [
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-procedure-01/brief.md",
+        "sha256": "161a1c3d378c1b23e5f088416a2a6ae3b96af2d7f2f09942d2fab224a77cc25a",
+        "bytes": 6348
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-verfahrensdiagnose01/00-brief.md.json",
+        "sha256": "4e89360aeb83956c2cc5735c8afd7c0f17ad911ee2ddb24156e22603e8890f29",
+        "bytes": 6811
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-procedure-01/input-bindings.json",
+        "sha256": "f7fea3f353573bb7f0d131ae093f81f234380133965c83224a865f76ce833609",
+        "bytes": 8404
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-verfahrensdiagnose01/01-input-bindings.json.json",
+        "sha256": "34dac978a80e68a43149679e8d4e5ced9683ba3ab2f29b281b74fdfa3fc9192a",
+        "bytes": 10589
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-procedure-01/procedural-bindings.json",
+        "sha256": "1770916c8c6c56bc9b779a083e9fec478306873f3b530e90c7966c84537b91e6",
+        "bytes": 57907
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-verfahrensdiagnose01/02-procedural-bindings.json.json",
+        "sha256": "cd42c6bcdf800a3ce5f983352c7732104fc278fad9bc35c6711fce3c6aeb7f32",
+        "bytes": 60067
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-procedure-01/dispatch-intent.json",
+        "sha256": "615d6a5f85e97c1c5e0e242a284f9168e094620d68a9655d22d59ea587e8ee4d",
+        "bytes": 1140
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-verfahrensdiagnose01/03-dispatch-intent.json.json",
+        "sha256": "767d7c05d15a7d9024eafb232f5cf5257d6d66d3b13d30af05795acadd0bdbc9",
+        "bytes": 1723
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-procedure-01/freeze-verification.json",
+        "sha256": "cab2ead09c43eebbad69a014489190b69ec1b09bea1af95454d5d7e2f34cb022",
+        "bytes": 6555
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-verfahrensdiagnose01/04-freeze-verification.json.json",
+        "sha256": "5471281acf4b29f8d698f939fe8353760e09b0220b4c0722c10652bc010d34d3",
+        "bytes": 8602
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    }
+  ],
+  "implementationAuthorized": false,
+  "ratificationIssued": false
+}

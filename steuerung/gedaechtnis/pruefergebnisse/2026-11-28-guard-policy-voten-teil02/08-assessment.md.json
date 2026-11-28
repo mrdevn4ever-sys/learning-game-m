@@ -1,0 +1,32 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part02/assessment.md",
+  "sourceSha256": "a65001e5d3262ab2f4e97aed3797bcedf6981f118999a8f43e0799919afef0f9",
+  "sourceBytes": 5401,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "# Elternauswertung: Guardpolicy 01, zweite Ganztextbatch\n",
+    "\n",
+    "Status: ZWEI_WERTBARE_ROLLENVOTEN_MIT_ERHALTENEN_AUSNAHMEN; KEINE_RATIFIKATION. Basis a78a72c716ca97bf2c1a04e5b302425a8b8164ca. Neue Batch deleg_5f13cf97; vorherige Batch deleg_8ca1aeb1 bleibt unveraendert.\n",
+    "\n",
+    "Gegenstand unveraendert: proposal.md SHA-256 7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3, 16281 Bytes, P1-P7. Beide neuen Rollen liefern COMPLETE/JA/unconditional=true, leere conditions und requiredTextChanges, sieben PASS_TEXT-Abschnitte. Erklaerte Meinung, Wertbarkeit und Annahme sind getrennt.\n",
+    "\n",
+    "## Nachpruefung und Wertbarkeit\n",
+    "\n",
+    "Der 139-Zeilen-Dokumenthelfer 5c4ed37d862c7f85d2080b6d9c5d34e3b9e3f5499af5e4a8037818bd120b6d1a lief im ersten ausgefuehrten Versuch mit Exit 0: PASS_DOCUMENT_BINDINGS_WITH_RETAINED_PROCEDURAL_EXCEPTIONS. Verifikation 5598427ccfab2674f4cc7930f9b6a6ce2abd1c767b45729c3b1cada758e8145d. Angefragter Aufruf und Helferrohbytes wurden vor Ausfuehrung unter attempt-01-request.json, die tatsaechliche Antwort unmittelbar danach unter attempt-01-result.json erhalten. Vor Ausfuehrung korrigierte Lesefeld-/Literalstellen sind keine ausgefuehrten Fehlversuche. Quellen und Rollenabgaben wurden nicht geaendert.\n",
+    "\n",
+    "- Red-Team Runde 02 ist als qualifiziertes unbedingtes Ganztextvotum wertbar: 69 feste Bindungen, 276 Originalprojektionen, zwoelf Rohuebergaenge, 41 Code-/Ausgabejournale und 1076 Berichtwoerter mechanisch verifiziert. Der Bericht prueft alle P1-P7, einschliesslich Gegenlesarten, sechs Illustrationen und offener Integrationspflichten. Startabweichung und Helferfehler bleiben erhalten. TOOL-01 bindet fehlgeschlagenen Pythoncode und Originaldiagnostik. TOOL-02 bindet den tatsaechlich abgeschlossenen Pythonrumpf von call 40 und die anschliessende echte Shell-Fehlerausgabe mit Exit 2; der abgeschlossene innere Aufruf wird nicht mit dem aeusseren Shellstatus verwechselt. Eine vollstaendige historische Shellargumentbindung wird damit NICHT behauptet. Diese Unterscheidung wird in der gezielten unabhaengigen Verfahrensdiagnose nochmals geprueft; bei einem nachgewiesenen weiteren Pflichtbelegmangel muss die Wertbarkeit erneut entschieden werden, ohne Quellen umzuschreiben.\n",
+    "- Die zusaetzliche nichtfatale Escape-Warnung des letzten Red-Team-Readbacks steht unveraendert in late-warning.json als Elternanhang. Ihr vollstaendiger Warnungspraefix ist im gebundenen Live-Log vorhanden; die dort spaeter gekuerzte JSON-Zusammenfassung wird nicht als vollstaendiger Originalruecklauf ausgegeben. Kein nachtraeglicher Write in die Rolle.\n",
+    "- Didaktik Runde 02 bleibt NICHT GEZAEHLT: 69 Bindungen, 343 Originalprojektionen, 15 Rohuebergaenge, 47 gebundene Journalaufrufe und 1149 Berichtwoerter sind nachgeprueft. Das ganze unbedingte JA bleibt unveraendert erhalten. PROC-SHELL-EOF benennt aber erneut eine unerfuellte Originalcodebindung: Shellparsing scheiterte vor Eintritt ins Pythonjournal, der angefragte urspruengliche Code ist nicht erhalten. Der Live-Log kuerzt gerade diesen Werkzeugauftrag um 9111 Zeichen und heilt die Luecke nicht. PROC-RUNNER-SYNTAX hat Originaldiagnostik, angefragten Operationscode und eine erhaltene fehlgeschlagene Runnerbindung, aber ebenfalls keine Vorjournalerfassung. Ein spaeterer Hashlauf erfuellt keine fehlende Vorbelegpflicht rueckwirkend.\n",
+    "- Architektur aus Runde 01 bleibt separat an den identischen Policyhash gebunden und gezaehlt; kein neues Architektvotum wird behauptet. Die beiden nicht wertbaren Didaktikmeinungen werden nicht addiert. Stand verschiedener Rollen: architekt, redteam; 2 gezaehlte Rollen, erforderliche Didaktik fehlt. Das ist keine Summe von Produkttests oder Verfahren und keine Freigabe.\n",
+    "\n",
+    "## Zeitweiser Elternpfad\n",
+    "\n",
+    "Didaktik beobachtete namentlich steuerung/.hermes-tmp.7pRfAJ ausserhalb der damals exakt 24 erlaubten Elternpfade. Der historische Commitdelta enthaelt nur die 24 erlaubten Pfade; heute existiert der Zusatzpfad nicht. Das beweist weder historische Herkunft noch Inhalt oder Harmlosigkeit. Die Namensform ist nur eine Werkzeugtemp-Hypothese. Beobachtung und fehlende Attribution bleiben in diagnostic-observations.json erhalten, keine rueckwirkende Scopeerlaubnis. Red-Team beobachtete diesen Zwischenstand nicht; dessen kleinere Beobachtungsmenge widerlegt die Didaktikbeobachtung nicht. Kein pauschales wholeProcedurePassed.\n",
+    "\n",
+    "## Anderer naechster Ansatz statt gleicher Wiederholung\n",
+    "\n",
+    "Nach wiederholter Belegluecke wird vor einer weiteren langen Ganztextwiederholung eine frische, eng begrenzte unabhaengige Verfahrensdiagnose beauftragt: Originalcode-Auffindbarkeit, aeussere Shell-/innere Journalgrenze, belegbare Temp-Pfad-Aussage und ein nachweisbar vor der Ausfuehrungsgrenze erfassender Ablauf. Diese Rolle stimmt NICHT ueber P1-P7 ab, ersetzt keine Didaktikrolle und erteilt keine Freigabe. Alte Abgaben bleiben schreibgeschuetzt. Ein spaeterer neuer Policyreview braucht erneut die exakten eingefrorenen Normen und einen fremden, nicht mit diesen Meinungen vorbelasteten Kontext. Neue Skillklaerung gilt ausschliesslich prospektiv.\n",
+    "\n",
+    "C-HELP-ANCHOR, C-U07, RT-GT-01 bis RT-GT-05 und alle Manifest-/Integrationspflichten bleiben offen. recommendationsAccepted=false, ratificationIssued=false, blockerClosed=false, implementationAuthorized=false, wholeManifestVerdict=NOT_ISSUED. Produkt/Parser/Schema/Evaluator/Tests/native NOT_RUN. Keine geschuetzte Instruktionsdatei, CI oder Cron geaendert.\n"
+  ]
+}

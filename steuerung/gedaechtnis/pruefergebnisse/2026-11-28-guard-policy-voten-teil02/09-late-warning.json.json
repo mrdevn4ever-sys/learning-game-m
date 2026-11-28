@@ -1,0 +1,26 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part02/late-warning.json",
+  "sourceSha256": "48afbdc6fa5a4659731ab449a6696b69659db90ef1e46a42d55361dc5d92dcce",
+  "sourceBytes": 1539,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"kind\": \"POST_DELIVERY_WARNING_APPENDIX\",\n",
+    "  \"role\": \"redteam\",\n",
+    "  \"batch\": \"deleg_5f13cf97\",\n",
+    "  \"originalReportUnmodified\": true,\n",
+    "  \"sourceLog\": {\n",
+    "    \"path\": \"C:/Users/user/AppData/Local/hermes/cache/delegation/live/deleg_5f13cf97/task-1.log\",\n",
+    "    \"sha256\": \"a06d6d279aa82df77b80742643d3029c1636ff6f8abc8436810e304d5e343549\",\n",
+    "    \"bytes\": 36208\n",
+    "  },\n",
+    "  \"logLine\": \"03:30:02 result   | terminal ok 1.1s: {\\\"output\\\": \\\"<string>:1: SyntaxWarning: \\\\\\\"\\\\\\\\C\\\\\\\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \\\\\\\"\\\\\\\\\\\\\\\\C\\\\\\\"? A raw string is also an option.\\\\r\\\\n{\\\\\\\"status\\\\\\\": \\\\\\\"COMPLETE\\\\\\\", \\\\\\\"wholeTextVote\\\\\\\": \\\\\\\"JA\\\\\\\", \\\\\\\"unconditional\\\\\\\": true, \\\\\\\"artifactsVerified\\\\\\\": true, \\\\\\\"summary\\\\\\\": {\\\\\\\"fixedSourceCount\\\\\\\": 69, \\\\\\\"fixedSourcesUnchanged\\\\\\\": true, \\\\\\\"projectionCount\\\\\\\": 276, \\\\\\\"caseCount\\\\ \u2026(+1123 chars)\",\n",
+    "  \"completeWarningPrefix\": \"<string>:1: SyntaxWarning: \\\"\\\\C\\\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \\\"\\\\\\\\C\\\"? A raw string is also an option.\",\n",
+    "  \"warningUtf8Sha256\": \"ba6599346d2bf9ff7b474b4cfd37ebdeccc9768cf313d01b547e414993b259f9\",\n",
+    "  \"warningUtf8Bytes\": 158,\n",
+    "  \"fullToolOutputAvailableInLiveLog\": false,\n",
+    "  \"qualification\": \"The live display truncates the later JSON summary, not this complete warning prefix. Exit 0 is reported by the delivered task summary and the live result is marked terminal ok. No warning is retrospectively inserted in the role outputs.\",\n",
+    "  \"productExecution\": \"NOT_RUN\"\n",
+    "}\n"
+  ]
+}

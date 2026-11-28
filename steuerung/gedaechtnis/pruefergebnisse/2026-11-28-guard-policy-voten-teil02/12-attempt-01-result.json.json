@@ -1,0 +1,20 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-votes-part02/attempt-01-result.json",
+  "sourceSha256": "743363dfa70c7dc04104183942eea9589da29e2318778720893ef35c984c68fa",
+  "sourceBytes": 642,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"request\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/guard-policy-01-votes-part02/attempt-01-request.json\",\n",
+    "    \"sha256\": \"9c6d28cbb43486e816b438918e2ebc6c0479912a6f89f0be32682d1590ffad29\",\n",
+    "    \"bytes\": 12676\n",
+    "  },\n",
+    "  \"actualToolResult\": {\n",
+    "    \"output\": \"{\\\"result\\\": \\\"PASS_DOCUMENT_BINDINGS_WITH_RETAINED_PROCEDURAL_EXCEPTIONS\\\", \\\"base\\\": \\\"a78a72c716ca97bf2c1a04e5b302425a8b8164ca\\\", \\\"newDeclaredVotes\\\": 2, \\\"newCountedVotes\\\": 1, \\\"countedNewRole\\\": \\\"redteam\\\", \\\"didaktikCountBlockedBy\\\": \\\"Missing original shell request code binding; text opinion is preserved, not rewritten.\\\"}\",\n",
+    "    \"exit_code\": 0,\n",
+    "    \"error\": null\n",
+    "  }\n",
+    "}\n"
+  ]
+}
