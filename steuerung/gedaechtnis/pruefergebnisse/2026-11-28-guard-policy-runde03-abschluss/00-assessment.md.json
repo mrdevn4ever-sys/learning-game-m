@@ -1,0 +1,25 @@
+{
+  "encoding": "utf-8-lines",
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-policy-01-checkpoint04/assessment.md",
+  "sourceSha256": "de24805e0c0ea5a333245423023804d61d9a098ed3a27f71f900662df93fdb99",
+  "sourceBytes": 3015,
+  "lines": [
+    "# Guard-/Kontextpolicy 01: Abschluss der Runde-03-Elternpruefungen\n",
+    "\n",
+    "Nur Dokumente und Wertbarkeit, keine Produktpruefung oder Ratifikation. Alle drei Ruecklaeufe sind abgeschlossen. Erneut zugestellte Batches werden anhand ihrer unveraenderten Artefakte abgeglichen und erzeugen keine neue Stimme.\n",
+    "\n",
+    "- Didaktik 03: COMPLETE, unbedingtes JA P1-P7; wertbar mit ausdruecklich erhaltenen Verfahrensausnahmen. Zusaetzlicher Zitier-Skill war nicht vorab eingefroren, ist aber gemaess urspruenglichem Brief offen roh gebunden. Keine Behauptung einer unveraenderten Gesamtlesebasis.\n",
+    "- Architektur 03: COMPLETE, unbedingtes JA P1-P7; wertbar mit erhaltenen Reihenfolge-/Werkzeugausnahmen. Elternvergleich nach einem erhaltenen Leserfehler Exit 0: 93 feste Quellen, drei Elternkontexte, 269 Originalprojektionen. Explizite No-op-Uebergaenge wurden geprueft, nicht aus den Quelldaten entfernt.\n",
+    "- Red-Team 03: COMPLETE, unbedingtes JA P1-P7, aber nicht gezaehlt: RT-GP03-CAPTURE-01, zeichenabweichende als Original bezeichnete Diagnostikkopie. Abgabe unveraendert erhalten. Fehlende Originalbytes werden nicht aus einem verlustbehafteten Log rekonstruiert.\n",
+    "\n",
+    "Damit zwei wertbare Rollen zum exakt selben unveraenderten Policyhash, weiterhin eine erforderliche frische Red-Team-Rolle. Keine erneuten Didaktik-/Architekturauftraege. Einzelmeinung, Wertbarkeit und Ratifikation bleiben getrennte Akte; alle alten nicht wertbaren Abgaben und frueheren Korrekturen bleiben erhalten.\n",
+    "\n",
+    "Erst nach Ende aller gebundenen Rollen: prozedurale Skillfortschreibung und anderer, zustandsloser Captureeinstieg 02. Sechs vorab gebundene Faelle bestanden ausschliesslich im Dokument-Captureumfang, erwartete Prozesscodes 0/1/2/1/Nichtstart/0. Dokumentvergleich 0007 Exit 0. Kein siebter Testfall, keine Addition mit den vier Capture-01-Proben. Keine allgemeine Robustheit, unabhaengige Ausfuehrungsbeglaubigung, Sandbox oder nachtraegliche Heilung behauptet.\n",
+    "\n",
+    "Runde 04 wird mit unveraenderten 63 normativen Pflichtdateien, 45 frisch gebundenen Prozeduraldateien und Brief/Input/Prozeduralcontainer vorbereitet: 111 feste Bindungen sowie drei separat eingefrorene neutrale Elternkontexte. Vollstaendige P1-P7-Prueffragen bleiben wortgleich. Nur Red-Team, eigener finaler und permanenter Journalbereich, null Eltern-Repositorywrites waehrend aktiver Rolle. Erst nach publiziertem und remote geprueftem Checkpoint dispatchen.\n",
+    "\n",
+    "Keine Ratifikation, Blockerschliessung, Manifest-, Implementierungs-, Integrations- oder Releasefreigabe. wholeManifestVerdict=NOT_ISSUED; wholeProcedurePassed=false. Produkt/Parser/Schema/Evaluator/Tests/native NOT_RUN. Alle RT-/U07-/Hilfe-/Oracle-/Feld-/Gesamtmanifest-/Identitaets-/Appleblocker bleiben getrennt erhalten. Cron aus. Geschuetzte Instruktionen und Produktdateien unveraendert.\n",
+    "\n",
+    "Exakte Quellen-/Abgabe-/Laufbindungen stehen in completion.json. Fremde Primaertranskripte, Rohjournale und verdeckte Daten bleiben lokal; der oeffentliche Elternindex ist keine zusaetzliche Lesefreigabe fuer den neuen Reviewer.\n"
+  ]
+}

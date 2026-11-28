@@ -745,7 +745,7 @@
         }
       },
       "policyReview01": {
-        "state": "ELIGIBILITY_CORRECTED_ZERO_ROLES_ROUND03_PREPARED",
+        "state": "TWO_ELIGIBLE_ROLES_ROUND03_COMPLETE_REDTEAM_ROUND04_PREPARED",
         "dispatch": {
           "kind": "guard-policy-whole-text-dispatch/1",
           "at": "2026-11-28T02:23:18.626786+01:00",
@@ -847,11 +847,11 @@
           "redteam"
         ],
         "roleStates": {
-          "didaktik": "COMPLETE_OPINIONS_NOT_COUNTED_MISSING_ORIGINAL_CODE_FRESH_REVIEW_REQUIRED",
-          "architekt": "COMPLETE_OPINION_NOT_COUNTED_ORIGINAL_OUTER_REQUEST_GAP_FRESH_REVIEW_REQUIRED",
-          "redteam": "COMPLETE_OPINION_NOT_COUNTED_ORIGINAL_OUTER_REQUEST_GAP_FRESH_REVIEW_REQUIRED"
+          "didaktik": "COUNTED_WITH_DECLARED_PROCEDURAL_EXCEPTIONS",
+          "redteam": "COMPLETE_OPINION_NOT_COUNTED_ORIGINAL_DIAGNOSTIC_COPY_MISMATCH",
+          "architekt": "COUNTED_WITH_DECLARED_PROCEDURAL_EXCEPTIONS"
         },
-        "newWholeTextVotesAccepted": 0,
+        "newWholeTextVotesAccepted": 2,
         "recommendationsAccepted": false,
         "ratificationIssued": false,
         "implementationAuthorized": false,
@@ -1225,7 +1225,10 @@
           "rawDiagnosticDossierLocalOnly": true,
           "priorDispatchIntentPreserved": true
         },
-        "countedRoles": [],
+        "countedRoles": [
+          "architekt",
+          "didaktik"
+        ],
         "eligibilityCorrection": {
           "decision": {
             "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/eligibility-correction.json",
@@ -1322,6 +1325,104 @@
           },
           "noParentRepositoryWritesWhileAnyRoleActive": true,
           "recommendationsAccepted": false,
+          "ratificationIssued": false,
+          "implementationAuthorized": false,
+          "wholeManifestVerdict": "NOT_ISSUED"
+        },
+        "completedRound03": {
+          "state": "ALL_RETURNED_PARENT_CHECKED_WITH_RETAINED_EXCEPTIONS",
+          "batches": [
+            "deleg_13cb813e",
+            "deleg_c99522db"
+          ],
+          "assessment": {
+            "path": "F:/ChnobelRuntime/verification/guard-policy-01-architecture03-parent/eligibility-assessment.json",
+            "sha256": "b7b15dcc38921a293d111ee5bce3d1846731b08d971d879b793557ab98c8ee9f",
+            "bytes": 8551
+          },
+          "completion": {
+            "path": "F:/ChnobelRuntime/verification/guard-policy-01-checkpoint04/completion.json",
+            "sha256": "98e0e94366a3191e07499d65fdb4419b4f94ad8f92aaf0efaedfa2a5ef0f4f2f",
+            "bytes": 7742
+          },
+          "archive": {
+            "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-runde03-abschluss/index.json",
+            "sha256": "c54617a54e6444cacaad7a7ce2d224c61c0f20d9b3c9b6f47610ea4b9871fb93",
+            "bytes": 3193
+          },
+          "countedRoles": [
+            "architekt",
+            "didaktik"
+          ],
+          "countedRoleCount": 2,
+          "retainedInvalidOpinion": "RT-GP03-CAPTURE-01",
+          "ratificationIssued": false,
+          "implementationAuthorized": false,
+          "wholeManifestVerdict": "NOT_ISSUED"
+        },
+        "followupRound04": {
+          "state": "PREPARED_CHECKPOINT_BEFORE_DISPATCH",
+          "intent": {
+            "kind": "guard-policy-round04-intent/1",
+            "state": "PREPARED_NOT_DISPATCHED",
+            "parentBase": "a52742edff87b4cf1d42b64194868ff99d647993",
+            "proposal": {
+              "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author/proposal.md",
+              "sha256": "7f376e2a9a776b6f2c303326e9b628bf0337bd2ccce1c119a7e0cb0b3ca506b3",
+              "bytes": 16281
+            },
+            "brief": {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/brief.md",
+              "sha256": "c698123fd7343d2e2baa2ffb5b0dea0564cf71474b740c31cb346c92b13676f5",
+              "bytes": 11406
+            },
+            "input": {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/input-bindings.json",
+              "sha256": "1ae226b4dae099c3d30ef7eacc90efaa561f1c2ac0a1cc75ceae71b358162a71",
+              "bytes": 47497
+            },
+            "proceduralFreeze": {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/procedural-bindings.json",
+              "sha256": "aeb14115630500f705160b25282bcb9a45875e2e4295234cd852858e929ce33d",
+              "bytes": 345734
+            },
+            "freeze": {
+              "path": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/freeze-verification.json",
+              "sha256": "7213d63bbfe6acb4bf3fca1d7258dc3074ead04f8929f4e9435871e6b2f5b1d3",
+              "bytes": 24976
+            },
+            "roles": [
+              "redteam"
+            ],
+            "maxConcurrentSubagents": 2,
+            "requireCheckpointRemoteReadbackBeforeDispatch": true,
+            "actualDispatchReceipt": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/dispatch-actual.json",
+            "noParentRepositoryWritesDuringActiveRoles": true,
+            "noSkillWritesDuringActiveRoles": true,
+            "historicalOpinionsNotProvided": true,
+            "recommendationsAccepted": false,
+            "ratificationIssued": false,
+            "implementationAuthorized": false,
+            "wholeManifestVerdict": "NOT_ISSUED",
+            "cronMustRemainPaused": true
+          },
+          "archive": {
+            "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-voten04/index.json",
+            "sha256": "123f3dbada649cb846ba9a7ae1124bf6676e70e56f2261d37c91f06def4ea2b3",
+            "bytes": 4667
+          },
+          "capturePreflight": {
+            "path": "F:/ChnobelRuntime/review-journals/guard-policy-01-round04/preflight/verification.json",
+            "sha256": "b6aed46659c5ce4a6a5bb6c6e79246cea9d916a7eb036a9b88767a548de172d3",
+            "bytes": 8094
+          },
+          "actualDispatchReceipt": "F:/ChnobelRuntime/reviews/guard-policy-01-round04/dispatch-actual.json",
+          "noParentRepositoryWritesWhileAnyRoleActive": true,
+          "retainedCountedRoles": [
+            "architekt",
+            "didaktik"
+          ],
+          "newVotesReceived": 0,
           "ratificationIssued": false,
           "implementationAuthorized": false,
           "wholeManifestVerdict": "NOT_ISSUED"

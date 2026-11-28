@@ -1,0 +1,79 @@
+{
+  "scope": "PUBLIC_TEXT_DOCUMENT_PRESERVATION_ONLY_NOT_ACCEPTANCE",
+  "count": 5,
+  "items": [
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-checkpoint04/assessment.md",
+        "sha256": "de24805e0c0ea5a333245423023804d61d9a098ed3a27f71f900662df93fdb99",
+        "bytes": 3015
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-runde03-abschluss/00-assessment.md.json",
+        "sha256": "1e013569df9e4be69257193292a7abb494d291523d3d3dec4f277ae1451a3f59",
+        "bytes": 3419
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-checkpoint04/completion.json",
+        "sha256": "98e0e94366a3191e07499d65fdb4419b4f94ad8f92aaf0efaedfa2a5ef0f4f2f",
+        "bytes": 7742
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-runde03-abschluss/01-completion.json.json",
+        "sha256": "a194e8c88b2099d56926da6a83970bd200731e68349ffff8d2788ea27155b3dc",
+        "bytes": 10136
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-architecture03-parent/eligibility-assessment.json",
+        "sha256": "b7b15dcc38921a293d111ee5bce3d1846731b08d971d879b793557ab98c8ee9f",
+        "bytes": 8551
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-runde03-abschluss/02-eligibility-assessment.json.json",
+        "sha256": "862512204bf37ca7f89b228df155915b7c6daaa61228317c8b5ebc24b814db24",
+        "bytes": 10494
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-policy-01-architecture03-parent/prospective-skill-change.json",
+        "sha256": "c7998b34aeb128dc8644b537fc0a34a146cec083541348bca09164edc5ff1258",
+        "bytes": 31204
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-runde03-abschluss/03-prospective-skill-change.json.json",
+        "sha256": "6de0dc3651324cb4cd9535a0fe9b7c3e3985718be9a10f366236b80570918740",
+        "bytes": 32037
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/review-journals/guard-policy-01-round04/preflight/verification.json",
+        "sha256": "b6aed46659c5ce4a6a5bb6c6e79246cea9d916a7eb036a9b88767a548de172d3",
+        "bytes": 8094
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-runde03-abschluss/04-verification.json.json",
+        "sha256": "da6c289f215b4f0215dc4c1937d19ad270d1bbefc65875f2bdc1e8c6b0bbc642",
+        "bytes": 10608
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    }
+  ],
+  "ratificationIssued": false,
+  "implementationAuthorized": false,
+  "currentPeerReviewersMayRead": false
+}
