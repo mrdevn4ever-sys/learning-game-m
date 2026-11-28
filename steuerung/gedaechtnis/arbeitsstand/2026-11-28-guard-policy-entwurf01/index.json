@@ -1,0 +1,52 @@
+{
+  "kind": "lossless-public-document-index/1",
+  "scope": "Guard consultations and author dispatch only; no product verdict, hidden tests or binary archives.",
+  "status": "PRESERVED_NOT_ADOPTED",
+  "fileCount": 5,
+  "files": [
+    {
+      "file": "brief.md.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-guard-policy-01/brief.md",
+      "contentSha256": "6f7df5608a562e846be224ded2d8f0390faa0599e0a91e5626b912ef47b2d18e",
+      "originalByteCount": 8938,
+      "containerSha256": "d5e35d3199b0e3532f267eab83d3f79e67c34733df614ef90e5018aed61ca134",
+      "containerByteCount": 9548
+    },
+    {
+      "file": "input-bindings.json.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-guard-policy-01/input-bindings.json",
+      "contentSha256": "31d4a8e17ae6b2a2881d508cccc7194f6ac53a5af7d2101ac109c0bb2dea0279",
+      "originalByteCount": 42979,
+      "containerSha256": "9ca20e34e5fa4725986de42e05f3801ab741f5cabb63a177fe7f73f44c80b9d0",
+      "containerByteCount": 55230
+    },
+    {
+      "file": "procedural-bindings.json.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-guard-policy-01/procedural-bindings.json",
+      "contentSha256": "bcaeddf7ef8325e4b2039e8c793f21e024fc786fe1594bdfd790f282a1d0a921",
+      "originalByteCount": 123368,
+      "containerSha256": "485876a38abafd7d3a80354d94d23b5f2ddf3ef3c5ca9bd8bc48148d09109e6f",
+      "containerByteCount": 125128
+    },
+    {
+      "file": "dispatch.json.json",
+      "sourcePath": "F:/ChnobelRuntime/specification/v2-guard-policy-01/dispatch.json",
+      "contentSha256": "10775fa5fd8365d57efb6f489f3c6836d5050e9efed20764046a3a57c1fa11aa",
+      "originalByteCount": 1810,
+      "containerSha256": "e68e1fd7597d8dab8a2ae6a5cff15b59f3e9b2a6b9d514559a1e70b6ebbc1bc5",
+      "containerByteCount": 2645
+    },
+    {
+      "file": "freeze-verification.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/author-freeze-verification.json",
+      "contentSha256": "97526912c454035a76d1d1a5597a7e0c7ff062829f2629cda419b312d9087d0e",
+      "originalByteCount": 13321,
+      "containerSha256": "79d92d00c90c36882123a5ff7c6e5f5c303ddf75eca5921667cc8a29d2b2c408",
+      "containerByteCount": 17098
+    }
+  ],
+  "encodingNote": "JSON Unicode escapes are transport representation only; reconstructed UTF-8 source bytes must match exactly.",
+  "recommendationsAccepted": false,
+  "ratificationIssued": false,
+  "implementationAuthorized": false
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "lossless-public-document/1",
+  "encoding": "utf-8-lines",
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/inspection-incident-02.json",
+  "sha256": "4389f03ab63537955ceb70d5cef16ae7f11ae4226670a86e3c234b610b076b99",
+  "byteCount": 491,
+  "lines": [
+    "{\n",
+    "  \"kind\": \"parent-inspection-exception/1\",\n",
+    "  \"at\": \"2026-11-28T01:17:10.926105+01:00\",\n",
+    "  \"scope\": \"REDTEAM_RETURN_METADATA_INSPECTION_ONLY\",\n",
+    "  \"error\": \"KeyError: 'contextDefinitions'\",\n",
+    "  \"cause\": \"Red-Team has no separate contextDefinitions member; its context proposals are case rows and report text. No source shape changed.\",\n",
+    "  \"writesBeforeFailure\": 0,\n",
+    "  \"correction\": \"Inspect existing keys and fact IDs; check role-specific structure explicitly.\",\n",
+    "  \"productExecution\": \"NOT_RUN\"\n",
+    "}\n"
+  ]
+}

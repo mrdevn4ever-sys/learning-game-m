@@ -2,7 +2,7 @@
   "documentKind": "planning-handoff-not-controller-task-transitions/1",
   "phase": 0,
   "date": "2026-11-27",
-  "checkpointBefore": "bb4decf6c3b9d3bb945e1e3bb33dd0ea969bd29b",
+  "checkpointBefore": "8d7c3e9b0f42440a0e2fe442684af6c4ad0605f4",
   "manifestSha256": "1516d127a688cea5e5a707fbc562e0e70cd43fcd583752be25b1cc3871d95502",
   "maxConcurrentSubagents": 2,
   "implementationAuthorized": false,
@@ -327,7 +327,7 @@
     },
     {
       "id": "Q-GUARD-TOTALISATION",
-      "state": "FIRST_TWO_ROLES_COMPLETE_QUALIFIED_REDTEAM_PENDING",
+      "state": "THREE_COMPLETE_CONSULTATIONS_WITH_RETAINED_EXCEPTIONS_NOT_ADOPTED",
       "requiredRoles": [
         "architekt",
         "didaktik",
@@ -396,7 +396,7 @@
       "roleStates": {
         "didaktik": "COMPLETE_QUESTION_CONSULTATION_WITH_RETAINED_PROCEDURAL_EXCEPTIONS",
         "architekt": "COMPLETE_QUESTION_CONSULTATION_WITH_RETAINED_PROCEDURAL_EXCEPTIONS",
-        "redteam": "DISPATCHED_RESULT_PENDING"
+        "redteam": "COMPLETE_QUESTION_CONSULTATION_WITH_RETAINED_PROCEDURAL_EXCEPTIONS"
       },
       "recommendationsAccepted": false,
       "questionClosed": false,
@@ -550,14 +550,147 @@
       },
       "historicalDispatchRetained": true,
       "nextDependencies": [
-        "Q-GUARD-TOTALISATION_G1-G6_REDTEAM",
+        "GUARD-POLICY-PROPOSAL-01_P1-P7",
+        "EXACT_GUARD_POLICY_WHOLE_TEXT_VOTES",
         "HELP_ANCHOR_CONDITIONALITY_DIFFERENCE",
         "RESULT_GUARD_AUTOMATIC_UPTAKE_BOUNDARY",
         "B-SPEC-U07-COVERAGE",
         "M-HELP-TEXT-BINDING",
         "M-REPORT-ORACLES",
         "M-SEMANTIC-CASE-CHECK"
-      ]
+      ],
+      "completedAllRoles": {
+        "scope": "G1-G6_ONLY",
+        "roles": [
+          "didaktik",
+          "architekt",
+          "redteam"
+        ],
+        "redteamBatch": "deleg_9b4da84a",
+        "redteamAgent": "sa-0-90056710",
+        "returnVerification": {
+          "path": "F:/ChnobelRuntime/verification/guard-question-04-final/verification.json",
+          "sha256": "ba08e11e61566844eee91fcd7f83e2cd21c8f7e87e3602d35d32ee8f69ed8812",
+          "bytes": 17243
+        },
+        "assessment": {
+          "path": "F:/ChnobelRuntime/verification/guard-question-04-final/assessment.md",
+          "sha256": "5a432558e805919ac11c87eee83c846a217f08c959bb7a3c50d17f5583aeb745",
+          "bytes": 4869
+        },
+        "recommendationComparison": {
+          "path": "F:/ChnobelRuntime/verification/guard-question-04-final/recommendation-comparison.json",
+          "sha256": "4ee07ac157fe55e233b68ad096dedd2a72338c08d79f8fde997dedd973d14781",
+          "bytes": 104106
+        },
+        "consolidation": {
+          "path": "F:/ChnobelRuntime/verification/guard-question-04-final/consolidation.json",
+          "sha256": "edf2bc756bc05291d50b343a1d9b8e48badbd9fb8cfff44a53630d1a5bdeac4a",
+          "bytes": 9506
+        },
+        "returnArchive": {
+          "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-beratung-abschluss/index.json",
+          "sha256": "3c950b5dbed64eb3213d94d79904e863c2c8e870b414789ed8d50ad586ffd916",
+          "bytes": 5817
+        },
+        "redteamImmutableSourceCount": 43,
+        "redteamOutputBindings": [
+          {
+            "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/redteam/report.md",
+            "sha256": "d9d280ce67dd4eb67b210ea7987eb89fb43c17e5b5d77f7e24d8001ee1a29656",
+            "bytes": 9112
+          },
+          {
+            "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/redteam/sources.json",
+            "sha256": "d04247aaffff146a7195af1c67551c41825e8746a326e606fc7c26d58f00d2e7",
+            "bytes": 5361772
+          },
+          {
+            "path": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/redteam/decision.json",
+            "sha256": "0b0d6d5b828225fc53da0dc11dc8eba1c1e924c32137d9fa706e4f3f33d90749",
+            "bytes": 761462
+          }
+        ],
+        "caseCount": 6,
+        "sharedGuardPositions": 30,
+        "sharedContextPositions": 18,
+        "rawValueDifferenceCounts": {
+          "otherRequiredFacts": 6,
+          "claimDecisionRecommendations": 12
+        },
+        "substantiveTextDifference": {
+          "factId": "proof.result.valid",
+          "didaktik": "Definitive direkte/bestaetigte/korrigierte Antwortbasis erforderlich.",
+          "architekt": "Vollstaendige aber fachlich nicht definitive automatische Uebernahme kann gueltige Beobachtungskette bei unbekanntem Zahlenfakt sein.",
+          "redteam": "Definitive Antwortbasis erforderlich.",
+          "resolution": "NOT_ADOPTED; author must explicitly propose a bounded choice and label required additional counterexample not materialised; future whole-text votes required."
+        },
+        "wholeReadSetUnchanged": false,
+        "recommendationsAccepted": false,
+        "questionClosed": false,
+        "implementationAuthorized": false,
+        "blockerClosed": false
+      },
+      "policyProposal01": {
+        "dispatch": {
+          "kind": "guard-policy-author-dispatch/1",
+          "at": "2026-11-28T01:29:32.653254+01:00",
+          "scopeId": "GUARD-POLICY-PROPOSAL-01",
+          "batchId": "deleg_353c9687",
+          "agentId": "sa-0-68409d1a",
+          "role": "specification-author",
+          "state": "DISPATCHED_RESULT_PENDING",
+          "parentBase": "8d7c3e9b0f42440a0e2fe442684af6c4ad0605f4",
+          "brief": {
+            "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/brief.md",
+            "sha256": "6f7df5608a562e846be224ded2d8f0390faa0599e0a91e5626b912ef47b2d18e",
+            "bytes": 8938
+          },
+          "input": {
+            "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/input-bindings.json",
+            "sha256": "31d4a8e17ae6b2a2881d508cccc7194f6ac53a5af7d2101ac109c0bb2dea0279",
+            "bytes": 42979
+          },
+          "proceduralFreeze": {
+            "path": "F:/ChnobelRuntime/specification/v2-guard-policy-01/procedural-bindings.json",
+            "sha256": "bcaeddf7ef8325e4b2039e8c793f21e024fc786fe1594bdfd790f282a1d0a921",
+            "bytes": 123368
+          },
+          "freezeVerification": {
+            "path": "F:/ChnobelRuntime/verification/guard-question-04-final/author-freeze-verification.json",
+            "sha256": "97526912c454035a76d1d1a5597a7e0c7ff062829f2629cda419b312d9087d0e",
+            "bytes": 13321
+          },
+          "outputRoot": "F:/ChnobelRuntime/specification/v2-guard-policy-01/author",
+          "outputFiles": [
+            "proposal.md",
+            "sources.json",
+            "handoff.json"
+          ],
+          "mandatorySourceCount": 54,
+          "immutableBindingCount": 60,
+          "activeChildrenAtDispatch": 1,
+          "maxConcurrentSubagents": 2,
+          "peerCompletedConsultationsProvided": true,
+          "independentReviewOrVote": false,
+          "recommendationsAccepted": false,
+          "ratificationIssued": false,
+          "implementationAuthorized": false,
+          "wholeManifestVerdict": "NOT_ISSUED",
+          "cronMustRemainPaused": true,
+          "protectedInstructionsMayChange": false,
+          "authorMustStopAfterBoundedReturn": true
+        },
+        "archive": {
+          "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-guard-policy-entwurf01/index.json",
+          "sha256": "f5f410ee863073853b1e83d21c88c48a3c326e5dbb6fe6dc668643210614ee2a",
+          "bytes": 2468
+        },
+        "state": "DISPATCHED_RESULT_PENDING",
+        "recommendationsAccepted": false,
+        "ratificationIssued": false,
+        "implementationAuthorized": false
+      }
     }
   ],
   "fieldNormalform": [
@@ -672,11 +805,11 @@
     }
   ],
   "nextOrder": [
-    "Receive the complete independent Guard Red-Team return from deleg_9b4da84a / sa-0-90056710. Bind exact original brief/input/procedural freeze and separate redteam session baseline; preserve all raw context deltas and incidents. Do not poll or count partial reports.",
-    "Reconcile three complete G1-G6 consultations without automatic adoption. Preserve help-anchor conditionality and result-guard automatic-uptake boundary differences; resolve source/specification questions by evidence. Any prospective product policy needs a separate exact-text vote.",
-    "Retain Q-U07 completed consultations without adoption; resolve U07 coverage and prospective event-bound oracle integration with Guard clarification. Preserve old raw failures and INCONCLUSIVE.",
-    "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004 and accepted digest-source transfer, and concrete mandatory additional-gate integration. Old drafts and values unchanged.",
-    "Create a new complete manifest, freeze/hash and obtain independent whole-manifest review before any implementation."
+    "Receive the complete bounded author return deleg_353c9687 / sa-0-68409d1a for GUARD-POLICY-PROPOSAL-01 P1-P7. Verify proposal, sources and handoff against the exact brief/input/procedural baseline. No partial returns, polling or self-acceptance.",
+    "Preserve the three qualified Guard consultations without adoption. The new full policy text must explicitly handle the result-guard automatic-uptake difference and retain C-HELP-ANCHOR/C-U07. Freeze its exact bytes, then obtain new complete whole-text votes from all three roles, at most two concurrent.",
+    "Only after a separate eligible policy decision: prospective technical/oracle integration, U07 coverage and version-bound qualification. Preserve historical raw failures and INCONCLUSIVE.",
+    "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004 and accepted digest-source transfer, and all retained additional-gate integration obligations. Old drafts and values unchanged.",
+    "Create a new complete manifest, freeze/hash and obtain independent whole-manifest review before implementation."
   ],
   "digestTargetClarification": {
     "role": "technical-specification-author",

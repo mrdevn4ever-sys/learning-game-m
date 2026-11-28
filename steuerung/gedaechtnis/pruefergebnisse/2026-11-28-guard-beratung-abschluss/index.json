@@ -1,0 +1,116 @@
+{
+  "kind": "lossless-public-document-index/1",
+  "scope": "Guard consultations and author dispatch only; no product verdict, hidden tests or binary archives.",
+  "status": "PRESERVED_NOT_ADOPTED",
+  "fileCount": 13,
+  "files": [
+    {
+      "file": "redteam-report.md.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/redteam/report.md",
+      "contentSha256": "d9d280ce67dd4eb67b210ea7987eb89fb43c17e5b5d77f7e24d8001ee1a29656",
+      "originalByteCount": 9112,
+      "containerSha256": "b05a260a130103b6feea79510da85d4093fa30dbbebdf7cecdf370918df8df56",
+      "containerByteCount": 10063
+    },
+    {
+      "file": "redteam-sources.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/redteam/sources.json",
+      "contentSha256": "d04247aaffff146a7195af1c67551c41825e8746a326e606fc7c26d58f00d2e7",
+      "originalByteCount": 5361772,
+      "containerSha256": "a66be8974ba9f7f01a878f3a7786782517faa14c95f586280140951b0cc7b435",
+      "containerByteCount": 5851990
+    },
+    {
+      "file": "redteam-decision.json.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/redteam/decision.json",
+      "contentSha256": "0b0d6d5b828225fc53da0dc11dc8eba1c1e924c32137d9fa706e4f3f33d90749",
+      "originalByteCount": 761462,
+      "containerSha256": "98fef0b74b00a68732a3c78c90be1bd465ba50a1d1f1d7b02698baeeede11016",
+      "containerByteCount": 971732
+    },
+    {
+      "file": "parent-verify_returns.py.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/verify_returns.py",
+      "contentSha256": "6853a36641674570711d42cdbce4bbc3bd45798b9bdfc08a1001ea251868b553",
+      "originalByteCount": 19496,
+      "containerSha256": "e61d2d7db9851346693ebfaf112f6e4392b135327495135ae1bbb3bc16eeaa20",
+      "containerByteCount": 22175
+    },
+    {
+      "file": "parent-verification.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/verification.json",
+      "contentSha256": "ba08e11e61566844eee91fcd7f83e2cd21c8f7e87e3602d35d32ee8f69ed8812",
+      "originalByteCount": 17243,
+      "containerSha256": "c37cbe3bbddb0f4baea3ab9e1b03f2f98263ecc79bb556db07868e241955ca5e",
+      "containerByteCount": 22084
+    },
+    {
+      "file": "parent-assessment.md.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/assessment.md",
+      "contentSha256": "5a432558e805919ac11c87eee83c846a217f08c959bb7a3c50d17f5583aeb745",
+      "originalByteCount": 4869,
+      "containerSha256": "f4caf2c94eea3400c54ded77e3647519c9bc70e8a3bbe62d2acffdf9063d5a29",
+      "containerByteCount": 5426
+    },
+    {
+      "file": "parent-recommendation-comparison.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/recommendation-comparison.json",
+      "contentSha256": "4ee07ac157fe55e233b68ad096dedd2a72338c08d79f8fde997dedd973d14781",
+      "originalByteCount": 104106,
+      "containerSha256": "5192bba0a7d320b8a08de03d29c39ab84aa7dd49c23ab6fde675fcd8adc1ea10",
+      "containerByteCount": 137143
+    },
+    {
+      "file": "parent-consolidation.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/consolidation.json",
+      "contentSha256": "edf2bc756bc05291d50b343a1d9b8e48badbd9fb8cfff44a53630d1a5bdeac4a",
+      "originalByteCount": 9506,
+      "containerSha256": "f838e81724b1ccbd88365d3599338c72c75d9086a70523b367ddea7586440bd3",
+      "containerByteCount": 12001
+    },
+    {
+      "file": "parent-attempt-01.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/attempt-01.json",
+      "contentSha256": "f3db96b20454448fc1105f98183c33592faab9cb00514ea3bd63afe975907201",
+      "originalByteCount": 19237,
+      "containerSha256": "1c0491eeb9b4c3ee7ab7e88815d06a6410693cddc51c73f51600cb98e1a57b12",
+      "containerByteCount": 20037
+    },
+    {
+      "file": "parent-attempt-02.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/attempt-02.json",
+      "contentSha256": "3a881886af760781163a5b8d9d86c9eb8c02135b2010388ef300f680115b78f5",
+      "originalByteCount": 20569,
+      "containerSha256": "65f7d7f178b9bd7791008cd5fb11ab7f16fddcc229efcba8da34226129de2ccb",
+      "containerByteCount": 21395
+    },
+    {
+      "file": "parent-inspection-incident-01.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/inspection-incident-01.json",
+      "contentSha256": "7e76299a465b03402956bf8a2aa8dfd66f53c2b2193ad1340061c873b0a3efe7",
+      "originalByteCount": 976,
+      "containerSha256": "fc4345d94340ac1d22a4d0ca62d4d10be454d11cc2c6b2c9b1b56d651193a4ba",
+      "containerByteCount": 1497
+    },
+    {
+      "file": "parent-inspection-incident-02.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/inspection-incident-02.json",
+      "contentSha256": "4389f03ab63537955ceb70d5cef16ae7f11ae4226670a86e3c234b610b076b99",
+      "originalByteCount": 491,
+      "containerSha256": "0639e8545c153a750f9dc0f61a3ba6afb038379b0524316333f8682dac7613ab",
+      "containerByteCount": 902
+    },
+    {
+      "file": "parent-live-before.json.json",
+      "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/live-before.json",
+      "contentSha256": "24ef36cc1167d0744650f6792279d825019c037f20afe52cf9eeae45002f8b20",
+      "originalByteCount": 1914,
+      "containerSha256": "784794f65b73e83ff5716f3cd07c98e28fb7d9be70e1bdfe9bc1d6e375773eab",
+      "containerByteCount": 2785
+    }
+  ],
+  "encodingNote": "JSON Unicode escapes are transport representation only; reconstructed UTF-8 source bytes must match exactly.",
+  "recommendationsAccepted": false,
+  "ratificationIssued": false,
+  "implementationAuthorized": false
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "lossless-public-document/1",
+  "encoding": "utf-8-lines",
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-question-04-final/inspection-incident-01.json",
+  "sha256": "7e76299a465b03402956bf8a2aa8dfd66f53c2b2193ad1340061c873b0a3efe7",
+  "byteCount": 976,
+  "lines": [
+    "{\n",
+    "  \"kind\": \"parent-inspection-exception/1\",\n",
+    "  \"at\": \"2026-11-28T01:08:42.408630+01:00\",\n",
+    "  \"scope\": \"REDTEAM_RETURN_METADATA_INSPECTION_ONLY\",\n",
+    "  \"error\": \"KeyError: 'expectedBinding'\",\n",
+    "  \"cause\": \"Assumed every fixed record had expectedBinding before comparing actual key sets; BINDING_CONTAINER records differ.\",\n",
+    "  \"rawOutputIncident\": {\n",
+    "    \"stdoutBytesTotal\": 747523,\n",
+    "    \"stdoutBytesOmitted\": 697523,\n",
+    "    \"automatedCaptureOutsideF\": \"C:/Users/user/AppData/Local/hermes/cache/exec/stdout-8fd77c28c305.txt\",\n",
+    "    \"cause\": \"Unfiltered record contained full embedded before/after index text.\",\n",
+    "    \"retroactivePermission\": false\n",
+    "  },\n",
+    "  \"writesBeforeFailure\": [\n",
+    "    \"F:/ChnobelRuntime/verification/guard-question-04-final/live-before.json\"\n",
+    "  ],\n",
+    "  \"normativeWritesBeforeFailure\": 0,\n",
+    "  \"correction\": \"Use recursively raw-text-stripped metadata projections plus measured byte ceiling before printing; inspect all record kinds before assertions.\",\n",
+    "  \"productExecution\": \"NOT_RUN\"\n",
+    "}\n"
+  ]
+}
