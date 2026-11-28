@@ -1,0 +1,30 @@
+{
+  "kind": "lossless-public-document-archive/1",
+  "scope": "Q-GUARD-TOTALISATION_REDTEAM_DISPATCH_SAME_NORMATIVE_FREEZE_RESULTS_PENDING",
+  "at": "2026-11-28T00:51:26.110644+01:00",
+  "fileCount": 2,
+  "files": [
+    {
+      "file": "01-dispatch.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard/dispatch-redteam.json",
+      "contentSha256": "f48c376774459d67b79747b0c10b0670fd45217b87d05fb89e4c9d704c674a4f",
+      "originalByteCount": 1792,
+      "containerSha256": "f87af0b7bcd9ad68638d7cd4e689c630a1bfe5595ca8512e3b755665d882084f",
+      "containerByteCount": 2545
+    },
+    {
+      "file": "02-session-procedural-baseline.json",
+      "sourcePath": "F:/ChnobelRuntime/reviews/v2-manifest-questions-04/guard-redteam-procedural-freeze/bindings.json",
+      "contentSha256": "8259894ec7dbbdbbe15a3299f7b4415e88e25cf4af4f132d02c6d8e0d0c6ea52",
+      "originalByteCount": 118119,
+      "containerSha256": "a8df5ebb940a15cc67a7b97e327d8f5ef56aeab49e7ca58317e26111cac32a19",
+      "containerByteCount": 119983
+    }
+  ],
+  "publicOpenSyntheticSpecificationOnly": true,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "implementationAuthorized": false,
+  "blockerClosed": false,
+  "recommendationsAccepted": false,
+  "productExecution": "NOT_RUN"
+}
