@@ -1617,12 +1617,38 @@
       "scope": "All retained additional bindings, full inventory/document contracts, independent trust/acquisition and authentic snapshot-bound enforcement; complete manifest transfer and review still required."
     }
   ],
+  "continuationHistoryCoverage01": [
+    {
+      "base": "1998a405ba5028114cf52537cbc5756a95ab25f7",
+      "previousNextOrder": [
+        "Reconcile ADR 0005, the exact published checkpoint and completed deleg_e1683c2a; do not redispatch historical policy review or procedure-auditor orders. Three eligible exact-target policy votes are complete; product implementation remains prohibited.",
+        "Next bounded specification task: resolve C-HELP-ANCHOR / B-SPEC-U07-COVERAGE with explicit coverage-window, anchor and source-binding proposals. Read original cases and retained recommendations; preserve undecided subwindow semantics and original oracles. No implementation.",
+        "Then integrate version-bound U07 qualification and assistance conflicts in new prospective technical/oracle documents. Preserve historical raw failures, undo_dependency and INCONCLUSIVE; no one-slot/world-action assumption.",
+        "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004/0005 and accepted digest-source transfer, and all retained additional-gate integration obligations. Old drafts and values unchanged.",
+        "Only a new complete manifest with its own freeze/hash and independent whole-manifest review can open the separate implementation gate."
+      ],
+      "reason": "Explicit user continuation 2026-11-28; prior instructions preserved, no redispatch of completed policy reviews"
+    }
+  ],
+  "coverageU07Closure01": {
+    "state": "AUTHOR_INPUTS_FROZEN_READY_AFTER_CHECKPOINT",
+    "dispatchPlan": {
+      "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-coverage-u07-01.json",
+      "sha256": "a89903253cc555066c289cba15a0adc53d6066cd90c1fb4728e5614854d033b8",
+      "bytes": 2751
+    },
+    "normativeStatus": "PROPOSED_NOT_ACCEPTED",
+    "step1Complete": false,
+    "step2Started": false,
+    "implementationAuthorized": false
+  },
   "nextOrder": [
-    "Reconcile ADR 0005, the exact published checkpoint and completed deleg_e1683c2a; do not redispatch historical policy review or procedure-auditor orders. Three eligible exact-target policy votes are complete; product implementation remains prohibited.",
-    "Next bounded specification task: resolve C-HELP-ANCHOR / B-SPEC-U07-COVERAGE with explicit coverage-window, anchor and source-binding proposals. Read original cases and retained recommendations; preserve undecided subwindow semantics and original oracles. No implementation.",
-    "Then integrate version-bound U07 qualification and assistance conflicts in new prospective technical/oracle documents. Preserve historical raw failures, undo_dependency and INCONCLUSIVE; no one-slot/world-action assumption.",
-    "Complete remaining field/help/oracle shards, T05 conflict, ADR-0004/0005 and accepted digest-source transfer, and all retained additional-gate integration obligations. Old drafts and values unchanged.",
-    "Only a new complete manifest with its own freeze/hash and independent whole-manifest review can open the separate implementation gate."
+    "Fortsetzung ab live bestaetigtem 1998a405ba5028114cf52537cbc5756a95ab25f7. ADR 0005 ratifiziert; alte Policy-/Auditorrollen nicht erneut starten. Hoechstens zwei Kinder; Cron aus; Implementation gesperrt.",
+    "SCHRITT 1: Coverage/Fenster/Anker und Q-U07 SUPPORT/COVERAGE sowie C-HELP-ANCHOR im gebundenen Auftrag COVERAGE-U07-01 ausarbeiten. Genau zwei vollstaendige U07-Vorschlagsoracles, acht Transportzuordnungen, 15 begrenzte Kontrollfaelle; keine alten Bytes veraendern.",
+    "Vollstaendige neue Autorenabgabe quellen-/dokumentgebunden nachpruefen, unveraendert frieren und fremd pruefen. Echte Produktpraezisierungen getrennt mit allen erforderlichen exakten Ganztextrollen entscheiden. Ohne Zustimmung keine Annahme; unvollstaendige Ruecklaeufe sind kein Urteil. Schritt 1 erst mit gesondertem engen Annahmebeleg abschliessen.",
+    "SCHRITT 2 erst danach: vollstaendige technische Manifestfassung einschliesslich restlicher Feldnormalformen, Hilfetext-/Reportbindungen, fallweiser Oracles, T05-Restprofil, ADR0004/0005-/Digestnorm und aller externen Zusatzgatepflichten erstellen.",
+    "Dann die ganze neue Manifestfassung mechanisch pruefen, einfrieren/haschen und fremd vollstaendig gegen genau diese Fassung pruefen. Separate Implementierungsfreigabe bleibt erforderlich; keine Teilsumme/Teilmeinung ersetzt das Gesamtgate.",
+    "Nach jedem abgeschlossenen Teilschritt ohne Rueckfrage mit der naechsten zulaessigen Aufgabe fortsetzen. Nur Checkpoints, Blocker oder knappes Limit melden. Vor echter Unterbrechung STATUS/BLOCKER/WIEDERAUFNAHME committen/pushen, Remote-SHAs lesen und aktive Kinder sauber stoppen; asynchroner Handoff ist keine Pause."
   ],
   "digestTargetClarification": {
     "role": "technical-specification-author",

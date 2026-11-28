@@ -1,0 +1,65 @@
+{
+  "kind": "bounded-specification-author-dispatch-plan/1",
+  "scopeId": "COVERAGE-U07-01",
+  "state": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+  "resumeBase": "1998a405ba5028114cf52537cbc5756a95ab25f7",
+  "requestedOrder": [
+    "CLOSE_U07_SUPPORT_COVERAGE_HELP_ANCHOR_AND_BINDINGS",
+    "THEN_COMPLETE_FREEZE_FOREIGN_REVIEW_WHOLE_MANIFEST"
+  ],
+  "maxConcurrentSubagents": 2,
+  "preparedActiveChildren": 0,
+  "brief": {
+    "path": "F:/ChnobelRuntime/reviews/coverage-u07-01/author-brief.md",
+    "sha256": "0c4eb8e53f52fba91bbb7ac32743e53eb69a12874debb913d407b3e10db0d0dd",
+    "bytes": 11893
+  },
+  "inputBindings": {
+    "path": "F:/ChnobelRuntime/reviews/coverage-u07-01/input-bindings.json",
+    "sha256": "33ca1ab5b82a7a42ad1d5410e18ed277e8dbd4bd3c1ed997a3fcccfbc3c7711c",
+    "bytes": 76411
+  },
+  "proceduralBindings": {
+    "path": "F:/ChnobelRuntime/reviews/coverage-u07-01/procedural-bindings.json",
+    "sha256": "e1453233c45438a1eb75b7434553cfd3d147fa3afc012eea580e03227aae4f84",
+    "bytes": 10066
+  },
+  "initialLiveCheck": {
+    "path": "F:/ChnobelRuntime/verification/coverage-u07-01-start/live-before.json",
+    "sha256": "07e79d3bf702f1bf2a07fdccd1e7d28d536da862dab1e202cb9ca89cb936796b",
+    "bytes": 36500
+  },
+  "capturePreflight": {
+    "path": "F:/ChnobelRuntime/review-journals/coverage-u07-01/preflight/verification.json",
+    "sha256": "cbd9e39c865980b4abf8d59d0aa2236992df9caa49eaff2578d62be53d02086f",
+    "bytes": 8074
+  },
+  "primaryFullOracleCaseCount": 2,
+  "boundedControlCaseCount": 15,
+  "transportLinkCount": 8,
+  "expectedFinalFiles": [
+    "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/proposal.md",
+    "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/technical.json",
+    "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/cases.json",
+    "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/sources.json",
+    "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/handoff.json"
+  ],
+  "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/author",
+  "actualDispatchReceipt": "F:/ChnobelRuntime/reviews/coverage-u07-01/dispatch-actual.json",
+  "checkpointReadback": "F:/ChnobelRuntime/verification/coverage-u07-01-start/checkpoint-readback.json",
+  "allowParentRepositoryWritesDuringRole": [],
+  "blockerClosed": false,
+  "proposalAccepted": false,
+  "implementationAuthorized": false,
+  "wholeManifestVerdict": "NOT_ISSUED",
+  "productExecution": "NOT_RUN",
+  "nativeExecution": "NOT_RUN",
+  "cron": {
+    "id": "26647d618052",
+    "enabled": false,
+    "state": "paused",
+    "next_run_at": null,
+    "changed": false
+  },
+  "authority": "Latest explicit user continuation; all existing gates unchanged; no protected-file permission"
+}
