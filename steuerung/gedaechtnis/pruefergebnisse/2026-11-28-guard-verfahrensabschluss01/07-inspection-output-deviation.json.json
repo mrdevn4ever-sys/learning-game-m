@@ -1,0 +1,21 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/inspection-output-deviation.json",
+  "sourceSha256": "a5d0d191866a83bcc8768ee30350779d15f0432d4ac03777280a6d1033a86928",
+  "sourceBytes": 659,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"kind\": \"PARENT_AGGREGATE_OUTPUT_BUDGET_DEVIATION\",\n",
+    "  \"executionCount\": 209,\n",
+    "  \"observedStdoutBytes\": 39463,\n",
+    "  \"observedStdoutTruncated\": false,\n",
+    "  \"intendedLimitBytes\": 18000,\n",
+    "  \"cause\": \"A bounded first display was followed by separate unbounded architecture metadata. Shallow len checks retained long nested arrays.\",\n",
+    "  \"sourceWritesInThatInvocation\": 0,\n",
+    "  \"sourceRecordsUnchanged\": true,\n",
+    "  \"wholeProcedurePassed\": false,\n",
+    "  \"preservationScope\": \"Tool-result metrics and diagnosis only; no reconstructed stdout is labelled original.\",\n",
+    "  \"futureDisplayControl\": \"One final bounded object per invocation; recursively reduce bodies before serialisation.\"\n",
+    "}\n"
+  ]
+}

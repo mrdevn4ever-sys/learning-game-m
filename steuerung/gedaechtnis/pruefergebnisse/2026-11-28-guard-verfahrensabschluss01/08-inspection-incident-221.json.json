@@ -1,0 +1,21 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/inspection-incident-221.json",
+  "sourceSha256": "aa1eae5764cdcc9e7c374682f59bb9ef9dc428adb183cdc5fb49e726d7b698dd",
+  "sourceBytes": 1537,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"kind\": \"PARENT_DOCUMENT_INSPECTION_FAILURE\",\n",
+    "  \"executionCount\": 221,\n",
+    "  \"requestedCodeFromVisibleOwnToolCall\": \"bounded({'otherLeadingAndTrailing':{n:{'header':t.splitlines()[0],'firstParagraph':t.split('\\\\r\\\\n\\\\r\\\\n')[1],'lastParagraph':t.split('\\\\r\\\\n\\\\r\\\\n')[-1] if t.split('\\\\r\\\\n\\\\r\\\\n')[-1].strip() else t.split('\\\\r\\\\n\\\\r\\\\n')[-2]} for n,t in sections_audit.items() if n!='STATUS.md'},'preserverCodeNames':list(preserve_group_v2.__code__.co_names),'preserverConstantTexts':[v for v in preserve_group_v2.__code__.co_consts if isinstance(v,str) and len(v)<250],'initialArchivedIndexShape':{k:outline(v) for k,v in json.loads((pa/'steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-policy-voten-teil02/index.json').read_bytes()).items()}})\\n\",\n",
+    "  \"requestedCodeSha256\": \"831a7822907663f9eb2f05ae334eb14285b6efbce3277d5a7d8210b7513d50ba\",\n",
+    "  \"capturedBeforeExecution\": false,\n",
+    "  \"originalToolExitCode\": 1,\n",
+    "  \"originalError\": \"Traceback (most recent call last):\\n  File \\\"F:\\\\HermesTemp\\\\hermes_kernel_9lh80zv7\\\\hermes_kernel_runner.py\\\", line 118, in run_cell\\n    exec(compile(request[\\\"code\\\"], \\\"<cell>\\\", \\\"exec\\\"), GLOBALS)\\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"<cell>\\\", line 1, in <module>\\nIndexError: list index out of range\\n\",\n",
+    "  \"sourceWrites\": 0,\n",
+    "  \"cause\": \"Assumed CRLF paragraph delimiters for all handoffs; some use LF.\",\n",
+    "  \"fix\": \"Inspect raw newline variants; use variant-aware read only and preserve each file newline spelling for edits.\",\n",
+    "  \"productExecution\": \"NOT_RUN\"\n",
+    "}\n"
+  ]
+}

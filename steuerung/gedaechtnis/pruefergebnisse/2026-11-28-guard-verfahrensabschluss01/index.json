@@ -1,0 +1,191 @@
+{
+  "kind": "guard-procedure-01-public-parent-summary/1",
+  "scope": "PUBLIC_TEXT_DOCUMENT_PRESERVATION_ONLY_NOT_ACCEPTANCE",
+  "count": 13,
+  "items": [
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/assessment.md",
+        "sha256": "e635f1d3463ccb3e327ecadd42067adff0b1d447d2ea0e06990efe7df6fe8e1a",
+        "bytes": 4207
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/00-assessment.md.json",
+        "sha256": "25aeef6f5a7cda83cf4ea3d6cfbfe4e66070b361d3a506d23e96a2fcfdde3a7d",
+        "bytes": 4644
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/eligibility-correction.json",
+        "sha256": "51730620aee4368f9ad3c91d60a413c464046dc21a0f1dae6c5243d629dd3f83",
+        "bytes": 3884
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/01-eligibility-correction.json.json",
+        "sha256": "733425428971cdd2df495ce134206e89dc93a006ea01fcb22e0ba0f43fdc9948",
+        "bytes": 5317
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/verification.json",
+        "sha256": "479c00e40d9635c6a803d46dbc1e57600e54a4a2d203d911b2632027164dc554",
+        "bytes": 2182
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/02-verification.json.json",
+        "sha256": "e13bc96be847c2139b1aefaa7f2210be465503b4d15b5c5193fa2391344c68c5",
+        "bytes": 3084
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/attempt-01-request.json",
+        "sha256": "bfb0f91fc1c6b44e20ddb91f8fb5d16bd356191d49799387f35c85df2688541a",
+        "bytes": 8027
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/03-attempt-01-request.json.json",
+        "sha256": "739824f23c12729aac32d4dbc063f7a9b692682ff38b6e460856800dc3756464",
+        "bytes": 8495
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/attempt-01-result.json",
+        "sha256": "bb3832a9caf9e0e65fa67c573c9b4c1dbffab87ec7ed62d504d0eb31260db425",
+        "bytes": 904
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/04-attempt-01-result.json.json",
+        "sha256": "734011e5eed6bf765ac55dc043bcde5fca52d6e6e7b30f5796b95d97a0e0f557",
+        "bytes": 1328
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/attempt-02-request.json",
+        "sha256": "200ddbc89fd6aa4c169a06903f49364e31e47a1959a00a900c4c95ec4caba261",
+        "bytes": 8971
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/05-attempt-02-request.json.json",
+        "sha256": "9e28a9eb9ef4db4ce93c4f0a347df13ce4927a971d0a3b7180d7cf06de88283e",
+        "bytes": 9571
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/attempt-02-result.json",
+        "sha256": "0fd8e295dd17e22904b8aeafea06cbc21bfbd69999ada8e8e73fdc97619dfeac",
+        "bytes": 602
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/06-attempt-02-result.json.json",
+        "sha256": "27d1119dcece2efbe0cb0b7fe6c3720c55e781048ea6428334731da3304b9ec0",
+        "bytes": 1024
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/inspection-output-deviation.json",
+        "sha256": "a5d0d191866a83bcc8768ee30350779d15f0432d4ac03777280a6d1033a86928",
+        "bytes": 659
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/07-inspection-output-deviation.json.json",
+        "sha256": "31050a00e70c8ea8e67bac41585ce8b612e3cf765529b022fc692d0424028a02",
+        "bytes": 1072
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/inspection-incident-221.json",
+        "sha256": "aa1eae5764cdcc9e7c374682f59bb9ef9dc428adb183cdc5fb49e726d7b698dd",
+        "bytes": 1537
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/08-inspection-incident-221.json.json",
+        "sha256": "9af7a7fac62672be829e921dc34c8f33fb145289265c14d503513aa9b6012c91",
+        "bytes": 2018
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/prospective-procedure-update.json",
+        "sha256": "d380b520afd254cd717b949a12d9879f1464440f82bbd06761f46e5d4bb9cb37",
+        "bytes": 928
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/09-prospective-procedure-update.json.json",
+        "sha256": "04b793fd728d14c7072c8e3fcf8a01a6cd80a60bae1ffce391bd052a7599b140",
+        "bytes": 1390
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/reviews/guard-policy-procedure-01/parent-completion.json",
+        "sha256": "95a8c6cd9aa4170d0790e1e343ffe8106755d25af6bc6009d56c89812771f217",
+        "bytes": 1772
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/10-parent-completion.json.json",
+        "sha256": "6882f64ab63c298198131eb53e990d950f0927566d9a14bb1e73bf3bbd8eaff6",
+        "bytes": 2533
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/review-journals/guard-policy-01-round03/preflight/verification.json",
+        "sha256": "e79426567baeffd4725f8b507bfb0a076694dbc6d3464f8fcd8b2ce058c08728",
+        "bytes": 3248
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/11-verification.json.json",
+        "sha256": "58cf0968512f4bae802c367556080a1a441e55cd7cc10b37a1f69da0293bd246",
+        "bytes": 4453
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    },
+    {
+      "source": {
+        "path": "F:/ChnobelRuntime/review-journals/guard-policy-01-round03/preflight/bootstrap-verification.json",
+        "sha256": "0769d545b781331e8e7496d3c1c2376e81b0037ee1c5305833ef6c087e0fe266",
+        "bytes": 1028
+      },
+      "container": {
+        "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/pruefergebnisse/2026-11-28-guard-verfahrensabschluss01/12-bootstrap-verification.json.json",
+        "sha256": "3c12c263130dce1f254962eb4bafeb8e35915cf3354e2865652632ee2b955bcb",
+        "bytes": 1587
+      },
+      "sourceUnmodified": true,
+      "roundTrip": true
+    }
+  ],
+  "implementationAuthorized": false,
+  "ratificationIssued": false
+}

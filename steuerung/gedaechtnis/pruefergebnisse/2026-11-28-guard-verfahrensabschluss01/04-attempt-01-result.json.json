@@ -1,0 +1,20 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/attempt-01-result.json",
+  "sourceSha256": "bb3832a9caf9e0e65fa67c573c9b4c1dbffab87ec7ed62d504d0eb31260db425",
+  "sourceBytes": 904,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"request\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/guard-procedure-01-parent/attempt-01-request.json\",\n",
+    "    \"sha256\": \"bfb0f91fc1c6b44e20ddb91f8fb5d16bd356191d49799387f35c85df2688541a\",\n",
+    "    \"bytes\": 8027\n",
+    "  },\n",
+    "  \"actualToolResult\": {\n",
+    "    \"output\": \"Traceback (most recent call last):\\r\\n  File \\\"F:\\\\ChnobelRuntime\\\\verification\\\\guard-procedure-01-parent\\\\verify_audit.py\\\", line 28, in <module>\\r\\n    for slot in ['expected','before','after']:assert check(x[slot])==check(fixed[Path(x['path'])])\\r\\n                                                     ~~~~~^^^^^^^^^\\r\\n  File \\\"F:\\\\ChnobelRuntime\\\\verification\\\\guard-procedure-01-parent\\\\verify_audit.py\\\", line 11, in check\\r\\n    assert sha(raw)==bound['sha256'] and len(raw)==bound['bytes'];return raw\\r\\n                                                   ~~~~~^^^^^^^^^\\r\\nKeyError: 'bytes'\",\n",
+    "    \"exit_code\": 1,\n",
+    "    \"error\": null\n",
+    "  }\n",
+    "}\n"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/prospective-procedure-update.json",
+  "sourceSha256": "d380b520afd254cd717b949a12d9879f1464440f82bbd06761f46e5d4bb9cb37",
+  "sourceBytes": 928,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"kind\": \"prospective-procedure-update-after-audit-completion/1\",\n",
+    "  \"at\": \"2026-11-28T05:16:11.315153+01:00\",\n",
+    "  \"noLiveSubagentsConfirmed\": true,\n",
+    "  \"auditVerificationPredatesChange\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/guard-procedure-01-parent/verification.json\",\n",
+    "    \"sha256\": \"479c00e40d9635c6a803d46dbc1e57600e54a4a2d203d911b2632027164dc554\",\n",
+    "    \"bytes\": 2182\n",
+    "  },\n",
+    "  \"path\": \"C:/Users/user/AppData/Local/hermes/skills/github/github-pr-workflow/references/review-document-checkpoints.md\",\n",
+    "  \"current\": {\n",
+    "    \"path\": \"C:/Users/user/AppData/Local/hermes/skills/github/github-pr-workflow/references/review-document-checkpoints.md\",\n",
+    "    \"sha256\": \"2c654888fc7ac595df1764365b1f9759400e2c3eb9ccb9c1a6817691ba699bba\",\n",
+    "    \"bytes\": 14257\n",
+    "  },\n",
+    "  \"scope\": \"Future shell-free request capture and consistent original-contract eligibility reassessment. Does not modify previous freezes or retroactively validate returns.\"\n",
+    "}\n"
+  ]
+}

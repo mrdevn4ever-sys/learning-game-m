@@ -1,0 +1,20 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/verification/guard-procedure-01-parent/attempt-02-result.json",
+  "sourceSha256": "0fd8e295dd17e22904b8aeafea06cbc21bfbd69999ada8e8e73fdc97619dfeac",
+  "sourceBytes": 602,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"request\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/verification/guard-procedure-01-parent/attempt-02-request.json\",\n",
+    "    \"sha256\": \"200ddbc89fd6aa4c169a06903f49364e31e47a1959a00a900c4c95ec4caba261\",\n",
+    "    \"bytes\": 8971\n",
+    "  },\n",
+    "  \"actualToolResult\": {\n",
+    "    \"output\": \"{\\\"result\\\": \\\"PASS_DOCUMENT_BINDINGS_AND_BOUNDED_CAPTURE_EVIDENCE\\\", \\\"base\\\": \\\"d66132dce2f6f9af8361a9b666ffe47565f2dfdf\\\", \\\"fixedSources\\\": 30, \\\"unchangedStartContexts\\\": 3, \\\"documentToolingRecordedCount\\\": 2, \\\"redteamEligibilityCorrectionRequired\\\": true, \\\"currentCountedPolicyRoles\\\": []}\",\n",
+    "    \"exit_code\": 0,\n",
+    "    \"error\": null\n",
+    "  }\n",
+    "}\n"
+  ]
+}

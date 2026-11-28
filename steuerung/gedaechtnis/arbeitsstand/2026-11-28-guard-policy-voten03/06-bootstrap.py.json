@@ -1,0 +1,15 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/tooling/request-capture-01/bootstrap.py",
+  "sourceSha256": "8053dd2a191d5c0a8dc3d1406fe74175353cb46b6c1009ee027e7107e0ac7c1e",
+  "sourceBytes": 417,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "from pathlib import Path\n",
+    "import hashlib\n",
+    "_capture_path=Path('F:/ChnobelRuntime/tooling/request-capture-01/driver.py')\n",
+    "_capture_raw=_capture_path.read_bytes()\n",
+    "assert hashlib.sha256(_capture_raw).hexdigest()=='b36496c2eac51f21703253875226c690adbb551762953e3b4e6d3abcaf4fd21f'\n",
+    "capture={'__file__':_capture_path.as_posix(),'__name__':'document_capture'}\n",
+    "exec(compile(_capture_raw,_capture_path.as_posix(),'exec'),capture)\n"
+  ]
+}

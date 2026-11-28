@@ -1,0 +1,33 @@
+{
+  "sourcePath": "F:/ChnobelRuntime/review-journals/guard-policy-01-round03/preflight/bootstrap-verification.json",
+  "sourceSha256": "0769d545b781331e8e7496d3c1c2376e81b0037ee1c5305833ef6c087e0fe266",
+  "sourceBytes": 1028,
+  "encoding": "utf-8-lines",
+  "lines": [
+    "{\n",
+    "  \"kind\": \"capture-bootstrap-check/1\",\n",
+    "  \"bootstrap\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/tooling/request-capture-01/bootstrap.py\",\n",
+    "    \"sha256\": \"8053dd2a191d5c0a8dc3d1406fe74175353cb46b6c1009ee027e7107e0ac7c1e\",\n",
+    "    \"bytes\": 417\n",
+    "  },\n",
+    "  \"driver\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/tooling/request-capture-01/driver.py\",\n",
+    "    \"sha256\": \"b36496c2eac51f21703253875226c690adbb551762953e3b4e6d3abcaf4fd21f\",\n",
+    "    \"bytes\": 5135\n",
+    "  },\n",
+    "  \"protocol\": {\n",
+    "    \"path\": \"F:/ChnobelRuntime/tooling/request-capture-01/protocol.md\",\n",
+    "    \"sha256\": \"d5f07283bee3d0a55e589f3e5437c129b367cba030984179690d6f068548e963\",\n",
+    "    \"bytes\": 6421\n",
+    "  },\n",
+    "  \"requestedExecuteCode\": \"exec(compile(__import__('pathlib').Path('F:/ChnobelRuntime/tooling/request-capture-01/bootstrap.py').read_bytes(), 'capture-bootstrap', 'exec'))\\n\",\n",
+    "  \"actualExecutionCount\": 223,\n",
+    "  \"actualExitCode\": 0,\n",
+    "  \"actualStdout\": \"\",\n",
+    "  \"preExecutionSource\": \"protocol.md contains the exact requested entry before execution\",\n",
+    "  \"captureFunctionAvailable\": true,\n",
+    "  \"isProductExecution\": false\n",
+    "}\n"
+  ]
+}
