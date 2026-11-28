@@ -1652,14 +1652,185 @@
         "step2Started": false,
         "implementationAuthorized": false
       }
+    },
+    {
+      "at": "2026-11-28T13:42:30.023008+01:00",
+      "previousNextOrder": [
+        "COVERAGE-U07-01-P01: Autorenruecklauf deleg_9a09d4bf ist vollstaendig elterngeprueft, nicht angenommen; nicht erneut dispatchen. Originale und alle Vorfaelle erhalten.",
+        "Nach diesem Dokumentcheckpoint die exakten Review01-Bindungen und Remote-SHA pruefen. Zuerst Didaktik/Architektur, danach frisches Red-Team zum unveraenderten fuenfteiligen Gegenstand; hoechstens zwei gleichzeitig, keine Peerlekture oder Eltern-Repositorywrites waehrend Rollen.",
+        "Alle drei kompletten technischen Fremdpruefungen und getrennten Ganztext-Produktvoten zu P-SELECT/P-SLICE/P-BEFORE/P-COVERAGE/P-HELP-CONTEXT nachpruefen. Unvollstaendige Rollen sind kein Urteil; notwendige Reparatur nur neue Fassung/neue passende Bindung, alte FAILs unveraendert.",
+        "Etwaige prospektive Produktpraezisierung und enge technische Annahme separat beschliessen; kein Quellen-/Faktenkonflikt per Mehrheit. Erst belegter enger Abschluss schliesst Schritt 1/Q-U07/C-HELP-ANCHOR und die zugehoerigen Bindungen.",
+        "Erst danach Schritt 2: gesamte technische Manifestfassung mit allen verbliebenen M-Punkten, T05-Restprofil, ADR-/Digestintegration und externer Pflichtinventur/Vertrauensanker/Beschaffung/Enforcement. Neues Ganzmanifest einfrieren, hashen und vollstaendig fremd pruefen; keine Implementation davor.",
+        "Cron 26647d618052 bleibt aus. Vor echter Unterbrechung STATUS/BLOCKER/WIEDERAUFNAHME sichern, committen/pushen und Remote-SHAs zuruecklesen; asynchroner Rollenhandoff ist keine Nutzerpause."
+      ],
+      "previousClosure": {
+        "state": "AUTHOR_COMPLETE_REVIEW01_READY_AFTER_CHECKPOINT",
+        "dispatchPlan": {
+          "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-coverage-u07-01.json",
+          "sha256": "a89903253cc555066c289cba15a0adc53d6066cd90c1fb4728e5614854d033b8",
+          "bytes": 2751
+        },
+        "normativeStatus": "PROPOSED_NOT_ACCEPTED",
+        "step1Complete": false,
+        "step2Started": false,
+        "implementationAuthorized": false,
+        "authorReturn": {
+          "delegationId": "deleg_9a09d4bf",
+          "subagentId": "sa-0-40d71310",
+          "actualStartCommit": "780be730c98489d292881622b8af495d8df1187b",
+          "authorScopeStatus": "COMPLETE",
+          "proposalRevision": "COVERAGE-U07-01-P01",
+          "subjectBindings": [
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/proposal.md",
+              "sha256": "d5a43a5a0afbb2e993281d4c8b9eb858ef434f6cfe289f566ed8675dd33c93ab",
+              "bytes": 21541
+            },
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/technical.json",
+              "sha256": "6a41397bd28c5b72e7346bf45f46ed91d465e931265b7c55be36d60f8b0f16d3",
+              "bytes": 133141
+            },
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/cases.json",
+              "sha256": "131611005a02bc0b63ce796d67a0f407f74807902f46fd34678f02b6a17f9544",
+              "bytes": 777313
+            },
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/sources.json",
+              "sha256": "9bb8c5289d4ad593a25cc7e01061d8bd548bdd281ee2fa548fa3446f52c3604c",
+              "bytes": 948912
+            },
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/handoff.json",
+              "sha256": "1a9a70ad8d69f9cb9f20966dac3ceb7b7fb0ee447525037974873733b60eb47f",
+              "bytes": 22978
+            }
+          ],
+          "documentVerification": {
+            "path": "F:/ChnobelRuntime/verification/coverage-u07-01-author-parent/verification.json",
+            "sha256": "741e36414c1230947286cc24a701cf092a8da46f403e77a60dbd2bf6ecd4f74d",
+            "bytes": 60386
+          },
+          "parentAssessment": {
+            "path": "F:/ChnobelRuntime/verification/coverage-u07-01-author-parent/assessment.json",
+            "sha256": "c28f8e720bcd9c645fa2293e643d57ad599197813b26d3accd2081e52186b85c",
+            "bytes": 14636
+          },
+          "scope": "Document/source/capture checks only; no semantic acceptance",
+          "proposalAccepted": false,
+          "ratificationIssued": false,
+          "blockerClosed": false,
+          "implementationAuthorized": false
+        },
+        "foreignReview": {
+          "scopeId": "COVERAGE-U07-01-REVIEW01",
+          "state": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+          "brief": {
+            "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/brief.md",
+            "sha256": "6048747aa2eea11fe127c0ddd5bb4ba52d73059f9abe01aba257325713359cca",
+            "bytes": 10703
+          },
+          "inputBindings": {
+            "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/input-bindings.json",
+            "sha256": "6977d3d2fabf328c4ff60d42663c66b047a2f71c05e26f927b43d399ac6cda9c",
+            "bytes": 83345
+          },
+          "proceduralBindings": {
+            "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/procedural-bindings.json",
+            "sha256": "9370e75a582db1453a58e9da4b8a3e0e17170fc1e477308f2181cb3e03820d59",
+            "bytes": 10337
+          },
+          "freezePath": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/freeze.json",
+          "subjectBindings": [
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/proposal.md",
+              "sha256": "d5a43a5a0afbb2e993281d4c8b9eb858ef434f6cfe289f566ed8675dd33c93ab",
+              "bytes": 21541
+            },
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/technical.json",
+              "sha256": "6a41397bd28c5b72e7346bf45f46ed91d465e931265b7c55be36d60f8b0f16d3",
+              "bytes": 133141
+            },
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/cases.json",
+              "sha256": "131611005a02bc0b63ce796d67a0f407f74807902f46fd34678f02b6a17f9544",
+              "bytes": 777313
+            },
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/sources.json",
+              "sha256": "9bb8c5289d4ad593a25cc7e01061d8bd548bdd281ee2fa548fa3446f52c3604c",
+              "bytes": 948912
+            },
+            {
+              "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/handoff.json",
+              "sha256": "1a9a70ad8d69f9cb9f20966dac3ceb7b7fb0ee447525037974873733b60eb47f",
+              "bytes": 22978
+            }
+          ],
+          "plannedBatches": [
+            [
+              "didaktik",
+              "architekt"
+            ],
+            [
+              "redteam"
+            ]
+          ],
+          "actualDispatchReceipts": {
+            "didaktik": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-didaktik.json",
+            "architekt": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-architekt.json",
+            "redteam": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-redteam.json"
+          },
+          "outputs": {
+            "didaktik": {
+              "finalFiles": [
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/report.md",
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/decision.json",
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/sources.json"
+              ],
+              "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/didaktik"
+            },
+            "architekt": {
+              "finalFiles": [
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/report.md",
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/decision.json",
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/sources.json"
+              ],
+              "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/architekt"
+            },
+            "redteam": {
+              "finalFiles": [
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/report.md",
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/decision.json",
+                "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/sources.json"
+              ],
+              "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/redteam"
+            }
+          },
+          "parentRepositoryWritePathsDuringRole": [],
+          "productPolicyIds": [
+            "P-SELECT",
+            "P-SLICE",
+            "P-BEFORE",
+            "P-COVERAGE",
+            "P-HELP-CONTEXT"
+          ],
+          "newVerdictsReceived": 0,
+          "step1Complete": false,
+          "step2Started": false,
+          "implementationAuthorized": false
+        }
+      }
     }
   ],
   "coverageU07Closure01": {
-    "state": "AUTHOR_COMPLETE_REVIEW01_READY_AFTER_CHECKPOINT",
+    "state": "P01_RETURN_HANDLING_COMPLETE_P02_PREPARED_PAUSED_BY_USER",
     "dispatchPlan": {
       "path": "F:/Projects/Chnobel/steuerung/gedaechtnis/arbeitsstand/2026-11-28-coverage-u07-01.json",
-      "sha256": "a89903253cc555066c289cba15a0adc53d6066cd90c1fb4728e5614854d033b8",
-      "bytes": 2751
+      "sha256": "9f43961eda3d61dc37cf928fb6fee69c04562926b359aac79c897be4e009aa4b",
+      "bytes": 19090
     },
     "normativeStatus": "PROPOSED_NOT_ACCEPTED",
     "step1Complete": false,
@@ -1716,7 +1887,7 @@
     },
     "foreignReview": {
       "scopeId": "COVERAGE-U07-01-REVIEW01",
-      "state": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+      "state": "RETURN_HANDLING_COMPLETE_NOT_ACCEPTED",
       "brief": {
         "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/brief.md",
         "sha256": "6048747aa2eea11fe127c0ddd5bb4ba52d73059f9abe01aba257325713359cca",
@@ -1808,19 +1979,83 @@
         "P-COVERAGE",
         "P-HELP-CONTEXT"
       ],
-      "newVerdictsReceived": 0,
+      "newVerdictsReceived": 4,
       "step1Complete": false,
       "step2Started": false,
-      "implementationAuthorized": false
-    }
+      "implementationAuthorized": false,
+      "allSubjectMatterRolesComplete": true,
+      "allRequiredRolesQualified": false,
+      "additionalRound": "COVERAGE-U07-01-REVIEW02",
+      "completedDelegations": [
+        "deleg_d98cbc44",
+        "deleg_2eb85026"
+      ],
+      "parentAssessment": {
+        "path": "F:/ChnobelRuntime/verification/coverage-u07-01-review02-parent/assessment.json",
+        "sha256": "13bbce917225baa3ddcf07144ff6d65cbf159f4225f93478a29bb1d63d65e8da",
+        "bytes": 6309
+      },
+      "documentVerification": {
+        "path": "F:/ChnobelRuntime/verification/coverage-u07-01-review02-parent/verification.json",
+        "sha256": "fa617c8badb6ea54e6d1163bbfc4aec664057f5a9dfb9c55d9bc8ca3a5f1a476",
+        "bytes": 63698
+      },
+      "outputsOriginalsRetained": true
+    },
+    "authorRevision02": {
+      "scopeId": "COVERAGE-U07-02",
+      "proposalRevision": "COVERAGE-U07-01-P02",
+      "state": "PREPARED_BEFORE_PAUSE_NOT_DISPATCHED",
+      "brief": {
+        "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/author-brief.md",
+        "sha256": "0d86015392227203a6143adc5277b8469e244ede214f1a23a598b10aee4838aa",
+        "bytes": 15355
+      },
+      "inputBindings": {
+        "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/input-bindings.json",
+        "sha256": "a6f28e5a5ed6cbc4d90434d1ed4683125d068de8c21e905a47c055db83c85abf",
+        "bytes": 82620
+      },
+      "proceduralBindings": {
+        "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/procedural-bindings.json",
+        "sha256": "e1e9dabfd62d27def46271bd6f0e5dadc46c9b06bff47d3c9c987cf48e03bccf",
+        "bytes": 10336
+      },
+      "freezePath": "F:/ChnobelRuntime/reviews/coverage-u07-02/freeze.json",
+      "actualDispatchReceipt": "F:/ChnobelRuntime/reviews/coverage-u07-02/dispatch-author.json",
+      "outputs": {
+        "finalFiles": [
+          "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/proposal.md",
+          "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/technical.json",
+          "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/cases.json",
+          "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/sources.json",
+          "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/handoff.json"
+        ],
+        "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/author",
+        "operationIdMin": 1001,
+        "operationIdMax": 1999,
+        "nonCaptureBasenamePrefix": "p02-",
+        "oldJournalReadOrWritePermitted": false
+      },
+      "step1Complete": false,
+      "step2Started": false,
+      "implementationAuthorized": false,
+      "dispatchBlockedUntilExplicitHumanResume": true,
+      "existingFreezeContextIsPrePause": true,
+      "freshStartContextBindingRequiredAfterResume": true
+    },
+    "betrieb": "PAUSIERT_AUF_NUTZERWUNSCH",
+    "resumeRequiresExplicitHumanOrder": true
   },
   "nextOrder": [
-    "COVERAGE-U07-01-P01: Autorenruecklauf deleg_9a09d4bf ist vollstaendig elterngeprueft, nicht angenommen; nicht erneut dispatchen. Originale und alle Vorfaelle erhalten.",
-    "Nach diesem Dokumentcheckpoint die exakten Review01-Bindungen und Remote-SHA pruefen. Zuerst Didaktik/Architektur, danach frisches Red-Team zum unveraenderten fuenfteiligen Gegenstand; hoechstens zwei gleichzeitig, keine Peerlekture oder Eltern-Repositorywrites waehrend Rollen.",
-    "Alle drei kompletten technischen Fremdpruefungen und getrennten Ganztext-Produktvoten zu P-SELECT/P-SLICE/P-BEFORE/P-COVERAGE/P-HELP-CONTEXT nachpruefen. Unvollstaendige Rollen sind kein Urteil; notwendige Reparatur nur neue Fassung/neue passende Bindung, alte FAILs unveraendert.",
-    "Etwaige prospektive Produktpraezisierung und enge technische Annahme separat beschliessen; kein Quellen-/Faktenkonflikt per Mehrheit. Erst belegter enger Abschluss schliesst Schritt 1/Q-U07/C-HELP-ANCHOR und die zugehoerigen Bindungen.",
-    "Erst danach Schritt 2: gesamte technische Manifestfassung mit allen verbliebenen M-Punkten, T05-Restprofil, ADR-/Digestintegration und externer Pflichtinventur/Vertrauensanker/Beschaffung/Enforcement. Neues Ganzmanifest einfrieren, hashen und vollstaendig fremd pruefen; keine Implementation davor.",
-    "Cron 26647d618052 bleibt aus. Vor echter Unterbrechung STATUS/BLOCKER/WIEDERAUFNAHME sichern, committen/pushen und Remote-SHAs zuruecklesen; asynchroner Rollenhandoff ist keine Nutzerpause."
+    "NUTZERPAUSE: Nach diesem Commit/Push/Remote-Readback stoppen. Keine automatische Fortsetzung, kein Autor-Dispatch, Cron aus. Erst neues ausdrueckliches \"Chnobel weiter\" hebt diese Sperre auf.",
+    "Nach ausdruecklicher Fortsetzung zuerst Live-/Remote-SHAs und Quellen abgleichen; vorbereiteten COVERAGE-U07-02-Auftrag nicht blind starten. Freeze-Elternkontexte sind vor der Pause gebunden und brauchen neue separate Startbindung. Originale unveraendert behalten.",
+    "P01-Autoren-/Reviewruecklaeufe sind verarbeitet und unveraendert erhalten; keine alten Rollen erneut dispatchen oder unqualifizierte Stimmen zaehlen. P01 ist nicht angenommen.",
+    "Erst nach ausdruecklicher Fortsetzung und neuer Startbindung den begrenzten Autor COVERAGE-U07-02 starten; fuenf separate P02-Abgaben, hoechstens zwei Kinder, kein Produktcode. dispatch-author.json vor jedem Wiederanlauf abgleichen.",
+    "P02-Ruecklauf vollstaendig dokument-/quellen-/capturepruefen, neue ganze Fassung einfrieren und alle erforderlichen fremden Rollen frisch pruefen lassen. Alte P01-Stimmen nicht uebertragen; Primaerbelegluecken nicht durch Werkzeugerfolge heilen.",
+    "Erst bei belegtem engem Textabschluss und gegebenenfalls separater prospektiver Produktentscheidung Schritt1 schliessen. Keine Quellenwahrheit per Mehrheit.",
+    "Erst danach ganze technische Manifestfassung mit allen M-Punkten, T05-Restprofil, ADR-/Digestintegration und externer Pflichtinventur/Vertrauensanker/Beschaffung/Enforcement; eigenes Freeze/Fremdreview vor Implementation.",
+    "Cron26647d618052 bleibt aus; vor echter Unterbrechung Checkpoint committen/pushen/remote lesen und Kinder sauber stoppen. Asynchroner Rollenhandoff ist keine Nutzerpause."
   ],
   "digestTargetClarification": {
     "role": "technical-specification-author",

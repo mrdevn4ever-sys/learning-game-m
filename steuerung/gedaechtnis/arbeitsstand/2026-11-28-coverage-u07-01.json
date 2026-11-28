@@ -1,7 +1,7 @@
 {
   "kind": "bounded-specification-author-dispatch-plan/1",
   "scopeId": "COVERAGE-U07-01",
-  "state": "AUTHOR_COMPLETE_REVIEW01_READY_AFTER_CHECKPOINT",
+  "state": "P01_RETURN_HANDLING_COMPLETE_P02_PREPARED_PAUSED_BY_USER",
   "resumeBase": "1998a405ba5028114cf52537cbc5756a95ab25f7",
   "requestedOrder": [
     "CLOSE_U07_SUPPORT_COVERAGE_HELP_ANCHOR_AND_BINDINGS",
@@ -46,7 +46,7 @@
   ],
   "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/author",
   "actualDispatchReceipt": "F:/ChnobelRuntime/reviews/coverage-u07-01/dispatch-actual.json",
-  "checkpointReadback": "F:/ChnobelRuntime/verification/coverage-u07-01-checkpoint01/checkpoint-readback.json",
+  "checkpointReadback": "F:/ChnobelRuntime/verification/coverage-u07-01-checkpoint02/checkpoint-readback.json",
   "allowParentRepositoryWritesDuringRole": [],
   "blockerClosed": false,
   "proposalAccepted": false,
@@ -77,6 +77,154 @@
         "path": "F:/ChnobelRuntime/reviews/coverage-u07-01/dispatch-actual.json",
         "sha256": "08742793c221a931a0758e12cdfbfa24be8abdd38446c3b56f8a3ac32707de34",
         "bytes": 2658
+      }
+    },
+    {
+      "at": "2026-11-28T13:42:30.022956+01:00",
+      "previousState": "AUTHOR_COMPLETE_REVIEW01_READY_AFTER_CHECKPOINT",
+      "previousCheckpointReadback": "F:/ChnobelRuntime/verification/coverage-u07-01-checkpoint01/checkpoint-readback.json",
+      "previousForeignReview": {
+        "scopeId": "COVERAGE-U07-01-REVIEW01",
+        "state": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+        "brief": {
+          "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/brief.md",
+          "sha256": "6048747aa2eea11fe127c0ddd5bb4ba52d73059f9abe01aba257325713359cca",
+          "bytes": 10703
+        },
+        "inputBindings": {
+          "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/input-bindings.json",
+          "sha256": "6977d3d2fabf328c4ff60d42663c66b047a2f71c05e26f927b43d399ac6cda9c",
+          "bytes": 83345
+        },
+        "proceduralBindings": {
+          "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/procedural-bindings.json",
+          "sha256": "9370e75a582db1453a58e9da4b8a3e0e17170fc1e477308f2181cb3e03820d59",
+          "bytes": 10337
+        },
+        "freezePath": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/freeze.json",
+        "subjectBindings": [
+          {
+            "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/proposal.md",
+            "sha256": "d5a43a5a0afbb2e993281d4c8b9eb858ef434f6cfe289f566ed8675dd33c93ab",
+            "bytes": 21541
+          },
+          {
+            "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/technical.json",
+            "sha256": "6a41397bd28c5b72e7346bf45f46ed91d465e931265b7c55be36d60f8b0f16d3",
+            "bytes": 133141
+          },
+          {
+            "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/cases.json",
+            "sha256": "131611005a02bc0b63ce796d67a0f407f74807902f46fd34678f02b6a17f9544",
+            "bytes": 777313
+          },
+          {
+            "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/sources.json",
+            "sha256": "9bb8c5289d4ad593a25cc7e01061d8bd548bdd281ee2fa548fa3446f52c3604c",
+            "bytes": 948912
+          },
+          {
+            "path": "F:/ChnobelRuntime/specification/v2-coverage-u07-01/author/handoff.json",
+            "sha256": "1a9a70ad8d69f9cb9f20966dac3ceb7b7fb0ee447525037974873733b60eb47f",
+            "bytes": 22978
+          }
+        ],
+        "plannedBatches": [
+          [
+            "didaktik",
+            "architekt"
+          ],
+          [
+            "redteam"
+          ]
+        ],
+        "actualDispatchReceipts": {
+          "didaktik": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-didaktik.json",
+          "architekt": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-architekt.json",
+          "redteam": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/dispatch-redteam.json"
+        },
+        "outputs": {
+          "didaktik": {
+            "finalFiles": [
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/report.md",
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/decision.json",
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/didaktik/sources.json"
+            ],
+            "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/didaktik"
+          },
+          "architekt": {
+            "finalFiles": [
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/report.md",
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/decision.json",
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/architekt/sources.json"
+            ],
+            "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/architekt"
+          },
+          "redteam": {
+            "finalFiles": [
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/report.md",
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/decision.json",
+              "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/redteam/sources.json"
+            ],
+            "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/redteam"
+          }
+        },
+        "parentRepositoryWritePathsDuringRole": [],
+        "productPolicyIds": [
+          "P-SELECT",
+          "P-SLICE",
+          "P-BEFORE",
+          "P-COVERAGE",
+          "P-HELP-CONTEXT"
+        ],
+        "newVerdictsReceived": 0,
+        "step1Complete": false,
+        "step2Started": false,
+        "implementationAuthorized": false
+      }
+    },
+    {
+      "at": "2026-11-28T14:34:59.871386+01:00",
+      "reason": "Explicit user pause before next commit",
+      "previousState": "P01_RETURN_HANDLING_COMPLETE_P02_AUTHOR_READY_AFTER_CHECKPOINT",
+      "previousAuthorRevision02": {
+        "scopeId": "COVERAGE-U07-02",
+        "proposalRevision": "COVERAGE-U07-01-P02",
+        "state": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+        "brief": {
+          "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/author-brief.md",
+          "sha256": "0d86015392227203a6143adc5277b8469e244ede214f1a23a598b10aee4838aa",
+          "bytes": 15355
+        },
+        "inputBindings": {
+          "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/input-bindings.json",
+          "sha256": "a6f28e5a5ed6cbc4d90434d1ed4683125d068de8c21e905a47c055db83c85abf",
+          "bytes": 82620
+        },
+        "proceduralBindings": {
+          "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/procedural-bindings.json",
+          "sha256": "e1e9dabfd62d27def46271bd6f0e5dadc46c9b06bff47d3c9c987cf48e03bccf",
+          "bytes": 10336
+        },
+        "freezePath": "F:/ChnobelRuntime/reviews/coverage-u07-02/freeze.json",
+        "actualDispatchReceipt": "F:/ChnobelRuntime/reviews/coverage-u07-02/dispatch-author.json",
+        "outputs": {
+          "finalFiles": [
+            "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/proposal.md",
+            "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/technical.json",
+            "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/cases.json",
+            "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/sources.json",
+            "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/handoff.json"
+          ],
+          "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/author",
+          "operationIdMin": 1001,
+          "operationIdMax": 1999,
+          "nonCaptureBasenamePrefix": "p02-",
+          "oldJournalReadOrWritePermitted": false
+        },
+        "step1Complete": false,
+        "step2Started": false,
+        "implementationAuthorized": false
       }
     }
   ],
@@ -129,9 +277,51 @@
     "blockerClosed": false,
     "implementationAuthorized": false
   },
+  "authorRevision02": {
+    "scopeId": "COVERAGE-U07-02",
+    "proposalRevision": "COVERAGE-U07-01-P02",
+    "state": "PREPARED_BEFORE_PAUSE_NOT_DISPATCHED",
+    "brief": {
+      "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/author-brief.md",
+      "sha256": "0d86015392227203a6143adc5277b8469e244ede214f1a23a598b10aee4838aa",
+      "bytes": 15355
+    },
+    "inputBindings": {
+      "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/input-bindings.json",
+      "sha256": "a6f28e5a5ed6cbc4d90434d1ed4683125d068de8c21e905a47c055db83c85abf",
+      "bytes": 82620
+    },
+    "proceduralBindings": {
+      "path": "F:/ChnobelRuntime/reviews/coverage-u07-02/procedural-bindings.json",
+      "sha256": "e1e9dabfd62d27def46271bd6f0e5dadc46c9b06bff47d3c9c987cf48e03bccf",
+      "bytes": 10336
+    },
+    "freezePath": "F:/ChnobelRuntime/reviews/coverage-u07-02/freeze.json",
+    "actualDispatchReceipt": "F:/ChnobelRuntime/reviews/coverage-u07-02/dispatch-author.json",
+    "outputs": {
+      "finalFiles": [
+        "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/proposal.md",
+        "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/technical.json",
+        "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/cases.json",
+        "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/sources.json",
+        "F:/ChnobelRuntime/specification/v2-coverage-u07-02/author/handoff.json"
+      ],
+      "persistentJournalDirectory": "F:/ChnobelRuntime/review-journals/coverage-u07-01/author",
+      "operationIdMin": 1001,
+      "operationIdMax": 1999,
+      "nonCaptureBasenamePrefix": "p02-",
+      "oldJournalReadOrWritePermitted": false
+    },
+    "step1Complete": false,
+    "step2Started": false,
+    "implementationAuthorized": false,
+    "dispatchBlockedUntilExplicitHumanResume": true,
+    "existingFreezeContextIsPrePause": true,
+    "freshStartContextBindingRequiredAfterResume": true
+  },
   "foreignReview": {
     "scopeId": "COVERAGE-U07-01-REVIEW01",
-    "state": "READY_AFTER_CHECKPOINT_NOT_DISPATCHED",
+    "state": "RETURN_HANDLING_COMPLETE_NOT_ACCEPTED",
     "brief": {
       "path": "F:/ChnobelRuntime/reviews/coverage-u07-01-review01/brief.md",
       "sha256": "6048747aa2eea11fe127c0ddd5bb4ba52d73059f9abe01aba257325713359cca",
@@ -223,9 +413,27 @@
       "P-COVERAGE",
       "P-HELP-CONTEXT"
     ],
-    "newVerdictsReceived": 0,
+    "newVerdictsReceived": 4,
     "step1Complete": false,
     "step2Started": false,
-    "implementationAuthorized": false
+    "implementationAuthorized": false,
+    "allSubjectMatterRolesComplete": true,
+    "allRequiredRolesQualified": false,
+    "additionalRound": "COVERAGE-U07-01-REVIEW02",
+    "completedDelegations": [
+      "deleg_d98cbc44",
+      "deleg_2eb85026"
+    ],
+    "parentAssessment": {
+      "path": "F:/ChnobelRuntime/verification/coverage-u07-01-review02-parent/assessment.json",
+      "sha256": "13bbce917225baa3ddcf07144ff6d65cbf159f4225f93478a29bb1d63d65e8da",
+      "bytes": 6309
+    },
+    "documentVerification": {
+      "path": "F:/ChnobelRuntime/verification/coverage-u07-01-review02-parent/verification.json",
+      "sha256": "fa617c8badb6ea54e6d1163bbfc4aec664057f5a9dfb9c55d9bc8ca3a5f1a476",
+      "bytes": 63698
+    },
+    "outputsOriginalsRetained": true
   }
 }
